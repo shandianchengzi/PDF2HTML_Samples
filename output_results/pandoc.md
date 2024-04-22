@@ -1,0 +1,1 @@
+`pandoc input.pdf -o output.html` 失败，pandoc 不接受 pdf 这个输入。详见 [【记录】Pandoc｜Linux安装最新Pandoc](https://blog.csdn.net/qq_46106285/article/details/138094313)。
