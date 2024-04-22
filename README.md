@@ -1,6 +1,6 @@
 ## 前言
 
-对比一下常用的。
+对比一下常用的 PDF 转 HTML/XML 的工具。
 
 ## 对比列表
 问：pdf转xml或html的开源python工具有哪些？
@@ -16,10 +16,49 @@
 7. PDFQuery https://www.freecodecamp.org/chinese/news/extract-data-from-pdf-files-with-python
 8. Spire.PDF https://blog.csdn.net/eiceblue/article/details/135988859
 
+如果还有其他工具也可以尝试测试并添加进来。
 
 ❌pandoc：已测，失败
 
 ## 测评过程
 
-1. 如果一个文件能解决，就在`python_samples`下新建一个python文件；如果解决不了就建一个文件夹。
-2. 测评结果放在`output_results`里。如果需要图片说明可以把图片放在`imgs/`文件夹下，也可以自己写一篇 CSDN 博客暂放到那里。
+1. 运行本仓库根目录下的 `tools.py` 文件，新建测试目录和测试文件：
+    ```bash
+    python3 tools.py new pdfminer.six       # 新建 pdfminer.six 工具测试目录 `python_samples/test_pdfminer_six`
+    python3 tools.py new pdfminer.six html  # 新建 pdfminer.six 工具的转换为 HTML 的测试文件 `python_samples/test_pdfminer_six/to_html.py`
+    ```
+2. 测试新工具的时候只需要重写新生成的测试文件的 `convert_pdf_to_{format}` 这个函数的内容，其他的我全部写好了。
+   1. 写测试函数的时候，如果参考了网络上的内容，在测试文件的上方填写一下 `# Reference: ` 链接。
+   2. 如果一个工具有多种写法，选结果最好的一种生成在 `output` 下。其他的已经写好的也不用删掉，可以注释了放一边。
+   3. 如果写的时候调用了除了工具名以外的其他第三方库，添加到 `requirements.txt` 中，以便之后我们同步更新时可以通过 `pip install -r requirements.txt` 装好对方的依赖。
+3. 写好函数之后，测试的方法：
+   ```bash
+   python3 tools.py test pdfminer.six       # 测试 pdfminer.six 工具下的所有格式转换文件
+   python3 tools.py test pdfminer.six html  # 测试 pdfminer.six 工具的转换为 HTML 的测试文件
+   ```
+
+具体测试过程是调用 `python_sampls/test_framework.py`。
+工具完整功能详见 `tools.py` 文件。
+
+测试输出：输出的文件在当前测评的工具的文件夹下，并被命名为 `to_{format}_{pdf_name}.{format}`。例如 pdfminer.six 工具样例的输出，放到 `python_samples/test_pdfminer_six/outputs` 。
+
+## 测评目的（如何评估效果）
+
+1. 能分清 PDF 章节
+2. 具备嵌套标签（就是格式化之后能看出来有**树状** DOM 元素的效果）
+
+
+## 测评结果
+
+1. 修改 `README.md`，用符号简单标注一下工具好不好用。可用的符号：❌✅⭐✨。
+   1. 完全用不了就打叉❌
+   2. 用得了就✅
+   3. 推荐指数⭐⭐⭐⭐⭐
+   4. 如果你觉得这个工具很nb就✨
+2. 详细说明可写在 `results/{工具名称}.md` 下。
+
+## TODO
+
+后续可以给它加上 GPT 自动根据描述/文章写测试用例的功能。
+
+现在需要测的不是特别多，你先熟悉一下流程，先人工问问网页 GPT 吧。
