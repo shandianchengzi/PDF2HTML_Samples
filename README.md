@@ -7,18 +7,23 @@
 
 在Python中，有几个开源工具可用于将PDF文件转换为XML或HTML格式。以下是其中一些：
 
-1. pdfminer.six: 这是一个PDF文档解析器，可以用于提取文本、元数据以及页面布局信息。您可以使用pdfminer.six来提取PDF中的文本内容，并将其转换为XML或HTML格式。https://products.documentprocessing.com/zh/conversion/python/pdfminer.six 多参考一些文档。
-2. pdfminer3k：
+1. pdfminer: Warning: Starting from version 20191010, PDFMiner supports Python 3 only. For Python 2 support, check out pdfminer.six. https://pypi.org/project/pdfminer/
+2. pdfminer3k：据说是 pdfminer 的 Python3 版本，不清楚和 pdfminer.six 有什么区别。
 3. PyPDF2: 这是一个纯Python库，用于处理PDF文件。虽然主要用于创建、阅读和修改PDF文件，但您也可以使用它来提取文本内容，并将其转换为XML或HTML格式。
 4. pdf2xml: 这是一个命令行工具，可以将PDF文件转换为XML格式。虽然它不是Python库，但您可以通过Python的subprocess模块来调用该工具，并处理生成的XML文件。
 5. pdf2htmlEX: 这是另一个命令行工具，用于将PDF文件转换为HTML格式。您可以通过Python的subprocess模块来调用该工具，并处理生成的HTML文件。https://blog.csdn.net/gitblog_00074/article/details/136775457
 6. PyMuPDF+tqdm https://blog.csdn.net/qq_28505809/article/details/124147552
 7. PDFQuery https://www.freecodecamp.org/chinese/news/extract-data-from-pdf-files-with-python
-8. Spire.PDF https://blog.csdn.net/eiceblue/article/details/135988859
+8. Spire.PDF https://blog.csdn.net/eiceblue/article/details/135988859, https://www.e-iceblue.com/Tutorials/Python/Spire.PDF-for-Python/Program-Guide/Conversion/Python-Convert-PDF-to-HTML.html
+9.  pdfkit: Adobe 提到了这个库，但是有人说是 iOS 专用的，StackOverflow 上只找到这个：https://stackoverflow.com/questions/75757120/convert-pdf-to-html-using-python-and-pdfkit
+10. pdftotree: 本软件包是我们开发自己的模块以替代 Adobe Acrobat 的成果。目前有几种将 pdf 转换为 html 的开源工具，但这些工具无法保留表格中的单元格结构。我们在这个项目中的目标是开发一个工具，提取 pdf 文档中的文本、数字和表格，并以易于使用的格式返回。https://pypi.org/project/pdftotree/
+11. depdf: An ultimate pdf file disintegration tool. DePDF is designed to extract tables and paragraphs into structured markup language [eg. html] from embedding pdf pages. You can also use it to convert page/pdf to html. Built on top of pdfplumber. https://pypi.org/project/depdf/0.1.1/
+12. poppdf: A python (3.6+) module that wraps poppler's pdftoimage, pdftohtml and pdftotext to extract informations from PDF. https://pypi.org/project/poppdf/
 
 如果还有其他工具也可以尝试测试并添加进来。
 
-❌pandoc：已测，失败
+❌pandoc：【已测，失败】`pandoc input.pdf -o output.html` 失败，pandoc 不接受 pdf 这个输入。详见 [【记录】Pandoc｜Linux安装最新Pandoc](https://blog.csdn.net/qq_46106285/article/details/138094313)。
+✅⭐pdfminer.six: 【这个工具是专供 Python2 的，详见 https://pypi.org/project/pdfminer/】这是一个PDF文档解析器，可以用于提取文本、元数据以及页面布局信息。您可以使用pdfminer.six来提取PDF中的文本内容，并将其转换为XML或HTML格式。https://products.documentprocessing.com/zh/conversion/python/pdfminer.six 多参考一些文档。
 
 ## 测评过程
 
@@ -46,6 +51,7 @@
 
 1. 能分清 PDF 章节
 2. 具备嵌套标签（就是格式化之后能看出来有**树状** DOM 元素的效果）
+3. 统计一下各个工具的社区活跃度（开源的看 Star 数量和最后更新的时间）
 
 
 ## 测评结果

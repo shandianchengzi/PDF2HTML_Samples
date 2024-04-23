@@ -29,3 +29,8 @@
 没用。
 也很可能是我没找到正确的打开方式。。。
 
+后来发现，这个工具是专供 Python2 的，详见 https://pypi.org/project/pdfminer/
+
+> Warning: Starting from version 20191010, PDFMiner supports Python 3 only. For Python 2 support, check out pdfminer.six. https://pypi.org/project/pdfminer/
+
+怪不得这么难用。。
