@@ -1,0 +1,509 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><title>Title</title></head><body style="display: flex;justify-content: center;flex-direction: column;background: white;align-items: center;"><div id="page0" style="width:595.0pt;height:842.0pt">
+<p style="top:59.7pt;left:67.3pt;line-height:10.0pt"><b><span style="font-family:Arial,sans-serif;font-size:10.0pt">Interrupts and events</span></b></p>
+<p style="top:59.7pt;left:490.1pt;line-height:10.0pt"><b><span style="font-family:Arial,sans-serif;font-size:10.0pt">RM0008</span></b></p>
+<p style="top:744.4pt;left:67.3pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">198/1136</span></p>
+<p style="top:744.4pt;left:265.1pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">RM0008 Rev 21</span></p>
+<p style="top:90.8pt;left:67.3pt;line-height:12.0pt"><b><span style="font-family:Arial,sans-serif;font-size:12.0pt">10.1.2 </span></b></p>
+<p style="top:90.8pt;left:123.9pt;line-height:12.0pt"><b><span style="font-family:Arial,sans-serif;font-size:12.0pt">Interrupt and exception vectors</span></b></p>
+<p style="top:112.2pt;left:124.0pt;line-height:10.0pt"><i><span style="font-family:Arial,sans-serif;font-size:10.0pt;color:#0000ff">Table 61</span></i><span style="font-family:Arial,sans-serif;font-size:10.0pt"> and </span><i><span style="font-family:Arial,sans-serif;font-size:10.0pt;color:#0000ff">Table 63</span></i><span style="font-family:Arial,sans-serif;font-size:10.0pt"> are the vector tables for connectivity line and other STM32F10xxx </span></p>
+<p style="top:124.2pt;left:124.0pt;line-height:10.0pt"><span style="font-family:Arial,sans-serif;font-size:10.0pt">devices, respectively.</span></p>
+<p style="top:147.2pt;left:124.5pt;line-height:2.0pt"><span style="font-family:Arial,sans-serif;font-size:2.0pt">         </span></p>
+<p style="top:148.2pt;left:177.1pt;line-height:10.0pt"><b><span style="font-family:Arial,sans-serif;font-size:10.0pt">Table 61. Vector table for connectivity line devices</span></b></p>
+<p style="top:220.5pt;left:101.1pt;line-height:9.0pt"><b><span style="font-family:Arial,sans-serif;font-size:9.0pt">Position</span></b></p>
+<p style="top:218.5pt;left:122.8pt;line-height:9.0pt"><b><span style="font-family:Arial,sans-serif;font-size:9.0pt">Priority</span></b></p>
+<p style="top:199.7pt;left:145.3pt;line-height:9.0pt"><b><span style="font-family:Arial,sans-serif;font-size:9.0pt">Type of </span></b></p>
+<p style="top:210.7pt;left:145.5pt;line-height:9.0pt"><b><span style="font-family:Arial,sans-serif;font-size:9.0pt">priority</span></b></p>
+<p style="top:205.3pt;left:207.0pt;line-height:9.0pt"><b><span style="font-family:Arial,sans-serif;font-size:9.0pt">Acronym</span></b></p>
+<p style="top:205.3pt;left:319.7pt;line-height:9.0pt"><b><span style="font-family:Arial,sans-serif;font-size:9.0pt">Description</span></b></p>
+<p style="top:205.3pt;left:441.7pt;line-height:9.0pt"><b><span style="font-family:Arial,sans-serif;font-size:9.0pt">Address</span></b></p>
+<p style="top:263.2pt;left:105.2pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">-</span></p>
+<p style="top:263.2pt;left:126.5pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">-</span></p>
+<p style="top:263.2pt;left:159.5pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">-</span></p>
+<p style="top:263.2pt;left:187.0pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">-</span></p>
+<p style="top:263.2pt;left:272.0pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">Reserved</span></p>
+<p style="top:263.2pt;left:432.5pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">0x0000_0000</span></p>
+<p style="top:280.3pt;left:105.2pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">-</span></p>
+<p style="top:280.3pt;left:124.0pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">-3</span></p>
+<p style="top:280.3pt;left:151.5pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">fixed</span></p>
+<p style="top:280.3pt;left:187.0pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">Reset</span></p>
+<p style="top:280.3pt;left:272.0pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">Reset</span></p>
+<p style="top:280.3pt;left:432.5pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">0x0000_0004</span></p>
+<p style="top:308.3pt;left:105.2pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">-</span></p>
+<p style="top:308.3pt;left:124.0pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">-2</span></p>
+<p style="top:308.3pt;left:151.5pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">fixed</span></p>
+<p style="top:308.3pt;left:187.0pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">NMI</span></p>
+<p style="top:297.2pt;left:272.0pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">Non maskable interrupt. The RCC </span></p>
+<p style="top:308.3pt;left:272.0pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">Clock Security System (CSS) is </span></p>
+<p style="top:319.3pt;left:272.0pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">linked to the NMI vector.</span></p>
+<p style="top:308.3pt;left:432.5pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">0x0000_0008</span></p>
+<p style="top:336.2pt;left:105.2pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">-</span></p>
+<p style="top:336.2pt;left:124.0pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">-1</span></p>
+<p style="top:336.2pt;left:151.5pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">fixed</span></p>
+<p style="top:336.2pt;left:187.0pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">HardFault</span></p>
+<p style="top:336.2pt;left:272.0pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">All class of fault</span></p>
+<p style="top:336.2pt;left:431.8pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">0x0000_000C</span></p>
+<p style="top:353.3pt;left:105.2pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">-</span></p>
+<p style="top:353.3pt;left:125.5pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">0</span></p>
+<p style="top:353.3pt;left:145.3pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">settable</span></p>
+<p style="top:353.3pt;left:187.0pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">MemManage</span></p>
+<p style="top:353.3pt;left:272.0pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">Memory management</span></p>
+<p style="top:353.3pt;left:432.5pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">0x0000_0010</span></p>
+<p style="top:370.3pt;left:105.2pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">-</span></p>
+<p style="top:370.3pt;left:125.5pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">1</span></p>
+<p style="top:370.3pt;left:145.3pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">settable</span></p>
+<p style="top:370.3pt;left:187.0pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">BusFault</span></p>
+<p style="top:370.3pt;left:272.0pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">Pre-fetch fault, memory access fault</span></p>
+<p style="top:370.3pt;left:432.5pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">0x0000_0014</span></p>
+<p style="top:387.2pt;left:105.2pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">-</span></p>
+<p style="top:387.2pt;left:125.5pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">2</span></p>
+<p style="top:387.2pt;left:145.3pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">settable</span></p>
+<p style="top:387.2pt;left:187.0pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">UsageFault</span></p>
+<p style="top:387.2pt;left:272.0pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">Undefined instruction or illegal state</span></p>
+<p style="top:387.2pt;left:432.5pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">0x0000_0018</span></p>
+<p style="top:409.7pt;left:105.2pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">-</span></p>
+<p style="top:409.7pt;left:126.5pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">-</span></p>
+<p style="top:409.7pt;left:159.5pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">-</span></p>
+<p style="top:409.7pt;left:187.0pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">-</span></p>
+<p style="top:409.7pt;left:272.0pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">Reserved</span></p>
+<p style="top:404.3pt;left:429.0pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">0x0000_001C - </span></p>
+<p style="top:415.3pt;left:432.0pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">0x0000_002B</span></p>
+<p style="top:437.8pt;left:105.2pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">-</span></p>
+<p style="top:437.8pt;left:125.5pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">3</span></p>
+<p style="top:437.8pt;left:145.3pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">settable</span></p>
+<p style="top:437.8pt;left:187.0pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">SVCall</span></p>
+<p style="top:432.2pt;left:272.0pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">System service call via SWI </span></p>
+<p style="top:443.3pt;left:272.0pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">instruction</span></p>
+<p style="top:437.8pt;left:431.8pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">0x0000_002C</span></p>
+<p style="top:460.3pt;left:105.2pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">-</span></p>
+<p style="top:460.3pt;left:125.5pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">4</span></p>
+<p style="top:460.3pt;left:145.3pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">settable</span></p>
+<p style="top:460.3pt;left:187.0pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">Debug Monitor</span></p>
+<p style="top:460.3pt;left:272.0pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">Debug Monitor</span></p>
+<p style="top:460.3pt;left:432.5pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">0x0000_0030</span></p>
+<p style="top:477.2pt;left:105.2pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">-</span></p>
+<p style="top:477.2pt;left:126.5pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">-</span></p>
+<p style="top:477.2pt;left:159.5pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">-</span></p>
+<p style="top:477.2pt;left:187.0pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">-</span></p>
+<p style="top:477.2pt;left:272.0pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">Reserved</span></p>
+<p style="top:477.2pt;left:432.5pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">0x0000_0034</span></p>
+<p style="top:494.3pt;left:105.2pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">-</span></p>
+<p style="top:494.3pt;left:125.5pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">5</span></p>
+<p style="top:494.3pt;left:145.3pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">settable</span></p>
+<p style="top:494.3pt;left:187.0pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">PendSV</span></p>
+<p style="top:494.3pt;left:272.0pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">Pendable request for system service</span></p>
+<p style="top:494.3pt;left:432.5pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">0x0000_0038</span></p>
+<p style="top:511.3pt;left:105.2pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">-</span></p>
+<p style="top:511.3pt;left:125.5pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">6</span></p>
+<p style="top:511.3pt;left:145.3pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">settable</span></p>
+<p style="top:511.3pt;left:187.0pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">SysTick</span></p>
+<p style="top:511.3pt;left:272.0pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">System tick timer</span></p>
+<p style="top:511.3pt;left:431.8pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">0x0000_003C</span></p>
+<p style="top:528.2pt;left:104.3pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">0</span></p>
+<p style="top:528.2pt;left:125.5pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">7</span></p>
+<p style="top:528.2pt;left:145.3pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">settable</span></p>
+<p style="top:528.2pt;left:186.9pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">WWDG</span></p>
+<p style="top:528.2pt;left:272.0pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">Window Watchdog interrupt</span></p>
+<p style="top:528.2pt;left:432.4pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">0x0000_0040</span></p>
+<p style="top:550.7pt;left:104.3pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">1</span></p>
+<p style="top:550.7pt;left:125.5pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">8</span></p>
+<p style="top:550.7pt;left:145.3pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">settable</span></p>
+<p style="top:550.7pt;left:187.0pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">PVD</span></p>
+<p style="top:545.3pt;left:272.0pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">PVD through EXTI Line detection </span></p>
+<p style="top:556.3pt;left:272.0pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">interrupt</span></p>
+<p style="top:550.7pt;left:432.5pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">0x0000_0044</span></p>
+<p style="top:573.2pt;left:104.3pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">2</span></p>
+<p style="top:573.2pt;left:125.5pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">9</span></p>
+<p style="top:573.2pt;left:145.3pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">settable</span></p>
+<p style="top:573.2pt;left:187.0pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">TAMPER</span></p>
+<p style="top:573.2pt;left:271.9pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">Tamper interrupt</span></p>
+<p style="top:573.2pt;left:432.4pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">0x0000_0048</span></p>
+<p style="top:590.3pt;left:104.3pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">3</span></p>
+<p style="top:590.3pt;left:122.9pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">10</span></p>
+<p style="top:590.3pt;left:145.3pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">settable</span></p>
+<p style="top:590.3pt;left:186.9pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">RTC</span></p>
+<p style="top:590.3pt;left:271.9pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">RTC global interrupt</span></p>
+<p style="top:590.3pt;left:431.7pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">0x0000_004C</span></p>
+<p style="top:607.3pt;left:104.3pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">4</span></p>
+<p style="top:607.3pt;left:123.3pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">11</span></p>
+<p style="top:607.3pt;left:145.3pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">settable</span></p>
+<p style="top:607.3pt;left:186.9pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">FLASH</span></p>
+<p style="top:607.3pt;left:271.9pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">Flash global interrupt</span></p>
+<p style="top:607.3pt;left:432.4pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">0x0000_0050</span></p>
+<p style="top:624.2pt;left:104.3pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">5</span></p>
+<p style="top:624.2pt;left:122.9pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">12</span></p>
+<p style="top:624.2pt;left:145.3pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">settable</span></p>
+<p style="top:624.2pt;left:186.9pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">RCC</span></p>
+<p style="top:624.2pt;left:271.9pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">RCC global interrupt</span></p>
+<p style="top:624.2pt;left:432.4pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">0x0000_0054</span></p>
+<p style="top:641.3pt;left:104.3pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">6</span></p>
+<p style="top:641.3pt;left:122.9pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">13</span></p>
+<p style="top:641.3pt;left:145.3pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">settable</span></p>
+<p style="top:641.3pt;left:186.9pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">EXTI0</span></p>
+<p style="top:641.3pt;left:271.9pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">EXTI Line0 interrupt</span></p>
+<p style="top:641.3pt;left:432.4pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">0x0000_0058</span></p>
+<p style="top:658.3pt;left:104.3pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">7</span></p>
+<p style="top:658.3pt;left:122.9pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">14</span></p>
+<p style="top:658.3pt;left:145.3pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">settable</span></p>
+<p style="top:658.3pt;left:186.9pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">EXTI1</span></p>
+<p style="top:658.3pt;left:271.9pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">EXTI Line1 interrupt</span></p>
+<p style="top:658.3pt;left:431.7pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">0x0000_005C</span></p>
+<p style="top:675.2pt;left:104.3pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">8</span></p>
+<p style="top:675.2pt;left:122.9pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">15</span></p>
+<p style="top:675.2pt;left:145.3pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">settable</span></p>
+<p style="top:675.2pt;left:186.9pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">EXTI2</span></p>
+<p style="top:675.2pt;left:271.9pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">EXTI Line2 interrupt</span></p>
+<p style="top:675.2pt;left:432.4pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">0x0000_0060</span></p>
+<p style="top:692.3pt;left:104.3pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">9</span></p>
+<p style="top:692.3pt;left:122.9pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">16</span></p>
+<p style="top:692.3pt;left:145.3pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">settable</span></p>
+<p style="top:692.3pt;left:186.9pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">EXTI3</span></p>
+<p style="top:692.3pt;left:271.9pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">EXTI Line3 interrupt</span></p>
+<p style="top:692.3pt;left:432.4pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">0x0000_0064</span></p>
+<p style="top:709.3pt;left:101.8pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">10</span></p>
+<p style="top:709.3pt;left:122.9pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">17</span></p>
+<p style="top:709.3pt;left:145.3pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">settable</span></p>
+<p style="top:709.3pt;left:186.9pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">EXTI4</span></p>
+<p style="top:709.3pt;left:271.9pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">EXTI Line4 interrupt</span></p>
+<p style="top:709.3pt;left:432.5pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">0x0000_0068</span></p>
+</div>
+<div id="page0" style="width:595.0pt;height:842.0pt">
+<p style="top:744.4pt;left:265.1pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">RM0008 Rev 21</span></p>
+<p style="top:744.4pt;left:491.1pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">199/1136</span></p>
+<p style="top:59.7pt;left:67.3pt;line-height:10.0pt"><b><span style="font-family:Arial,sans-serif;font-size:10.0pt">RM0008</span></b></p>
+<p style="top:59.7pt;left:426.3pt;line-height:10.0pt"><b><span style="font-family:Arial,sans-serif;font-size:10.0pt">Interrupts and events</span></b></p>
+<p style="top:760.8pt;left:550.3pt;line-height:7.0pt"><span style="font-family:Arial,sans-serif;font-size:7.0pt;color:#ffffff">214</span></p>
+<p style="top:206.2pt;left:102.1pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">11</span></p>
+<p style="top:206.2pt;left:122.9pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">18</span></p>
+<p style="top:206.2pt;left:145.3pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">settable</span></p>
+<p style="top:206.2pt;left:186.9pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">DMA1_Channel1</span></p>
+<p style="top:206.2pt;left:271.9pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">DMA1 Channel1 global interrupt </span></p>
+<p style="top:206.2pt;left:431.6pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">0x0000_006C</span></p>
+<p style="top:223.3pt;left:101.8pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">12</span></p>
+<p style="top:223.3pt;left:122.9pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">19</span></p>
+<p style="top:223.3pt;left:145.3pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">settable</span></p>
+<p style="top:223.3pt;left:186.9pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">DMA1_Channel2</span></p>
+<p style="top:223.3pt;left:271.9pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">DMA1 Channel2 global interrupt</span></p>
+<p style="top:223.3pt;left:432.4pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">0x0000_0070</span></p>
+<p style="top:240.2pt;left:101.8pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">13</span></p>
+<p style="top:240.2pt;left:122.9pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">20</span></p>
+<p style="top:240.2pt;left:145.3pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">settable</span></p>
+<p style="top:240.2pt;left:186.9pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">DMA1_Channel3</span></p>
+<p style="top:240.2pt;left:271.9pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">DMA1 Channel3 global interrupt</span></p>
+<p style="top:240.2pt;left:432.4pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">0x0000_0074</span></p>
+<p style="top:257.2pt;left:101.8pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">14</span></p>
+<p style="top:257.2pt;left:122.9pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">21</span></p>
+<p style="top:257.2pt;left:145.3pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">settable</span></p>
+<p style="top:257.2pt;left:186.9pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">DMA1_Channel4</span></p>
+<p style="top:257.2pt;left:271.9pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">DMA1 Channel4 global interrupt</span></p>
+<p style="top:257.2pt;left:432.4pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">0x0000_0078</span></p>
+<p style="top:274.3pt;left:101.8pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">15</span></p>
+<p style="top:274.3pt;left:122.9pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">22</span></p>
+<p style="top:274.3pt;left:145.3pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">settable</span></p>
+<p style="top:274.3pt;left:186.9pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">DMA1_Channel5</span></p>
+<p style="top:274.3pt;left:271.9pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">DMA1 Channel5 global interrupt</span></p>
+<p style="top:274.3pt;left:431.6pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">0x0000_007C</span></p>
+<p style="top:291.2pt;left:101.8pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">16</span></p>
+<p style="top:291.2pt;left:122.9pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">23</span></p>
+<p style="top:291.2pt;left:145.3pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">settable</span></p>
+<p style="top:291.2pt;left:186.9pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">DMA1_Channel6</span></p>
+<p style="top:291.2pt;left:271.9pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">DMA1 Channel6 global interrupt</span></p>
+<p style="top:291.2pt;left:432.4pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">0x0000_0080</span></p>
+<p style="top:308.3pt;left:101.8pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">17</span></p>
+<p style="top:308.3pt;left:122.9pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">24</span></p>
+<p style="top:308.3pt;left:145.3pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">settable</span></p>
+<p style="top:308.3pt;left:186.9pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">DMA1_Channel7</span></p>
+<p style="top:308.3pt;left:271.9pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">DMA1 Channel7 global interrupt</span></p>
+<p style="top:308.3pt;left:432.4pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">0x0000_0084</span></p>
+<p style="top:325.3pt;left:101.8pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">18</span></p>
+<p style="top:325.3pt;left:122.9pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">25</span></p>
+<p style="top:325.3pt;left:145.3pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">settable</span></p>
+<p style="top:325.3pt;left:186.9pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">ADC1_2</span></p>
+<p style="top:325.3pt;left:272.0pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">ADC1 and ADC2 global interrupt</span></p>
+<p style="top:325.3pt;left:432.4pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">0x0000_0088</span></p>
+<p style="top:342.2pt;left:101.8pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">19</span></p>
+<p style="top:342.2pt;left:122.9pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">26</span></p>
+<p style="top:342.2pt;left:145.3pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">settable</span></p>
+<p style="top:342.2pt;left:186.9pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">CAN1_TX</span></p>
+<p style="top:342.2pt;left:272.0pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">CAN1 TX interrupts</span></p>
+<p style="top:342.2pt;left:431.7pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">0x0000_008C</span></p>
+<p style="top:359.3pt;left:101.8pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">20</span></p>
+<p style="top:359.3pt;left:122.9pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">27</span></p>
+<p style="top:359.3pt;left:145.3pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">settable</span></p>
+<p style="top:359.3pt;left:187.0pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">CAN1_RX0</span></p>
+<p style="top:359.3pt;left:271.9pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">CAN1 RX0 interrupts</span></p>
+<p style="top:359.3pt;left:432.4pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">0x0000_0090</span></p>
+<p style="top:376.3pt;left:101.8pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">21</span></p>
+<p style="top:376.3pt;left:122.9pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">28</span></p>
+<p style="top:376.3pt;left:145.3pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">settable</span></p>
+<p style="top:376.3pt;left:186.9pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">CAN1_RX1</span></p>
+<p style="top:376.3pt;left:271.9pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">CAN1 RX1 interrupt</span></p>
+<p style="top:376.3pt;left:432.4pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">0x0000_0094</span></p>
+<p style="top:393.2pt;left:101.8pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">22</span></p>
+<p style="top:393.2pt;left:122.9pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">29</span></p>
+<p style="top:393.2pt;left:145.3pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">settable</span></p>
+<p style="top:393.2pt;left:187.0pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">CAN1_SCE</span></p>
+<p style="top:393.2pt;left:272.0pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">CAN1 SCE interrupt</span></p>
+<p style="top:393.2pt;left:432.4pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">0x0000_0098</span></p>
+<p style="top:410.3pt;left:101.8pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">23</span></p>
+<p style="top:410.3pt;left:122.9pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">30</span></p>
+<p style="top:410.3pt;left:145.3pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">settable</span></p>
+<p style="top:410.3pt;left:186.9pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">EXTI9_5</span></p>
+<p style="top:410.3pt;left:271.9pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">EXTI Line[9:5] interrupts</span></p>
+<p style="top:410.3pt;left:431.7pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">0x0000_009C</span></p>
+<p style="top:427.3pt;left:101.8pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">24</span></p>
+<p style="top:427.3pt;left:122.9pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">31</span></p>
+<p style="top:427.3pt;left:145.3pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">settable</span></p>
+<p style="top:427.3pt;left:187.0pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">TIM1_BRK</span></p>
+<p style="top:427.3pt;left:271.9pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">TIM1 Break interrupt</span></p>
+<p style="top:427.3pt;left:431.9pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">0x0000_00A0</span></p>
+<p style="top:444.2pt;left:101.8pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">25</span></p>
+<p style="top:444.2pt;left:122.9pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">32</span></p>
+<p style="top:444.2pt;left:145.3pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">settable</span></p>
+<p style="top:444.2pt;left:187.0pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">TIM1_UP</span></p>
+<p style="top:444.2pt;left:271.9pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">TIM1 Update interrupt</span></p>
+<p style="top:444.2pt;left:431.9pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">0x0000_00A4</span></p>
+<p style="top:466.7pt;left:101.8pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">26</span></p>
+<p style="top:466.7pt;left:122.9pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">33</span></p>
+<p style="top:466.7pt;left:145.3pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">settable</span></p>
+<p style="top:466.7pt;left:187.0pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">TIM1_TRG_COM</span></p>
+<p style="top:461.3pt;left:272.0pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">TIM1 Trigger and Commutation </span></p>
+<p style="top:472.3pt;left:272.0pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">interrupts</span></p>
+<p style="top:466.7pt;left:432.0pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">0x0000_00A8</span></p>
+<p style="top:489.2pt;left:101.8pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">27</span></p>
+<p style="top:489.2pt;left:122.9pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">34</span></p>
+<p style="top:489.2pt;left:145.3pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">settable</span></p>
+<p style="top:489.2pt;left:187.0pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">TIM1_CC</span></p>
+<p style="top:489.2pt;left:271.9pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">TIM1 Capture Compare interrupt</span></p>
+<p style="top:489.2pt;left:431.1pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">0x0000_00AC</span></p>
+<p style="top:506.3pt;left:101.8pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">28</span></p>
+<p style="top:506.3pt;left:122.9pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">35</span></p>
+<p style="top:506.3pt;left:145.3pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">settable</span></p>
+<p style="top:506.3pt;left:187.0pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">TIM2</span></p>
+<p style="top:506.3pt;left:271.9pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">TIM2 global interrupt</span></p>
+<p style="top:506.3pt;left:431.9pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">0x0000_00B0</span></p>
+<p style="top:523.3pt;left:101.8pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">29</span></p>
+<p style="top:523.3pt;left:122.9pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">36</span></p>
+<p style="top:523.3pt;left:145.3pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">settable</span></p>
+<p style="top:523.3pt;left:187.0pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">TIM3</span></p>
+<p style="top:523.3pt;left:271.9pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">TIM3 global interrupt</span></p>
+<p style="top:523.3pt;left:431.9pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">0x0000_00B4</span></p>
+<p style="top:540.2pt;left:101.8pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">30</span></p>
+<p style="top:540.2pt;left:122.9pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">37</span></p>
+<p style="top:540.2pt;left:145.3pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">settable</span></p>
+<p style="top:540.2pt;left:187.0pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">TIM4</span></p>
+<p style="top:540.2pt;left:271.9pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">TIM4 global interrupt</span></p>
+<p style="top:540.2pt;left:431.9pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">0x0000_00B8</span></p>
+<p style="top:557.3pt;left:101.8pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">31</span></p>
+<p style="top:557.3pt;left:122.9pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">38</span></p>
+<p style="top:557.3pt;left:145.3pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">settable</span></p>
+<p style="top:557.3pt;left:186.9pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">I2C1_EV</span></p>
+<p style="top:557.3pt;left:272.0pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">I</span><sup><span style="font-family:Arial,sans-serif;font-size:7.2pt">2</span></sup><span style="font-family:Arial,sans-serif;font-size:9.0pt">C1 event interrupt</span></p>
+<p style="top:557.3pt;left:431.2pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">0x0000_00BC</span></p>
+<p style="top:574.3pt;left:101.8pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">32</span></p>
+<p style="top:574.3pt;left:122.9pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">39</span></p>
+<p style="top:574.3pt;left:145.3pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">settable</span></p>
+<p style="top:574.3pt;left:186.9pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">I2C1_ER</span></p>
+<p style="top:574.3pt;left:272.0pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">I</span><sup><span style="font-family:Arial,sans-serif;font-size:7.2pt">2</span></sup><span style="font-family:Arial,sans-serif;font-size:9.0pt">C1 error interrupt</span></p>
+<p style="top:574.3pt;left:431.7pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">0x0000_00C0</span></p>
+<p style="top:591.2pt;left:101.8pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">33</span></p>
+<p style="top:591.2pt;left:122.9pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">40</span></p>
+<p style="top:591.2pt;left:145.3pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">settable</span></p>
+<p style="top:591.2pt;left:186.9pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">I2C2_EV</span></p>
+<p style="top:591.2pt;left:272.0pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">I</span><sup><span style="font-family:Arial,sans-serif;font-size:7.2pt">2</span></sup><span style="font-family:Arial,sans-serif;font-size:9.0pt">C2 event interrupt</span></p>
+<p style="top:591.2pt;left:431.7pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">0x0000_00C4</span></p>
+<p style="top:608.3pt;left:101.8pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">34</span></p>
+<p style="top:608.3pt;left:122.9pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">41</span></p>
+<p style="top:608.3pt;left:145.3pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">settable</span></p>
+<p style="top:608.3pt;left:186.9pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">I2C2_ER</span></p>
+<p style="top:608.3pt;left:272.0pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">I</span><sup><span style="font-family:Arial,sans-serif;font-size:7.2pt">2</span></sup><span style="font-family:Arial,sans-serif;font-size:9.0pt">C2 error interrupt</span></p>
+<p style="top:608.3pt;left:431.7pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">0x0000_00C8</span></p>
+<p style="top:625.3pt;left:101.8pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">35</span></p>
+<p style="top:625.3pt;left:122.9pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">42</span></p>
+<p style="top:625.3pt;left:145.3pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">settable</span></p>
+<p style="top:625.3pt;left:186.9pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">SPI1</span></p>
+<p style="top:625.3pt;left:271.9pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">SPI1 global interrupt</span></p>
+<p style="top:625.3pt;left:430.9pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">0x0000_00CC</span></p>
+<p style="top:642.2pt;left:101.8pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">36</span></p>
+<p style="top:642.2pt;left:122.9pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">43</span></p>
+<p style="top:642.2pt;left:145.3pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">settable</span></p>
+<p style="top:642.2pt;left:186.9pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">SPI2</span></p>
+<p style="top:642.2pt;left:271.9pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">SPI2 global interrupt</span></p>
+<p style="top:642.2pt;left:431.7pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">0x0000_00D0</span></p>
+<p style="top:659.3pt;left:101.8pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">37</span></p>
+<p style="top:659.3pt;left:122.9pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">44</span></p>
+<p style="top:659.3pt;left:145.3pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">settable</span></p>
+<p style="top:659.3pt;left:187.0pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">USART1</span></p>
+<p style="top:659.3pt;left:272.0pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">USART1 global interrupt</span></p>
+<p style="top:659.3pt;left:431.7pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">0x0000_00D4</span></p>
+<p style="top:676.3pt;left:101.8pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">38</span></p>
+<p style="top:676.3pt;left:122.9pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">45</span></p>
+<p style="top:676.3pt;left:145.3pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">settable</span></p>
+<p style="top:676.3pt;left:187.0pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">USART2</span></p>
+<p style="top:676.3pt;left:272.0pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">USART2 global interrupt</span></p>
+<p style="top:676.3pt;left:431.7pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">0x0000_00D8</span></p>
+<p style="top:693.2pt;left:101.8pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">39</span></p>
+<p style="top:693.2pt;left:122.9pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">46</span></p>
+<p style="top:693.2pt;left:145.3pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">settable</span></p>
+<p style="top:693.2pt;left:187.0pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">USART3</span></p>
+<p style="top:693.2pt;left:272.0pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">USART3 global interrupt</span></p>
+<p style="top:693.2pt;left:430.9pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">0x0000_00DC</span></p>
+<p style="top:91.2pt;left:149.9pt;line-height:10.0pt"><b><span style="font-family:Arial,sans-serif;font-size:10.0pt">Table 61. Vector table for connectivity line devices (continued)</span></b></p>
+<p style="top:163.5pt;left:101.1pt;line-height:9.0pt"><b><span style="font-family:Arial,sans-serif;font-size:9.0pt">Position</span></b></p>
+<p style="top:161.5pt;left:122.8pt;line-height:9.0pt"><b><span style="font-family:Arial,sans-serif;font-size:9.0pt">Priority</span></b></p>
+<p style="top:142.7pt;left:145.3pt;line-height:9.0pt"><b><span style="font-family:Arial,sans-serif;font-size:9.0pt">Type of </span></b></p>
+<p style="top:153.7pt;left:145.5pt;line-height:9.0pt"><b><span style="font-family:Arial,sans-serif;font-size:9.0pt">priority</span></b></p>
+<p style="top:148.3pt;left:207.0pt;line-height:9.0pt"><b><span style="font-family:Arial,sans-serif;font-size:9.0pt">Acronym</span></b></p>
+<p style="top:148.3pt;left:319.7pt;line-height:9.0pt"><b><span style="font-family:Arial,sans-serif;font-size:9.0pt">Description</span></b></p>
+<p style="top:148.3pt;left:441.7pt;line-height:9.0pt"><b><span style="font-family:Arial,sans-serif;font-size:9.0pt">Address</span></b></p>
+</div>
+<div id="page0" style="width:595.0pt;height:842.0pt">
+<p style="top:59.7pt;left:67.3pt;line-height:10.0pt"><b><span style="font-family:Arial,sans-serif;font-size:10.0pt">Interrupts and events</span></b></p>
+<p style="top:59.7pt;left:490.1pt;line-height:10.0pt"><b><span style="font-family:Arial,sans-serif;font-size:10.0pt">RM0008</span></b></p>
+<p style="top:744.4pt;left:67.3pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">200/1136</span></p>
+<p style="top:744.4pt;left:265.1pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">RM0008 Rev 21</span></p>
+<p style="top:206.2pt;left:101.8pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">40</span></p>
+<p style="top:206.2pt;left:122.9pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">47</span></p>
+<p style="top:206.2pt;left:145.3pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">settable</span></p>
+<p style="top:206.2pt;left:186.9pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">EXTI15_10</span></p>
+<p style="top:206.2pt;left:271.9pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">EXTI Line[15:10] interrupts</span></p>
+<p style="top:206.2pt;left:431.9pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">0x0000_00E0</span></p>
+<p style="top:228.7pt;left:101.8pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">41</span></p>
+<p style="top:228.7pt;left:122.9pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">48</span></p>
+<p style="top:228.7pt;left:145.3pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">settable</span></p>
+<p style="top:228.7pt;left:187.0pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">RTCAlarm</span></p>
+<p style="top:223.3pt;left:272.0pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">RTC alarm through EXTI line </span></p>
+<p style="top:234.2pt;left:272.0pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">interrupt</span></p>
+<p style="top:228.7pt;left:432.0pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">0x0000_00E4</span></p>
+<p style="top:256.7pt;left:101.8pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">42</span></p>
+<p style="top:256.7pt;left:122.9pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">49</span></p>
+<p style="top:256.7pt;left:145.3pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">settable</span></p>
+<p style="top:256.7pt;left:186.9pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">OTG_FS_WKUP</span></p>
+<p style="top:251.2pt;left:272.0pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">USB On-The-Go FS Wakeup </span></p>
+<p style="top:262.3pt;left:272.0pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">through EXTI line interrupt</span></p>
+<p style="top:256.7pt;left:432.0pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">0x0000_00E8</span></p>
+<p style="top:284.8pt;left:105.2pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">-</span></p>
+<p style="top:284.8pt;left:126.5pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">-</span></p>
+<p style="top:284.8pt;left:159.5pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">-</span></p>
+<p style="top:284.8pt;left:187.0pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">-</span></p>
+<p style="top:284.8pt;left:272.0pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">Reserved</span></p>
+<p style="top:279.2pt;left:428.5pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">0x0000_00EC - </span></p>
+<p style="top:290.2pt;left:432.5pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">0x0000_0104</span></p>
+<p style="top:307.3pt;left:101.8pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">50</span></p>
+<p style="top:307.3pt;left:122.9pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">57</span></p>
+<p style="top:307.3pt;left:145.3pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">settable</span></p>
+<p style="top:307.3pt;left:187.0pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">TIM5</span></p>
+<p style="top:307.3pt;left:271.9pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">TIM5 global interrupt</span></p>
+<p style="top:307.3pt;left:432.4pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">0x0000_0108</span></p>
+<p style="top:324.2pt;left:101.8pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">51</span></p>
+<p style="top:324.2pt;left:122.9pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">58</span></p>
+<p style="top:324.2pt;left:145.3pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">settable</span></p>
+<p style="top:324.2pt;left:186.9pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">SPI3</span></p>
+<p style="top:324.2pt;left:271.9pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">SPI3 global interrupt</span></p>
+<p style="top:324.2pt;left:431.7pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">0x0000_010C</span></p>
+<p style="top:341.3pt;left:101.8pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">52</span></p>
+<p style="top:341.3pt;left:122.9pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">59</span></p>
+<p style="top:341.3pt;left:145.3pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">settable</span></p>
+<p style="top:341.3pt;left:187.0pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">UART4</span></p>
+<p style="top:341.3pt;left:272.0pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">UART4 global interrupt</span></p>
+<p style="top:341.3pt;left:432.8pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">0x0000_0110</span></p>
+<p style="top:358.3pt;left:101.8pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">53</span></p>
+<p style="top:358.3pt;left:122.9pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">60</span></p>
+<p style="top:358.3pt;left:145.3pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">settable</span></p>
+<p style="top:358.3pt;left:187.0pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">UART5</span></p>
+<p style="top:358.3pt;left:272.0pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">UART5 global interrupt</span></p>
+<p style="top:358.3pt;left:432.8pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">0x0000_0114</span></p>
+<p style="top:375.2pt;left:101.8pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">54</span></p>
+<p style="top:375.2pt;left:122.9pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">61</span></p>
+<p style="top:375.2pt;left:145.3pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">settable</span></p>
+<p style="top:375.2pt;left:187.0pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">TIM6</span></p>
+<p style="top:375.2pt;left:271.9pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">TIM6 global interrupt</span></p>
+<p style="top:375.2pt;left:432.8pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">0x0000_0118</span></p>
+<p style="top:392.3pt;left:101.8pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">55</span></p>
+<p style="top:392.3pt;left:122.9pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">62</span></p>
+<p style="top:392.3pt;left:145.3pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">settable</span></p>
+<p style="top:392.3pt;left:187.0pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">TIM7</span></p>
+<p style="top:392.3pt;left:271.9pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">TIM7 global interrupt</span></p>
+<p style="top:392.3pt;left:432.0pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">0x0000_011C</span></p>
+<p style="top:409.3pt;left:101.8pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">56</span></p>
+<p style="top:409.3pt;left:122.9pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">63</span></p>
+<p style="top:409.3pt;left:145.3pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">settable</span></p>
+<p style="top:409.3pt;left:186.9pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">DMA2_Channel1</span></p>
+<p style="top:409.3pt;left:271.9pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">DMA2 Channel1 global interrupt </span></p>
+<p style="top:409.3pt;left:432.4pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">0x0000_0120</span></p>
+<p style="top:426.2pt;left:101.8pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">57</span></p>
+<p style="top:426.2pt;left:122.9pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">64</span></p>
+<p style="top:426.2pt;left:145.3pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">settable</span></p>
+<p style="top:426.2pt;left:186.9pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">DMA2_Channel2</span></p>
+<p style="top:426.2pt;left:271.9pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">DMA2 Channel2 global interrupt</span></p>
+<p style="top:426.2pt;left:432.4pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">0x0000_0124</span></p>
+<p style="top:443.3pt;left:101.8pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">58</span></p>
+<p style="top:443.3pt;left:122.9pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">65</span></p>
+<p style="top:443.3pt;left:145.3pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">settable</span></p>
+<p style="top:443.3pt;left:186.9pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">DMA2_Channel3</span></p>
+<p style="top:443.3pt;left:271.9pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">DMA2 Channel3 global interrupt</span></p>
+<p style="top:443.3pt;left:432.4pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">0x0000_0128</span></p>
+<p style="top:460.3pt;left:101.8pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">59</span></p>
+<p style="top:460.3pt;left:122.9pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">66</span></p>
+<p style="top:460.3pt;left:145.3pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">settable</span></p>
+<p style="top:460.3pt;left:186.9pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">DMA2_Channel4</span></p>
+<p style="top:460.3pt;left:271.9pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">DMA2 Channel4 global interrupt</span></p>
+<p style="top:460.3pt;left:431.6pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">0x0000_012C</span></p>
+<p style="top:477.2pt;left:101.8pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">60</span></p>
+<p style="top:477.2pt;left:122.9pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">67</span></p>
+<p style="top:477.2pt;left:145.3pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">settable</span></p>
+<p style="top:477.2pt;left:186.9pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">DMA2_Channel5</span></p>
+<p style="top:477.2pt;left:271.9pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">DMA2 Channel5 global interrupt</span></p>
+<p style="top:477.2pt;left:432.4pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">0x0000_0130</span></p>
+<p style="top:494.3pt;left:101.8pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">61</span></p>
+<p style="top:494.3pt;left:122.9pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">68</span></p>
+<p style="top:494.3pt;left:145.3pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">settable</span></p>
+<p style="top:494.3pt;left:186.9pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">ETH</span></p>
+<p style="top:494.3pt;left:272.0pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">Ethernet global interrupt </span></p>
+<p style="top:494.3pt;left:432.4pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">0x0000_0134</span></p>
+<p style="top:516.8pt;left:101.8pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">62</span></p>
+<p style="top:516.8pt;left:122.9pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">69</span></p>
+<p style="top:516.8pt;left:145.3pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">settable</span></p>
+<p style="top:516.8pt;left:186.9pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">ETH_WKUP</span></p>
+<p style="top:511.3pt;left:272.0pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">Ethernet Wakeup through EXTI line </span></p>
+<p style="top:522.2pt;left:272.0pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">interrupt</span></p>
+<p style="top:516.8pt;left:432.5pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">0x0000_0138</span></p>
+<p style="top:539.3pt;left:101.8pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">63</span></p>
+<p style="top:539.3pt;left:122.9pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">70</span></p>
+<p style="top:539.3pt;left:145.3pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">settable</span></p>
+<p style="top:539.3pt;left:186.9pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">CAN2_TX</span></p>
+<p style="top:539.3pt;left:272.0pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">CAN2 TX interrupts</span></p>
+<p style="top:539.3pt;left:431.7pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">0x0000_013C</span></p>
+<p style="top:556.3pt;left:101.8pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">64</span></p>
+<p style="top:556.3pt;left:122.9pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">71</span></p>
+<p style="top:556.3pt;left:145.3pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">settable</span></p>
+<p style="top:556.3pt;left:187.0pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">CAN2_RX0</span></p>
+<p style="top:556.3pt;left:271.9pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">CAN2 RX0 interrupts</span></p>
+<p style="top:556.3pt;left:432.4pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">0x0000_0140</span></p>
+<p style="top:573.2pt;left:101.8pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">65</span></p>
+<p style="top:573.2pt;left:122.9pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">72</span></p>
+<p style="top:573.2pt;left:145.3pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">settable</span></p>
+<p style="top:573.2pt;left:186.9pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">CAN2_RX1</span></p>
+<p style="top:573.2pt;left:271.9pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">CAN2 RX1 interrupt</span></p>
+<p style="top:573.2pt;left:432.4pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">0x0000_0144</span></p>
+<p style="top:590.3pt;left:101.8pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">66</span></p>
+<p style="top:590.3pt;left:122.9pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">73</span></p>
+<p style="top:590.3pt;left:145.3pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">settable</span></p>
+<p style="top:590.3pt;left:186.9pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">CAN2_SCE</span></p>
+<p style="top:590.3pt;left:272.0pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">CAN2 SCE interrupt</span></p>
+<p style="top:590.3pt;left:432.4pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">0x0000_0148</span></p>
+<p style="top:607.3pt;left:101.8pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">67</span></p>
+<p style="top:607.3pt;left:122.9pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">74</span></p>
+<p style="top:607.3pt;left:145.3pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">settable</span></p>
+<p style="top:607.3pt;left:186.9pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">OTG_FS</span></p>
+<p style="top:607.3pt;left:272.0pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">USB On The Go FS global interrupt</span></p>
+<p style="top:607.3pt;left:431.7pt;line-height:9.0pt"><span style="font-family:Arial,sans-serif;font-size:9.0pt">0x0000_014C</span></p>
+<p style="top:91.2pt;left:149.9pt;line-height:10.0pt"><b><span style="font-family:Arial,sans-serif;font-size:10.0pt">Table 61. Vector table for connectivity line devices (continued)</span></b></p>
+<p style="top:163.5pt;left:101.1pt;line-height:9.0pt"><b><span style="font-family:Arial,sans-serif;font-size:9.0pt">Position</span></b></p>
+<p style="top:161.5pt;left:122.8pt;line-height:9.0pt"><b><span style="font-family:Arial,sans-serif;font-size:9.0pt">Priority</span></b></p>
+<p style="top:142.7pt;left:145.3pt;line-height:9.0pt"><b><span style="font-family:Arial,sans-serif;font-size:9.0pt">Type of </span></b></p>
+<p style="top:153.7pt;left:145.5pt;line-height:9.0pt"><b><span style="font-family:Arial,sans-serif;font-size:9.0pt">priority</span></b></p>
+<p style="top:148.3pt;left:207.0pt;line-height:9.0pt"><b><span style="font-family:Arial,sans-serif;font-size:9.0pt">Acronym</span></b></p>
+<p style="top:148.3pt;left:319.7pt;line-height:9.0pt"><b><span style="font-family:Arial,sans-serif;font-size:9.0pt">Description</span></b></p>
+<p style="top:148.3pt;left:441.7pt;line-height:9.0pt"><b><span style="font-family:Arial,sans-serif;font-size:9.0pt">Address</span></b></p>
+</div>
+</body></html>

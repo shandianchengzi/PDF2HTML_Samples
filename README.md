@@ -25,6 +25,10 @@
 ❌pandoc：【已测，失败】`pandoc input.pdf -o output.html` 失败，pandoc 不接受 pdf 这个输入。详见 [【记录】Pandoc｜Linux安装最新Pandoc](https://blog.csdn.net/qq_46106285/article/details/138094313)。
 ✅⭐pdfminer.six: 【这个工具是专供 Python2 的，详见 https://pypi.org/project/pdfminer/】这是一个PDF文档解析器，可以用于提取文本、元数据以及页面布局信息。您可以使用pdfminer.six来提取PDF中的文本内容，并将其转换为XML或HTML格式。https://products.documentprocessing.com/zh/conversion/python/pdfminer.six 多参考一些文档。
 
+✅⭐⭐⭐⭐pdf2htmlEX：除了大纲有点问题，其他都很好。它还提供了很多转换参数https://github.com/coolwanglu/pdf2htmlEX/wiki/Command-Line-Options
+
+✅⭐PyMuPDF+tqdm：和pdfminer.six转换结果类似
+
 ## 测评过程
 
 1. 运行本仓库根目录下的 `tools.py` 文件，新建测试目录和测试文件：
