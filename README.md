@@ -29,6 +29,8 @@
 
 ✅⭐PyMuPDF+tqdm：和pdfminer.six转换结果类似
 
+✅⭐PDFQuery：不好，和pdfminer.six转换结果类似
+
 ## 测评过程
 
 1. 运行本仓库根目录下的 `tools.py` 文件，新建测试目录和测试文件：
