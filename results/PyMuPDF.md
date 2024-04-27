@@ -8,7 +8,7 @@ pip install tqdm
 或者pip3 install tqdm
 ```
 
-参考代码：https://blog.csdn.net/qq_28505809/article/details/124147552或者https://stackoverflow.com/questions/71812718/convert-pdf-to-html-via-pymupdf
+参考代码：https://blog.csdn.net/qq_28505809/article/details/124147552 或者 https://stackoverflow.com/questions/71812718/convert-pdf-to-html-via-pymupdf
 
 ### 转html的结果
 

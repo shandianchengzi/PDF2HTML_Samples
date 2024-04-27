@@ -18,6 +18,6 @@
 
 看一下它的说明[pdftotree · PyPI](https://pypi.org/project/pdftotree/#description)
 
-`Convert PDF into hOCR with text, tables, and figures being recognized and preserved`
+> Convert PDF into hOCR with text, tables, and figures being recognized and preserved
 
 这个hOCR 我也不知道是什么格式的文件，总之，就是这个工具应该不能用于转html
