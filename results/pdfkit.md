@@ -13,3 +13,10 @@ pip install pdfkit
 后面运行出现报错
 
 ![alt text](../imgs/pdfkit_html_error.png)
+
+下面两篇文章有记录类似报错，但转换的格式不一样
+
+[格式转化工具集之pdfkit错误_wkhtmltopdf exited with non-zero code 1. error:-CSDN博客](https://blog.csdn.net/python__reported/article/details/108168094)
+
+[Python使用pdfkit、wkhtmltopdf将html转换为pdf错误记录文档_qpainter::begin(): returned false-CSDN博客](https://blog.csdn.net/u012561176/article/details/83655247)
+
