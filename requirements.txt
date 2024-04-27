@@ -1,0 +1,5 @@
+# PyMuPDF
+tqdm
+
+# PDFQuery
+pandas
