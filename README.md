@@ -33,6 +33,8 @@
 
 ✅⭐⭐⭐Spire.PDF：还行，就是转换参数太少，并且试用会有水印，最多只能转化10页
 
+❌pdftotree：https://pypi.org/project/pdftotree/中说是将PDF转换成hOCR，测试也只生成了三个空文件，这个工具应该不能用于转html
+
 ## 测评过程
 
 1. 运行本仓库根目录下的 `tools.py` 文件，新建测试目录和测试文件：
