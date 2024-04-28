@@ -1,0 +1,2782 @@
+<?xml version="1.0" ?>
+<html>
+	<head>
+		<meta name="ocr-system" content="Converted from PDF by pdftotree 0.5.0"/>
+		<meta name="ocr-capabilities" content="ocr_page ocr_table ocrx_block ocrx_word"/>
+		<meta name="ocr-number-of-pages" content="3"/>
+	</head>
+	<body>
+		<div class="ocr_page" id="page_1" title="bbox 0 0 595 842; ppageno 0">
+			<div class="ocrx_block" pdftotree="header" title="bbox 67 55 168 69">
+				<span class="ocrx_line" title="bbox 67 55 168 69">
+					<span class="ocrx_word" title="bbox 67 55 113 69">Interrupts</span>
+					<span class="ocrx_word" title="bbox 116 55 134 69">and</span>
+					<span class="ocrx_word" title="bbox 137 55 168 69">events</span>
+				</span>
+			</div>
+			<div class="ocrx_block" pdftotree="section_header" title="bbox 490 55 527 69">
+				<span class="ocrx_line" title="bbox 490 55 527 69">
+					<span class="ocrx_word" title="bbox 490 55 527 69">RM0008</span>
+				</span>
+			</div>
+			<div class="ocrx_block" pdftotree="section_header" title="bbox 67 86 103 102">
+				<span class="ocrx_line" title="bbox 67 86 103 102">
+					<span class="ocrx_word" title="bbox 67 86 100 102">10.1.2</span>
+				</span>
+			</div>
+			<div class="ocrx_block" pdftotree="section_header" title="bbox 123 86 303 102">
+				<span class="ocrx_line" title="bbox 123 86 303 102">
+					<span class="ocrx_word" title="bbox 123 86 173 102">Interrupt</span>
+					<span class="ocrx_word" title="bbox 176 86 197 102">and</span>
+					<span class="ocrx_word" title="bbox 201 86 257 102">exception</span>
+					<span class="ocrx_word" title="bbox 260 86 303 102">vectors</span>
+				</span>
+			</div>
+			<div class="ocrx_block" pdftotree="table_caption" title="bbox 123 109 518 134">
+				<span class="ocrx_line" title="bbox 123 109 518 122">
+					<span class="ocrx_word" title="bbox 123 109 147 122">Table</span>
+					<span class="ocrx_word" title="bbox 150 109 161 122">61</span>
+					<span class="ocrx_word" title="bbox 164 108 181 122">and</span>
+					<span class="ocrx_word" title="bbox 184 109 208 122">Table</span>
+					<span class="ocrx_word" title="bbox 211 109 222 122">63</span>
+					<span class="ocrx_word" title="bbox 224 108 239 122">are</span>
+					<span class="ocrx_word" title="bbox 242 108 255 122">the</span>
+					<span class="ocrx_word" title="bbox 258 108 285 122">vector</span>
+					<span class="ocrx_word" title="bbox 288 108 315 122">tables</span>
+					<span class="ocrx_word" title="bbox 318 108 329 122">for</span>
+					<span class="ocrx_word" title="bbox 332 108 384 122">connectivity</span>
+					<span class="ocrx_word" title="bbox 387 108 403 122">line</span>
+					<span class="ocrx_word" title="bbox 406 108 422 122">and</span>
+					<span class="ocrx_word" title="bbox 425 108 448 122">other</span>
+					<span class="ocrx_word" title="bbox 451 108 515 122">STM32F10xxx</span>
+				</span>
+				<span class="ocrx_line" title="bbox 123 120 218 134">
+					<span class="ocrx_word" title="bbox 123 120 160 134">devices,</span>
+					<span class="ocrx_word" title="bbox 163 120 218 134">respectively.</span>
+				</span>
+			</div>
+			<div class="ocrx_block" pdftotree="table_caption" title="bbox 177 144 415 158">
+				<span class="ocrx_line" title="bbox 177 144 415 158">
+					<span class="ocrx_word" title="bbox 177 144 202 158">Table</span>
+					<span class="ocrx_word" title="bbox 205 144 219 158">61.</span>
+					<span class="ocrx_word" title="bbox 221 144 252 158">Vector</span>
+					<span class="ocrx_word" title="bbox 255 144 278 158">table</span>
+					<span class="ocrx_word" title="bbox 281 144 294 158">for</span>
+					<span class="ocrx_word" title="bbox 297 144 355 158">connectivity</span>
+					<span class="ocrx_word" title="bbox 358 144 375 158">line</span>
+					<span class="ocrx_word" title="bbox 378 144 415 158">devices</span>
+				</span>
+			</div>
+			<table class="ocr_table" title="bbox 98 196 493 705">
+				<tr>
+					<td/>
+					<td title="bbox 117 196 138 259">
+						<span class="ocrx_line" title="bbox 120 219 132 225">
+							<span class="ocrx_word" title="bbox 120 194 132 225">Priority</span>
+						</span>
+					</td>
+					<td title="bbox 138 196 183 259">
+						<span class="ocrx_line" title="bbox 145 196 179 208">
+							<span class="ocrx_word" title="bbox 145 196 165 208">Type</span>
+							<span class="ocrx_word" title="bbox 168 196 176 208">of</span>
+						</span>
+						<span class="ocrx_line" title="bbox 145 207 176 219">
+							<span class="ocrx_word" title="bbox 145 207 176 219">priority</span>
+						</span>
+					</td>
+					<td title="bbox 183 196 268 259">
+						<span class="ocrx_line" title="bbox 206 201 245 214">
+							<span class="ocrx_word" title="bbox 206 201 245 214">Acronym</span>
+						</span>
+					</td>
+					<td title="bbox 268 196 419 259">
+						<span class="ocrx_line" title="bbox 319 201 369 214">
+							<span class="ocrx_word" title="bbox 319 201 369 214">Description</span>
+						</span>
+					</td>
+					<td title="bbox 419 196 493 259">
+						<span class="ocrx_line" title="bbox 441 201 477 214">
+							<span class="ocrx_word" title="bbox 441 201 477 214">Address</span>
+						</span>
+					</td>
+				</tr>
+				<tr>
+					<td title="bbox 98 259 117 276">
+						<span class="ocrx_line" title="bbox 105 260 108 272">
+							<span class="ocrx_word" title="bbox 105 260 108 272">-</span>
+						</span>
+					</td>
+					<td title="bbox 117 259 138 276">
+						<span class="ocrx_line" title="bbox 126 260 129 272">
+							<span class="ocrx_word" title="bbox 126 260 129 272">-</span>
+						</span>
+					</td>
+					<td title="bbox 138 259 183 276">
+						<span class="ocrx_line" title="bbox 159 260 162 272">
+							<span class="ocrx_word" title="bbox 159 260 162 272">-</span>
+						</span>
+					</td>
+					<td title="bbox 183 259 268 276">
+						<span class="ocrx_line" title="bbox 186 260 189 272">
+							<span class="ocrx_word" title="bbox 186 260 189 272">-</span>
+						</span>
+					</td>
+					<td title="bbox 268 259 419 276">
+						<span class="ocrx_line" title="bbox 271 260 310 272">
+							<span class="ocrx_word" title="bbox 271 260 310 272">Reserved</span>
+						</span>
+					</td>
+					<td title="bbox 419 259 493 276">
+						<span class="ocrx_line" title="bbox 432 260 486 272">
+							<span class="ocrx_word" title="bbox 432 260 486 272">0x0000_0000</span>
+						</span>
+					</td>
+				</tr>
+				<tr>
+					<td title="bbox 98 276 117 293">
+						<span class="ocrx_line" title="bbox 105 277 108 289">
+							<span class="ocrx_word" title="bbox 105 277 108 289">-</span>
+						</span>
+					</td>
+					<td title="bbox 117 276 138 293">
+						<span class="ocrx_line" title="bbox 123 277 131 289">
+							<span class="ocrx_word" title="bbox 123 277 131 289">-3</span>
+						</span>
+					</td>
+					<td title="bbox 138 276 183 293">
+						<span class="ocrx_line" title="bbox 151 277 170 289">
+							<span class="ocrx_word" title="bbox 151 277 170 289">fixed</span>
+						</span>
+					</td>
+					<td title="bbox 183 276 268 293">
+						<span class="ocrx_line" title="bbox 186 277 210 289">
+							<span class="ocrx_word" title="bbox 186 277 210 289">Reset</span>
+						</span>
+					</td>
+					<td title="bbox 268 276 419 293">
+						<span class="ocrx_line" title="bbox 271 277 295 289">
+							<span class="ocrx_word" title="bbox 271 277 295 289">Reset</span>
+						</span>
+					</td>
+					<td title="bbox 419 276 493 293">
+						<span class="ocrx_line" title="bbox 432 277 486 289">
+							<span class="ocrx_word" title="bbox 432 277 486 289">0x0000_0004</span>
+						</span>
+					</td>
+				</tr>
+				<tr>
+					<td title="bbox 98 293 117 332">
+						<span class="ocrx_line" title="bbox 105 305 108 317">
+							<span class="ocrx_word" title="bbox 105 305 108 317">-</span>
+						</span>
+					</td>
+					<td title="bbox 117 293 138 332">
+						<span class="ocrx_line" title="bbox 123 305 131 317">
+							<span class="ocrx_word" title="bbox 123 305 131 317">-2</span>
+						</span>
+					</td>
+					<td title="bbox 138 293 183 332">
+						<span class="ocrx_line" title="bbox 151 305 170 317">
+							<span class="ocrx_word" title="bbox 151 305 170 317">fixed</span>
+						</span>
+					</td>
+					<td title="bbox 183 293 268 332">
+						<span class="ocrx_line" title="bbox 186 305 203 317">
+							<span class="ocrx_word" title="bbox 186 305 203 317">NMI</span>
+						</span>
+					</td>
+					<td title="bbox 268 293 419 332">
+						<span class="ocrx_line" title="bbox 271 294 409 306">
+							<span class="ocrx_word" title="bbox 271 294 288 306">Non</span>
+							<span class="ocrx_word" title="bbox 290 294 329 306">maskable</span>
+							<span class="ocrx_word" title="bbox 331 294 367 306">interrupt.</span>
+							<span class="ocrx_word" title="bbox 369 294 385 306">The</span>
+							<span class="ocrx_word" title="bbox 387 294 407 306">RCC</span>
+						</span>
+						<span class="ocrx_line" title="bbox 271 305 400 317">
+							<span class="ocrx_word" title="bbox 271 305 294 317">Clock</span>
+							<span class="ocrx_word" title="bbox 296 305 329 317">Security</span>
+							<span class="ocrx_word" title="bbox 331 305 361 317">System</span>
+							<span class="ocrx_word" title="bbox 364 305 388 317">(CSS)</span>
+							<span class="ocrx_word" title="bbox 391 305 397 317">is</span>
+						</span>
+						<span class="ocrx_line" title="bbox 271 316 368 328">
+							<span class="ocrx_word" title="bbox 271 316 295 328">linked</span>
+							<span class="ocrx_word" title="bbox 297 316 305 328">to</span>
+							<span class="ocrx_word" title="bbox 307 316 320 328">the</span>
+							<span class="ocrx_word" title="bbox 322 316 339 328">NMI</span>
+							<span class="ocrx_word" title="bbox 341 316 368 328">vector.</span>
+						</span>
+					</td>
+					<td title="bbox 419 293 493 332">
+						<span class="ocrx_line" title="bbox 432 305 486 317">
+							<span class="ocrx_word" title="bbox 432 305 486 317">0x0000_0008</span>
+						</span>
+					</td>
+				</tr>
+				<tr>
+					<td title="bbox 98 332 117 349">
+						<span class="ocrx_line" title="bbox 105 333 108 345">
+							<span class="ocrx_word" title="bbox 105 333 108 345">-</span>
+						</span>
+					</td>
+					<td title="bbox 117 332 138 349">
+						<span class="ocrx_line" title="bbox 123 333 131 345">
+							<span class="ocrx_word" title="bbox 123 333 131 345">-1</span>
+						</span>
+					</td>
+					<td title="bbox 138 332 183 349">
+						<span class="ocrx_line" title="bbox 151 333 170 345">
+							<span class="ocrx_word" title="bbox 151 333 170 345">fixed</span>
+						</span>
+					</td>
+					<td title="bbox 183 332 268 349">
+						<span class="ocrx_line" title="bbox 186 333 226 345">
+							<span class="ocrx_word" title="bbox 186 333 226 345">HardFault</span>
+						</span>
+					</td>
+					<td title="bbox 268 332 419 349">
+						<span class="ocrx_line" title="bbox 271 333 334 345">
+							<span class="ocrx_word" title="bbox 271 333 281 345">All</span>
+							<span class="ocrx_word" title="bbox 284 333 304 345">class</span>
+							<span class="ocrx_word" title="bbox 307 333 314 345">of</span>
+							<span class="ocrx_word" title="bbox 317 333 334 345">fault</span>
+						</span>
+					</td>
+					<td title="bbox 419 332 493 349">
+						<span class="ocrx_line" title="bbox 431 333 487 345">
+							<span class="ocrx_word" title="bbox 431 333 487 345">0x0000_000C</span>
+						</span>
+					</td>
+				</tr>
+				<tr>
+					<td title="bbox 98 349 117 366">
+						<span class="ocrx_line" title="bbox 105 350 108 362">
+							<span class="ocrx_word" title="bbox 105 350 108 362">-</span>
+						</span>
+					</td>
+					<td title="bbox 117 349 138 366">
+						<span class="ocrx_line" title="bbox 125 350 130 362">
+							<span class="ocrx_word" title="bbox 125 350 130 362">0</span>
+						</span>
+					</td>
+					<td title="bbox 138 349 183 366">
+						<span class="ocrx_line" title="bbox 145 350 176 362">
+							<span class="ocrx_word" title="bbox 145 350 176 362">settable</span>
+						</span>
+					</td>
+					<td title="bbox 183 349 268 366">
+						<span class="ocrx_line" title="bbox 186 350 239 362">
+							<span class="ocrx_word" title="bbox 186 350 239 362">MemManage</span>
+						</span>
+					</td>
+					<td title="bbox 268 349 419 366">
+						<span class="ocrx_line" title="bbox 271 350 359 362">
+							<span class="ocrx_word" title="bbox 271 350 304 362">Memory</span>
+							<span class="ocrx_word" title="bbox 306 350 359 362">management</span>
+						</span>
+					</td>
+					<td title="bbox 419 349 493 366">
+						<span class="ocrx_line" title="bbox 432 350 486 362">
+							<span class="ocrx_word" title="bbox 432 350 486 362">0x0000_0010</span>
+						</span>
+					</td>
+				</tr>
+				<tr>
+					<td title="bbox 98 366 117 383">
+						<span class="ocrx_line" title="bbox 105 367 108 379">
+							<span class="ocrx_word" title="bbox 105 367 108 379">-</span>
+						</span>
+					</td>
+					<td title="bbox 117 366 138 383">
+						<span class="ocrx_line" title="bbox 125 367 130 379">
+							<span class="ocrx_word" title="bbox 125 367 130 379">1</span>
+						</span>
+					</td>
+					<td title="bbox 138 366 183 383">
+						<span class="ocrx_line" title="bbox 145 367 176 379">
+							<span class="ocrx_word" title="bbox 145 367 176 379">settable</span>
+						</span>
+					</td>
+					<td title="bbox 183 366 268 383">
+						<span class="ocrx_line" title="bbox 186 367 222 379">
+							<span class="ocrx_word" title="bbox 186 367 222 379">BusFault</span>
+						</span>
+					</td>
+					<td title="bbox 268 366 419 383">
+						<span class="ocrx_line" title="bbox 271 367 415 379">
+							<span class="ocrx_word" title="bbox 271 367 308 379">Pre-fetch</span>
+							<span class="ocrx_word" title="bbox 310 367 330 379">fault,</span>
+							<span class="ocrx_word" title="bbox 332 367 365 379">memory</span>
+							<span class="ocrx_word" title="bbox 367 367 395 379">access</span>
+							<span class="ocrx_word" title="bbox 398 367 415 379">fault</span>
+						</span>
+					</td>
+					<td title="bbox 419 366 493 383">
+						<span class="ocrx_line" title="bbox 432 367 486 379">
+							<span class="ocrx_word" title="bbox 432 367 486 379">0x0000_0014</span>
+						</span>
+					</td>
+				</tr>
+				<tr>
+					<td title="bbox 98 383 117 400">
+						<span class="ocrx_line" title="bbox 105 384 108 396">
+							<span class="ocrx_word" title="bbox 105 384 108 396">-</span>
+						</span>
+					</td>
+					<td title="bbox 117 383 138 400">
+						<span class="ocrx_line" title="bbox 125 384 130 396">
+							<span class="ocrx_word" title="bbox 125 384 130 396">2</span>
+						</span>
+					</td>
+					<td title="bbox 138 383 183 400">
+						<span class="ocrx_line" title="bbox 145 384 176 396">
+							<span class="ocrx_word" title="bbox 145 384 176 396">settable</span>
+						</span>
+					</td>
+					<td title="bbox 183 383 268 400">
+						<span class="ocrx_line" title="bbox 186 384 232 396">
+							<span class="ocrx_word" title="bbox 186 384 232 396">UsageFault</span>
+						</span>
+					</td>
+					<td title="bbox 268 383 419 400">
+						<span class="ocrx_line" title="bbox 271 384 414 396">
+							<span class="ocrx_word" title="bbox 271 384 312 396">Undefined</span>
+							<span class="ocrx_word" title="bbox 315 384 356 396">instruction</span>
+							<span class="ocrx_word" title="bbox 358 384 366 396">or</span>
+							<span class="ocrx_word" title="bbox 369 384 392 396">illegal</span>
+							<span class="ocrx_word" title="bbox 394 384 414 396">state</span>
+						</span>
+					</td>
+					<td title="bbox 419 383 493 400">
+						<span class="ocrx_line" title="bbox 432 384 486 396">
+							<span class="ocrx_word" title="bbox 432 384 486 396">0x0000_0018</span>
+						</span>
+					</td>
+				</tr>
+				<tr>
+					<td title="bbox 98 400 117 428">
+						<span class="ocrx_line" title="bbox 105 406 108 418">
+							<span class="ocrx_word" title="bbox 105 406 108 418">-</span>
+						</span>
+					</td>
+					<td title="bbox 117 400 138 428">
+						<span class="ocrx_line" title="bbox 126 406 129 418">
+							<span class="ocrx_word" title="bbox 126 406 129 418">-</span>
+						</span>
+					</td>
+					<td title="bbox 138 400 183 428">
+						<span class="ocrx_line" title="bbox 159 406 162 418">
+							<span class="ocrx_word" title="bbox 159 406 162 418">-</span>
+						</span>
+					</td>
+					<td title="bbox 183 400 268 428">
+						<span class="ocrx_line" title="bbox 186 406 189 418">
+							<span class="ocrx_word" title="bbox 186 406 189 418">-</span>
+						</span>
+					</td>
+					<td title="bbox 268 400 419 428">
+						<span class="ocrx_line" title="bbox 271 406 310 418">
+							<span class="ocrx_word" title="bbox 271 406 310 418">Reserved</span>
+						</span>
+					</td>
+					<td title="bbox 419 400 493 428">
+						<span class="ocrx_line" title="bbox 429 401 493 413">
+							<span class="ocrx_word" title="bbox 429 401 485 413">0x0000_001C</span>
+							<span class="ocrx_word" title="bbox 487 401 490 413">-</span>
+						</span>
+						<span class="ocrx_line" title="bbox 431 412 487 424">
+							<span class="ocrx_word" title="bbox 431 412 487 424">0x0000_002B</span>
+						</span>
+					</td>
+				</tr>
+				<tr>
+					<td title="bbox 98 428 117 456">
+						<span class="ocrx_line" title="bbox 105 434 108 446">
+							<span class="ocrx_word" title="bbox 105 434 108 446">-</span>
+						</span>
+					</td>
+					<td title="bbox 117 428 138 456">
+						<span class="ocrx_line" title="bbox 125 434 130 446">
+							<span class="ocrx_word" title="bbox 125 434 130 446">3</span>
+						</span>
+					</td>
+					<td title="bbox 138 428 183 456">
+						<span class="ocrx_line" title="bbox 145 434 176 446">
+							<span class="ocrx_word" title="bbox 145 434 176 446">settable</span>
+						</span>
+					</td>
+					<td title="bbox 183 428 268 456">
+						<span class="ocrx_line" title="bbox 186 434 214 446">
+							<span class="ocrx_word" title="bbox 186 434 214 446">SVCall</span>
+						</span>
+					</td>
+					<td title="bbox 268 428 419 456">
+						<span class="ocrx_line" title="bbox 271 429 384 441">
+							<span class="ocrx_word" title="bbox 271 429 301 441">System</span>
+							<span class="ocrx_word" title="bbox 304 429 332 441">service</span>
+							<span class="ocrx_word" title="bbox 335 429 348 441">call</span>
+							<span class="ocrx_word" title="bbox 351 429 362 441">via</span>
+							<span class="ocrx_word" title="bbox 365 429 382 441">SWI</span>
+						</span>
+						<span class="ocrx_line" title="bbox 271 440 312 452">
+							<span class="ocrx_word" title="bbox 271 440 312 452">instruction</span>
+						</span>
+					</td>
+					<td title="bbox 419 428 493 456">
+						<span class="ocrx_line" title="bbox 431 434 487 446">
+							<span class="ocrx_word" title="bbox 431 434 487 446">0x0000_002C</span>
+						</span>
+					</td>
+				</tr>
+				<tr>
+					<td title="bbox 98 456 117 473">
+						<span class="ocrx_line" title="bbox 105 457 108 469">
+							<span class="ocrx_word" title="bbox 105 457 108 469">-</span>
+						</span>
+					</td>
+					<td title="bbox 117 456 138 473">
+						<span class="ocrx_line" title="bbox 125 457 130 469">
+							<span class="ocrx_word" title="bbox 125 457 130 469">4</span>
+						</span>
+					</td>
+					<td title="bbox 138 456 183 473">
+						<span class="ocrx_line" title="bbox 145 457 176 469">
+							<span class="ocrx_word" title="bbox 145 457 176 469">settable</span>
+						</span>
+					</td>
+					<td title="bbox 183 456 268 473">
+						<span class="ocrx_line" title="bbox 186 457 245 469">
+							<span class="ocrx_word" title="bbox 186 457 213 469">Debug</span>
+							<span class="ocrx_word" title="bbox 215 457 245 469">Monitor</span>
+						</span>
+					</td>
+					<td title="bbox 268 456 419 473">
+						<span class="ocrx_line" title="bbox 271 457 330 469">
+							<span class="ocrx_word" title="bbox 271 457 298 469">Debug</span>
+							<span class="ocrx_word" title="bbox 300 457 330 469">Monitor</span>
+						</span>
+					</td>
+					<td title="bbox 419 456 493 473">
+						<span class="ocrx_line" title="bbox 432 457 486 469">
+							<span class="ocrx_word" title="bbox 432 457 486 469">0x0000_0030</span>
+						</span>
+					</td>
+				</tr>
+				<tr>
+					<td title="bbox 98 473 117 490">
+						<span class="ocrx_line" title="bbox 105 474 108 486">
+							<span class="ocrx_word" title="bbox 105 474 108 486">-</span>
+						</span>
+					</td>
+					<td title="bbox 117 473 138 490">
+						<span class="ocrx_line" title="bbox 126 474 129 486">
+							<span class="ocrx_word" title="bbox 126 474 129 486">-</span>
+						</span>
+					</td>
+					<td title="bbox 138 473 183 490">
+						<span class="ocrx_line" title="bbox 159 474 162 486">
+							<span class="ocrx_word" title="bbox 159 474 162 486">-</span>
+						</span>
+					</td>
+					<td title="bbox 183 473 268 490">
+						<span class="ocrx_line" title="bbox 186 474 189 486">
+							<span class="ocrx_word" title="bbox 186 474 189 486">-</span>
+						</span>
+					</td>
+					<td title="bbox 268 473 419 490">
+						<span class="ocrx_line" title="bbox 271 474 310 486">
+							<span class="ocrx_word" title="bbox 271 474 310 486">Reserved</span>
+						</span>
+					</td>
+					<td title="bbox 419 473 493 490">
+						<span class="ocrx_line" title="bbox 432 474 486 486">
+							<span class="ocrx_word" title="bbox 432 474 486 486">0x0000_0034</span>
+						</span>
+					</td>
+				</tr>
+				<tr>
+					<td title="bbox 98 490 117 507">
+						<span class="ocrx_line" title="bbox 105 491 108 503">
+							<span class="ocrx_word" title="bbox 105 491 108 503">-</span>
+						</span>
+					</td>
+					<td title="bbox 117 490 138 507">
+						<span class="ocrx_line" title="bbox 125 491 130 503">
+							<span class="ocrx_word" title="bbox 125 491 130 503">5</span>
+						</span>
+					</td>
+					<td title="bbox 138 490 183 507">
+						<span class="ocrx_line" title="bbox 145 491 176 503">
+							<span class="ocrx_word" title="bbox 145 491 176 503">settable</span>
+						</span>
+					</td>
+					<td title="bbox 183 490 268 507">
+						<span class="ocrx_line" title="bbox 186 491 219 503">
+							<span class="ocrx_word" title="bbox 186 491 219 503">PendSV</span>
+						</span>
+					</td>
+					<td title="bbox 268 490 419 507">
+						<span class="ocrx_line" title="bbox 271 491 416 503">
+							<span class="ocrx_word" title="bbox 271 491 309 503">Pendable</span>
+							<span class="ocrx_word" title="bbox 312 491 342 503">request</span>
+							<span class="ocrx_word" title="bbox 344 491 355 503">for</span>
+							<span class="ocrx_word" title="bbox 357 491 385 503">system</span>
+							<span class="ocrx_word" title="bbox 388 491 416 503">service</span>
+						</span>
+					</td>
+					<td title="bbox 419 490 493 507">
+						<span class="ocrx_line" title="bbox 432 491 486 503">
+							<span class="ocrx_word" title="bbox 432 491 486 503">0x0000_0038</span>
+						</span>
+					</td>
+				</tr>
+				<tr>
+					<td title="bbox 98 507 117 524">
+						<span class="ocrx_line" title="bbox 105 508 108 520">
+							<span class="ocrx_word" title="bbox 105 508 108 520">-</span>
+						</span>
+					</td>
+					<td title="bbox 117 507 138 524">
+						<span class="ocrx_line" title="bbox 125 508 130 520">
+							<span class="ocrx_word" title="bbox 125 508 130 520">6</span>
+						</span>
+					</td>
+					<td title="bbox 138 507 183 524">
+						<span class="ocrx_line" title="bbox 145 508 176 520">
+							<span class="ocrx_word" title="bbox 145 508 176 520">settable</span>
+						</span>
+					</td>
+					<td title="bbox 183 507 268 524">
+						<span class="ocrx_line" title="bbox 186 508 218 520">
+							<span class="ocrx_word" title="bbox 186 508 218 520">SysTick</span>
+						</span>
+					</td>
+					<td title="bbox 268 507 419 524">
+						<span class="ocrx_line" title="bbox 271 508 340 520">
+							<span class="ocrx_word" title="bbox 271 508 301 520">System</span>
+							<span class="ocrx_word" title="bbox 304 508 317 520">tick</span>
+							<span class="ocrx_word" title="bbox 320 508 340 520">timer</span>
+						</span>
+					</td>
+					<td title="bbox 419 507 493 524">
+						<span class="ocrx_line" title="bbox 431 508 487 520">
+							<span class="ocrx_word" title="bbox 431 508 487 520">0x0000_003C</span>
+						</span>
+					</td>
+				</tr>
+				<tr>
+					<td title="bbox 98 524 117 541">
+						<span class="ocrx_line" title="bbox 104 525 109 537">
+							<span class="ocrx_word" title="bbox 104 525 109 537">0</span>
+						</span>
+					</td>
+					<td title="bbox 117 524 138 541">
+						<span class="ocrx_line" title="bbox 125 525 130 537">
+							<span class="ocrx_word" title="bbox 125 525 130 537">7</span>
+						</span>
+					</td>
+					<td title="bbox 138 524 183 541">
+						<span class="ocrx_line" title="bbox 145 525 176 537">
+							<span class="ocrx_word" title="bbox 145 525 176 537">settable</span>
+						</span>
+					</td>
+					<td title="bbox 183 524 268 541">
+						<span class="ocrx_line" title="bbox 186 525 217 537">
+							<span class="ocrx_word" title="bbox 186 525 217 537">WWDG</span>
+						</span>
+					</td>
+					<td title="bbox 268 524 419 541">
+						<span class="ocrx_line" title="bbox 271 525 381 537">
+							<span class="ocrx_word" title="bbox 271 525 303 537">Window</span>
+							<span class="ocrx_word" title="bbox 306 525 346 537">Watchdog</span>
+							<span class="ocrx_word" title="bbox 348 525 381 537">interrupt</span>
+						</span>
+					</td>
+					<td title="bbox 419 524 493 541">
+						<span class="ocrx_line" title="bbox 432 525 486 537">
+							<span class="ocrx_word" title="bbox 432 525 486 537">0x0000_0040</span>
+						</span>
+					</td>
+				</tr>
+				<tr>
+					<td title="bbox 98 541 117 569">
+						<span class="ocrx_line" title="bbox 104 547 109 559">
+							<span class="ocrx_word" title="bbox 104 547 109 559">1</span>
+						</span>
+					</td>
+					<td title="bbox 117 541 138 569">
+						<span class="ocrx_line" title="bbox 125 547 130 559">
+							<span class="ocrx_word" title="bbox 125 547 130 559">8</span>
+						</span>
+					</td>
+					<td title="bbox 138 541 183 569">
+						<span class="ocrx_line" title="bbox 145 547 176 559">
+							<span class="ocrx_word" title="bbox 145 547 176 559">settable</span>
+						</span>
+					</td>
+					<td title="bbox 183 541 268 569">
+						<span class="ocrx_line" title="bbox 186 547 205 559">
+							<span class="ocrx_word" title="bbox 186 547 205 559">PVD</span>
+						</span>
+					</td>
+					<td title="bbox 268 541 419 569">
+						<span class="ocrx_line" title="bbox 271 542 406 554">
+							<span class="ocrx_word" title="bbox 271 542 290 554">PVD</span>
+							<span class="ocrx_word" title="bbox 292 542 323 554">through</span>
+							<span class="ocrx_word" title="bbox 325 542 345 554">EXTI</span>
+							<span class="ocrx_word" title="bbox 348 542 365 554">Line</span>
+							<span class="ocrx_word" title="bbox 367 542 404 554">detection</span>
+						</span>
+						<span class="ocrx_line" title="bbox 271 553 304 565">
+							<span class="ocrx_word" title="bbox 271 553 304 565">interrupt</span>
+						</span>
+					</td>
+					<td title="bbox 419 541 493 569">
+						<span class="ocrx_line" title="bbox 432 547 486 559">
+							<span class="ocrx_word" title="bbox 432 547 486 559">0x0000_0044</span>
+						</span>
+					</td>
+				</tr>
+				<tr>
+					<td title="bbox 98 569 117 586">
+						<span class="ocrx_line" title="bbox 104 570 109 582">
+							<span class="ocrx_word" title="bbox 104 570 109 582">2</span>
+						</span>
+					</td>
+					<td title="bbox 117 569 138 586">
+						<span class="ocrx_line" title="bbox 125 570 130 582">
+							<span class="ocrx_word" title="bbox 125 570 130 582">9</span>
+						</span>
+					</td>
+					<td title="bbox 138 569 183 586">
+						<span class="ocrx_line" title="bbox 145 570 176 582">
+							<span class="ocrx_word" title="bbox 145 570 176 582">settable</span>
+						</span>
+					</td>
+					<td title="bbox 183 569 268 586">
+						<span class="ocrx_line" title="bbox 186 570 223 582">
+							<span class="ocrx_word" title="bbox 186 570 223 582">TAMPER</span>
+						</span>
+					</td>
+					<td title="bbox 268 569 419 586">
+						<span class="ocrx_line" title="bbox 271 570 337 582">
+							<span class="ocrx_word" title="bbox 271 570 301 582">Tamper</span>
+							<span class="ocrx_word" title="bbox 304 570 337 582">interrupt</span>
+						</span>
+					</td>
+					<td title="bbox 419 569 493 586">
+						<span class="ocrx_line" title="bbox 432 570 486 582">
+							<span class="ocrx_word" title="bbox 432 570 486 582">0x0000_0048</span>
+						</span>
+					</td>
+				</tr>
+				<tr>
+					<td title="bbox 98 586 117 603">
+						<span class="ocrx_line" title="bbox 104 587 109 599">
+							<span class="ocrx_word" title="bbox 104 587 109 599">3</span>
+						</span>
+					</td>
+					<td title="bbox 117 586 138 603">
+						<span class="ocrx_line" title="bbox 122 587 132 599">
+							<span class="ocrx_word" title="bbox 122 587 132 599">10</span>
+						</span>
+					</td>
+					<td title="bbox 138 586 183 603">
+						<span class="ocrx_line" title="bbox 145 587 176 599">
+							<span class="ocrx_word" title="bbox 145 587 176 599">settable</span>
+						</span>
+					</td>
+					<td title="bbox 183 586 268 603">
+						<span class="ocrx_line" title="bbox 186 587 205 599">
+							<span class="ocrx_word" title="bbox 186 587 205 599">RTC</span>
+						</span>
+					</td>
+					<td title="bbox 268 586 419 603">
+						<span class="ocrx_line" title="bbox 271 587 352 599">
+							<span class="ocrx_word" title="bbox 271 587 290 599">RTC</span>
+							<span class="ocrx_word" title="bbox 292 587 316 599">global</span>
+							<span class="ocrx_word" title="bbox 319 587 352 599">interrupt</span>
+						</span>
+					</td>
+					<td title="bbox 419 586 493 603">
+						<span class="ocrx_line" title="bbox 431 587 487 599">
+							<span class="ocrx_word" title="bbox 431 587 487 599">0x0000_004C</span>
+						</span>
+					</td>
+				</tr>
+				<tr>
+					<td title="bbox 98 603 117 620">
+						<span class="ocrx_line" title="bbox 104 604 109 616">
+							<span class="ocrx_word" title="bbox 104 604 109 616">4</span>
+						</span>
+					</td>
+					<td title="bbox 117 603 138 620">
+						<span class="ocrx_line" title="bbox 123 604 132 616">
+							<span class="ocrx_word" title="bbox 123 604 132 616">11</span>
+						</span>
+					</td>
+					<td title="bbox 138 603 183 620">
+						<span class="ocrx_line" title="bbox 145 604 176 616">
+							<span class="ocrx_word" title="bbox 145 604 176 616">settable</span>
+						</span>
+					</td>
+					<td title="bbox 183 603 268 620">
+						<span class="ocrx_line" title="bbox 186 604 215 616">
+							<span class="ocrx_word" title="bbox 186 604 215 616">FLASH</span>
+						</span>
+					</td>
+					<td title="bbox 268 603 419 620">
+						<span class="ocrx_line" title="bbox 271 604 355 616">
+							<span class="ocrx_word" title="bbox 271 604 293 616">Flash</span>
+							<span class="ocrx_word" title="bbox 296 604 320 616">global</span>
+							<span class="ocrx_word" title="bbox 322 604 355 616">interrupt</span>
+						</span>
+					</td>
+					<td title="bbox 419 603 493 620">
+						<span class="ocrx_line" title="bbox 432 604 486 616">
+							<span class="ocrx_word" title="bbox 432 604 486 616">0x0000_0050</span>
+						</span>
+					</td>
+				</tr>
+				<tr>
+					<td title="bbox 98 620 117 637">
+						<span class="ocrx_line" title="bbox 104 621 109 633">
+							<span class="ocrx_word" title="bbox 104 621 109 633">5</span>
+						</span>
+					</td>
+					<td title="bbox 117 620 138 637">
+						<span class="ocrx_line" title="bbox 122 621 132 633">
+							<span class="ocrx_word" title="bbox 122 621 132 633">12</span>
+						</span>
+					</td>
+					<td title="bbox 138 620 183 637">
+						<span class="ocrx_line" title="bbox 145 621 176 633">
+							<span class="ocrx_word" title="bbox 145 621 176 633">settable</span>
+						</span>
+					</td>
+					<td title="bbox 183 620 268 637">
+						<span class="ocrx_line" title="bbox 186 621 206 633">
+							<span class="ocrx_word" title="bbox 186 621 206 633">RCC</span>
+						</span>
+					</td>
+					<td title="bbox 268 620 419 637">
+						<span class="ocrx_line" title="bbox 271 621 353 633">
+							<span class="ocrx_word" title="bbox 271 621 291 633">RCC</span>
+							<span class="ocrx_word" title="bbox 293 621 317 633">global</span>
+							<span class="ocrx_word" title="bbox 320 621 353 633">interrupt</span>
+						</span>
+					</td>
+					<td title="bbox 419 620 493 637">
+						<span class="ocrx_line" title="bbox 432 621 486 633">
+							<span class="ocrx_word" title="bbox 432 621 486 633">0x0000_0054</span>
+						</span>
+					</td>
+				</tr>
+				<tr>
+					<td title="bbox 98 637 117 654">
+						<span class="ocrx_line" title="bbox 104 638 109 650">
+							<span class="ocrx_word" title="bbox 104 638 109 650">6</span>
+						</span>
+					</td>
+					<td title="bbox 117 637 138 654">
+						<span class="ocrx_line" title="bbox 122 638 132 650">
+							<span class="ocrx_word" title="bbox 122 638 132 650">13</span>
+						</span>
+					</td>
+					<td title="bbox 138 637 183 654">
+						<span class="ocrx_line" title="bbox 145 638 176 650">
+							<span class="ocrx_word" title="bbox 145 638 176 650">settable</span>
+						</span>
+					</td>
+					<td title="bbox 183 637 268 654">
+						<span class="ocrx_line" title="bbox 186 638 211 650">
+							<span class="ocrx_word" title="bbox 186 638 211 650">EXTI0</span>
+						</span>
+					</td>
+					<td title="bbox 268 637 419 654">
+						<span class="ocrx_line" title="bbox 271 638 351 650">
+							<span class="ocrx_word" title="bbox 271 638 291 650">EXTI</span>
+							<span class="ocrx_word" title="bbox 294 638 316 650">Line0</span>
+							<span class="ocrx_word" title="bbox 318 638 351 650">interrupt</span>
+						</span>
+					</td>
+					<td title="bbox 419 637 493 654">
+						<span class="ocrx_line" title="bbox 432 638 486 650">
+							<span class="ocrx_word" title="bbox 432 638 486 650">0x0000_0058</span>
+						</span>
+					</td>
+				</tr>
+				<tr>
+					<td title="bbox 98 654 117 671">
+						<span class="ocrx_line" title="bbox 104 655 109 667">
+							<span class="ocrx_word" title="bbox 104 655 109 667">7</span>
+						</span>
+					</td>
+					<td title="bbox 117 654 138 671">
+						<span class="ocrx_line" title="bbox 122 655 132 667">
+							<span class="ocrx_word" title="bbox 122 655 132 667">14</span>
+						</span>
+					</td>
+					<td title="bbox 138 654 183 671">
+						<span class="ocrx_line" title="bbox 145 655 176 667">
+							<span class="ocrx_word" title="bbox 145 655 176 667">settable</span>
+						</span>
+					</td>
+					<td title="bbox 183 654 268 671">
+						<span class="ocrx_line" title="bbox 186 655 211 667">
+							<span class="ocrx_word" title="bbox 186 655 211 667">EXTI1</span>
+						</span>
+					</td>
+					<td title="bbox 268 654 419 671">
+						<span class="ocrx_line" title="bbox 271 655 351 667">
+							<span class="ocrx_word" title="bbox 271 655 291 667">EXTI</span>
+							<span class="ocrx_word" title="bbox 294 655 316 667">Line1</span>
+							<span class="ocrx_word" title="bbox 318 655 351 667">interrupt</span>
+						</span>
+					</td>
+					<td title="bbox 419 654 493 671">
+						<span class="ocrx_line" title="bbox 431 655 487 667">
+							<span class="ocrx_word" title="bbox 431 655 487 667">0x0000_005C</span>
+						</span>
+					</td>
+				</tr>
+				<tr>
+					<td title="bbox 98 671 117 688">
+						<span class="ocrx_line" title="bbox 104 672 109 684">
+							<span class="ocrx_word" title="bbox 104 672 109 684">8</span>
+						</span>
+					</td>
+					<td title="bbox 117 671 138 688">
+						<span class="ocrx_line" title="bbox 122 672 132 684">
+							<span class="ocrx_word" title="bbox 122 672 132 684">15</span>
+						</span>
+					</td>
+					<td title="bbox 138 671 183 688">
+						<span class="ocrx_line" title="bbox 145 672 176 684">
+							<span class="ocrx_word" title="bbox 145 672 176 684">settable</span>
+						</span>
+					</td>
+					<td title="bbox 183 671 268 688">
+						<span class="ocrx_line" title="bbox 186 672 211 684">
+							<span class="ocrx_word" title="bbox 186 672 211 684">EXTI2</span>
+						</span>
+					</td>
+					<td title="bbox 268 671 419 688">
+						<span class="ocrx_line" title="bbox 271 672 351 684">
+							<span class="ocrx_word" title="bbox 271 672 291 684">EXTI</span>
+							<span class="ocrx_word" title="bbox 294 672 316 684">Line2</span>
+							<span class="ocrx_word" title="bbox 318 672 351 684">interrupt</span>
+						</span>
+					</td>
+					<td title="bbox 419 671 493 688">
+						<span class="ocrx_line" title="bbox 432 672 486 684">
+							<span class="ocrx_word" title="bbox 432 672 486 684">0x0000_0060</span>
+						</span>
+					</td>
+				</tr>
+				<tr>
+					<td title="bbox 98 688 117 705">
+						<span class="ocrx_line" title="bbox 104 689 109 701">
+							<span class="ocrx_word" title="bbox 104 689 109 701">9</span>
+						</span>
+					</td>
+					<td title="bbox 117 688 138 705">
+						<span class="ocrx_line" title="bbox 122 689 132 701">
+							<span class="ocrx_word" title="bbox 122 689 132 701">16</span>
+						</span>
+					</td>
+					<td title="bbox 138 688 183 705">
+						<span class="ocrx_line" title="bbox 145 689 176 701">
+							<span class="ocrx_word" title="bbox 145 689 176 701">settable</span>
+						</span>
+					</td>
+					<td title="bbox 183 688 268 705">
+						<span class="ocrx_line" title="bbox 186 689 211 701">
+							<span class="ocrx_word" title="bbox 186 689 211 701">EXTI3</span>
+						</span>
+					</td>
+					<td title="bbox 268 688 419 705">
+						<span class="ocrx_line" title="bbox 271 689 351 701">
+							<span class="ocrx_word" title="bbox 271 689 291 701">EXTI</span>
+							<span class="ocrx_word" title="bbox 294 689 316 701">Line3</span>
+							<span class="ocrx_word" title="bbox 318 689 351 701">interrupt</span>
+						</span>
+					</td>
+					<td title="bbox 419 688 493 705">
+						<span class="ocrx_line" title="bbox 432 689 486 701">
+							<span class="ocrx_word" title="bbox 432 689 486 701">0x0000_0064</span>
+						</span>
+					</td>
+				</tr>
+			</table>
+			<div class="ocrx_block" pdftotree="section_header" title="bbox 67 741 104 753">
+				<span class="ocrx_line" title="bbox 67 741 104 753">
+					<span class="ocrx_word" title="bbox 67 741 104 753">198/1136</span>
+				</span>
+			</div>
+			<div class="ocrx_block" pdftotree="section_header" title="bbox 265 741 330 753">
+				<span class="ocrx_line" title="bbox 265 741 330 753">
+					<span class="ocrx_word" title="bbox 265 741 299 753">RM0008</span>
+					<span class="ocrx_word" title="bbox 301 741 317 753">Rev</span>
+					<span class="ocrx_word" title="bbox 320 741 330 753">21</span>
+				</span>
+			</div>
+		</div>
+		<div class="ocr_page" id="page_2" title="bbox 0 0 595 842; ppageno 1">
+			<div class="ocrx_block" pdftotree="header" title="bbox 67 55 105 69">
+				<span class="ocrx_line" title="bbox 67 55 105 69">
+					<span class="ocrx_word" title="bbox 67 55 105 69">RM0008</span>
+				</span>
+			</div>
+			<div class="ocrx_block" pdftotree="header" title="bbox 426 55 527 69">
+				<span class="ocrx_line" title="bbox 426 55 527 69">
+					<span class="ocrx_word" title="bbox 426 55 472 69">Interrupts</span>
+					<span class="ocrx_word" title="bbox 475 55 493 69">and</span>
+					<span class="ocrx_word" title="bbox 496 55 527 69">events</span>
+				</span>
+			</div>
+			<div class="ocrx_block" pdftotree="table_caption" title="bbox 149 87 445 101">
+				<span class="ocrx_line" title="bbox 149 87 445 101">
+					<span class="ocrx_word" title="bbox 149 87 175 101">Table</span>
+					<span class="ocrx_word" title="bbox 178 87 191 101">61.</span>
+					<span class="ocrx_word" title="bbox 194 87 225 101">Vector</span>
+					<span class="ocrx_word" title="bbox 228 87 251 101">table</span>
+					<span class="ocrx_word" title="bbox 254 87 267 101">for</span>
+					<span class="ocrx_word" title="bbox 270 87 328 101">connectivity</span>
+					<span class="ocrx_word" title="bbox 331 87 348 101">line</span>
+					<span class="ocrx_word" title="bbox 351 87 388 101">devices</span>
+					<span class="ocrx_word" title="bbox 390 87 445 101">(continued)</span>
+				</span>
+			</div>
+			<table class="ocr_table" title="bbox 98 139 488 689">
+				<tr>
+					<td/>
+					<td title="bbox 117 139 138 202">
+						<span class="ocrx_line" title="bbox 120 162 132 168">
+							<span class="ocrx_word" title="bbox 120 137 132 168">Priority</span>
+						</span>
+					</td>
+					<td title="bbox 138 139 183 202">
+						<span class="ocrx_line" title="bbox 145 139 179 151">
+							<span class="ocrx_word" title="bbox 145 139 165 151">Type</span>
+							<span class="ocrx_word" title="bbox 168 139 176 151">of</span>
+						</span>
+						<span class="ocrx_line" title="bbox 145 150 176 162">
+							<span class="ocrx_word" title="bbox 145 150 176 162">priority</span>
+						</span>
+					</td>
+					<td title="bbox 183 139 268 202">
+						<span class="ocrx_line" title="bbox 206 144 245 157">
+							<span class="ocrx_word" title="bbox 206 144 245 157">Acronym</span>
+						</span>
+					</td>
+					<td title="bbox 268 139 419 202">
+						<span class="ocrx_line" title="bbox 319 144 369 157">
+							<span class="ocrx_word" title="bbox 319 144 369 157">Description</span>
+						</span>
+					</td>
+					<td title="bbox 419 139 488 202">
+						<span class="ocrx_line" title="bbox 441 144 477 157">
+							<span class="ocrx_word" title="bbox 441 144 477 157">Address</span>
+						</span>
+					</td>
+				</tr>
+				<tr>
+					<td title="bbox 98 202 117 219">
+						<span class="ocrx_line" title="bbox 102 203 111 215">
+							<span class="ocrx_word" title="bbox 102 203 111 215">11</span>
+						</span>
+					</td>
+					<td title="bbox 117 202 138 219">
+						<span class="ocrx_line" title="bbox 122 203 132 215">
+							<span class="ocrx_word" title="bbox 122 203 132 215">18</span>
+						</span>
+					</td>
+					<td title="bbox 138 202 183 219">
+						<span class="ocrx_line" title="bbox 145 203 176 215">
+							<span class="ocrx_word" title="bbox 145 203 176 215">settable</span>
+						</span>
+					</td>
+					<td title="bbox 183 202 268 219">
+						<span class="ocrx_line" title="bbox 186 203 255 215">
+							<span class="ocrx_word" title="bbox 186 203 255 215">DMA1_Channel1</span>
+						</span>
+					</td>
+					<td title="bbox 268 202 419 219">
+						<span class="ocrx_line" title="bbox 271 203 402 215">
+							<span class="ocrx_word" title="bbox 271 203 296 215">DMA1</span>
+							<span class="ocrx_word" title="bbox 299 203 337 215">Channel1</span>
+							<span class="ocrx_word" title="bbox 340 203 364 215">global</span>
+							<span class="ocrx_word" title="bbox 366 203 399 215">interrupt</span>
+						</span>
+					</td>
+					<td title="bbox 419 202 488 219">
+						<span class="ocrx_line" title="bbox 431 203 487 215">
+							<span class="ocrx_word" title="bbox 431 203 487 215">0x0000_006C</span>
+						</span>
+					</td>
+				</tr>
+				<tr>
+					<td title="bbox 98 219 117 236">
+						<span class="ocrx_line" title="bbox 101 220 111 232">
+							<span class="ocrx_word" title="bbox 101 220 111 232">12</span>
+						</span>
+					</td>
+					<td title="bbox 117 219 138 236">
+						<span class="ocrx_line" title="bbox 122 220 132 232">
+							<span class="ocrx_word" title="bbox 122 220 132 232">19</span>
+						</span>
+					</td>
+					<td title="bbox 138 219 183 236">
+						<span class="ocrx_line" title="bbox 145 220 176 232">
+							<span class="ocrx_word" title="bbox 145 220 176 232">settable</span>
+						</span>
+					</td>
+					<td title="bbox 183 219 268 236">
+						<span class="ocrx_line" title="bbox 186 220 255 232">
+							<span class="ocrx_word" title="bbox 186 220 255 232">DMA1_Channel2</span>
+						</span>
+					</td>
+					<td title="bbox 268 219 419 236">
+						<span class="ocrx_line" title="bbox 271 220 399 232">
+							<span class="ocrx_word" title="bbox 271 220 296 232">DMA1</span>
+							<span class="ocrx_word" title="bbox 299 220 337 232">Channel2</span>
+							<span class="ocrx_word" title="bbox 340 220 364 232">global</span>
+							<span class="ocrx_word" title="bbox 366 220 399 232">interrupt</span>
+						</span>
+					</td>
+					<td title="bbox 419 219 488 236">
+						<span class="ocrx_line" title="bbox 432 220 486 232">
+							<span class="ocrx_word" title="bbox 432 220 486 232">0x0000_0070</span>
+						</span>
+					</td>
+				</tr>
+				<tr>
+					<td title="bbox 98 236 117 253">
+						<span class="ocrx_line" title="bbox 101 237 111 249">
+							<span class="ocrx_word" title="bbox 101 237 111 249">13</span>
+						</span>
+					</td>
+					<td title="bbox 117 236 138 253">
+						<span class="ocrx_line" title="bbox 122 237 132 249">
+							<span class="ocrx_word" title="bbox 122 237 132 249">20</span>
+						</span>
+					</td>
+					<td title="bbox 138 236 183 253">
+						<span class="ocrx_line" title="bbox 145 237 176 249">
+							<span class="ocrx_word" title="bbox 145 237 176 249">settable</span>
+						</span>
+					</td>
+					<td title="bbox 183 236 268 253">
+						<span class="ocrx_line" title="bbox 186 237 255 249">
+							<span class="ocrx_word" title="bbox 186 237 255 249">DMA1_Channel3</span>
+						</span>
+					</td>
+					<td title="bbox 268 236 419 253">
+						<span class="ocrx_line" title="bbox 271 237 399 249">
+							<span class="ocrx_word" title="bbox 271 237 296 249">DMA1</span>
+							<span class="ocrx_word" title="bbox 299 237 337 249">Channel3</span>
+							<span class="ocrx_word" title="bbox 340 237 364 249">global</span>
+							<span class="ocrx_word" title="bbox 366 237 399 249">interrupt</span>
+						</span>
+					</td>
+					<td title="bbox 419 236 488 253">
+						<span class="ocrx_line" title="bbox 432 237 486 249">
+							<span class="ocrx_word" title="bbox 432 237 486 249">0x0000_0074</span>
+						</span>
+					</td>
+				</tr>
+				<tr>
+					<td title="bbox 98 253 117 270">
+						<span class="ocrx_line" title="bbox 101 254 111 266">
+							<span class="ocrx_word" title="bbox 101 254 111 266">14</span>
+						</span>
+					</td>
+					<td title="bbox 117 253 138 270">
+						<span class="ocrx_line" title="bbox 122 254 132 266">
+							<span class="ocrx_word" title="bbox 122 254 132 266">21</span>
+						</span>
+					</td>
+					<td title="bbox 138 253 183 270">
+						<span class="ocrx_line" title="bbox 145 254 176 266">
+							<span class="ocrx_word" title="bbox 145 254 176 266">settable</span>
+						</span>
+					</td>
+					<td title="bbox 183 253 268 270">
+						<span class="ocrx_line" title="bbox 186 254 255 266">
+							<span class="ocrx_word" title="bbox 186 254 255 266">DMA1_Channel4</span>
+						</span>
+					</td>
+					<td title="bbox 268 253 419 270">
+						<span class="ocrx_line" title="bbox 271 254 399 266">
+							<span class="ocrx_word" title="bbox 271 254 296 266">DMA1</span>
+							<span class="ocrx_word" title="bbox 299 254 337 266">Channel4</span>
+							<span class="ocrx_word" title="bbox 340 254 364 266">global</span>
+							<span class="ocrx_word" title="bbox 366 254 399 266">interrupt</span>
+						</span>
+					</td>
+					<td title="bbox 419 253 488 270">
+						<span class="ocrx_line" title="bbox 432 254 486 266">
+							<span class="ocrx_word" title="bbox 432 254 486 266">0x0000_0078</span>
+						</span>
+					</td>
+				</tr>
+				<tr>
+					<td title="bbox 98 270 117 287">
+						<span class="ocrx_line" title="bbox 101 271 111 283">
+							<span class="ocrx_word" title="bbox 101 271 111 283">15</span>
+						</span>
+					</td>
+					<td title="bbox 117 270 138 287">
+						<span class="ocrx_line" title="bbox 122 271 132 283">
+							<span class="ocrx_word" title="bbox 122 271 132 283">22</span>
+						</span>
+					</td>
+					<td title="bbox 138 270 183 287">
+						<span class="ocrx_line" title="bbox 145 271 176 283">
+							<span class="ocrx_word" title="bbox 145 271 176 283">settable</span>
+						</span>
+					</td>
+					<td title="bbox 183 270 268 287">
+						<span class="ocrx_line" title="bbox 186 271 255 283">
+							<span class="ocrx_word" title="bbox 186 271 255 283">DMA1_Channel5</span>
+						</span>
+					</td>
+					<td title="bbox 268 270 419 287">
+						<span class="ocrx_line" title="bbox 271 271 399 283">
+							<span class="ocrx_word" title="bbox 271 271 296 283">DMA1</span>
+							<span class="ocrx_word" title="bbox 299 271 337 283">Channel5</span>
+							<span class="ocrx_word" title="bbox 340 271 364 283">global</span>
+							<span class="ocrx_word" title="bbox 366 271 399 283">interrupt</span>
+						</span>
+					</td>
+					<td title="bbox 419 270 488 287">
+						<span class="ocrx_line" title="bbox 431 271 487 283">
+							<span class="ocrx_word" title="bbox 431 271 487 283">0x0000_007C</span>
+						</span>
+					</td>
+				</tr>
+				<tr>
+					<td title="bbox 98 287 117 304">
+						<span class="ocrx_line" title="bbox 101 288 111 300">
+							<span class="ocrx_word" title="bbox 101 288 111 300">16</span>
+						</span>
+					</td>
+					<td title="bbox 117 287 138 304">
+						<span class="ocrx_line" title="bbox 122 288 132 300">
+							<span class="ocrx_word" title="bbox 122 288 132 300">23</span>
+						</span>
+					</td>
+					<td title="bbox 138 287 183 304">
+						<span class="ocrx_line" title="bbox 145 288 176 300">
+							<span class="ocrx_word" title="bbox 145 288 176 300">settable</span>
+						</span>
+					</td>
+					<td title="bbox 183 287 268 304">
+						<span class="ocrx_line" title="bbox 186 288 255 300">
+							<span class="ocrx_word" title="bbox 186 288 255 300">DMA1_Channel6</span>
+						</span>
+					</td>
+					<td title="bbox 268 287 419 304">
+						<span class="ocrx_line" title="bbox 271 288 399 300">
+							<span class="ocrx_word" title="bbox 271 288 296 300">DMA1</span>
+							<span class="ocrx_word" title="bbox 299 288 337 300">Channel6</span>
+							<span class="ocrx_word" title="bbox 340 288 364 300">global</span>
+							<span class="ocrx_word" title="bbox 366 288 399 300">interrupt</span>
+						</span>
+					</td>
+					<td title="bbox 419 287 488 304">
+						<span class="ocrx_line" title="bbox 432 288 486 300">
+							<span class="ocrx_word" title="bbox 432 288 486 300">0x0000_0080</span>
+						</span>
+					</td>
+				</tr>
+				<tr>
+					<td title="bbox 98 304 117 321">
+						<span class="ocrx_line" title="bbox 101 305 111 317">
+							<span class="ocrx_word" title="bbox 101 305 111 317">17</span>
+						</span>
+					</td>
+					<td title="bbox 117 304 138 321">
+						<span class="ocrx_line" title="bbox 122 305 132 317">
+							<span class="ocrx_word" title="bbox 122 305 132 317">24</span>
+						</span>
+					</td>
+					<td title="bbox 138 304 183 321">
+						<span class="ocrx_line" title="bbox 145 305 176 317">
+							<span class="ocrx_word" title="bbox 145 305 176 317">settable</span>
+						</span>
+					</td>
+					<td title="bbox 183 304 268 321">
+						<span class="ocrx_line" title="bbox 186 305 255 317">
+							<span class="ocrx_word" title="bbox 186 305 255 317">DMA1_Channel7</span>
+						</span>
+					</td>
+					<td title="bbox 268 304 419 321">
+						<span class="ocrx_line" title="bbox 271 305 399 317">
+							<span class="ocrx_word" title="bbox 271 305 296 317">DMA1</span>
+							<span class="ocrx_word" title="bbox 299 305 337 317">Channel7</span>
+							<span class="ocrx_word" title="bbox 340 305 364 317">global</span>
+							<span class="ocrx_word" title="bbox 366 305 399 317">interrupt</span>
+						</span>
+					</td>
+					<td title="bbox 419 304 488 321">
+						<span class="ocrx_line" title="bbox 432 305 486 317">
+							<span class="ocrx_word" title="bbox 432 305 486 317">0x0000_0084</span>
+						</span>
+					</td>
+				</tr>
+				<tr>
+					<td title="bbox 98 321 117 338">
+						<span class="ocrx_line" title="bbox 101 322 111 334">
+							<span class="ocrx_word" title="bbox 101 322 111 334">18</span>
+						</span>
+					</td>
+					<td title="bbox 117 321 138 338">
+						<span class="ocrx_line" title="bbox 122 322 132 334">
+							<span class="ocrx_word" title="bbox 122 322 132 334">25</span>
+						</span>
+					</td>
+					<td title="bbox 138 321 183 338">
+						<span class="ocrx_line" title="bbox 145 322 176 334">
+							<span class="ocrx_word" title="bbox 145 322 176 334">settable</span>
+						</span>
+					</td>
+					<td title="bbox 183 321 268 338">
+						<span class="ocrx_line" title="bbox 186 322 220 334">
+							<span class="ocrx_word" title="bbox 186 322 220 334">ADC1_2</span>
+						</span>
+					</td>
+					<td title="bbox 268 321 419 338">
+						<span class="ocrx_line" title="bbox 271 322 401 334">
+							<span class="ocrx_word" title="bbox 271 322 295 334">ADC1</span>
+							<span class="ocrx_word" title="bbox 298 322 313 334">and</span>
+							<span class="ocrx_word" title="bbox 315 322 339 334">ADC2</span>
+							<span class="ocrx_word" title="bbox 341 322 365 334">global</span>
+							<span class="ocrx_word" title="bbox 368 322 401 334">interrupt</span>
+						</span>
+					</td>
+					<td title="bbox 419 321 488 338">
+						<span class="ocrx_line" title="bbox 432 322 486 334">
+							<span class="ocrx_word" title="bbox 432 322 486 334">0x0000_0088</span>
+						</span>
+					</td>
+				</tr>
+				<tr>
+					<td title="bbox 98 338 117 355">
+						<span class="ocrx_line" title="bbox 101 339 111 351">
+							<span class="ocrx_word" title="bbox 101 339 111 351">19</span>
+						</span>
+					</td>
+					<td title="bbox 117 338 138 355">
+						<span class="ocrx_line" title="bbox 122 339 132 351">
+							<span class="ocrx_word" title="bbox 122 339 132 351">26</span>
+						</span>
+					</td>
+					<td title="bbox 138 338 183 355">
+						<span class="ocrx_line" title="bbox 145 339 176 351">
+							<span class="ocrx_word" title="bbox 145 339 176 351">settable</span>
+						</span>
+					</td>
+					<td title="bbox 183 338 268 355">
+						<span class="ocrx_line" title="bbox 186 339 227 351">
+							<span class="ocrx_word" title="bbox 186 339 227 351">CAN1_TX</span>
+						</span>
+					</td>
+					<td title="bbox 268 338 419 355">
+						<span class="ocrx_line" title="bbox 271 339 349 351">
+							<span class="ocrx_word" title="bbox 271 339 295 351">CAN1</span>
+							<span class="ocrx_word" title="bbox 298 339 309 351">TX</span>
+							<span class="ocrx_word" title="bbox 312 339 349 351">interrupts</span>
+						</span>
+					</td>
+					<td title="bbox 419 338 488 355">
+						<span class="ocrx_line" title="bbox 431 339 487 351">
+							<span class="ocrx_word" title="bbox 431 339 487 351">0x0000_008C</span>
+						</span>
+					</td>
+				</tr>
+				<tr>
+					<td title="bbox 98 355 117 372">
+						<span class="ocrx_line" title="bbox 101 356 111 368">
+							<span class="ocrx_word" title="bbox 101 356 111 368">20</span>
+						</span>
+					</td>
+					<td title="bbox 117 355 138 372">
+						<span class="ocrx_line" title="bbox 122 356 132 368">
+							<span class="ocrx_word" title="bbox 122 356 132 368">27</span>
+						</span>
+					</td>
+					<td title="bbox 138 355 183 372">
+						<span class="ocrx_line" title="bbox 145 356 176 368">
+							<span class="ocrx_word" title="bbox 145 356 176 368">settable</span>
+						</span>
+					</td>
+					<td title="bbox 183 355 268 372">
+						<span class="ocrx_line" title="bbox 186 356 233 368">
+							<span class="ocrx_word" title="bbox 186 356 233 368">CAN1_RX0</span>
+						</span>
+					</td>
+					<td title="bbox 268 355 419 372">
+						<span class="ocrx_line" title="bbox 271 356 355 368">
+							<span class="ocrx_word" title="bbox 271 356 295 368">CAN1</span>
+							<span class="ocrx_word" title="bbox 298 356 315 368">RX0</span>
+							<span class="ocrx_word" title="bbox 318 356 355 368">interrupts</span>
+						</span>
+					</td>
+					<td title="bbox 419 355 488 372">
+						<span class="ocrx_line" title="bbox 432 356 486 368">
+							<span class="ocrx_word" title="bbox 432 356 486 368">0x0000_0090</span>
+						</span>
+					</td>
+				</tr>
+				<tr>
+					<td title="bbox 98 372 117 389">
+						<span class="ocrx_line" title="bbox 101 373 111 385">
+							<span class="ocrx_word" title="bbox 101 373 111 385">21</span>
+						</span>
+					</td>
+					<td title="bbox 117 372 138 389">
+						<span class="ocrx_line" title="bbox 122 373 132 385">
+							<span class="ocrx_word" title="bbox 122 373 132 385">28</span>
+						</span>
+					</td>
+					<td title="bbox 138 372 183 389">
+						<span class="ocrx_line" title="bbox 145 373 176 385">
+							<span class="ocrx_word" title="bbox 145 373 176 385">settable</span>
+						</span>
+					</td>
+					<td title="bbox 183 372 268 389">
+						<span class="ocrx_line" title="bbox 186 373 233 385">
+							<span class="ocrx_word" title="bbox 186 373 233 385">CAN1_RX1</span>
+						</span>
+					</td>
+					<td title="bbox 268 372 419 389">
+						<span class="ocrx_line" title="bbox 271 373 351 385">
+							<span class="ocrx_word" title="bbox 271 373 295 385">CAN1</span>
+							<span class="ocrx_word" title="bbox 298 373 315 385">RX1</span>
+							<span class="ocrx_word" title="bbox 318 373 351 385">interrupt</span>
+						</span>
+					</td>
+					<td title="bbox 419 372 488 389">
+						<span class="ocrx_line" title="bbox 432 373 486 385">
+							<span class="ocrx_word" title="bbox 432 373 486 385">0x0000_0094</span>
+						</span>
+					</td>
+				</tr>
+				<tr>
+					<td title="bbox 98 389 117 406">
+						<span class="ocrx_line" title="bbox 101 390 111 402">
+							<span class="ocrx_word" title="bbox 101 390 111 402">22</span>
+						</span>
+					</td>
+					<td title="bbox 117 389 138 406">
+						<span class="ocrx_line" title="bbox 122 390 132 402">
+							<span class="ocrx_word" title="bbox 122 390 132 402">29</span>
+						</span>
+					</td>
+					<td title="bbox 138 389 183 406">
+						<span class="ocrx_line" title="bbox 145 390 176 402">
+							<span class="ocrx_word" title="bbox 145 390 176 402">settable</span>
+						</span>
+					</td>
+					<td title="bbox 183 389 268 406">
+						<span class="ocrx_line" title="bbox 186 390 234 402">
+							<span class="ocrx_word" title="bbox 186 390 234 402">CAN1_SCE</span>
+						</span>
+					</td>
+					<td title="bbox 268 389 419 406">
+						<span class="ocrx_line" title="bbox 272 390 352 402">
+							<span class="ocrx_word" title="bbox 272 390 295 402">CAN1</span>
+							<span class="ocrx_word" title="bbox 298 390 316 402">SCE</span>
+							<span class="ocrx_word" title="bbox 319 390 352 402">interrupt</span>
+						</span>
+					</td>
+					<td title="bbox 419 389 488 406">
+						<span class="ocrx_line" title="bbox 432 390 486 402">
+							<span class="ocrx_word" title="bbox 432 390 486 402">0x0000_0098</span>
+						</span>
+					</td>
+				</tr>
+				<tr>
+					<td title="bbox 98 406 117 423">
+						<span class="ocrx_line" title="bbox 101 407 111 419">
+							<span class="ocrx_word" title="bbox 101 407 111 419">23</span>
+						</span>
+					</td>
+					<td title="bbox 117 406 138 423">
+						<span class="ocrx_line" title="bbox 122 407 132 419">
+							<span class="ocrx_word" title="bbox 122 407 132 419">30</span>
+						</span>
+					</td>
+					<td title="bbox 138 406 183 423">
+						<span class="ocrx_line" title="bbox 145 407 176 419">
+							<span class="ocrx_word" title="bbox 145 407 176 419">settable</span>
+						</span>
+					</td>
+					<td title="bbox 183 406 268 423">
+						<span class="ocrx_line" title="bbox 186 407 221 419">
+							<span class="ocrx_word" title="bbox 186 407 221 419">EXTI9_5</span>
+						</span>
+					</td>
+					<td title="bbox 268 406 419 423">
+						<span class="ocrx_line" title="bbox 271 407 368 419">
+							<span class="ocrx_word" title="bbox 271 407 291 419">EXTI</span>
+							<span class="ocrx_word" title="bbox 294 407 328 419">Line[9:5]</span>
+							<span class="ocrx_word" title="bbox 331 407 368 419">interrupts</span>
+						</span>
+					</td>
+					<td title="bbox 419 406 488 423">
+						<span class="ocrx_line" title="bbox 431 407 487 419">
+							<span class="ocrx_word" title="bbox 431 407 487 419">0x0000_009C</span>
+						</span>
+					</td>
+				</tr>
+				<tr>
+					<td title="bbox 98 423 117 440">
+						<span class="ocrx_line" title="bbox 101 424 111 436">
+							<span class="ocrx_word" title="bbox 101 424 111 436">24</span>
+						</span>
+					</td>
+					<td title="bbox 117 423 138 440">
+						<span class="ocrx_line" title="bbox 122 424 132 436">
+							<span class="ocrx_word" title="bbox 122 424 132 436">31</span>
+						</span>
+					</td>
+					<td title="bbox 138 423 183 440">
+						<span class="ocrx_line" title="bbox 145 424 176 436">
+							<span class="ocrx_word" title="bbox 145 424 176 436">settable</span>
+						</span>
+					</td>
+					<td title="bbox 183 423 268 440">
+						<span class="ocrx_line" title="bbox 186 424 230 436">
+							<span class="ocrx_word" title="bbox 186 424 230 436">TIM1_BRK</span>
+						</span>
+					</td>
+					<td title="bbox 268 423 419 440">
+						<span class="ocrx_line" title="bbox 271 424 353 436">
+							<span class="ocrx_word" title="bbox 271 424 292 436">TIM1</span>
+							<span class="ocrx_word" title="bbox 294 424 318 436">Break</span>
+							<span class="ocrx_word" title="bbox 320 424 353 436">interrupt</span>
+						</span>
+					</td>
+					<td title="bbox 419 423 488 440">
+						<span class="ocrx_line" title="bbox 431 424 487 436">
+							<span class="ocrx_word" title="bbox 431 424 487 436">0x0000_00A0</span>
+						</span>
+					</td>
+				</tr>
+				<tr>
+					<td title="bbox 98 440 117 457">
+						<span class="ocrx_line" title="bbox 101 441 111 453">
+							<span class="ocrx_word" title="bbox 101 441 111 453">25</span>
+						</span>
+					</td>
+					<td title="bbox 117 440 138 457">
+						<span class="ocrx_line" title="bbox 122 441 132 453">
+							<span class="ocrx_word" title="bbox 122 441 132 453">32</span>
+						</span>
+					</td>
+					<td title="bbox 138 440 183 457">
+						<span class="ocrx_line" title="bbox 145 441 176 453">
+							<span class="ocrx_word" title="bbox 145 441 176 453">settable</span>
+						</span>
+					</td>
+					<td title="bbox 183 440 268 457">
+						<span class="ocrx_line" title="bbox 186 441 224 453">
+							<span class="ocrx_word" title="bbox 186 441 224 453">TIM1_UP</span>
+						</span>
+					</td>
+					<td title="bbox 268 440 419 457">
+						<span class="ocrx_line" title="bbox 271 441 359 453">
+							<span class="ocrx_word" title="bbox 271 441 292 453">TIM1</span>
+							<span class="ocrx_word" title="bbox 294 441 323 453">Update</span>
+							<span class="ocrx_word" title="bbox 326 441 359 453">interrupt</span>
+						</span>
+					</td>
+					<td title="bbox 419 440 488 457">
+						<span class="ocrx_line" title="bbox 431 441 487 453">
+							<span class="ocrx_word" title="bbox 431 441 487 453">0x0000_00A4</span>
+						</span>
+					</td>
+				</tr>
+				<tr>
+					<td title="bbox 98 457 117 485">
+						<span class="ocrx_line" title="bbox 101 463 111 475">
+							<span class="ocrx_word" title="bbox 101 463 111 475">26</span>
+						</span>
+					</td>
+					<td title="bbox 117 457 138 485">
+						<span class="ocrx_line" title="bbox 122 463 132 475">
+							<span class="ocrx_word" title="bbox 122 463 132 475">33</span>
+						</span>
+					</td>
+					<td title="bbox 138 457 183 485">
+						<span class="ocrx_line" title="bbox 145 463 176 475">
+							<span class="ocrx_word" title="bbox 145 463 176 475">settable</span>
+						</span>
+					</td>
+					<td title="bbox 183 457 268 485">
+						<span class="ocrx_line" title="bbox 186 463 257 475">
+							<span class="ocrx_word" title="bbox 186 463 257 475">TIM1_TRG_COM</span>
+						</span>
+					</td>
+					<td title="bbox 268 457 419 485">
+						<span class="ocrx_line" title="bbox 271 458 398 470">
+							<span class="ocrx_word" title="bbox 271 458 292 470">TIM1</span>
+							<span class="ocrx_word" title="bbox 294 458 322 470">Trigger</span>
+							<span class="ocrx_word" title="bbox 325 458 340 470">and</span>
+							<span class="ocrx_word" title="bbox 342 458 396 470">Commutation</span>
+						</span>
+						<span class="ocrx_line" title="bbox 271 469 309 481">
+							<span class="ocrx_word" title="bbox 271 469 309 481">interrupts</span>
+						</span>
+					</td>
+					<td title="bbox 419 457 488 485">
+						<span class="ocrx_line" title="bbox 431 463 487 475">
+							<span class="ocrx_word" title="bbox 431 463 487 475">0x0000_00A8</span>
+						</span>
+					</td>
+				</tr>
+				<tr>
+					<td title="bbox 98 485 117 502">
+						<span class="ocrx_line" title="bbox 101 486 111 498">
+							<span class="ocrx_word" title="bbox 101 486 111 498">27</span>
+						</span>
+					</td>
+					<td title="bbox 117 485 138 502">
+						<span class="ocrx_line" title="bbox 122 486 132 498">
+							<span class="ocrx_word" title="bbox 122 486 132 498">34</span>
+						</span>
+					</td>
+					<td title="bbox 138 485 183 502">
+						<span class="ocrx_line" title="bbox 145 486 176 498">
+							<span class="ocrx_word" title="bbox 145 486 176 498">settable</span>
+						</span>
+					</td>
+					<td title="bbox 183 485 268 502">
+						<span class="ocrx_line" title="bbox 186 486 225 498">
+							<span class="ocrx_word" title="bbox 186 486 225 498">TIM1_CC</span>
+						</span>
+					</td>
+					<td title="bbox 268 485 419 502">
+						<span class="ocrx_line" title="bbox 271 486 401 498">
+							<span class="ocrx_word" title="bbox 271 486 292 498">TIM1</span>
+							<span class="ocrx_word" title="bbox 294 486 326 498">Capture</span>
+							<span class="ocrx_word" title="bbox 329 486 366 498">Compare</span>
+							<span class="ocrx_word" title="bbox 368 486 401 498">interrupt</span>
+						</span>
+					</td>
+					<td title="bbox 419 485 488 502">
+						<span class="ocrx_line" title="bbox 431 486 488 498">
+							<span class="ocrx_word" title="bbox 431 486 488 498">0x0000_00AC</span>
+						</span>
+					</td>
+				</tr>
+				<tr>
+					<td title="bbox 98 502 117 519">
+						<span class="ocrx_line" title="bbox 101 503 111 515">
+							<span class="ocrx_word" title="bbox 101 503 111 515">28</span>
+						</span>
+					</td>
+					<td title="bbox 117 502 138 519">
+						<span class="ocrx_line" title="bbox 122 503 132 515">
+							<span class="ocrx_word" title="bbox 122 503 132 515">35</span>
+						</span>
+					</td>
+					<td title="bbox 138 502 183 519">
+						<span class="ocrx_line" title="bbox 145 503 176 515">
+							<span class="ocrx_word" title="bbox 145 503 176 515">settable</span>
+						</span>
+					</td>
+					<td title="bbox 183 502 268 519">
+						<span class="ocrx_line" title="bbox 186 503 207 515">
+							<span class="ocrx_word" title="bbox 186 503 207 515">TIM2</span>
+						</span>
+					</td>
+					<td title="bbox 268 502 419 519">
+						<span class="ocrx_line" title="bbox 271 503 354 515">
+							<span class="ocrx_word" title="bbox 271 503 292 515">TIM2</span>
+							<span class="ocrx_word" title="bbox 294 503 318 515">global</span>
+							<span class="ocrx_word" title="bbox 321 503 354 515">interrupt</span>
+						</span>
+					</td>
+					<td title="bbox 419 502 488 519">
+						<span class="ocrx_line" title="bbox 431 503 487 515">
+							<span class="ocrx_word" title="bbox 431 503 487 515">0x0000_00B0</span>
+						</span>
+					</td>
+				</tr>
+				<tr>
+					<td title="bbox 98 519 117 536">
+						<span class="ocrx_line" title="bbox 101 520 111 532">
+							<span class="ocrx_word" title="bbox 101 520 111 532">29</span>
+						</span>
+					</td>
+					<td title="bbox 117 519 138 536">
+						<span class="ocrx_line" title="bbox 122 520 132 532">
+							<span class="ocrx_word" title="bbox 122 520 132 532">36</span>
+						</span>
+					</td>
+					<td title="bbox 138 519 183 536">
+						<span class="ocrx_line" title="bbox 145 520 176 532">
+							<span class="ocrx_word" title="bbox 145 520 176 532">settable</span>
+						</span>
+					</td>
+					<td title="bbox 183 519 268 536">
+						<span class="ocrx_line" title="bbox 186 520 207 532">
+							<span class="ocrx_word" title="bbox 186 520 207 532">TIM3</span>
+						</span>
+					</td>
+					<td title="bbox 268 519 419 536">
+						<span class="ocrx_line" title="bbox 271 520 354 532">
+							<span class="ocrx_word" title="bbox 271 520 292 532">TIM3</span>
+							<span class="ocrx_word" title="bbox 294 520 318 532">global</span>
+							<span class="ocrx_word" title="bbox 321 520 354 532">interrupt</span>
+						</span>
+					</td>
+					<td title="bbox 419 519 488 536">
+						<span class="ocrx_line" title="bbox 431 520 487 532">
+							<span class="ocrx_word" title="bbox 431 520 487 532">0x0000_00B4</span>
+						</span>
+					</td>
+				</tr>
+				<tr>
+					<td title="bbox 98 536 117 553">
+						<span class="ocrx_line" title="bbox 101 537 111 549">
+							<span class="ocrx_word" title="bbox 101 537 111 549">30</span>
+						</span>
+					</td>
+					<td title="bbox 117 536 138 553">
+						<span class="ocrx_line" title="bbox 122 537 132 549">
+							<span class="ocrx_word" title="bbox 122 537 132 549">37</span>
+						</span>
+					</td>
+					<td title="bbox 138 536 183 553">
+						<span class="ocrx_line" title="bbox 145 537 176 549">
+							<span class="ocrx_word" title="bbox 145 537 176 549">settable</span>
+						</span>
+					</td>
+					<td title="bbox 183 536 268 553">
+						<span class="ocrx_line" title="bbox 186 537 207 549">
+							<span class="ocrx_word" title="bbox 186 537 207 549">TIM4</span>
+						</span>
+					</td>
+					<td title="bbox 268 536 419 553">
+						<span class="ocrx_line" title="bbox 271 537 354 549">
+							<span class="ocrx_word" title="bbox 271 537 292 549">TIM4</span>
+							<span class="ocrx_word" title="bbox 294 537 318 549">global</span>
+							<span class="ocrx_word" title="bbox 321 537 354 549">interrupt</span>
+						</span>
+					</td>
+					<td title="bbox 419 536 488 553">
+						<span class="ocrx_line" title="bbox 431 537 487 549">
+							<span class="ocrx_word" title="bbox 431 537 487 549">0x0000_00B8</span>
+						</span>
+					</td>
+				</tr>
+				<tr>
+					<td title="bbox 98 553 117 570">
+						<span class="ocrx_line" title="bbox 101 554 111 566">
+							<span class="ocrx_word" title="bbox 101 554 111 566">31</span>
+						</span>
+					</td>
+					<td title="bbox 117 553 138 570">
+						<span class="ocrx_line" title="bbox 122 554 132 566">
+							<span class="ocrx_word" title="bbox 122 554 132 566">38</span>
+						</span>
+					</td>
+					<td title="bbox 138 553 183 570">
+						<span class="ocrx_line" title="bbox 145 554 176 566">
+							<span class="ocrx_word" title="bbox 145 554 176 566">settable</span>
+						</span>
+					</td>
+					<td title="bbox 183 553 268 570">
+						<span class="ocrx_line" title="bbox 186 554 222 566">
+							<span class="ocrx_word" title="bbox 186 554 222 566">I2C1_EV</span>
+						</span>
+					</td>
+					<td title="bbox 268 553 419 570">
+						<span class="ocrx_line" title="bbox 271 554 349 566">
+							<span class="ocrx_word" title="bbox 271 552 289 566">I2C1</span>
+							<span class="ocrx_word" title="bbox 292 554 314 566">event</span>
+							<span class="ocrx_word" title="bbox 316 554 349 566">interrupt</span>
+						</span>
+					</td>
+					<td title="bbox 419 553 488 570">
+						<span class="ocrx_line" title="bbox 431 554 488 566">
+							<span class="ocrx_word" title="bbox 431 554 488 566">0x0000_00BC</span>
+						</span>
+					</td>
+				</tr>
+				<tr>
+					<td title="bbox 98 570 117 587">
+						<span class="ocrx_line" title="bbox 101 571 111 583">
+							<span class="ocrx_word" title="bbox 101 571 111 583">32</span>
+						</span>
+					</td>
+					<td title="bbox 117 570 138 587">
+						<span class="ocrx_line" title="bbox 122 571 132 583">
+							<span class="ocrx_word" title="bbox 122 571 132 583">39</span>
+						</span>
+					</td>
+					<td title="bbox 138 570 183 587">
+						<span class="ocrx_line" title="bbox 145 571 176 583">
+							<span class="ocrx_word" title="bbox 145 571 176 583">settable</span>
+						</span>
+					</td>
+					<td title="bbox 183 570 268 587">
+						<span class="ocrx_line" title="bbox 186 571 223 583">
+							<span class="ocrx_word" title="bbox 186 571 223 583">I2C1_ER</span>
+						</span>
+					</td>
+					<td title="bbox 268 570 419 587">
+						<span class="ocrx_line" title="bbox 271 571 346 583">
+							<span class="ocrx_word" title="bbox 271 569 289 583">I2C1</span>
+							<span class="ocrx_word" title="bbox 292 571 311 583">error</span>
+							<span class="ocrx_word" title="bbox 313 571 346 583">interrupt</span>
+						</span>
+					</td>
+					<td title="bbox 419 570 488 587">
+						<span class="ocrx_line" title="bbox 431 571 487 583">
+							<span class="ocrx_word" title="bbox 431 571 487 583">0x0000_00C0</span>
+						</span>
+					</td>
+				</tr>
+				<tr>
+					<td title="bbox 98 587 117 604">
+						<span class="ocrx_line" title="bbox 101 588 111 600">
+							<span class="ocrx_word" title="bbox 101 588 111 600">33</span>
+						</span>
+					</td>
+					<td title="bbox 117 587 138 604">
+						<span class="ocrx_line" title="bbox 122 588 132 600">
+							<span class="ocrx_word" title="bbox 122 588 132 600">40</span>
+						</span>
+					</td>
+					<td title="bbox 138 587 183 604">
+						<span class="ocrx_line" title="bbox 145 588 176 600">
+							<span class="ocrx_word" title="bbox 145 588 176 600">settable</span>
+						</span>
+					</td>
+					<td title="bbox 183 587 268 604">
+						<span class="ocrx_line" title="bbox 186 588 222 600">
+							<span class="ocrx_word" title="bbox 186 588 222 600">I2C2_EV</span>
+						</span>
+					</td>
+					<td title="bbox 268 587 419 604">
+						<span class="ocrx_line" title="bbox 271 588 349 600">
+							<span class="ocrx_word" title="bbox 271 586 289 600">I2C2</span>
+							<span class="ocrx_word" title="bbox 292 588 314 600">event</span>
+							<span class="ocrx_word" title="bbox 316 588 349 600">interrupt</span>
+						</span>
+					</td>
+					<td title="bbox 419 587 488 604">
+						<span class="ocrx_line" title="bbox 431 588 487 600">
+							<span class="ocrx_word" title="bbox 431 588 487 600">0x0000_00C4</span>
+						</span>
+					</td>
+				</tr>
+				<tr>
+					<td title="bbox 98 604 117 621">
+						<span class="ocrx_line" title="bbox 101 605 111 617">
+							<span class="ocrx_word" title="bbox 101 605 111 617">34</span>
+						</span>
+					</td>
+					<td title="bbox 117 604 138 621">
+						<span class="ocrx_line" title="bbox 122 605 132 617">
+							<span class="ocrx_word" title="bbox 122 605 132 617">41</span>
+						</span>
+					</td>
+					<td title="bbox 138 604 183 621">
+						<span class="ocrx_line" title="bbox 145 605 176 617">
+							<span class="ocrx_word" title="bbox 145 605 176 617">settable</span>
+						</span>
+					</td>
+					<td title="bbox 183 604 268 621">
+						<span class="ocrx_line" title="bbox 186 605 223 617">
+							<span class="ocrx_word" title="bbox 186 605 223 617">I2C2_ER</span>
+						</span>
+					</td>
+					<td title="bbox 268 604 419 621">
+						<span class="ocrx_line" title="bbox 271 605 346 617">
+							<span class="ocrx_word" title="bbox 271 603 289 617">I2C2</span>
+							<span class="ocrx_word" title="bbox 292 605 311 617">error</span>
+							<span class="ocrx_word" title="bbox 313 605 346 617">interrupt</span>
+						</span>
+					</td>
+					<td title="bbox 419 604 488 621">
+						<span class="ocrx_line" title="bbox 431 605 487 617">
+							<span class="ocrx_word" title="bbox 431 605 487 617">0x0000_00C8</span>
+						</span>
+					</td>
+				</tr>
+				<tr>
+					<td title="bbox 98 621 117 638">
+						<span class="ocrx_line" title="bbox 101 622 111 634">
+							<span class="ocrx_word" title="bbox 101 622 111 634">35</span>
+						</span>
+					</td>
+					<td title="bbox 117 621 138 638">
+						<span class="ocrx_line" title="bbox 122 622 132 634">
+							<span class="ocrx_word" title="bbox 122 622 132 634">42</span>
+						</span>
+					</td>
+					<td title="bbox 138 621 183 638">
+						<span class="ocrx_line" title="bbox 145 622 176 634">
+							<span class="ocrx_word" title="bbox 145 622 176 634">settable</span>
+						</span>
+					</td>
+					<td title="bbox 183 621 268 638">
+						<span class="ocrx_line" title="bbox 186 622 206 634">
+							<span class="ocrx_word" title="bbox 186 622 206 634">SPI1</span>
+						</span>
+					</td>
+					<td title="bbox 268 621 419 638">
+						<span class="ocrx_line" title="bbox 271 622 353 634">
+							<span class="ocrx_word" title="bbox 271 622 291 634">SPI1</span>
+							<span class="ocrx_word" title="bbox 293 622 317 634">global</span>
+							<span class="ocrx_word" title="bbox 320 622 353 634">interrupt</span>
+						</span>
+					</td>
+					<td title="bbox 419 621 488 638">
+						<span class="ocrx_line" title="bbox 430 622 488 634">
+							<span class="ocrx_word" title="bbox 430 622 488 634">0x0000_00CC</span>
+						</span>
+					</td>
+				</tr>
+				<tr>
+					<td title="bbox 98 638 117 655">
+						<span class="ocrx_line" title="bbox 101 639 111 651">
+							<span class="ocrx_word" title="bbox 101 639 111 651">36</span>
+						</span>
+					</td>
+					<td title="bbox 117 638 138 655">
+						<span class="ocrx_line" title="bbox 122 639 132 651">
+							<span class="ocrx_word" title="bbox 122 639 132 651">43</span>
+						</span>
+					</td>
+					<td title="bbox 138 638 183 655">
+						<span class="ocrx_line" title="bbox 145 639 176 651">
+							<span class="ocrx_word" title="bbox 145 639 176 651">settable</span>
+						</span>
+					</td>
+					<td title="bbox 183 638 268 655">
+						<span class="ocrx_line" title="bbox 186 639 206 651">
+							<span class="ocrx_word" title="bbox 186 639 206 651">SPI2</span>
+						</span>
+					</td>
+					<td title="bbox 268 638 419 655">
+						<span class="ocrx_line" title="bbox 271 639 353 651">
+							<span class="ocrx_word" title="bbox 271 639 291 651">SPI2</span>
+							<span class="ocrx_word" title="bbox 293 639 317 651">global</span>
+							<span class="ocrx_word" title="bbox 320 639 353 651">interrupt</span>
+						</span>
+					</td>
+					<td title="bbox 419 638 488 655">
+						<span class="ocrx_line" title="bbox 431 639 487 651">
+							<span class="ocrx_word" title="bbox 431 639 487 651">0x0000_00D0</span>
+						</span>
+					</td>
+				</tr>
+				<tr>
+					<td title="bbox 98 655 117 672">
+						<span class="ocrx_line" title="bbox 101 656 111 668">
+							<span class="ocrx_word" title="bbox 101 656 111 668">37</span>
+						</span>
+					</td>
+					<td title="bbox 117 655 138 672">
+						<span class="ocrx_line" title="bbox 122 656 132 668">
+							<span class="ocrx_word" title="bbox 122 656 132 668">44</span>
+						</span>
+					</td>
+					<td title="bbox 138 655 183 672">
+						<span class="ocrx_line" title="bbox 145 656 176 668">
+							<span class="ocrx_word" title="bbox 145 656 176 668">settable</span>
+						</span>
+					</td>
+					<td title="bbox 183 655 268 672">
+						<span class="ocrx_line" title="bbox 186 656 222 668">
+							<span class="ocrx_word" title="bbox 186 656 222 668">USART1</span>
+						</span>
+					</td>
+					<td title="bbox 268 655 419 672">
+						<span class="ocrx_line" title="bbox 271 656 369 668">
+							<span class="ocrx_word" title="bbox 271 656 307 668">USART1</span>
+							<span class="ocrx_word" title="bbox 309 656 333 668">global</span>
+							<span class="ocrx_word" title="bbox 336 656 369 668">interrupt</span>
+						</span>
+					</td>
+					<td title="bbox 419 655 488 672">
+						<span class="ocrx_line" title="bbox 431 656 487 668">
+							<span class="ocrx_word" title="bbox 431 656 487 668">0x0000_00D4</span>
+						</span>
+					</td>
+				</tr>
+				<tr>
+					<td title="bbox 98 672 117 689">
+						<span class="ocrx_line" title="bbox 101 673 111 685">
+							<span class="ocrx_word" title="bbox 101 673 111 685">38</span>
+						</span>
+					</td>
+					<td title="bbox 117 672 138 689">
+						<span class="ocrx_line" title="bbox 122 673 132 685">
+							<span class="ocrx_word" title="bbox 122 673 132 685">45</span>
+						</span>
+					</td>
+					<td title="bbox 138 672 183 689">
+						<span class="ocrx_line" title="bbox 145 673 176 685">
+							<span class="ocrx_word" title="bbox 145 673 176 685">settable</span>
+						</span>
+					</td>
+					<td title="bbox 183 672 268 689">
+						<span class="ocrx_line" title="bbox 186 673 222 685">
+							<span class="ocrx_word" title="bbox 186 673 222 685">USART2</span>
+						</span>
+					</td>
+					<td title="bbox 268 672 419 689">
+						<span class="ocrx_line" title="bbox 271 673 369 685">
+							<span class="ocrx_word" title="bbox 271 673 307 685">USART2</span>
+							<span class="ocrx_word" title="bbox 309 673 333 685">global</span>
+							<span class="ocrx_word" title="bbox 336 673 369 685">interrupt</span>
+						</span>
+					</td>
+					<td title="bbox 419 672 488 689">
+						<span class="ocrx_line" title="bbox 431 673 487 685">
+							<span class="ocrx_word" title="bbox 431 673 487 685">0x0000_00D8</span>
+						</span>
+					</td>
+				</tr>
+			</table>
+			<div class="ocrx_block" pdftotree="section_header" title="bbox 265 741 330 753">
+				<span class="ocrx_line" title="bbox 265 741 330 753">
+					<span class="ocrx_word" title="bbox 265 741 299 753">RM0008</span>
+					<span class="ocrx_word" title="bbox 301 741 317 753">Rev</span>
+					<span class="ocrx_word" title="bbox 320 741 330 753">21</span>
+				</span>
+			</div>
+			<div class="ocrx_block" pdftotree="section_header" title="bbox 491 741 527 753">
+				<span class="ocrx_line" title="bbox 491 741 527 753">
+					<span class="ocrx_word" title="bbox 491 741 527 753">199/1136</span>
+				</span>
+			</div>
+			<div class="ocrx_block" pdftotree="section_header" title="bbox 550 758 561 767">
+				<span class="ocrx_line" title="bbox 550 758 561 767">
+					<span class="ocrx_word" title="bbox 550 758 561 767">214</span>
+				</span>
+			</div>
+		</div>
+		<div class="ocr_page" id="page_3" title="bbox 0 0 595 842; ppageno 2">
+			<div class="ocrx_block" pdftotree="header" title="bbox 67 55 168 69">
+				<span class="ocrx_line" title="bbox 67 55 168 69">
+					<span class="ocrx_word" title="bbox 67 55 113 69">Interrupts</span>
+					<span class="ocrx_word" title="bbox 116 55 134 69">and</span>
+					<span class="ocrx_word" title="bbox 137 55 168 69">events</span>
+				</span>
+			</div>
+			<div class="ocrx_block" pdftotree="section_header" title="bbox 490 55 527 69">
+				<span class="ocrx_line" title="bbox 490 55 527 69">
+					<span class="ocrx_word" title="bbox 490 55 527 69">RM0008</span>
+				</span>
+			</div>
+			<div class="ocrx_block" pdftotree="table_caption" title="bbox 149 87 445 101">
+				<span class="ocrx_line" title="bbox 149 87 445 101">
+					<span class="ocrx_word" title="bbox 149 87 175 101">Table</span>
+					<span class="ocrx_word" title="bbox 178 87 191 101">61.</span>
+					<span class="ocrx_word" title="bbox 194 87 225 101">Vector</span>
+					<span class="ocrx_word" title="bbox 228 87 251 101">table</span>
+					<span class="ocrx_word" title="bbox 254 87 267 101">for</span>
+					<span class="ocrx_word" title="bbox 270 87 328 101">connectivity</span>
+					<span class="ocrx_word" title="bbox 331 87 348 101">line</span>
+					<span class="ocrx_word" title="bbox 351 87 388 101">devices</span>
+					<span class="ocrx_word" title="bbox 390 87 445 101">(continued)</span>
+				</span>
+			</div>
+			<table class="ocr_table" title="bbox 98 139 493 603">
+				<tr>
+					<td/>
+					<td title="bbox 117 139 138 202">
+						<span class="ocrx_line" title="bbox 120 162 132 168">
+							<span class="ocrx_word" title="bbox 120 137 132 168">Priority</span>
+						</span>
+					</td>
+					<td title="bbox 138 139 183 202">
+						<span class="ocrx_line" title="bbox 145 139 179 151">
+							<span class="ocrx_word" title="bbox 145 139 165 151">Type</span>
+							<span class="ocrx_word" title="bbox 168 139 176 151">of</span>
+						</span>
+						<span class="ocrx_line" title="bbox 145 150 176 162">
+							<span class="ocrx_word" title="bbox 145 150 176 162">priority</span>
+						</span>
+					</td>
+					<td title="bbox 183 139 268 202">
+						<span class="ocrx_line" title="bbox 206 144 245 157">
+							<span class="ocrx_word" title="bbox 206 144 245 157">Acronym</span>
+						</span>
+					</td>
+					<td title="bbox 268 139 419 202">
+						<span class="ocrx_line" title="bbox 319 144 369 157">
+							<span class="ocrx_word" title="bbox 319 144 369 157">Description</span>
+						</span>
+					</td>
+					<td title="bbox 419 139 493 202">
+						<span class="ocrx_line" title="bbox 441 144 477 157">
+							<span class="ocrx_word" title="bbox 441 144 477 157">Address</span>
+						</span>
+					</td>
+				</tr>
+				<tr>
+					<td title="bbox 98 202 117 219">
+						<span class="ocrx_line" title="bbox 101 203 111 215">
+							<span class="ocrx_word" title="bbox 101 203 111 215">40</span>
+						</span>
+					</td>
+					<td title="bbox 117 202 138 219">
+						<span class="ocrx_line" title="bbox 122 203 132 215">
+							<span class="ocrx_word" title="bbox 122 203 132 215">47</span>
+						</span>
+					</td>
+					<td title="bbox 138 202 183 219">
+						<span class="ocrx_line" title="bbox 145 203 176 215">
+							<span class="ocrx_word" title="bbox 145 203 176 215">settable</span>
+						</span>
+					</td>
+					<td title="bbox 183 202 268 219">
+						<span class="ocrx_line" title="bbox 186 203 231 215">
+							<span class="ocrx_word" title="bbox 186 203 231 215">EXTI15_10</span>
+						</span>
+					</td>
+					<td title="bbox 268 202 419 219">
+						<span class="ocrx_line" title="bbox 271 203 378 215">
+							<span class="ocrx_word" title="bbox 271 203 291 215">EXTI</span>
+							<span class="ocrx_word" title="bbox 294 203 338 215">Line[15:10]</span>
+							<span class="ocrx_word" title="bbox 341 203 378 215">interrupts</span>
+						</span>
+					</td>
+					<td title="bbox 419 202 493 219">
+						<span class="ocrx_line" title="bbox 431 203 487 215">
+							<span class="ocrx_word" title="bbox 431 203 487 215">0x0000_00E0</span>
+						</span>
+					</td>
+				</tr>
+				<tr>
+					<td title="bbox 98 219 117 247">
+						<span class="ocrx_line" title="bbox 101 225 111 237">
+							<span class="ocrx_word" title="bbox 101 225 111 237">41</span>
+						</span>
+					</td>
+					<td title="bbox 117 219 138 247">
+						<span class="ocrx_line" title="bbox 122 225 132 237">
+							<span class="ocrx_word" title="bbox 122 225 132 237">48</span>
+						</span>
+					</td>
+					<td title="bbox 138 219 183 247">
+						<span class="ocrx_line" title="bbox 145 225 176 237">
+							<span class="ocrx_word" title="bbox 145 225 176 237">settable</span>
+						</span>
+					</td>
+					<td title="bbox 183 219 268 247">
+						<span class="ocrx_line" title="bbox 186 225 228 237">
+							<span class="ocrx_word" title="bbox 186 225 228 237">RTCAlarm</span>
+						</span>
+					</td>
+					<td title="bbox 268 219 419 247">
+						<span class="ocrx_line" title="bbox 271 220 389 232">
+							<span class="ocrx_word" title="bbox 271 220 290 232">RTC</span>
+							<span class="ocrx_word" title="bbox 292 220 315 232">alarm</span>
+							<span class="ocrx_word" title="bbox 317 220 348 232">through</span>
+							<span class="ocrx_word" title="bbox 350 220 370 232">EXTI</span>
+							<span class="ocrx_word" title="bbox 373 220 387 232">line</span>
+						</span>
+						<span class="ocrx_line" title="bbox 271 231 304 243">
+							<span class="ocrx_word" title="bbox 271 231 304 243">interrupt</span>
+						</span>
+					</td>
+					<td title="bbox 419 219 493 247">
+						<span class="ocrx_line" title="bbox 431 225 487 237">
+							<span class="ocrx_word" title="bbox 431 225 487 237">0x0000_00E4</span>
+						</span>
+					</td>
+				</tr>
+				<tr>
+					<td title="bbox 98 247 117 275">
+						<span class="ocrx_line" title="bbox 101 253 111 265">
+							<span class="ocrx_word" title="bbox 101 253 111 265">42</span>
+						</span>
+					</td>
+					<td title="bbox 117 247 138 275">
+						<span class="ocrx_line" title="bbox 122 253 132 265">
+							<span class="ocrx_word" title="bbox 122 253 132 265">49</span>
+						</span>
+					</td>
+					<td title="bbox 138 247 183 275">
+						<span class="ocrx_line" title="bbox 145 253 176 265">
+							<span class="ocrx_word" title="bbox 145 253 176 265">settable</span>
+						</span>
+					</td>
+					<td title="bbox 183 247 268 275">
+						<span class="ocrx_line" title="bbox 186 253 254 265">
+							<span class="ocrx_word" title="bbox 186 253 254 265">OTG_FS_WKUP</span>
+						</span>
+					</td>
+					<td title="bbox 268 247 419 275">
+						<span class="ocrx_line" title="bbox 271 248 389 260">
+							<span class="ocrx_word" title="bbox 271 248 290 260">USB</span>
+							<span class="ocrx_word" title="bbox 292 248 338 260">On-The-Go</span>
+							<span class="ocrx_word" title="bbox 340 248 352 260">FS</span>
+							<span class="ocrx_word" title="bbox 354 248 387 260">Wakeup</span>
+						</span>
+						<span class="ocrx_line" title="bbox 271 259 376 271">
+							<span class="ocrx_word" title="bbox 271 259 302 271">through</span>
+							<span class="ocrx_word" title="bbox 304 259 324 271">EXTI</span>
+							<span class="ocrx_word" title="bbox 327 259 341 271">line</span>
+							<span class="ocrx_word" title="bbox 343 259 376 271">interrupt</span>
+						</span>
+					</td>
+					<td title="bbox 419 247 493 275">
+						<span class="ocrx_line" title="bbox 431 253 487 265">
+							<span class="ocrx_word" title="bbox 431 253 487 265">0x0000_00E8</span>
+						</span>
+					</td>
+				</tr>
+				<tr>
+					<td title="bbox 98 275 117 303">
+						<span class="ocrx_line" title="bbox 105 281 108 293">
+							<span class="ocrx_word" title="bbox 105 281 108 293">-</span>
+						</span>
+					</td>
+					<td title="bbox 117 275 138 303">
+						<span class="ocrx_line" title="bbox 126 281 129 293">
+							<span class="ocrx_word" title="bbox 126 281 129 293">-</span>
+						</span>
+					</td>
+					<td title="bbox 138 275 183 303">
+						<span class="ocrx_line" title="bbox 159 281 162 293">
+							<span class="ocrx_word" title="bbox 159 281 162 293">-</span>
+						</span>
+					</td>
+					<td title="bbox 183 275 268 303">
+						<span class="ocrx_line" title="bbox 186 281 189 293">
+							<span class="ocrx_word" title="bbox 186 281 189 293">-</span>
+						</span>
+					</td>
+					<td title="bbox 268 275 419 303">
+						<span class="ocrx_line" title="bbox 271 281 310 293">
+							<span class="ocrx_word" title="bbox 271 281 310 293">Reserved</span>
+						</span>
+					</td>
+					<td title="bbox 419 275 493 303">
+						<span class="ocrx_line" title="bbox 428 276 493 288">
+							<span class="ocrx_word" title="bbox 428 276 485 288">0x0000_00EC</span>
+							<span class="ocrx_word" title="bbox 487 276 490 288">-</span>
+						</span>
+						<span class="ocrx_line" title="bbox 432 287 486 299">
+							<span class="ocrx_word" title="bbox 432 287 486 299">0x0000_0104</span>
+						</span>
+					</td>
+				</tr>
+				<tr>
+					<td title="bbox 98 303 117 320">
+						<span class="ocrx_line" title="bbox 101 304 111 316">
+							<span class="ocrx_word" title="bbox 101 304 111 316">50</span>
+						</span>
+					</td>
+					<td title="bbox 117 303 138 320">
+						<span class="ocrx_line" title="bbox 122 304 132 316">
+							<span class="ocrx_word" title="bbox 122 304 132 316">57</span>
+						</span>
+					</td>
+					<td title="bbox 138 303 183 320">
+						<span class="ocrx_line" title="bbox 145 304 176 316">
+							<span class="ocrx_word" title="bbox 145 304 176 316">settable</span>
+						</span>
+					</td>
+					<td title="bbox 183 303 268 320">
+						<span class="ocrx_line" title="bbox 186 304 207 316">
+							<span class="ocrx_word" title="bbox 186 304 207 316">TIM5</span>
+						</span>
+					</td>
+					<td title="bbox 268 303 419 320">
+						<span class="ocrx_line" title="bbox 271 304 354 316">
+							<span class="ocrx_word" title="bbox 271 304 292 316">TIM5</span>
+							<span class="ocrx_word" title="bbox 294 304 318 316">global</span>
+							<span class="ocrx_word" title="bbox 321 304 354 316">interrupt</span>
+						</span>
+					</td>
+					<td title="bbox 419 303 493 320">
+						<span class="ocrx_line" title="bbox 432 304 486 316">
+							<span class="ocrx_word" title="bbox 432 304 486 316">0x0000_0108</span>
+						</span>
+					</td>
+				</tr>
+				<tr>
+					<td title="bbox 98 320 117 337">
+						<span class="ocrx_line" title="bbox 101 321 111 333">
+							<span class="ocrx_word" title="bbox 101 321 111 333">51</span>
+						</span>
+					</td>
+					<td title="bbox 117 320 138 337">
+						<span class="ocrx_line" title="bbox 122 321 132 333">
+							<span class="ocrx_word" title="bbox 122 321 132 333">58</span>
+						</span>
+					</td>
+					<td title="bbox 138 320 183 337">
+						<span class="ocrx_line" title="bbox 145 321 176 333">
+							<span class="ocrx_word" title="bbox 145 321 176 333">settable</span>
+						</span>
+					</td>
+					<td title="bbox 183 320 268 337">
+						<span class="ocrx_line" title="bbox 186 321 206 333">
+							<span class="ocrx_word" title="bbox 186 321 206 333">SPI3</span>
+						</span>
+					</td>
+					<td title="bbox 268 320 419 337">
+						<span class="ocrx_line" title="bbox 271 321 353 333">
+							<span class="ocrx_word" title="bbox 271 321 291 333">SPI3</span>
+							<span class="ocrx_word" title="bbox 293 321 317 333">global</span>
+							<span class="ocrx_word" title="bbox 320 321 353 333">interrupt</span>
+						</span>
+					</td>
+					<td title="bbox 419 320 493 337">
+						<span class="ocrx_line" title="bbox 431 321 487 333">
+							<span class="ocrx_word" title="bbox 431 321 487 333">0x0000_010C</span>
+						</span>
+					</td>
+				</tr>
+				<tr>
+					<td title="bbox 98 337 117 354">
+						<span class="ocrx_line" title="bbox 101 338 111 350">
+							<span class="ocrx_word" title="bbox 101 338 111 350">52</span>
+						</span>
+					</td>
+					<td title="bbox 117 337 138 354">
+						<span class="ocrx_line" title="bbox 122 338 132 350">
+							<span class="ocrx_word" title="bbox 122 338 132 350">59</span>
+						</span>
+					</td>
+					<td title="bbox 138 337 183 354">
+						<span class="ocrx_line" title="bbox 145 338 176 350">
+							<span class="ocrx_word" title="bbox 145 338 176 350">settable</span>
+						</span>
+					</td>
+					<td title="bbox 183 337 268 354">
+						<span class="ocrx_line" title="bbox 186 338 216 350">
+							<span class="ocrx_word" title="bbox 186 338 216 350">UART4</span>
+						</span>
+					</td>
+					<td title="bbox 268 337 419 354">
+						<span class="ocrx_line" title="bbox 271 338 363 350">
+							<span class="ocrx_word" title="bbox 271 338 301 350">UART4</span>
+							<span class="ocrx_word" title="bbox 303 338 327 350">global</span>
+							<span class="ocrx_word" title="bbox 330 338 363 350">interrupt</span>
+						</span>
+					</td>
+					<td title="bbox 419 337 493 354">
+						<span class="ocrx_line" title="bbox 432 338 486 350">
+							<span class="ocrx_word" title="bbox 432 338 486 350">0x0000_0110</span>
+						</span>
+					</td>
+				</tr>
+				<tr>
+					<td title="bbox 98 354 117 371">
+						<span class="ocrx_line" title="bbox 101 355 111 367">
+							<span class="ocrx_word" title="bbox 101 355 111 367">53</span>
+						</span>
+					</td>
+					<td title="bbox 117 354 138 371">
+						<span class="ocrx_line" title="bbox 122 355 132 367">
+							<span class="ocrx_word" title="bbox 122 355 132 367">60</span>
+						</span>
+					</td>
+					<td title="bbox 138 354 183 371">
+						<span class="ocrx_line" title="bbox 145 355 176 367">
+							<span class="ocrx_word" title="bbox 145 355 176 367">settable</span>
+						</span>
+					</td>
+					<td title="bbox 183 354 268 371">
+						<span class="ocrx_line" title="bbox 186 355 216 367">
+							<span class="ocrx_word" title="bbox 186 355 216 367">UART5</span>
+						</span>
+					</td>
+					<td title="bbox 268 354 419 371">
+						<span class="ocrx_line" title="bbox 271 355 363 367">
+							<span class="ocrx_word" title="bbox 271 355 301 367">UART5</span>
+							<span class="ocrx_word" title="bbox 303 355 327 367">global</span>
+							<span class="ocrx_word" title="bbox 330 355 363 367">interrupt</span>
+						</span>
+					</td>
+					<td title="bbox 419 354 493 371">
+						<span class="ocrx_line" title="bbox 432 355 486 367">
+							<span class="ocrx_word" title="bbox 432 355 486 367">0x0000_0114</span>
+						</span>
+					</td>
+				</tr>
+				<tr>
+					<td title="bbox 98 371 117 388">
+						<span class="ocrx_line" title="bbox 101 372 111 384">
+							<span class="ocrx_word" title="bbox 101 372 111 384">54</span>
+						</span>
+					</td>
+					<td title="bbox 117 371 138 388">
+						<span class="ocrx_line" title="bbox 122 372 132 384">
+							<span class="ocrx_word" title="bbox 122 372 132 384">61</span>
+						</span>
+					</td>
+					<td title="bbox 138 371 183 388">
+						<span class="ocrx_line" title="bbox 145 372 176 384">
+							<span class="ocrx_word" title="bbox 145 372 176 384">settable</span>
+						</span>
+					</td>
+					<td title="bbox 183 371 268 388">
+						<span class="ocrx_line" title="bbox 186 372 207 384">
+							<span class="ocrx_word" title="bbox 186 372 207 384">TIM6</span>
+						</span>
+					</td>
+					<td title="bbox 268 371 419 388">
+						<span class="ocrx_line" title="bbox 271 372 354 384">
+							<span class="ocrx_word" title="bbox 271 372 292 384">TIM6</span>
+							<span class="ocrx_word" title="bbox 294 372 318 384">global</span>
+							<span class="ocrx_word" title="bbox 321 372 354 384">interrupt</span>
+						</span>
+					</td>
+					<td title="bbox 419 371 493 388">
+						<span class="ocrx_line" title="bbox 432 372 486 384">
+							<span class="ocrx_word" title="bbox 432 372 486 384">0x0000_0118</span>
+						</span>
+					</td>
+				</tr>
+				<tr>
+					<td title="bbox 98 388 117 405">
+						<span class="ocrx_line" title="bbox 101 389 111 401">
+							<span class="ocrx_word" title="bbox 101 389 111 401">55</span>
+						</span>
+					</td>
+					<td title="bbox 117 388 138 405">
+						<span class="ocrx_line" title="bbox 122 389 132 401">
+							<span class="ocrx_word" title="bbox 122 389 132 401">62</span>
+						</span>
+					</td>
+					<td title="bbox 138 388 183 405">
+						<span class="ocrx_line" title="bbox 145 389 176 401">
+							<span class="ocrx_word" title="bbox 145 389 176 401">settable</span>
+						</span>
+					</td>
+					<td title="bbox 183 388 268 405">
+						<span class="ocrx_line" title="bbox 186 389 207 401">
+							<span class="ocrx_word" title="bbox 186 389 207 401">TIM7</span>
+						</span>
+					</td>
+					<td title="bbox 268 388 419 405">
+						<span class="ocrx_line" title="bbox 271 389 354 401">
+							<span class="ocrx_word" title="bbox 271 389 292 401">TIM7</span>
+							<span class="ocrx_word" title="bbox 294 389 318 401">global</span>
+							<span class="ocrx_word" title="bbox 321 389 354 401">interrupt</span>
+						</span>
+					</td>
+					<td title="bbox 419 388 493 405">
+						<span class="ocrx_line" title="bbox 431 389 487 401">
+							<span class="ocrx_word" title="bbox 431 389 487 401">0x0000_011C</span>
+						</span>
+					</td>
+				</tr>
+				<tr>
+					<td title="bbox 98 405 117 422">
+						<span class="ocrx_line" title="bbox 101 406 111 418">
+							<span class="ocrx_word" title="bbox 101 406 111 418">56</span>
+						</span>
+					</td>
+					<td title="bbox 117 405 138 422">
+						<span class="ocrx_line" title="bbox 122 406 132 418">
+							<span class="ocrx_word" title="bbox 122 406 132 418">63</span>
+						</span>
+					</td>
+					<td title="bbox 138 405 183 422">
+						<span class="ocrx_line" title="bbox 145 406 176 418">
+							<span class="ocrx_word" title="bbox 145 406 176 418">settable</span>
+						</span>
+					</td>
+					<td title="bbox 183 405 268 422">
+						<span class="ocrx_line" title="bbox 186 406 255 418">
+							<span class="ocrx_word" title="bbox 186 406 255 418">DMA2_Channel1</span>
+						</span>
+					</td>
+					<td title="bbox 268 405 419 422">
+						<span class="ocrx_line" title="bbox 271 406 402 418">
+							<span class="ocrx_word" title="bbox 271 406 296 418">DMA2</span>
+							<span class="ocrx_word" title="bbox 299 406 337 418">Channel1</span>
+							<span class="ocrx_word" title="bbox 340 406 364 418">global</span>
+							<span class="ocrx_word" title="bbox 366 406 399 418">interrupt</span>
+						</span>
+					</td>
+					<td title="bbox 419 405 493 422">
+						<span class="ocrx_line" title="bbox 432 406 486 418">
+							<span class="ocrx_word" title="bbox 432 406 486 418">0x0000_0120</span>
+						</span>
+					</td>
+				</tr>
+				<tr>
+					<td title="bbox 98 422 117 439">
+						<span class="ocrx_line" title="bbox 101 423 111 435">
+							<span class="ocrx_word" title="bbox 101 423 111 435">57</span>
+						</span>
+					</td>
+					<td title="bbox 117 422 138 439">
+						<span class="ocrx_line" title="bbox 122 423 132 435">
+							<span class="ocrx_word" title="bbox 122 423 132 435">64</span>
+						</span>
+					</td>
+					<td title="bbox 138 422 183 439">
+						<span class="ocrx_line" title="bbox 145 423 176 435">
+							<span class="ocrx_word" title="bbox 145 423 176 435">settable</span>
+						</span>
+					</td>
+					<td title="bbox 183 422 268 439">
+						<span class="ocrx_line" title="bbox 186 423 255 435">
+							<span class="ocrx_word" title="bbox 186 423 255 435">DMA2_Channel2</span>
+						</span>
+					</td>
+					<td title="bbox 268 422 419 439">
+						<span class="ocrx_line" title="bbox 271 423 399 435">
+							<span class="ocrx_word" title="bbox 271 423 296 435">DMA2</span>
+							<span class="ocrx_word" title="bbox 299 423 337 435">Channel2</span>
+							<span class="ocrx_word" title="bbox 340 423 364 435">global</span>
+							<span class="ocrx_word" title="bbox 366 423 399 435">interrupt</span>
+						</span>
+					</td>
+					<td title="bbox 419 422 493 439">
+						<span class="ocrx_line" title="bbox 432 423 486 435">
+							<span class="ocrx_word" title="bbox 432 423 486 435">0x0000_0124</span>
+						</span>
+					</td>
+				</tr>
+				<tr>
+					<td title="bbox 98 439 117 456">
+						<span class="ocrx_line" title="bbox 101 440 111 452">
+							<span class="ocrx_word" title="bbox 101 440 111 452">58</span>
+						</span>
+					</td>
+					<td title="bbox 117 439 138 456">
+						<span class="ocrx_line" title="bbox 122 440 132 452">
+							<span class="ocrx_word" title="bbox 122 440 132 452">65</span>
+						</span>
+					</td>
+					<td title="bbox 138 439 183 456">
+						<span class="ocrx_line" title="bbox 145 440 176 452">
+							<span class="ocrx_word" title="bbox 145 440 176 452">settable</span>
+						</span>
+					</td>
+					<td title="bbox 183 439 268 456">
+						<span class="ocrx_line" title="bbox 186 440 255 452">
+							<span class="ocrx_word" title="bbox 186 440 255 452">DMA2_Channel3</span>
+						</span>
+					</td>
+					<td title="bbox 268 439 419 456">
+						<span class="ocrx_line" title="bbox 271 440 399 452">
+							<span class="ocrx_word" title="bbox 271 440 296 452">DMA2</span>
+							<span class="ocrx_word" title="bbox 299 440 337 452">Channel3</span>
+							<span class="ocrx_word" title="bbox 340 440 364 452">global</span>
+							<span class="ocrx_word" title="bbox 366 440 399 452">interrupt</span>
+						</span>
+					</td>
+					<td title="bbox 419 439 493 456">
+						<span class="ocrx_line" title="bbox 432 440 486 452">
+							<span class="ocrx_word" title="bbox 432 440 486 452">0x0000_0128</span>
+						</span>
+					</td>
+				</tr>
+				<tr>
+					<td title="bbox 98 456 117 473">
+						<span class="ocrx_line" title="bbox 101 457 111 469">
+							<span class="ocrx_word" title="bbox 101 457 111 469">59</span>
+						</span>
+					</td>
+					<td title="bbox 117 456 138 473">
+						<span class="ocrx_line" title="bbox 122 457 132 469">
+							<span class="ocrx_word" title="bbox 122 457 132 469">66</span>
+						</span>
+					</td>
+					<td title="bbox 138 456 183 473">
+						<span class="ocrx_line" title="bbox 145 457 176 469">
+							<span class="ocrx_word" title="bbox 145 457 176 469">settable</span>
+						</span>
+					</td>
+					<td title="bbox 183 456 268 473">
+						<span class="ocrx_line" title="bbox 186 457 255 469">
+							<span class="ocrx_word" title="bbox 186 457 255 469">DMA2_Channel4</span>
+						</span>
+					</td>
+					<td title="bbox 268 456 419 473">
+						<span class="ocrx_line" title="bbox 271 457 399 469">
+							<span class="ocrx_word" title="bbox 271 457 296 469">DMA2</span>
+							<span class="ocrx_word" title="bbox 299 457 337 469">Channel4</span>
+							<span class="ocrx_word" title="bbox 340 457 364 469">global</span>
+							<span class="ocrx_word" title="bbox 366 457 399 469">interrupt</span>
+						</span>
+					</td>
+					<td title="bbox 419 456 493 473">
+						<span class="ocrx_line" title="bbox 431 457 487 469">
+							<span class="ocrx_word" title="bbox 431 457 487 469">0x0000_012C</span>
+						</span>
+					</td>
+				</tr>
+				<tr>
+					<td title="bbox 98 473 117 490">
+						<span class="ocrx_line" title="bbox 101 474 111 486">
+							<span class="ocrx_word" title="bbox 101 474 111 486">60</span>
+						</span>
+					</td>
+					<td title="bbox 117 473 138 490">
+						<span class="ocrx_line" title="bbox 122 474 132 486">
+							<span class="ocrx_word" title="bbox 122 474 132 486">67</span>
+						</span>
+					</td>
+					<td title="bbox 138 473 183 490">
+						<span class="ocrx_line" title="bbox 145 474 176 486">
+							<span class="ocrx_word" title="bbox 145 474 176 486">settable</span>
+						</span>
+					</td>
+					<td title="bbox 183 473 268 490">
+						<span class="ocrx_line" title="bbox 186 474 255 486">
+							<span class="ocrx_word" title="bbox 186 474 255 486">DMA2_Channel5</span>
+						</span>
+					</td>
+					<td title="bbox 268 473 419 490">
+						<span class="ocrx_line" title="bbox 271 474 399 486">
+							<span class="ocrx_word" title="bbox 271 474 296 486">DMA2</span>
+							<span class="ocrx_word" title="bbox 299 474 337 486">Channel5</span>
+							<span class="ocrx_word" title="bbox 340 474 364 486">global</span>
+							<span class="ocrx_word" title="bbox 366 474 399 486">interrupt</span>
+						</span>
+					</td>
+					<td title="bbox 419 473 493 490">
+						<span class="ocrx_line" title="bbox 432 474 486 486">
+							<span class="ocrx_word" title="bbox 432 474 486 486">0x0000_0130</span>
+						</span>
+					</td>
+				</tr>
+				<tr>
+					<td title="bbox 98 490 117 507">
+						<span class="ocrx_line" title="bbox 101 491 111 503">
+							<span class="ocrx_word" title="bbox 101 491 111 503">61</span>
+						</span>
+					</td>
+					<td title="bbox 117 490 138 507">
+						<span class="ocrx_line" title="bbox 122 491 132 503">
+							<span class="ocrx_word" title="bbox 122 491 132 503">68</span>
+						</span>
+					</td>
+					<td title="bbox 138 490 183 507">
+						<span class="ocrx_line" title="bbox 145 491 176 503">
+							<span class="ocrx_word" title="bbox 145 491 176 503">settable</span>
+						</span>
+					</td>
+					<td title="bbox 183 490 268 507">
+						<span class="ocrx_line" title="bbox 186 491 204 503">
+							<span class="ocrx_word" title="bbox 186 491 204 503">ETH</span>
+						</span>
+					</td>
+					<td title="bbox 268 490 419 507">
+						<span class="ocrx_line" title="bbox 271 491 370 503">
+							<span class="ocrx_word" title="bbox 271 491 305 503">Ethernet</span>
+							<span class="ocrx_word" title="bbox 308 491 332 503">global</span>
+							<span class="ocrx_word" title="bbox 334 491 367 503">interrupt</span>
+						</span>
+					</td>
+					<td title="bbox 419 490 493 507">
+						<span class="ocrx_line" title="bbox 432 491 486 503">
+							<span class="ocrx_word" title="bbox 432 491 486 503">0x0000_0134</span>
+						</span>
+					</td>
+				</tr>
+				<tr>
+					<td title="bbox 98 507 117 535">
+						<span class="ocrx_line" title="bbox 101 513 111 525">
+							<span class="ocrx_word" title="bbox 101 513 111 525">62</span>
+						</span>
+					</td>
+					<td title="bbox 117 507 138 535">
+						<span class="ocrx_line" title="bbox 122 513 132 525">
+							<span class="ocrx_word" title="bbox 122 513 132 525">69</span>
+						</span>
+					</td>
+					<td title="bbox 138 507 183 535">
+						<span class="ocrx_line" title="bbox 145 513 176 525">
+							<span class="ocrx_word" title="bbox 145 513 176 525">settable</span>
+						</span>
+					</td>
+					<td title="bbox 183 507 268 535">
+						<span class="ocrx_line" title="bbox 186 513 236 525">
+							<span class="ocrx_word" title="bbox 186 513 236 525">ETH_WKUP</span>
+						</span>
+					</td>
+					<td title="bbox 268 507 419 535">
+						<span class="ocrx_line" title="bbox 271 508 415 520">
+							<span class="ocrx_word" title="bbox 271 508 305 520">Ethernet</span>
+							<span class="ocrx_word" title="bbox 308 508 341 520">Wakeup</span>
+							<span class="ocrx_word" title="bbox 343 508 373 520">through</span>
+							<span class="ocrx_word" title="bbox 376 508 396 520">EXTI</span>
+							<span class="ocrx_word" title="bbox 398 508 412 520">line</span>
+						</span>
+						<span class="ocrx_line" title="bbox 271 519 304 531">
+							<span class="ocrx_word" title="bbox 271 519 304 531">interrupt</span>
+						</span>
+					</td>
+					<td title="bbox 419 507 493 535">
+						<span class="ocrx_line" title="bbox 432 513 486 525">
+							<span class="ocrx_word" title="bbox 432 513 486 525">0x0000_0138</span>
+						</span>
+					</td>
+				</tr>
+				<tr>
+					<td title="bbox 98 535 117 552">
+						<span class="ocrx_line" title="bbox 101 536 111 548">
+							<span class="ocrx_word" title="bbox 101 536 111 548">63</span>
+						</span>
+					</td>
+					<td title="bbox 117 535 138 552">
+						<span class="ocrx_line" title="bbox 122 536 132 548">
+							<span class="ocrx_word" title="bbox 122 536 132 548">70</span>
+						</span>
+					</td>
+					<td title="bbox 138 535 183 552">
+						<span class="ocrx_line" title="bbox 145 536 176 548">
+							<span class="ocrx_word" title="bbox 145 536 176 548">settable</span>
+						</span>
+					</td>
+					<td title="bbox 183 535 268 552">
+						<span class="ocrx_line" title="bbox 186 536 227 548">
+							<span class="ocrx_word" title="bbox 186 536 227 548">CAN2_TX</span>
+						</span>
+					</td>
+					<td title="bbox 268 535 419 552">
+						<span class="ocrx_line" title="bbox 271 536 349 548">
+							<span class="ocrx_word" title="bbox 271 536 295 548">CAN2</span>
+							<span class="ocrx_word" title="bbox 298 536 309 548">TX</span>
+							<span class="ocrx_word" title="bbox 312 536 349 548">interrupts</span>
+						</span>
+					</td>
+					<td title="bbox 419 535 493 552">
+						<span class="ocrx_line" title="bbox 431 536 487 548">
+							<span class="ocrx_word" title="bbox 431 536 487 548">0x0000_013C</span>
+						</span>
+					</td>
+				</tr>
+				<tr>
+					<td title="bbox 98 552 117 569">
+						<span class="ocrx_line" title="bbox 101 553 111 565">
+							<span class="ocrx_word" title="bbox 101 553 111 565">64</span>
+						</span>
+					</td>
+					<td title="bbox 117 552 138 569">
+						<span class="ocrx_line" title="bbox 122 553 132 565">
+							<span class="ocrx_word" title="bbox 122 553 132 565">71</span>
+						</span>
+					</td>
+					<td title="bbox 138 552 183 569">
+						<span class="ocrx_line" title="bbox 145 553 176 565">
+							<span class="ocrx_word" title="bbox 145 553 176 565">settable</span>
+						</span>
+					</td>
+					<td title="bbox 183 552 268 569">
+						<span class="ocrx_line" title="bbox 186 553 233 565">
+							<span class="ocrx_word" title="bbox 186 553 233 565">CAN2_RX0</span>
+						</span>
+					</td>
+					<td title="bbox 268 552 419 569">
+						<span class="ocrx_line" title="bbox 271 553 355 565">
+							<span class="ocrx_word" title="bbox 271 553 295 565">CAN2</span>
+							<span class="ocrx_word" title="bbox 298 553 315 565">RX0</span>
+							<span class="ocrx_word" title="bbox 318 553 355 565">interrupts</span>
+						</span>
+					</td>
+					<td title="bbox 419 552 493 569">
+						<span class="ocrx_line" title="bbox 432 553 486 565">
+							<span class="ocrx_word" title="bbox 432 553 486 565">0x0000_0140</span>
+						</span>
+					</td>
+				</tr>
+				<tr>
+					<td title="bbox 98 569 117 586">
+						<span class="ocrx_line" title="bbox 101 570 111 582">
+							<span class="ocrx_word" title="bbox 101 570 111 582">65</span>
+						</span>
+					</td>
+					<td title="bbox 117 569 138 586">
+						<span class="ocrx_line" title="bbox 122 570 132 582">
+							<span class="ocrx_word" title="bbox 122 570 132 582">72</span>
+						</span>
+					</td>
+					<td title="bbox 138 569 183 586">
+						<span class="ocrx_line" title="bbox 145 570 176 582">
+							<span class="ocrx_word" title="bbox 145 570 176 582">settable</span>
+						</span>
+					</td>
+					<td title="bbox 183 569 268 586">
+						<span class="ocrx_line" title="bbox 186 570 233 582">
+							<span class="ocrx_word" title="bbox 186 570 233 582">CAN2_RX1</span>
+						</span>
+					</td>
+					<td title="bbox 268 569 419 586">
+						<span class="ocrx_line" title="bbox 271 570 351 582">
+							<span class="ocrx_word" title="bbox 271 570 295 582">CAN2</span>
+							<span class="ocrx_word" title="bbox 298 570 315 582">RX1</span>
+							<span class="ocrx_word" title="bbox 318 570 351 582">interrupt</span>
+						</span>
+					</td>
+					<td title="bbox 419 569 493 586">
+						<span class="ocrx_line" title="bbox 432 570 486 582">
+							<span class="ocrx_word" title="bbox 432 570 486 582">0x0000_0144</span>
+						</span>
+					</td>
+				</tr>
+				<tr>
+					<td title="bbox 98 586 117 603">
+						<span class="ocrx_line" title="bbox 101 587 111 599">
+							<span class="ocrx_word" title="bbox 101 587 111 599">66</span>
+						</span>
+					</td>
+					<td title="bbox 117 586 138 603">
+						<span class="ocrx_line" title="bbox 122 587 132 599">
+							<span class="ocrx_word" title="bbox 122 587 132 599">73</span>
+						</span>
+					</td>
+					<td title="bbox 138 586 183 603">
+						<span class="ocrx_line" title="bbox 145 587 176 599">
+							<span class="ocrx_word" title="bbox 145 587 176 599">settable</span>
+						</span>
+					</td>
+					<td title="bbox 183 586 268 603">
+						<span class="ocrx_line" title="bbox 186 587 234 599">
+							<span class="ocrx_word" title="bbox 186 587 234 599">CAN2_SCE</span>
+						</span>
+					</td>
+					<td title="bbox 268 586 419 603">
+						<span class="ocrx_line" title="bbox 272 587 352 599">
+							<span class="ocrx_word" title="bbox 272 587 295 599">CAN2</span>
+							<span class="ocrx_word" title="bbox 298 587 316 599">SCE</span>
+							<span class="ocrx_word" title="bbox 319 587 352 599">interrupt</span>
+						</span>
+					</td>
+					<td title="bbox 419 586 493 603">
+						<span class="ocrx_line" title="bbox 432 587 486 599">
+							<span class="ocrx_word" title="bbox 432 587 486 599">0x0000_0148</span>
+						</span>
+					</td>
+				</tr>
+			</table>
+			<div class="ocrx_block" pdftotree="section_header" title="bbox 67 741 104 753">
+				<span class="ocrx_line" title="bbox 67 741 104 753">
+					<span class="ocrx_word" title="bbox 67 741 104 753">200/1136</span>
+				</span>
+			</div>
+			<div class="ocrx_block" pdftotree="section_header" title="bbox 265 741 330 753">
+				<span class="ocrx_line" title="bbox 265 741 330 753">
+					<span class="ocrx_word" title="bbox 265 741 299 753">RM0008</span>
+					<span class="ocrx_word" title="bbox 301 741 317 753">Rev</span>
+					<span class="ocrx_word" title="bbox 320 741 330 753">21</span>
+				</span>
+			</div>
+		</div>
+	</body>
+</html>
