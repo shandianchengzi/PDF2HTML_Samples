@@ -1,6 +1,10 @@
 import subprocess
 import os
 
+need_pip_install = False
+
+file_dir = os.path.dirname(os.path.abspath(__file__))
+
 def convert_pdf_to_html(pdf_file_path, output_file_path):
     """
     Convert a PDF file to an HTML file using pdf2htmlEX.
@@ -10,7 +14,7 @@ def convert_pdf_to_html(pdf_file_path, output_file_path):
     :return: bool: True if conversion is successful, False otherwise.
     """
     # pdf2htmlEX 所在文件夹
-    exe_file_path = "D:/Github/PDF2HTML_Samples/python_samples/test_pdf2htmlEX/pdf2htmlEX"
+    exe_file_path = os.path.join(file_dir, "pdf2htmlEX")
     # Change to the target directory
     os.chdir(exe_file_path)
     if not os.path.exists(exe_file_path):
@@ -38,5 +42,5 @@ def convert_pdf_to_html(pdf_file_path, output_file_path):
         print("Conversion successful. Output saved to", output_file_path)
         return True
     except subprocess.CalledProcessError as e:
-        print("Error:", e)
+        print("Error when Command {}".format({" ".join(command)}))
         return False
