@@ -17,7 +17,7 @@ action == test:
 import os
 import argparse
 
-file_dir = os.path.dirname(__file__)
+file_dir = os.path.realpath(os.path.dirname(__file__))
 os.chdir(file_dir)
 
 def make_new_tool_test_directory(tool_name):
@@ -32,7 +32,7 @@ def make_new_tool_test_file(tool_name, output_format):
     # check if tool test file already exists
     if os.path.exists(tool_test_file) and os.path.getsize(tool_test_file) > 0: # if not empty, return
         return tool_test_file
-    with open(tool_test_file, 'w') as f:
+    with open(tool_test_file, 'w', encoding='utf-8') as f:
         f.write("# -*- coding: utf-8 -*-\n")
         f.write("# Reference: <FILL IN IF YOU HAVE A REFERENCE>\n")
         f.write("\n")
@@ -46,7 +46,44 @@ def make_new_tool_test_file(tool_name, output_format):
         f.write("    '''\n")
         f.write("    # Write your code here\n")
         f.write("    pass\n")
+    print(f"Succesfully created new tool test file: {tool_test_file}")
     return tool_test_file
+
+def make_new_results_document(tool_name, raw_tool_name):
+    # make new results document
+    results_doc = os.path.join(file_dir, f"./results/{tool_name}.md")
+    if os.path.exists(results_doc) and os.path.getsize(results_doc) > 0: # if not empty, return
+        return results_doc
+    with open(results_doc, 'w', encoding='utf-8') as f:
+        f.write(f'''[toc]
+> Github 阅读：[https://github.com/shandianchengzi/PDF2HTML_Samples/blob/main/results/{tool_name}.md](https://github.com/shandianchengzi/PDF2HTML_Samples/blob/main/results/{tool_name}.md)  
+> CSDN 阅读：[](https://blog.csdn.net/qq_46106285/article/details/待补充)  
+
+> 参考：[]()  
+
+# {raw_tool_name}
+
+## 1 安装
+
+```bash
+pip install {raw_tool_name}
+```
+
+## 2 测试代码
+
+测试代码可以看仓库：[https://github.com/shandianchengzi/PDF2HTML_Samples/tree/main/python_samples/{tool_name}](https://github.com/shandianchengzi/PDF2HTML_Samples/tree/main/python_samples/{tool_name})
+
+## 3 测试结果
+
+### 3.1 转 HTML 的测试结果
+
+### 3.2 转 XML 的测试结果
+
+## 总体评价：✅⭐
+
+        ''')
+    print(f"Succesfully created new results document: {results_doc}")
+    return results_doc
 
 def get_tool_module(tool_name, output_format):
     module = f"python_samples.test_{tool_name}.to_{output_format}"
@@ -77,10 +114,13 @@ if __name__ == "__main__":
         tool_name = args.tool_name.replace(".", "_").replace("-", "_").replace(" ", "_")
         tool_test_dir = make_new_tool_test_directory(tool_name)
         if args.output_format is None:
-            print(f"Succesfully created new tool test directory: {tool_test_dir}")
+            print(f"Your tool test directory: {tool_test_dir}")
         else:
             tool_test_file = make_new_tool_test_file(tool_name, args.output_format)
-            print(f"Succesfully created new tool test file: {tool_test_file}")
+            print(f"Your tool test file: {tool_test_file}")
+        # make new results document
+        results_doc = make_new_results_document(tool_name, args.tool_name)
+        print(f"Your tool test results document: {results_doc}")
     elif args.action == 'test':
         from python_samples.test_framework import test_func
         # test the tool all the format
