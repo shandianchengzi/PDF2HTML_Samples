@@ -61,9 +61,11 @@ def make_new_results_document(tool_name, raw_tool_name):
 
 > 参考：[]()  
 
-# {raw_tool_name}
+# {raw_tool_name} 使用体验与评估
 
-## 1 安装
+## 1 安装指南
+
+要使用 {raw_tool_name}，您可以通过 Python 的包管理工具 pip 进行安装。在命令行中执行以下命令：
 
 ```bash
 pip install {raw_tool_name}
@@ -71,13 +73,13 @@ pip install {raw_tool_name}
 
 ## 2 测试代码
 
-测试代码可以看仓库：[https://github.com/shandianchengzi/PDF2HTML_Samples/tree/main/python_samples/{tool_name}](https://github.com/shandianchengzi/PDF2HTML_Samples/tree/main/python_samples/{tool_name})
+为了帮助您更好地理解 {raw_tool_name} 的用法，我提供了一个测试代码示例。您可以在以下 GitHub 仓库中找到相关代码和样本文件：[https://github.com/shandianchengzi/PDF2HTML_Samples/tree/main/python_samples/{tool_name}](https://github.com/shandianchengzi/PDF2HTML_Samples/tree/main/python_samples/{tool_name})
 
 ## 3 测试结果
 
-### 3.1 转 HTML 的测试结果
+### 3.1 转 HTML 的结果
 
-### 3.2 转 XML 的测试结果
+### 3.2 转 XML 的结果
 
 ## 总体评价：✅⭐
 
