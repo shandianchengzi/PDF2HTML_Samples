@@ -1,6 +1,13 @@
-## 前言
+# PDF2HTML_Samples
 
-对比一下常用的 PDF 转 HTML/XML 的工具。
+目的是对比一下常用的 PDF 转 HTML/XML 的工具。
+
+整个对比过程放在了 Github 仓库中，
+欢迎提交 PR/Issue 补充更多工具：[https://github.com/shandianchengzi/PDF2HTML_Samples](https://github.com/shandianchengzi/PDF2HTML_Samples)。
+
+对比结果同步更新在 CSDN 博客中，目录页在博客 [【记录】Python3｜2024年 PDF 转 XML 或 HTML 的第三方库的使用方式、测评过程以及对比结果（汇总）](https://blog.csdn.net/sunyuhua_keyboard/article/details/138093382)。
+
+整个测评流程由 [@汐琐_ayq618258](https://blog.csdn.net/ayq618258) （Github 账号：[arche8](https://github.com/arche8)） 学妹和[我](https://blog.csdn.net/qq_46106285)（Github账号：[shandianchengzi](https://github.com/shandianchengzi)）一起完成，我主要是写了测评的流程并搭了框架，学妹补充了各项工具的测评代码和结果。感谢学妹！
 
 ## 对比列表
 在Python中，有几个开源工具可用于将PDF文件转换为XML或HTML格式。以下是其中一些：
@@ -62,7 +69,7 @@
 3. 统计一下各个工具的社区活跃度（开源的看 Star 数量和最后更新的时间）
 
 
-## 3 测评结果
+## 3 结果说明
 
 1. 修改 `README.md`，用符号简单标注一下工具好不好用。可用的符号：❌✅⭐✨。
    1. 完全用不了就打叉❌
