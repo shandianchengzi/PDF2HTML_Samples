@@ -17,6 +17,8 @@ class CustomDePDF(DePDF):
         return super().write_to(output_file_path)
 '''
 
+need_pip_install = True
+
 def convert_pdf_to_html(pdf_file_path, output_file_path):
     '''
     "convert_pdf_to_html" is used to convert a PDF file to an html file.
