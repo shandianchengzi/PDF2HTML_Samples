@@ -56,12 +56,13 @@ def make_new_results_document(tool_name, raw_tool_name):
         return results_doc
     with open(results_doc, 'w', encoding='utf-8') as f:
         f.write(f'''[toc]
+
+# {raw_tool_name} 使用体验与评估
+
 > Github 阅读：[https://github.com/shandianchengzi/PDF2HTML_Samples/blob/main/results/{tool_name}.md](https://github.com/shandianchengzi/PDF2HTML_Samples/blob/main/results/{tool_name}.md)  
 > CSDN 阅读：[](https://blog.csdn.net/qq_46106285/article/details/待补充)  
 
-> 参考：[]()  
-
-# {raw_tool_name} 使用体验与评估
+> 参考：[]() 
 
 ## 1 安装指南
 
@@ -73,7 +74,11 @@ pip install {raw_tool_name}
 
 ## 2 测试代码
 
-为了帮助您更好地理解 {raw_tool_name} 的用法，我提供了一个测试代码示例。您可以在以下 GitHub 仓库中找到相关代码和样本文件：[https://github.com/shandianchengzi/PDF2HTML_Samples/tree/main/python_samples/{tool_name}](https://github.com/shandianchengzi/PDF2HTML_Samples/tree/main/python_samples/{tool_name})
+为了帮助您更好地理解 {raw_tool_name} 的用法，我提供了一个测试代码示例。您可以在以下 GitHub 仓库中找到相关代码和样本文件：[https://github.com/shandianchengzi/PDF2HTML_Samples/tree/main/python_samples/test_{tool_name}](https://github.com/shandianchengzi/PDF2HTML_Samples/tree/main/python_samples/test_{tool_name})
+
+其目录结构如是：
+
+![在这里插入图片描述](https://img-blog.csdnimg.cn/direct/75cb65db0825401494111dc64003deb3.png)
 
 ## 3 测试结果
 
