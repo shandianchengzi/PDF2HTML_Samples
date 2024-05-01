@@ -3,3 +3,7 @@ tqdm
 
 # PDFQuery
 pandas
+
+# poppdf
+pytesseract
+opencv-python

@@ -1,0 +1,162 @@
+Interrupts and events                                                                                                RM0008
+
+
+10.1.2              Interrupt and exception vectors
+                    Table 61 and Table 63 are the vector tables for connectivity line and other STM32F10xxx
+                    devices, respectively.
+
+                                          Table 61. Vector table for connectivity line devices
+         Position
+
+                    Priority
+
+
+
+
+                               Type of
+                                                  Acronym                  Description                   Address
+                               priority
+
+
+
+
+            -         -           -         -                 Reserved                                 0x0000_0000
+            -       -3          fixed       Reset             Reset                                    0x0000_0004
+                                                              Non maskable interrupt. The RCC
+            -       -2          fixed       NMI               Clock Security System (CSS) is           0x0000_0008
+                                                              linked to the NMI vector.
+            -       -1          fixed       HardFault         All class of fault                       0x0000_000C
+            -         0        settable     MemManage         Memory management                        0x0000_0010
+            -         1        settable     BusFault          Pre-fetch fault, memory access fault     0x0000_0014
+            -         2        settable     UsageFault        Undefined instruction or illegal state   0x0000_0018
+                                                                                                       0x0000_001C -
+            -         -           -         -                 Reserved
+                                                                                                        0x0000_002B
+                                                              System service call via SWI
+            -         3        settable     SVCall                                                     0x0000_002C
+                                                              instruction
+            -         4        settable     Debug Monitor     Debug Monitor                            0x0000_0030
+            -         -           -         -                 Reserved                                 0x0000_0034
+            -         5        settable     PendSV            Pendable request for system service      0x0000_0038
+            -         6        settable     SysTick           System tick timer                        0x0000_003C
+           0          7        settable     WWDG              Window Watchdog interrupt                0x0000_0040
+                                                              PVD through EXTI Line detection
+           1          8        settable     PVD                                                        0x0000_0044
+                                                              interrupt
+           2          9        settable     TAMPER            Tamper interrupt                         0x0000_0048
+           3        10         settable     RTC               RTC global interrupt                     0x0000_004C
+           4        11         settable     FLASH             Flash global interrupt                   0x0000_0050
+           5        12         settable     RCC               RCC global interrupt                     0x0000_0054
+           6        13         settable     EXTI0             EXTI Line0 interrupt                     0x0000_0058
+           7        14         settable     EXTI1             EXTI Line1 interrupt                     0x0000_005C
+           8        15         settable     EXTI2             EXTI Line2 interrupt                     0x0000_0060
+           9        16         settable     EXTI3             EXTI Line3 interrupt                     0x0000_0064
+         10         17         settable     EXTI4             EXTI Line4 interrupt                     0x0000_0068
+
+
+198/1136                                                     RM0008 Rev 21
+RM0008                                                                                   Interrupts and events
+
+
+                            Table 61. Vector table for connectivity line devices (continued)
+     Position
+
+                Priority
+
+                           Type of
+                                             Acronym                   Description          Address
+                           priority
+
+
+
+
+     11         18         settable   DMA1_Channel1     DMA1 Channel1 global interrupt    0x0000_006C
+     12         19         settable   DMA1_Channel2     DMA1 Channel2 global interrupt    0x0000_0070
+     13         20         settable   DMA1_Channel3     DMA1 Channel3 global interrupt    0x0000_0074
+     14         21         settable   DMA1_Channel4     DMA1 Channel4 global interrupt    0x0000_0078
+     15         22         settable   DMA1_Channel5     DMA1 Channel5 global interrupt    0x0000_007C
+     16         23         settable   DMA1_Channel6     DMA1 Channel6 global interrupt    0x0000_0080
+     17         24         settable   DMA1_Channel7     DMA1 Channel7 global interrupt    0x0000_0084
+     18         25         settable   ADC1_2            ADC1 and ADC2 global interrupt    0x0000_0088
+     19         26         settable   CAN1_TX           CAN1 TX interrupts                0x0000_008C
+     20         27         settable   CAN1_RX0          CAN1 RX0 interrupts               0x0000_0090
+     21         28         settable   CAN1_RX1          CAN1 RX1 interrupt                0x0000_0094
+     22         29         settable   CAN1_SCE          CAN1 SCE interrupt                0x0000_0098
+     23         30         settable   EXTI9_5           EXTI Line[9:5] interrupts         0x0000_009C
+     24         31         settable   TIM1_BRK          TIM1 Break interrupt              0x0000_00A0
+     25         32         settable   TIM1_UP           TIM1 Update interrupt             0x0000_00A4
+                                                        TIM1 Trigger and Commutation
+     26         33         settable   TIM1_TRG_COM                                        0x0000_00A8
+                                                        interrupts
+     27         34         settable   TIM1_CC           TIM1 Capture Compare interrupt   0x0000_00AC
+     28         35         settable   TIM2              TIM2 global interrupt             0x0000_00B0
+     29         36         settable   TIM3              TIM3 global interrupt             0x0000_00B4
+     30         37         settable   TIM4              TIM4 global interrupt             0x0000_00B8
+     31         38         settable   I2C1_EV           I2C1 event interrupt              0x0000_00BC
+                                                            2
+     32         39         settable   I2C1_ER           I C1 error interrupt              0x0000_00C0
+                                                            2C2 event interrupt
+     33         40         settable   I2C2_EV           I                                 0x0000_00C4
+     34         41         settable   I2C2_ER           I2C2 error interrupt              0x0000_00C8
+     35         42         settable   SPI1              SPI1 global interrupt            0x0000_00CC
+     36         43         settable   SPI2              SPI2 global interrupt             0x0000_00D0
+     37         44         settable   USART1            USART1 global interrupt           0x0000_00D4
+     38         45         settable   USART2            USART2 global interrupt           0x0000_00D8
+     39         46         settable   USART3            USART3 global interrupt          0x0000_00DC
+
+
+
+
+                                                       RM0008 Rev 21                                    199/1136
+                                                                                                                   214
+Interrupts and events                                                                                       RM0008
+
+
+                              Table 61. Vector table for connectivity line devices (continued)
+       Position
+
+                  Priority
+
+                             Type of
+                                               Acronym                Description               Address
+                             priority
+
+
+
+
+       40         47         settable   EXTI15_10         EXTI Line[15:10] interrupts         0x0000_00E0
+                                                          RTC alarm through EXTI line
+       41         48         settable   RTCAlarm                                              0x0000_00E4
+                                                          interrupt
+                                                          USB On-The-Go FS Wakeup
+       42         49         settable   OTG_FS_WKUP                                           0x0000_00E8
+                                                          through EXTI line interrupt
+                                                                                              0x0000_00EC -
+           -        -           -       -                 Reserved
+                                                                                               0x0000_0104
+       50         57         settable   TIM5              TIM5 global interrupt               0x0000_0108
+       51         58         settable   SPI3              SPI3 global interrupt               0x0000_010C
+       52         59         settable   UART4             UART4 global interrupt              0x0000_0110
+       53         60         settable   UART5             UART5 global interrupt              0x0000_0114
+       54         61         settable   TIM6              TIM6 global interrupt               0x0000_0118
+       55         62         settable   TIM7              TIM7 global interrupt               0x0000_011C
+       56         63         settable   DMA2_Channel1     DMA2 Channel1 global interrupt      0x0000_0120
+       57         64         settable   DMA2_Channel2     DMA2 Channel2 global interrupt      0x0000_0124
+       58         65         settable   DMA2_Channel3     DMA2 Channel3 global interrupt      0x0000_0128
+       59         66         settable   DMA2_Channel4     DMA2 Channel4 global interrupt      0x0000_012C
+       60         67         settable   DMA2_Channel5     DMA2 Channel5 global interrupt      0x0000_0130
+       61         68         settable   ETH               Ethernet global interrupt           0x0000_0134
+                                                          Ethernet Wakeup through EXTI line
+       62         69         settable   ETH_WKUP                                              0x0000_0138
+                                                          interrupt
+       63         70         settable   CAN2_TX           CAN2 TX interrupts                  0x0000_013C
+       64         71         settable   CAN2_RX0          CAN2 RX0 interrupts                 0x0000_0140
+       65         72         settable   CAN2_RX1          CAN2 RX1 interrupt                  0x0000_0144
+       66         73         settable   CAN2_SCE          CAN2 SCE interrupt                  0x0000_0148
+       67         74         settable   OTG_FS            USB On The Go FS global interrupt   0x0000_014C
+
+
+
+
+200/1136                                                 RM0008 Rev 21
+

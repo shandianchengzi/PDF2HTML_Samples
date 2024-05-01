@@ -36,7 +36,7 @@ def make_new_tool_test_file(tool_name, output_format):
         f.write("# -*- coding: utf-8 -*-\n")
         f.write("# Reference: <FILL IN IF YOU HAVE A REFERENCE>\n")
         f.write("\n")
-        f.write("need_pip_install = True # If this tool is not installed by the pip, let it be False.")
+        f.write("need_pip_install = True # If this tool is not installed by the pip, let it be False.\n")
         f.write(f"def convert_pdf_to_{output_format}(pdf_file_path, output_file_path):\n")
         f.write("    '''\n")
         f.write(f"    \"convert_pdf_to_{output_format}\" is used to convert a PDF file to an {output_format} file.\n")
