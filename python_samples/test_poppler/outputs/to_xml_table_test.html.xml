@@ -1,0 +1,544 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pdf2xml SYSTEM "pdf2xml.dtd">
+
+<pdf2xml producer="poppler" version="24.02.0">
+<page number="1" position="absolute" top="0" left="0" height="1263" width="892">
+	<fontspec id="0" size="15" family="KNBNHG+Arial,Bold" color="#000000"/>
+	<fontspec id="1" size="14" family="KNBMFL+Arial" color="#000000"/>
+	<fontspec id="2" size="18" family="KNBNHG+Arial,Bold" color="#000000"/>
+	<fontspec id="3" size="15" family="KNBNII+Arial,Italic" color="#0000ff"/>
+	<fontspec id="4" size="15" family="KNBMFL+Arial" color="#000000"/>
+	<fontspec id="5" size="3" family="KNBMFL+Arial" color="#000000"/>
+	<fontspec id="6" size="14" family="KNBNHG+Arial,Bold" color="#000000"/>
+	<fontspec id="7" size="14" family="KNBNHG+Arial,Bold" color="#000000"/>
+<text top="88" left="101" width="152" height="17" font="0"><b>Interrupts and events</b></text>
+<text top="88" left="735" width="57" height="17" font="0"><b>RM0008</b></text>
+<text top="1115" left="101" width="55" height="15" font="1"><a href="">198/1136</a></text>
+<text top="1115" left="398" width="97" height="15" font="1">RM0008 Rev 21</text>
+<text top="134" left="101" width="55" height="20" font="2"><b>10.1.2 </b></text>
+<text top="134" left="186" width="269" height="20" font="2"><b>Interrupt and exception vectors</b></text>
+<text top="167" left="186" width="57" height="17" font="3"><a href="to_xml_table_test.html.html#1"><i>Table 61</i></a></text>
+<text top="167" left="243" width="33" height="17" font="4"><a href="to_xml_table_test.html.html#1"> an</a><a href="">d </a></text>
+<text top="167" left="276" width="57" height="17" font="3"><a href=""><i>Table 63</i></a></text>
+<text top="167" left="333" width="444" height="17" font="4"> are the vector tables for connectivity line and other STM32F10xxx </text>
+<text top="185" left="186" width="141" height="17" font="4">devices, respectively.</text>
+<text top="221" left="187" width="7" height="3" font="5">         </text>
+<text top="221" left="266" width="357" height="17" font="0"><b>Table 61. Vector table for connectivity line devices</b></text>
+<text top="329" left="164" width="0" height="15" font="6"><b>Position</b></text>
+<text top="326" left="196" width="0" height="15" font="6"><b>Priority</b></text>
+<text top="298" left="218" width="52" height="15" font="7"><b>Type of </b></text>
+<text top="315" left="218" width="46" height="15" font="7"><b>priority</b></text>
+<text top="306" left="310" width="58" height="15" font="7"><b>Acronym</b></text>
+<text top="306" left="480" width="74" height="15" font="7"><b>Description</b></text>
+<text top="306" left="663" width="54" height="15" font="7"><b>Address</b></text>
+<text top="393" left="158" width="4" height="15" font="1">-</text>
+<text top="393" left="190" width="4" height="15" font="1">-</text>
+<text top="393" left="239" width="4" height="15" font="1">-</text>
+<text top="393" left="280" width="4" height="15" font="1">-</text>
+<text top="393" left="408" width="58" height="15" font="1">Reserved</text>
+<text top="393" left="649" width="82" height="15" font="1">0x0000_0000</text>
+<text top="419" left="158" width="4" height="15" font="1">-</text>
+<text top="419" left="186" width="12" height="15" font="1">-3</text>
+<text top="419" left="227" width="28" height="15" font="1">fixed</text>
+<text top="419" left="280" width="35" height="15" font="1">Reset</text>
+<text top="419" left="408" width="35" height="15" font="1">Reset</text>
+<text top="419" left="649" width="82" height="15" font="1">0x0000_0004</text>
+<text top="461" left="158" width="4" height="15" font="1">-</text>
+<text top="461" left="186" width="12" height="15" font="1">-2</text>
+<text top="461" left="227" width="28" height="15" font="1">fixed</text>
+<text top="461" left="280" width="25" height="15" font="1">NMI</text>
+<text top="444" left="408" width="207" height="15" font="1">Non maskable interrupt. The RCC </text>
+<text top="461" left="408" width="192" height="15" font="1">Clock Security System (CSS) is </text>
+<text top="477" left="408" width="145" height="15" font="1">linked to the NMI vector.</text>
+<text top="461" left="649" width="82" height="15" font="1">0x0000_0008</text>
+<text top="503" left="158" width="4" height="15" font="1">-</text>
+<text top="503" left="186" width="12" height="15" font="1">-1</text>
+<text top="503" left="227" width="28" height="15" font="1">fixed</text>
+<text top="503" left="280" width="59" height="15" font="1">HardFault</text>
+<text top="503" left="408" width="94" height="15" font="1">All class of fault</text>
+<text top="503" left="648" width="84" height="15" font="1">0x0000_000C</text>
+<text top="529" left="158" width="4" height="15" font="1">-</text>
+<text top="529" left="188" width="8" height="15" font="1">0</text>
+<text top="529" left="218" width="47" height="15" font="1">settable</text>
+<text top="529" left="280" width="79" height="15" font="1">MemManage</text>
+<text top="529" left="408" width="131" height="15" font="1">Memory management</text>
+<text top="529" left="649" width="82" height="15" font="1">0x0000_0010</text>
+<text top="554" left="158" width="4" height="15" font="1">-</text>
+<text top="554" left="188" width="8" height="15" font="1">1</text>
+<text top="554" left="218" width="47" height="15" font="1">settable</text>
+<text top="554" left="280" width="53" height="15" font="1">BusFault</text>
+<text top="554" left="408" width="215" height="15" font="1">Pre-fetch fault, memory access fault</text>
+<text top="554" left="649" width="82" height="15" font="1">0x0000_0014</text>
+<text top="579" left="158" width="4" height="15" font="1">-</text>
+<text top="579" left="188" width="8" height="15" font="1">2</text>
+<text top="579" left="218" width="47" height="15" font="1">settable</text>
+<text top="579" left="280" width="69" height="15" font="1">UsageFault</text>
+<text top="579" left="408" width="213" height="15" font="1">Undefined instruction or illegal state</text>
+<text top="579" left="649" width="82" height="15" font="1">0x0000_0018</text>
+<text top="613" left="158" width="4" height="15" font="1">-</text>
+<text top="613" left="190" width="4" height="15" font="1">-</text>
+<text top="613" left="239" width="4" height="15" font="1">-</text>
+<text top="613" left="280" width="4" height="15" font="1">-</text>
+<text top="613" left="408" width="58" height="15" font="1">Reserved</text>
+<text top="605" left="644" width="96" height="15" font="1">0x0000_001C - </text>
+<text top="621" left="648" width="83" height="15" font="1">0x0000_002B</text>
+<text top="655" left="158" width="4" height="15" font="1">-</text>
+<text top="655" left="188" width="8" height="15" font="1">3</text>
+<text top="655" left="218" width="47" height="15" font="1">settable</text>
+<text top="655" left="280" width="41" height="15" font="1">SVCall</text>
+<text top="647" left="408" width="169" height="15" font="1">System service call via SWI </text>
+<text top="664" left="408" width="61" height="15" font="1">instruction</text>
+<text top="655" left="648" width="84" height="15" font="1">0x0000_002C</text>
+<text top="689" left="158" width="4" height="15" font="1">-</text>
+<text top="689" left="188" width="8" height="15" font="1">4</text>
+<text top="689" left="218" width="47" height="15" font="1">settable</text>
+<text top="689" left="280" width="88" height="15" font="1">Debug Monitor</text>
+<text top="689" left="408" width="88" height="15" font="1">Debug Monitor</text>
+<text top="689" left="649" width="82" height="15" font="1">0x0000_0030</text>
+<text top="714" left="158" width="4" height="15" font="1">-</text>
+<text top="714" left="190" width="4" height="15" font="1">-</text>
+<text top="714" left="239" width="4" height="15" font="1">-</text>
+<text top="714" left="280" width="4" height="15" font="1">-</text>
+<text top="714" left="408" width="58" height="15" font="1">Reserved</text>
+<text top="714" left="649" width="82" height="15" font="1">0x0000_0034</text>
+<text top="740" left="158" width="4" height="15" font="1">-</text>
+<text top="740" left="188" width="8" height="15" font="1">5</text>
+<text top="740" left="218" width="47" height="15" font="1">settable</text>
+<text top="740" left="280" width="49" height="15" font="1">PendSV</text>
+<text top="740" left="408" width="217" height="15" font="1">Pendable request for system service</text>
+<text top="740" left="649" width="82" height="15" font="1">0x0000_0038</text>
+<text top="765" left="158" width="4" height="15" font="1">-</text>
+<text top="765" left="188" width="8" height="15" font="1">6</text>
+<text top="765" left="218" width="47" height="15" font="1">settable</text>
+<text top="765" left="280" width="47" height="15" font="1">SysTick</text>
+<text top="765" left="408" width="103" height="15" font="1">System tick timer</text>
+<text top="765" left="648" width="84" height="15" font="1">0x0000_003C</text>
+<text top="791" left="156" width="8" height="15" font="1">0</text>
+<text top="791" left="188" width="8" height="15" font="1">7</text>
+<text top="791" left="218" width="47" height="15" font="1">settable</text>
+<text top="791" left="280" width="46" height="15" font="1">WWDG</text>
+<text top="791" left="408" width="165" height="15" font="1">Window Watchdog interrupt</text>
+<text top="791" left="649" width="82" height="15" font="1">0x0000_0040</text>
+<text top="825" left="156" width="8" height="15" font="1">1</text>
+<text top="825" left="188" width="8" height="15" font="1">8</text>
+<text top="825" left="218" width="47" height="15" font="1">settable</text>
+<text top="825" left="280" width="28" height="15" font="1">PVD</text>
+<text top="817" left="408" width="202" height="15" font="1">PVD through EXTI Line detection </text>
+<text top="833" left="408" width="49" height="15" font="1">interrupt</text>
+<text top="825" left="649" width="82" height="15" font="1">0x0000_0044</text>
+<text top="858" left="156" width="8" height="15" font="1">2</text>
+<text top="858" left="188" width="8" height="15" font="1">9</text>
+<text top="858" left="218" width="47" height="15" font="1">settable</text>
+<text top="858" left="280" width="55" height="15" font="1">TAMPER</text>
+<text top="858" left="408" width="98" height="15" font="1">Tamper interrupt</text>
+<text top="858" left="649" width="82" height="15" font="1">0x0000_0048</text>
+<text top="884" left="156" width="8" height="15" font="1">3</text>
+<text top="884" left="184" width="15" height="15" font="1">10</text>
+<text top="884" left="218" width="47" height="15" font="1">settable</text>
+<text top="884" left="280" width="27" height="15" font="1">RTC</text>
+<text top="884" left="408" width="120" height="15" font="1">RTC global interrupt</text>
+<text top="884" left="648" width="84" height="15" font="1">0x0000_004C</text>
+<text top="909" left="156" width="8" height="15" font="1">4</text>
+<text top="909" left="185" width="14" height="15" font="1">11</text>
+<text top="909" left="218" width="47" height="15" font="1">settable</text>
+<text top="909" left="280" width="43" height="15" font="1">FLASH</text>
+<text top="909" left="408" width="126" height="15" font="1">Flash global interrupt</text>
+<text top="909" left="649" width="82" height="15" font="1">0x0000_0050</text>
+<text top="935" left="156" width="8" height="15" font="1">5</text>
+<text top="935" left="184" width="15" height="15" font="1">12</text>
+<text top="935" left="218" width="47" height="15" font="1">settable</text>
+<text top="935" left="280" width="29" height="15" font="1">RCC</text>
+<text top="935" left="408" width="122" height="15" font="1">RCC global interrupt</text>
+<text top="935" left="649" width="82" height="15" font="1">0x0000_0054</text>
+<text top="961" left="156" width="8" height="15" font="1">6</text>
+<text top="961" left="184" width="15" height="15" font="1">13</text>
+<text top="961" left="218" width="47" height="15" font="1">settable</text>
+<text top="961" left="280" width="37" height="15" font="1">EXTI0</text>
+<text top="961" left="408" width="120" height="15" font="1">EXTI Line0 interrupt</text>
+<text top="961" left="649" width="82" height="15" font="1">0x0000_0058</text>
+<text top="986" left="156" width="8" height="15" font="1">7</text>
+<text top="986" left="184" width="15" height="15" font="1">14</text>
+<text top="986" left="218" width="47" height="15" font="1">settable</text>
+<text top="986" left="280" width="37" height="15" font="1">EXTI1</text>
+<text top="986" left="408" width="120" height="15" font="1">EXTI Line1 interrupt</text>
+<text top="986" left="648" width="84" height="15" font="1">0x0000_005C</text>
+<text top="1011" left="156" width="8" height="15" font="1">8</text>
+<text top="1011" left="184" width="15" height="15" font="1">15</text>
+<text top="1011" left="218" width="47" height="15" font="1">settable</text>
+<text top="1011" left="280" width="37" height="15" font="1">EXTI2</text>
+<text top="1011" left="408" width="120" height="15" font="1">EXTI Line2 interrupt</text>
+<text top="1011" left="649" width="82" height="15" font="1">0x0000_0060</text>
+<text top="1037" left="156" width="8" height="15" font="1">9</text>
+<text top="1037" left="184" width="15" height="15" font="1">16</text>
+<text top="1037" left="218" width="47" height="15" font="1">settable</text>
+<text top="1037" left="280" width="37" height="15" font="1">EXTI3</text>
+<text top="1037" left="408" width="120" height="15" font="1">EXTI Line3 interrupt</text>
+<text top="1037" left="649" width="82" height="15" font="1">0x0000_0064</text>
+<text top="1062" left="153" width="15" height="15" font="1">10</text>
+<text top="1062" left="184" width="15" height="15" font="1">17</text>
+<text top="1062" left="218" width="47" height="15" font="1">settable</text>
+<text top="1062" left="280" width="37" height="15" font="1">EXTI4</text>
+<text top="1062" left="408" width="120" height="15" font="1">EXTI Line4 interrupt</text>
+<text top="1062" left="649" width="82" height="15" font="1">0x0000_0068</text>
+</page>
+<page number="2" position="absolute" top="0" left="0" height="1263" width="892">
+	<fontspec id="8" size="10" family="KNBMFL+Arial" color="#ffffff"/>
+	<fontspec id="9" size="11" family="KNBMFL+Arial" color="#000000"/>
+<text top="1115" left="398" width="97" height="15" font="1">RM0008 Rev 21</text>
+<text top="1115" left="737" width="55" height="15" font="1">199<a href="">/1136</a></text>
+<text top="88" left="101" width="57" height="17" font="0"><b>RM0008</b></text>
+<text top="88" left="639" width="152" height="17" font="0"><b>Interrupts and events</b></text>
+<text top="1140" left="825" width="17" height="12" font="8">214</text>
+<text top="308" left="153" width="14" height="15" font="1">11</text>
+<text top="308" left="184" width="15" height="15" font="1">18</text>
+<text top="308" left="218" width="47" height="15" font="1">settable</text>
+<text top="308" left="280" width="103" height="15" font="1">DMA1_Channel1</text>
+<text top="308" left="408" width="195" height="15" font="1">DMA1 Channel1 global interrupt </text>
+<text top="308" left="647" width="84" height="15" font="1">0x0000_006C</text>
+<text top="333" left="153" width="15" height="15" font="1">12</text>
+<text top="333" left="184" width="15" height="15" font="1">19</text>
+<text top="333" left="218" width="47" height="15" font="1">settable</text>
+<text top="333" left="280" width="103" height="15" font="1">DMA1_Channel2</text>
+<text top="333" left="408" width="192" height="15" font="1">DMA1 Channel2 global interrupt</text>
+<text top="333" left="649" width="82" height="15" font="1">0x0000_0070</text>
+<text top="359" left="153" width="15" height="15" font="1">13</text>
+<text top="359" left="184" width="15" height="15" font="1">20</text>
+<text top="359" left="218" width="47" height="15" font="1">settable</text>
+<text top="359" left="280" width="103" height="15" font="1">DMA1_Channel3</text>
+<text top="359" left="408" width="192" height="15" font="1">DMA1 Channel3 global interrupt</text>
+<text top="359" left="649" width="82" height="15" font="1">0x0000_0074</text>
+<text top="384" left="153" width="15" height="15" font="1">14</text>
+<text top="384" left="184" width="15" height="15" font="1">21</text>
+<text top="384" left="218" width="47" height="15" font="1">settable</text>
+<text top="384" left="280" width="103" height="15" font="1">DMA1_Channel4</text>
+<text top="384" left="408" width="192" height="15" font="1">DMA1 Channel4 global interrupt</text>
+<text top="384" left="649" width="82" height="15" font="1">0x0000_0078</text>
+<text top="410" left="153" width="15" height="15" font="1">15</text>
+<text top="410" left="184" width="15" height="15" font="1">22</text>
+<text top="410" left="218" width="47" height="15" font="1">settable</text>
+<text top="410" left="280" width="103" height="15" font="1">DMA1_Channel5</text>
+<text top="410" left="408" width="192" height="15" font="1">DMA1 Channel5 global interrupt</text>
+<text top="410" left="647" width="84" height="15" font="1">0x0000_007C</text>
+<text top="435" left="153" width="15" height="15" font="1">16</text>
+<text top="435" left="184" width="15" height="15" font="1">23</text>
+<text top="435" left="218" width="47" height="15" font="1">settable</text>
+<text top="435" left="280" width="103" height="15" font="1">DMA1_Channel6</text>
+<text top="435" left="408" width="192" height="15" font="1">DMA1 Channel6 global interrupt</text>
+<text top="435" left="649" width="82" height="15" font="1">0x0000_0080</text>
+<text top="461" left="153" width="15" height="15" font="1">17</text>
+<text top="461" left="184" width="15" height="15" font="1">24</text>
+<text top="461" left="218" width="47" height="15" font="1">settable</text>
+<text top="461" left="280" width="103" height="15" font="1">DMA1_Channel7</text>
+<text top="461" left="408" width="192" height="15" font="1">DMA1 Channel7 global interrupt</text>
+<text top="461" left="649" width="82" height="15" font="1">0x0000_0084</text>
+<text top="486" left="153" width="15" height="15" font="1">18</text>
+<text top="486" left="184" width="15" height="15" font="1">25</text>
+<text top="486" left="218" width="47" height="15" font="1">settable</text>
+<text top="486" left="280" width="51" height="15" font="1">ADC1_2</text>
+<text top="486" left="408" width="194" height="15" font="1">ADC1 and ADC2 global interrupt</text>
+<text top="486" left="649" width="82" height="15" font="1">0x0000_0088</text>
+<text top="512" left="153" width="15" height="15" font="1">19</text>
+<text top="512" left="184" width="15" height="15" font="1">26</text>
+<text top="512" left="218" width="47" height="15" font="1">settable</text>
+<text top="512" left="280" width="61" height="15" font="1">CAN1_TX</text>
+<text top="512" left="408" width="117" height="15" font="1">CAN1 TX interrupts</text>
+<text top="512" left="648" width="84" height="15" font="1">0x0000_008C</text>
+<text top="538" left="153" width="15" height="15" font="1">20</text>
+<text top="538" left="184" width="15" height="15" font="1">27</text>
+<text top="538" left="218" width="47" height="15" font="1">settable</text>
+<text top="538" left="280" width="70" height="15" font="1">CAN1_RX0</text>
+<text top="538" left="408" width="126" height="15" font="1">CAN1 RX0 interrupts</text>
+<text top="538" left="649" width="82" height="15" font="1">0x0000_0090</text>
+<text top="563" left="153" width="15" height="15" font="1">21</text>
+<text top="563" left="184" width="15" height="15" font="1">28</text>
+<text top="563" left="218" width="47" height="15" font="1">settable</text>
+<text top="563" left="280" width="70" height="15" font="1">CAN1_RX1</text>
+<text top="563" left="408" width="119" height="15" font="1">CAN1 RX1 interrupt</text>
+<text top="563" left="649" width="82" height="15" font="1">0x0000_0094</text>
+<text top="588" left="153" width="15" height="15" font="1">22</text>
+<text top="588" left="184" width="15" height="15" font="1">29</text>
+<text top="588" left="218" width="47" height="15" font="1">settable</text>
+<text top="588" left="280" width="71" height="15" font="1">CAN1_SCE</text>
+<text top="588" left="408" width="120" height="15" font="1">CAN1 SCE interrupt</text>
+<text top="588" left="649" width="82" height="15" font="1">0x0000_0098</text>
+<text top="614" left="153" width="15" height="15" font="1">23</text>
+<text top="614" left="184" width="15" height="15" font="1">30</text>
+<text top="614" left="218" width="47" height="15" font="1">settable</text>
+<text top="614" left="280" width="52" height="15" font="1">EXTI9_5</text>
+<text top="614" left="408" width="145" height="15" font="1">EXTI Line[9:5] interrupts</text>
+<text top="614" left="648" width="84" height="15" font="1">0x0000_009C</text>
+<text top="639" left="153" width="15" height="15" font="1">24</text>
+<text top="639" left="184" width="15" height="15" font="1">31</text>
+<text top="639" left="218" width="47" height="15" font="1">settable</text>
+<text top="639" left="280" width="66" height="15" font="1">TIM1_BRK</text>
+<text top="639" left="408" width="123" height="15" font="1">TIM1 Break interrupt</text>
+<text top="639" left="648" width="83" height="15" font="1">0x0000_00A0</text>
+<text top="665" left="153" width="15" height="15" font="1">25</text>
+<text top="665" left="184" width="15" height="15" font="1">32</text>
+<text top="665" left="218" width="47" height="15" font="1">settable</text>
+<text top="665" left="280" width="57" height="15" font="1">TIM1_UP</text>
+<text top="665" left="408" width="131" height="15" font="1">TIM1 Update interrupt</text>
+<text top="665" left="648" width="83" height="15" font="1">0x0000_00A4</text>
+<text top="699" left="153" width="15" height="15" font="1">26</text>
+<text top="699" left="184" width="15" height="15" font="1">33</text>
+<text top="699" left="218" width="47" height="15" font="1">settable</text>
+<text top="699" left="280" width="106" height="15" font="1">TIM1_TRG_COM</text>
+<text top="691" left="408" width="190" height="15" font="1">TIM1 Trigger and Commutation </text>
+<text top="707" left="408" width="56" height="15" font="1">interrupts</text>
+<text top="699" left="648" width="83" height="15" font="1">0x0000_00A8</text>
+<text top="732" left="153" width="15" height="15" font="1">27</text>
+<text top="732" left="184" width="15" height="15" font="1">34</text>
+<text top="732" left="218" width="47" height="15" font="1">settable</text>
+<text top="732" left="280" width="58" height="15" font="1">TIM1_CC</text>
+<text top="732" left="408" width="195" height="15" font="1">TIM1 Capture Compare interrupt</text>
+<text top="732" left="647" width="85" height="15" font="1">0x0000_00AC</text>
+<text top="758" left="153" width="15" height="15" font="1">28</text>
+<text top="758" left="184" width="15" height="15" font="1">35</text>
+<text top="758" left="218" width="47" height="15" font="1">settable</text>
+<text top="758" left="280" width="31" height="15" font="1">TIM2</text>
+<text top="758" left="408" width="124" height="15" font="1">TIM2 global interrupt</text>
+<text top="758" left="648" width="83" height="15" font="1">0x0000_00B0</text>
+<text top="783" left="153" width="15" height="15" font="1">29</text>
+<text top="783" left="184" width="15" height="15" font="1">36</text>
+<text top="783" left="218" width="47" height="15" font="1">settable</text>
+<text top="783" left="280" width="31" height="15" font="1">TIM3</text>
+<text top="783" left="408" width="124" height="15" font="1">TIM3 global interrupt</text>
+<text top="783" left="648" width="83" height="15" font="1">0x0000_00B4</text>
+<text top="809" left="153" width="15" height="15" font="1">30</text>
+<text top="809" left="184" width="15" height="15" font="1">37</text>
+<text top="809" left="218" width="47" height="15" font="1">settable</text>
+<text top="809" left="280" width="31" height="15" font="1">TIM4</text>
+<text top="809" left="408" width="124" height="15" font="1">TIM4 global interrupt</text>
+<text top="809" left="648" width="83" height="15" font="1">0x0000_00B8</text>
+<text top="835" left="153" width="15" height="15" font="1">31</text>
+<text top="835" left="184" width="15" height="15" font="1">38</text>
+<text top="835" left="218" width="47" height="15" font="1">settable</text>
+<text top="835" left="280" width="54" height="15" font="1">I2C1_EV</text>
+<text top="835" left="408" width="4" height="15" font="1">I</text>
+<text top="832" left="412" width="6" height="12" font="9">2</text>
+<text top="835" left="418" width="107" height="15" font="1">C1 event interrupt</text>
+<text top="835" left="647" width="85" height="15" font="1">0x0000_00BC</text>
+<text top="860" left="153" width="15" height="15" font="1">32</text>
+<text top="860" left="184" width="15" height="15" font="1">39</text>
+<text top="860" left="218" width="47" height="15" font="1">settable</text>
+<text top="860" left="280" width="55" height="15" font="1">I2C1_ER</text>
+<text top="860" left="408" width="4" height="15" font="1">I</text>
+<text top="857" left="412" width="6" height="12" font="9">2</text>
+<text top="860" left="418" width="103" height="15" font="1">C1 error interrupt</text>
+<text top="860" left="648" width="84" height="15" font="1">0x0000_00C0</text>
+<text top="885" left="153" width="15" height="15" font="1">33</text>
+<text top="885" left="184" width="15" height="15" font="1">40</text>
+<text top="885" left="218" width="47" height="15" font="1">settable</text>
+<text top="885" left="280" width="54" height="15" font="1">I2C2_EV</text>
+<text top="885" left="408" width="4" height="15" font="1">I</text>
+<text top="882" left="412" width="6" height="12" font="9">2</text>
+<text top="885" left="418" width="107" height="15" font="1">C2 event interrupt</text>
+<text top="885" left="648" width="84" height="15" font="1">0x0000_00C4</text>
+<text top="911" left="153" width="15" height="15" font="1">34</text>
+<text top="911" left="184" width="15" height="15" font="1">41</text>
+<text top="911" left="218" width="47" height="15" font="1">settable</text>
+<text top="911" left="280" width="55" height="15" font="1">I2C2_ER</text>
+<text top="911" left="408" width="4" height="15" font="1">I</text>
+<text top="908" left="412" width="6" height="12" font="9">2</text>
+<text top="911" left="418" width="103" height="15" font="1">C2 error interrupt</text>
+<text top="911" left="648" width="84" height="15" font="1">0x0000_00C8</text>
+<text top="936" left="153" width="15" height="15" font="1">35</text>
+<text top="936" left="184" width="15" height="15" font="1">42</text>
+<text top="936" left="218" width="47" height="15" font="1">settable</text>
+<text top="936" left="280" width="29" height="15" font="1">SPI1</text>
+<text top="936" left="408" width="122" height="15" font="1">SPI1 global interrupt</text>
+<text top="936" left="646" width="86" height="15" font="1">0x0000_00CC</text>
+<text top="962" left="153" width="15" height="15" font="1">36</text>
+<text top="962" left="184" width="15" height="15" font="1">43</text>
+<text top="962" left="218" width="47" height="15" font="1">settable</text>
+<text top="962" left="280" width="29" height="15" font="1">SPI2</text>
+<text top="962" left="408" width="122" height="15" font="1">SPI2 global interrupt</text>
+<text top="962" left="648" width="84" height="15" font="1">0x0000_00D0</text>
+<text top="988" left="153" width="15" height="15" font="1">37</text>
+<text top="988" left="184" width="15" height="15" font="1">44</text>
+<text top="988" left="218" width="47" height="15" font="1">settable</text>
+<text top="988" left="280" width="53" height="15" font="1">USART1</text>
+<text top="988" left="408" width="146" height="15" font="1">USART1 global interrupt</text>
+<text top="988" left="648" width="84" height="15" font="1">0x0000_00D4</text>
+<text top="1013" left="153" width="15" height="15" font="1">38</text>
+<text top="1013" left="184" width="15" height="15" font="1">45</text>
+<text top="1013" left="218" width="47" height="15" font="1">settable</text>
+<text top="1013" left="280" width="53" height="15" font="1">USART2</text>
+<text top="1013" left="408" width="146" height="15" font="1">USART2 global interrupt</text>
+<text top="1013" left="648" width="84" height="15" font="1">0x0000_00D8</text>
+<text top="1038" left="153" width="15" height="15" font="1">39</text>
+<text top="1038" left="184" width="15" height="15" font="1">46</text>
+<text top="1038" left="218" width="47" height="15" font="1">settable</text>
+<text top="1038" left="280" width="53" height="15" font="1">USART3</text>
+<text top="1038" left="408" width="146" height="15" font="1">USART3 global interrupt</text>
+<text top="1038" left="646" width="86" height="15" font="1">0x0000_00DC</text>
+<text top="135" left="225" width="443" height="17" font="0"><b>Table 61. Vector table for connectivity line devices (continued)</b></text>
+<text top="244" left="164" width="0" height="15" font="6"><b>Position</b></text>
+<text top="241" left="196" width="0" height="15" font="6"><b>Priority</b></text>
+<text top="213" left="218" width="52" height="15" font="7"><b>Type of </b></text>
+<text top="229" left="218" width="46" height="15" font="7"><b>priority</b></text>
+<text top="221" left="310" width="58" height="15" font="7"><b>Acronym</b></text>
+<text top="221" left="480" width="74" height="15" font="7"><b>Description</b></text>
+<text top="221" left="663" width="54" height="15" font="7"><b>Address</b></text>
+</page>
+<page number="3" position="absolute" top="0" left="0" height="1263" width="892">
+<text top="88" left="101" width="152" height="17" font="0"><b>Interrupts and events</b></text>
+<text top="88" left="735" width="57" height="17" font="0"><b>RM0008</b></text>
+<text top="1115" left="101" width="55" height="15" font="1">200<a href="">/1136</a></text>
+<text top="1115" left="398" width="97" height="15" font="1">RM0008 Rev 21</text>
+<text top="308" left="153" width="15" height="15" font="1">40</text>
+<text top="308" left="184" width="15" height="15" font="1">47</text>
+<text top="308" left="218" width="47" height="15" font="1">settable</text>
+<text top="308" left="280" width="67" height="15" font="1">EXTI15_10</text>
+<text top="308" left="408" width="160" height="15" font="1">EXTI Line[15:10] interrupts</text>
+<text top="308" left="648" width="83" height="15" font="1">0x0000_00E0</text>
+<text top="342" left="153" width="15" height="15" font="1">41</text>
+<text top="342" left="184" width="15" height="15" font="1">48</text>
+<text top="342" left="218" width="47" height="15" font="1">settable</text>
+<text top="342" left="280" width="63" height="15" font="1">RTCAlarm</text>
+<text top="333" left="408" width="177" height="15" font="1">RTC alarm through EXTI line </text>
+<text top="350" left="408" width="49" height="15" font="1">interrupt</text>
+<text top="342" left="648" width="83" height="15" font="1">0x0000_00E4</text>
+<text top="384" left="153" width="15" height="15" font="1">42</text>
+<text top="384" left="184" width="15" height="15" font="1">49</text>
+<text top="384" left="218" width="47" height="15" font="1">settable</text>
+<text top="384" left="280" width="102" height="15" font="1">OTG_FS_WKUP</text>
+<text top="375" left="408" width="177" height="15" font="1">USB On-The-Go FS Wakeup </text>
+<text top="392" left="408" width="157" height="15" font="1">through EXTI line interrupt</text>
+<text top="384" left="648" width="83" height="15" font="1">0x0000_00E8</text>
+<text top="426" left="158" width="4" height="15" font="1">-</text>
+<text top="426" left="190" width="4" height="15" font="1">-</text>
+<text top="426" left="239" width="4" height="15" font="1">-</text>
+<text top="426" left="280" width="4" height="15" font="1">-</text>
+<text top="426" left="408" width="58" height="15" font="1">Reserved</text>
+<text top="417" left="643" width="97" height="15" font="1">0x0000_00EC - </text>
+<text top="434" left="649" width="82" height="15" font="1">0x0000_0104</text>
+<text top="459" left="153" width="15" height="15" font="1">50</text>
+<text top="459" left="184" width="15" height="15" font="1">57</text>
+<text top="459" left="218" width="47" height="15" font="1">settable</text>
+<text top="459" left="280" width="31" height="15" font="1">TIM5</text>
+<text top="459" left="408" width="124" height="15" font="1">TIM5 global interrupt</text>
+<text top="459" left="649" width="82" height="15" font="1">0x0000_0108</text>
+<text top="485" left="153" width="15" height="15" font="1">51</text>
+<text top="485" left="184" width="15" height="15" font="1">58</text>
+<text top="485" left="218" width="47" height="15" font="1">settable</text>
+<text top="485" left="280" width="29" height="15" font="1">SPI3</text>
+<text top="485" left="408" width="122" height="15" font="1">SPI3 global interrupt</text>
+<text top="485" left="648" width="84" height="15" font="1">0x0000_010C</text>
+<text top="511" left="153" width="15" height="15" font="1">52</text>
+<text top="511" left="184" width="15" height="15" font="1">59</text>
+<text top="511" left="218" width="47" height="15" font="1">settable</text>
+<text top="511" left="280" width="44" height="15" font="1">UART4</text>
+<text top="511" left="408" width="137" height="15" font="1">UART4 global interrupt</text>
+<text top="511" left="649" width="81" height="15" font="1">0x0000_0110</text>
+<text top="536" left="153" width="15" height="15" font="1">53</text>
+<text top="536" left="184" width="15" height="15" font="1">60</text>
+<text top="536" left="218" width="47" height="15" font="1">settable</text>
+<text top="536" left="280" width="44" height="15" font="1">UART5</text>
+<text top="536" left="408" width="137" height="15" font="1">UART5 global interrupt</text>
+<text top="536" left="649" width="81" height="15" font="1">0x0000_0114</text>
+<text top="561" left="153" width="15" height="15" font="1">54</text>
+<text top="561" left="184" width="15" height="15" font="1">61</text>
+<text top="561" left="218" width="47" height="15" font="1">settable</text>
+<text top="561" left="280" width="31" height="15" font="1">TIM6</text>
+<text top="561" left="408" width="124" height="15" font="1">TIM6 global interrupt</text>
+<text top="561" left="649" width="81" height="15" font="1">0x0000_0118</text>
+<text top="587" left="153" width="15" height="15" font="1">55</text>
+<text top="587" left="184" width="15" height="15" font="1">62</text>
+<text top="587" left="218" width="47" height="15" font="1">settable</text>
+<text top="587" left="280" width="31" height="15" font="1">TIM7</text>
+<text top="587" left="408" width="124" height="15" font="1">TIM7 global interrupt</text>
+<text top="587" left="648" width="83" height="15" font="1">0x0000_011C</text>
+<text top="612" left="153" width="15" height="15" font="1">56</text>
+<text top="612" left="184" width="15" height="15" font="1">63</text>
+<text top="612" left="218" width="47" height="15" font="1">settable</text>
+<text top="612" left="280" width="103" height="15" font="1">DMA2_Channel1</text>
+<text top="612" left="408" width="195" height="15" font="1">DMA2 Channel1 global interrupt </text>
+<text top="612" left="649" width="82" height="15" font="1">0x0000_0120</text>
+<text top="638" left="153" width="15" height="15" font="1">57</text>
+<text top="638" left="184" width="15" height="15" font="1">64</text>
+<text top="638" left="218" width="47" height="15" font="1">settable</text>
+<text top="638" left="280" width="103" height="15" font="1">DMA2_Channel2</text>
+<text top="638" left="408" width="192" height="15" font="1">DMA2 Channel2 global interrupt</text>
+<text top="638" left="649" width="82" height="15" font="1">0x0000_0124</text>
+<text top="664" left="153" width="15" height="15" font="1">58</text>
+<text top="664" left="184" width="15" height="15" font="1">65</text>
+<text top="664" left="218" width="47" height="15" font="1">settable</text>
+<text top="664" left="280" width="103" height="15" font="1">DMA2_Channel3</text>
+<text top="664" left="408" width="192" height="15" font="1">DMA2 Channel3 global interrupt</text>
+<text top="664" left="649" width="82" height="15" font="1">0x0000_0128</text>
+<text top="689" left="153" width="15" height="15" font="1">59</text>
+<text top="689" left="184" width="15" height="15" font="1">66</text>
+<text top="689" left="218" width="47" height="15" font="1">settable</text>
+<text top="689" left="280" width="103" height="15" font="1">DMA2_Channel4</text>
+<text top="689" left="408" width="192" height="15" font="1">DMA2 Channel4 global interrupt</text>
+<text top="689" left="647" width="84" height="15" font="1">0x0000_012C</text>
+<text top="714" left="153" width="15" height="15" font="1">60</text>
+<text top="714" left="184" width="15" height="15" font="1">67</text>
+<text top="714" left="218" width="47" height="15" font="1">settable</text>
+<text top="714" left="280" width="103" height="15" font="1">DMA2_Channel5</text>
+<text top="714" left="408" width="192" height="15" font="1">DMA2 Channel5 global interrupt</text>
+<text top="714" left="649" width="82" height="15" font="1">0x0000_0130</text>
+<text top="740" left="153" width="15" height="15" font="1">61</text>
+<text top="740" left="184" width="15" height="15" font="1">68</text>
+<text top="740" left="218" width="47" height="15" font="1">settable</text>
+<text top="740" left="280" width="27" height="15" font="1">ETH</text>
+<text top="740" left="408" width="147" height="15" font="1">Ethernet global interrupt </text>
+<text top="740" left="649" width="82" height="15" font="1">0x0000_0134</text>
+<text top="774" left="153" width="15" height="15" font="1">62</text>
+<text top="774" left="184" width="15" height="15" font="1">69</text>
+<text top="774" left="218" width="47" height="15" font="1">settable</text>
+<text top="774" left="280" width="75" height="15" font="1">ETH_WKUP</text>
+<text top="765" left="408" width="215" height="15" font="1">Ethernet Wakeup through EXTI line </text>
+<text top="782" left="408" width="49" height="15" font="1">interrupt</text>
+<text top="774" left="649" width="82" height="15" font="1">0x0000_0138</text>
+<text top="808" left="153" width="15" height="15" font="1">63</text>
+<text top="808" left="184" width="15" height="15" font="1">70</text>
+<text top="808" left="218" width="47" height="15" font="1">settable</text>
+<text top="808" left="280" width="61" height="15" font="1">CAN2_TX</text>
+<text top="808" left="408" width="117" height="15" font="1">CAN2 TX interrupts</text>
+<text top="808" left="648" width="84" height="15" font="1">0x0000_013C</text>
+<text top="833" left="153" width="15" height="15" font="1">64</text>
+<text top="833" left="184" width="15" height="15" font="1">71</text>
+<text top="833" left="218" width="47" height="15" font="1">settable</text>
+<text top="833" left="280" width="70" height="15" font="1">CAN2_RX0</text>
+<text top="833" left="408" width="126" height="15" font="1">CAN2 RX0 interrupts</text>
+<text top="833" left="649" width="82" height="15" font="1">0x0000_0140</text>
+<text top="858" left="153" width="15" height="15" font="1">65</text>
+<text top="858" left="184" width="15" height="15" font="1">72</text>
+<text top="858" left="218" width="47" height="15" font="1">settable</text>
+<text top="858" left="280" width="70" height="15" font="1">CAN2_RX1</text>
+<text top="858" left="408" width="119" height="15" font="1">CAN2 RX1 interrupt</text>
+<text top="858" left="649" width="82" height="15" font="1">0x0000_0144</text>
+<text top="884" left="153" width="15" height="15" font="1">66</text>
+<text top="884" left="184" width="15" height="15" font="1">73</text>
+<text top="884" left="218" width="47" height="15" font="1">settable</text>
+<text top="884" left="280" width="71" height="15" font="1">CAN2_SCE</text>
+<text top="884" left="408" width="120" height="15" font="1">CAN2 SCE interrupt</text>
+<text top="884" left="649" width="82" height="15" font="1">0x0000_0148</text>
+<text top="909" left="153" width="15" height="15" font="1">67</text>
+<text top="909" left="184" width="15" height="15" font="1">74</text>
+<text top="909" left="218" width="47" height="15" font="1">settable</text>
+<text top="909" left="280" width="54" height="15" font="1">OTG_FS</text>
+<text top="909" left="408" width="212" height="15" font="1">USB On The Go FS global interrupt</text>
+<text top="909" left="647" width="84" height="15" font="1">0x0000_014C</text>
+<text top="135" left="225" width="443" height="17" font="0"><b>Table 61. Vector table for connectivity line devices (continued)</b></text>
+<text top="244" left="164" width="0" height="15" font="6"><b>Position</b></text>
+<text top="241" left="196" width="0" height="15" font="6"><b>Priority</b></text>
+<text top="213" left="218" width="52" height="15" font="7"><b>Type of </b></text>
+<text top="229" left="218" width="46" height="15" font="7"><b>priority</b></text>
+<text top="221" left="310" width="58" height="15" font="7"><b>Acronym</b></text>
+<text top="221" left="480" width="74" height="15" font="7"><b>Description</b></text>
+<text top="221" left="663" width="54" height="15" font="7"><b>Address</b></text>
+</page>
+<outline>
+<item page="1">My Bookmarks</item>
+<outline>
+<item page="1">10.1.2 Interrupt and exception vectors</item>
+<item page="1">10.1.2 Interrupt and exception vectors</item>
+<outline>
+<item page="1">Table 61. Vector table for connectivity line devices</item>
+</outline>
+</outline>
+</outline>
+</pdf2xml>

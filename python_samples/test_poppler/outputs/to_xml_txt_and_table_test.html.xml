@@ -1,0 +1,2330 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pdf2xml SYSTEM "pdf2xml.dtd">
+
+<pdf2xml producer="poppler" version="24.02.0">
+<page number="1" position="absolute" top="0" left="0" height="1263" width="892">
+	<fontspec id="0" size="14" family="KNBMFL+Arial" color="#000000"/>
+	<fontspec id="1" size="15" family="KNBNHG+Arial,Bold" color="#000000"/>
+	<fontspec id="2" size="10" family="KNBMFL+Arial" color="#ffffff"/>
+	<fontspec id="3" size="21" family="KNBNHG+Arial,Bold" color="#000000"/>
+	<fontspec id="4" size="15" family="KNBMFL+Arial" color="#000000"/>
+	<fontspec id="5" size="15" family="KNBNII+Arial,Italic" color="#0000ff"/>
+	<fontspec id="6" size="18" family="KNBNHG+Arial,Bold" color="#000000"/>
+	<fontspec id="7" size="3" family="KNBMFL+Arial" color="#000000"/>
+	<fontspec id="8" size="10" family="KNBMFL+Arial" color="#000000"/>
+	<fontspec id="9" size="14" family="KNBNHG+Arial,Bold" color="#000000"/>
+	<fontspec id="10" size="14" family="KNBNII+Arial,Italic" color="#000000"/>
+<text top="1115" left="398" width="97" height="15" font="0">RM0008 Rev 21</text>
+<text top="1115" left="737" width="55" height="15" font="0">237<a href="">/1136</a></text>
+<text top="88" left="101" width="57" height="17" font="1"><b>RM0008</b></text>
+<text top="88" left="554" width="238" height="17" font="1"><b>Analog-to-digital converter (ADC)</b></text>
+<text top="1140" left="825" width="18" height="12" font="2">253</text>
+<text top="134" left="101" width="164" height="23" font="3"><b>11.12 ADC </b></text>
+<text top="134" left="237" width="89" height="23" font="3"><b>registers</b></text>
+<text top="170" left="186" width="57" height="17" font="4"><a href="">Refer to </a></text>
+<text top="170" left="243" width="154" height="17" font="5"><a href=""><i>Section 2.2 on page 45</i></a></text>
+<text top="170" left="398" width="362" height="17" font="4"><a href=""> fo</a>r a list of abbreviations used in register descriptions.</text>
+<text top="197" left="186" width="420" height="17" font="4">The peripheral registers have to be accessed by words (32-bit).</text>
+<text top="235" left="101" width="64" height="20" font="6"><b>11.12.1 </b></text>
+<text top="235" left="186" width="259" height="20" font="6"><b>ADC status register (ADC_SR)</b></text>
+<text top="267" left="186" width="136" height="17" font="4">Address offset: 0x00</text>
+<text top="294" left="186" width="174" height="17" font="4">Reset value: 0x0000 0000</text>
+<text top="330" left="187" width="7" height="3" font="7">         </text>
+<text top="446" left="187" width="7" height="3" font="7">         </text>
+<text top="337" left="115" width="12" height="12" font="8">31</text>
+<text top="337" left="157" width="12" height="12" font="8">30</text>
+<text top="337" left="199" width="12" height="12" font="8">29</text>
+<text top="337" left="241" width="12" height="12" font="8">28</text>
+<text top="337" left="283" width="12" height="12" font="8">27</text>
+<text top="337" left="325" width="12" height="12" font="8">26</text>
+<text top="337" left="368" width="12" height="12" font="8">25</text>
+<text top="337" left="412" width="12" height="12" font="8">24</text>
+<text top="337" left="456" width="12" height="12" font="8">23</text>
+<text top="337" left="500" width="12" height="12" font="8">22</text>
+<text top="337" left="544" width="12" height="12" font="8">21</text>
+<text top="337" left="588" width="12" height="12" font="8">20</text>
+<text top="337" left="632" width="12" height="12" font="8">19</text>
+<text top="337" left="676" width="12" height="12" font="8">18</text>
+<text top="337" left="721" width="12" height="12" font="8">17</text>
+<text top="337" left="765" width="12" height="12" font="8">16</text>
+<text top="357" left="424" width="45" height="12" font="8">Reserved</text>
+<text top="376" left="115" width="12" height="12" font="8">15</text>
+<text top="376" left="157" width="12" height="12" font="8">14</text>
+<text top="376" left="199" width="12" height="12" font="8">13</text>
+<text top="376" left="241" width="12" height="12" font="8">12</text>
+<text top="376" left="283" width="11" height="12" font="8">11</text>
+<text top="376" left="325" width="12" height="12" font="8">10</text>
+<text top="376" left="371" width="6" height="12" font="8">9</text>
+<text top="376" left="415" width="6" height="12" font="8">8</text>
+<text top="376" left="459" width="6" height="12" font="8">7</text>
+<text top="376" left="503" width="6" height="12" font="8">6</text>
+<text top="376" left="547" width="6" height="12" font="8">5</text>
+<text top="376" left="591" width="6" height="12" font="8">4</text>
+<text top="376" left="635" width="6" height="12" font="8">3</text>
+<text top="376" left="679" width="6" height="12" font="8">2</text>
+<text top="376" left="724" width="6" height="12" font="8">1</text>
+<text top="376" left="768" width="6" height="12" font="8">0</text>
+<text top="405" left="313" width="45" height="12" font="8">Reserved</text>
+<text top="396" left="581" width="27" height="12" font="8">STRT</text>
+<text top="396" left="622" width="32" height="12" font="8">JSTRT</text>
+<text top="396" left="668" width="69" height="12" font="8">JEOC EOC</text>
+<text top="396" left="759" width="24" height="12" font="8">AWD</text>
+<text top="415" left="580" width="28" height="12" font="8">rc_w0</text>
+<text top="415" left="624" width="28" height="12" font="8">rc_w0</text>
+<text top="415" left="668" width="28" height="12" font="8">rc_w0</text>
+<text top="415" left="713" width="28" height="12" font="8">rc_w0</text>
+<text top="415" left="757" width="28" height="12" font="8">rc_w0</text>
+<text top="455" left="167" width="292" height="15" font="0">Bits 31:5 Reserved, must be kept at reset value.</text>
+<text top="480" left="193" width="27" height="15" font="0">Bit 4</text>
+<text top="480" left="228" width="38" height="15" font="9"><b>STRT:</b></text>
+<text top="480" left="266" width="160" height="15" font="0"> Regular channel Start flag</text>
+<text top="480" left="426" width="4" height="15" font="10"><i> </i></text>
+<text top="500" left="241" width="548" height="15" font="0">This bit is set by hardware when regular channel conversion starts. It is cleared by software.</text>
+<text top="518" left="241" width="243" height="15" font="0">0: No regular channel conversion started</text>
+<text top="536" left="241" width="253" height="15" font="0">1: Regular channel conversion has started</text>
+<text top="561" left="193" width="27" height="15" font="0">Bit 3</text>
+<text top="561" left="228" width="46" height="15" font="9"><b>JSTRT:</b></text>
+<text top="561" left="274" width="160" height="15" font="0"> Injected channel Start flag</text>
+<text top="581" left="241" width="536" height="15" font="0">This bit is set by hardware when injected channel group conversion starts. It is cleared by </text>
+<text top="597" left="241" width="55" height="15" font="0">software.</text>
+<text top="615" left="241" width="235" height="15" font="0">0: No injected group conversion started</text>
+<text top="633" left="241" width="240" height="15" font="0">1: Injected group conversion has started</text>
+<text top="659" left="193" width="27" height="15" font="0">Bit 2</text>
+<text top="659" left="228" width="41" height="15" font="9"><b>JEOC:</b></text>
+<text top="659" left="269" width="212" height="15" font="0"> Injected channel end of conversion</text>
+<text top="678" left="241" width="541" height="15" font="0">This bit is set by hardware at the end of all injected group channel conversion. It is cleared </text>
+<text top="695" left="241" width="77" height="15" font="0">by software. </text>
+<text top="713" left="241" width="181" height="15" font="0">0: Conversion is not complete </text>
+<text top="731" left="241" width="142" height="15" font="0">1: Conversion complete</text>
+<text top="756" left="193" width="27" height="15" font="0">Bit 1</text>
+<text top="756" left="228" width="34" height="15" font="9"><b>EOC:</b></text>
+<text top="756" left="262" width="112" height="15" font="0"> End of conversion</text>
+<text top="776" left="241" width="548" height="15" font="0">This bit is set by hardware at the end of a group channel conversion (regular or injected). It is </text>
+<text top="792" left="241" width="288" height="15" font="0">cleared by software or by reading the ADC_DR. </text>
+<text top="810" left="241" width="181" height="15" font="0">0: Conversion is not complete </text>
+<text top="828" left="241" width="142" height="15" font="0">1: Conversion complete</text>
+<text top="854" left="193" width="27" height="15" font="0">Bit 0</text>
+<text top="854" left="228" width="36" height="15" font="9"><b>AWD:</b></text>
+<text top="854" left="264" width="136" height="15" font="0"> Analog watchdog flag </text>
+<text top="873" left="241" width="539" height="15" font="0">This bit is set by hardware when the converted voltage crosses the values programmed in </text>
+<text top="890" left="241" width="383" height="15" font="0">the ADC_LTR and ADC_HTR registers. It is cleared by software.</text>
+<text top="908" left="241" width="232" height="15" font="0">0: No Analog watchdog event occurred</text>
+<text top="926" left="241" width="211" height="15" font="0">1: Analog watchdog event occurred</text>
+</page>
+<page number="2" position="absolute" top="0" left="0" height="1263" width="892">
+<text top="88" left="101" width="238" height="17" font="1"><b>Analog-to-digital converter (ADC)</b></text>
+<text top="88" left="735" width="57" height="17" font="1"><b>RM0008</b></text>
+<text top="1115" left="101" width="55" height="15" font="0">238<a href="">/1136</a></text>
+<text top="1115" left="398" width="97" height="15" font="0">RM0008 Rev 21</text>
+<text top="134" left="101" width="150" height="20" font="6"><b>11.12.2 ADC </b></text>
+<text top="134" left="230" width="87" height="20" font="6"><b>control </b></text>
+<text top="134" left="296" width="183" height="20" font="6"><b>register 1 (ADC_CR1)</b></text>
+<text top="167" left="186" width="136" height="17" font="4">Address offset: 0x04</text>
+<text top="194" left="186" width="174" height="17" font="4">Reset value: 0x0000 0000</text>
+<text top="230" left="187" width="7" height="3" font="7">         </text>
+<text top="388" left="187" width="7" height="3" font="7">         </text>
+<text top="237" left="115" width="12" height="12" font="8">31</text>
+<text top="237" left="156" width="12" height="12" font="8">30</text>
+<text top="237" left="196" width="12" height="12" font="8">29</text>
+<text top="237" left="238" width="12" height="12" font="8">28</text>
+<text top="237" left="282" width="12" height="12" font="8">27</text>
+<text top="237" left="325" width="12" height="12" font="8">26</text>
+<text top="237" left="368" width="12" height="12" font="8">25</text>
+<text top="237" left="413" width="12" height="12" font="8">24</text>
+<text top="237" left="457" width="12" height="12" font="8">23</text>
+<text top="237" left="502" width="12" height="12" font="8">22</text>
+<text top="237" left="548" width="12" height="12" font="8">21</text>
+<text top="237" left="591" width="12" height="12" font="8">20</text>
+<text top="237" left="634" width="12" height="12" font="8">19</text>
+<text top="237" left="677" width="12" height="12" font="8">18</text>
+<text top="237" left="721" width="12" height="12" font="8">17</text>
+<text top="237" left="764" width="12" height="12" font="8">16</text>
+<text top="272" left="248" width="45" height="12" font="8">Reserved</text>
+<text top="256" left="447" width="31" height="12" font="8">AWDE</text>
+<text top="268" left="459" width="8" height="12" font="8">N</text>
+<text top="256" left="490" width="36" height="12" font="8">JAWDE</text>
+<text top="268" left="504" width="8" height="12" font="8">N</text>
+<text top="272" left="553" width="45" height="12" font="8">Reserved</text>
+<text top="262" left="669" width="73" height="12" font="8">DUALMOD[3:0]</text>
+<text top="288" left="457" width="11" height="12" font="8">rw</text>
+<text top="288" left="502" width="11" height="12" font="8">rw</text>
+<text top="288" left="635" width="11" height="12" font="8">rw</text>
+<text top="288" left="678" width="11" height="12" font="8">rw</text>
+<text top="288" left="721" width="11" height="12" font="8">rw</text>
+<text top="288" left="765" width="11" height="12" font="8">rw</text>
+<text top="307" left="115" width="12" height="12" font="8">15</text>
+<text top="307" left="156" width="12" height="12" font="8">14</text>
+<text top="307" left="196" width="12" height="12" font="8">13</text>
+<text top="307" left="238" width="12" height="12" font="8">12</text>
+<text top="307" left="282" width="11" height="12" font="8">11</text>
+<text top="307" left="325" width="12" height="12" font="8">10</text>
+<text top="307" left="371" width="6" height="12" font="8">9</text>
+<text top="307" left="416" width="6" height="12" font="8">8</text>
+<text top="307" left="460" width="6" height="12" font="8">7</text>
+<text top="307" left="505" width="6" height="12" font="8">6</text>
+<text top="307" left="551" width="6" height="12" font="8">5</text>
+<text top="307" left="594" width="6" height="12" font="8">4</text>
+<text top="307" left="637" width="6" height="12" font="8">3</text>
+<text top="307" left="680" width="6" height="12" font="8">2</text>
+<text top="307" left="724" width="6" height="12" font="8">1</text>
+<text top="307" left="767" width="6" height="12" font="8">0</text>
+<text top="333" left="127" width="69" height="12" font="8">DISCNUM[2:0]</text>
+<text top="327" left="226" width="37" height="12" font="8">JDISCE</text>
+<text top="339" left="240" width="8" height="12" font="8">N</text>
+<text top="327" left="275" width="28" height="12" font="8">DISC </text>
+<text top="339" left="281" width="15" height="12" font="8">EN</text>
+<text top="333" left="314" width="34" height="12" font="8">JAUTO</text>
+<text top="327" left="362" width="27" height="12" font="8">AWD </text>
+<text top="339" left="364" width="21" height="12" font="8">SGL</text>
+<text top="333" left="404" width="29" height="12" font="8">SCAN</text>
+<text top="327" left="449" width="31" height="12" font="8">JEOC </text>
+<text top="339" left="458" width="10" height="12" font="8">IE</text>
+<text top="333" left="491" width="34" height="12" font="8">AWDIE</text>
+<text top="333" left="537" width="33" height="12" font="8">EOCIE</text>
+<text top="333" left="654" width="60" height="12" font="8">AWDCH[4:0]</text>
+<text top="358" left="116" width="11" height="12" font="8">rw</text>
+<text top="358" left="156" width="11" height="12" font="8">rw</text>
+<text top="358" left="197" width="11" height="12" font="8">rw</text>
+<text top="358" left="239" width="11" height="12" font="8">rw</text>
+<text top="358" left="282" width="11" height="12" font="8">rw</text>
+<text top="358" left="325" width="11" height="12" font="8">rw</text>
+<text top="358" left="368" width="11" height="12" font="8">rw</text>
+<text top="358" left="413" width="11" height="12" font="8">rw</text>
+<text top="358" left="457" width="11" height="12" font="8">rw</text>
+<text top="358" left="502" width="11" height="12" font="8">rw</text>
+<text top="358" left="548" width="11" height="12" font="8">rw</text>
+<text top="358" left="591" width="11" height="12" font="8">rw</text>
+<text top="358" left="635" width="11" height="12" font="8">rw</text>
+<text top="358" left="678" width="11" height="12" font="8">rw</text>
+<text top="358" left="721" width="11" height="12" font="8">rw</text>
+<text top="358" left="765" width="11" height="12" font="8">rw</text>
+<text top="398" left="160" width="299" height="15" font="0">Bits 31:24 Reserved, must be kept at reset value.</text>
+<text top="423" left="185" width="34" height="15" font="0">Bit 23</text>
+<text top="423" left="228" width="55" height="15" font="9"><b>AWDEN:</b></text>
+<text top="423" left="283" width="273" height="15" font="0"> Analog watchdog enable on regular channels</text>
+<text top="443" left="241" width="189" height="15" font="0">This bit is set/reset by software.</text>
+<text top="461" left="241" width="294" height="15" font="0">0: Analog watchdog disabled on regular channels</text>
+<text top="479" left="241" width="291" height="15" font="0">1: Analog watchdog enabled on regular channels</text>
+<text top="504" left="185" width="34" height="15" font="0">Bit 22</text>
+<text top="504" left="228" width="62" height="15" font="9"><b>JAWDEN:</b></text>
+<text top="504" left="290" width="277" height="15" font="0"> Analog watchdog enable on injected channels</text>
+<text top="524" left="241" width="189" height="15" font="0">This bit is set/reset by software.</text>
+<text top="542" left="241" width="298" height="15" font="0">0: Analog watchdog disabled on injected channels</text>
+<text top="560" left="241" width="296" height="15" font="0">1: Analog watchdog enabled on injected channels</text>
+<text top="585" left="160" width="299" height="15" font="0">Bits 21:20 Reserved, must be kept at reset value.</text>
+<text top="611" left="160" width="60" height="15" font="0">Bits 19:16</text>
+<text top="611" left="228" width="97" height="15" font="9"><b>DUALMOD[3:0]</b></text>
+<text top="611" left="325" width="130" height="15" font="0">: Dual mode selection</text>
+<text top="630" left="241" width="379" height="15" font="0">These bits are written by software to select the operating mode.</text>
+<text top="648" left="241" width="157" height="15" font="0">0000: Independent mode. </text>
+<text top="666" left="241" width="414" height="15" font="0">0001: Combined regular simultaneous + injected simultaneous mode </text>
+<text top="684" left="241" width="375" height="15" font="0">0010: Combined regular simultaneous + alternate trigger mode</text>
+<text top="702" left="241" width="379" height="15" font="0">0011: Combined injected simultaneous + fast interleaved mode </text>
+<text top="720" left="241" width="386" height="15" font="0">0100: Combined injected simultaneous + slow Interleaved mode </text>
+<text top="738" left="241" width="234" height="15" font="0">0101: Injected simultaneous mode only</text>
+<text top="756" left="241" width="233" height="15" font="0">0110: Regular simultaneous mode only</text>
+<text top="774" left="241" width="197" height="15" font="0">0111: Fast interleaved mode only</text>
+<text top="792" left="241" width="202" height="15" font="0">1000: Slow interleaved mode only</text>
+<text top="810" left="241" width="199" height="15" font="0">1001: Alternate trigger mode only</text>
+<text top="830" left="228" width="307" height="15" font="10"><i>Note: These bits are reserved in ADC2 and ADC3.</i></text>
+<text top="849" left="271" width="518" height="15" font="10"><i>In dual mode, a change of channel configuration generates a restart that can produce a </i></text>
+<text top="866" left="271" width="454" height="15" font="10"><i>loss of synchronization. It is recommended to disable dual mode before any </i></text>
+<text top="882" left="271" width="129" height="15" font="10"><i>configuration change.</i></text>
+<text top="908" left="160" width="72" height="15" font="0">Bits 15:13  </text>
+<text top="908" left="232" width="91" height="15" font="9"><b>DISCNUM[2:0]</b></text>
+<text top="908" left="323" width="217" height="15" font="0">: Discontinuous mode channel count</text>
+<text top="927" left="241" width="548" height="15" font="0">These bits are written by software to define the number of regular channels to be converted </text>
+<text top="944" left="241" width="342" height="15" font="0">in discontinuous mode, after receiving an external trigger.</text>
+<text top="962" left="241" width="88" height="15" font="0">000: 1 channel</text>
+<text top="980" left="241" width="95" height="15" font="0">001: 2 channels</text>
+<text top="998" left="241" width="26" height="15" font="0">.......</text>
+<text top="1016" left="241" width="93" height="15" font="0">111: 8 channels</text>
+</page>
+<page number="3" position="absolute" top="0" left="0" height="1263" width="892">
+<text top="1115" left="398" width="97" height="15" font="0">RM0008 Rev 21</text>
+<text top="1115" left="737" width="55" height="15" font="0">239<a href="">/1136</a></text>
+<text top="88" left="101" width="57" height="17" font="1"><b>RM0008</b></text>
+<text top="88" left="554" width="238" height="17" font="1"><b>Analog-to-digital converter (ADC)</b></text>
+<text top="1140" left="825" width="18" height="12" font="2">253</text>
+<text top="144" left="185" width="34" height="15" font="0">Bit 12</text>
+<text top="144" left="228" width="58" height="15" font="9"><b>JDISCEN</b></text>
+<text top="144" left="287" width="256" height="15" font="0">: Discontinuous mode on injected channels</text>
+<text top="164" left="241" width="548" height="15" font="0">This bit set and cleared by software to enable/disable discontinuous mode on injected group </text>
+<text top="180" left="241" width="54" height="15" font="0">channels</text>
+<text top="198" left="241" width="318" height="15" font="0">0: Discontinuous mode on injected channels disabled</text>
+<text top="216" left="241" width="315" height="15" font="0">1: Discontinuous mode on injected channels enabled</text>
+<text top="242" left="186" width="33" height="15" font="0">Bit 11</text>
+<text top="242" left="228" width="51" height="15" font="9"><b>DISCEN</b></text>
+<text top="242" left="279" width="252" height="15" font="0">: Discontinuous mode on regular channels</text>
+<text top="261" left="241" width="512" height="15" font="0">This bit set and cleared by software to enable/disable Discontinuous mode on regular </text>
+<text top="278" left="241" width="58" height="15" font="0">channels.</text>
+<text top="296" left="241" width="313" height="15" font="0">0: Discontinuous mode on regular channels disabled</text>
+<text top="314" left="241" width="311" height="15" font="0">1: Discontinuous mode on regular channels enabled</text>
+<text top="339" left="185" width="34" height="15" font="0">Bit 10</text>
+<text top="339" left="228" width="50" height="15" font="9"><b>JAUTO:</b></text>
+<text top="339" left="278" width="228" height="15" font="0"> Automatic Injected Group conversion </text>
+<text top="359" left="241" width="541" height="15" font="0">This bit set and cleared by software to enable/disable automatic injected group conversion </text>
+<text top="375" left="241" width="184" height="15" font="0">after regular group conversion.</text>
+<text top="393" left="241" width="289" height="15" font="0">0: Automatic injected group conversion disabled </text>
+<text top="411" left="241" width="283" height="15" font="0">1: Automatic injected group conversion enabled</text>
+<text top="437" left="193" width="27" height="15" font="0">Bit 9</text>
+<text top="437" left="228" width="64" height="15" font="9"><b>AWDSGL:</b></text>
+<text top="437" left="292" width="333" height="15" font="0"> Enable the watchdog on a single channel in scan mode</text>
+<text top="457" left="241" width="542" height="15" font="0">This bit set and cleared by software to enable/disable the analog watchdog on the channel </text>
+<text top="473" left="241" width="203" height="15" font="0">identified by the AWDCH[4:0] bits.</text>
+<text top="491" left="241" width="263" height="15" font="0">0: Analog watchdog enabled on all channels</text>
+<text top="509" left="241" width="293" height="15" font="0">1: Analog watchdog enabled on a single channel </text>
+<text top="534" left="193" width="27" height="15" font="0">Bit 8</text>
+<text top="534" left="228" width="43" height="15" font="9"><b>SCAN:</b></text>
+<text top="534" left="271" width="76" height="15" font="0"> Scan mode </text>
+<text top="554" left="241" width="524" height="15" font="0">This bit is set and cleared by software to enable/disable Scan mode. In Scan mode, the </text>
+<text top="570" left="241" width="483" height="15" font="0">inputs selected through the ADC_SQRx or ADC_JSQRx registers are converted. </text>
+<text top="588" left="241" width="137" height="15" font="0">0: Scan mode disabled</text>
+<text top="606" left="241" width="135" height="15" font="0">1: Scan mode enabled</text>
+<text top="626" left="228" width="524" height="15" font="10"><i>Note: An EOC or JEOC interrupt is generated only on the end of conversion of the last </i></text>
+<text top="642" left="271" width="336" height="15" font="10"><i>channel if the corresponding EOCIE or JEOCIE bit is set</i></text>
+<text top="668" left="193" width="27" height="15" font="0">Bit 7</text>
+<text top="668" left="228" width="50" height="15" font="9"><b>JEOCIE</b></text>
+<text top="668" left="278" width="229" height="15" font="0">: Interrupt enable for injected channels</text>
+<text top="687" left="241" width="540" height="15" font="0">This bit is set and cleared by software to enable/disable the end of conversion interrupt for </text>
+<text top="704" left="241" width="112" height="15" font="0">injected channels. </text>
+<text top="722" left="241" width="158" height="15" font="0">0: JEOC interrupt disabled</text>
+<text top="740" left="241" width="466" height="15" font="0">1: JEOC interrupt enabled. An interrupt is generated when the JEOC bit is set.</text>
+</page>
+<page number="4" position="absolute" top="0" left="0" height="1263" width="892">
+	<fontspec id="11" size="11" family="KNBNII+Arial,Italic" color="#000000"/>
+<text top="88" left="101" width="238" height="17" font="1"><b>Analog-to-digital converter (ADC)</b></text>
+<text top="88" left="735" width="57" height="17" font="1"><b>RM0008</b></text>
+<text top="1115" left="101" width="55" height="15" font="0">240<a href="">/1136</a></text>
+<text top="1115" left="398" width="97" height="15" font="0">RM0008 Rev 21</text>
+<text top="605" left="101" width="150" height="20" font="6"><b>11.12.3 ADC </b></text>
+<text top="605" left="230" width="87" height="20" font="6"><b>control </b></text>
+<text top="605" left="296" width="183" height="20" font="6"><b>register 2 (ADC_CR2)</b></text>
+<text top="638" left="186" width="136" height="17" font="4">Address offset: 0x08</text>
+<text top="665" left="186" width="174" height="17" font="4">Reset value: 0x0000 0000</text>
+<text top="700" left="187" width="7" height="3" font="7">         </text>
+<text top="860" left="187" width="7" height="3" font="7">         </text>
+<text top="144" left="193" width="27" height="15" font="0">Bit 6</text>
+<text top="144" left="228" width="44" height="15" font="9"><b>AWDIE</b></text>
+<text top="144" left="272" width="8" height="15" font="10"><i>: </i></text>
+<text top="144" left="280" width="204" height="15" font="0">Analog watchdog interrupt enable </text>
+<text top="164" left="241" width="520" height="15" font="0">This bit is set and cleared by software to enable/disable the analog watchdog interrupt. </text>
+<text top="182" left="241" width="228" height="15" font="0">0: Analog watchdog interrupt disabled </text>
+<text top="200" left="241" width="223" height="15" font="0">1: Analog watchdog interrupt enabled</text>
+<text top="225" left="193" width="27" height="15" font="0">Bit 5</text>
+<text top="225" left="228" width="46" height="15" font="9"><b>EOCIE:</b></text>
+<text top="225" left="275" width="154" height="15" font="0"> Interrupt enable for EOC </text>
+<text top="245" left="241" width="529" height="15" font="0">This bit is set and cleared by software to enable/disable the End of Conversion interrupt. </text>
+<text top="263" left="241" width="151" height="15" font="0">0: EOC interrupt disabled</text>
+<text top="281" left="241" width="452" height="15" font="0">1: EOC interrupt enabled. An interrupt is generated when the EOC bit is set.</text>
+<text top="306" left="175" width="45" height="15" font="0">Bits 4:0</text>
+<text top="306" left="228" width="84" height="15" font="9"><b>AWDCH[4:0]:</b></text>
+<text top="306" left="312" width="225" height="15" font="0"> Analog watchdog channel select bits </text>
+<text top="326" left="241" width="545" height="15" font="0">These bits are set and cleared by software. They select the input channel to be guarded by </text>
+<text top="342" left="241" width="132" height="15" font="0">the Analog watchdog. </text>
+<text top="360" left="241" width="181" height="15" font="0">00000: ADC analog Channel0 </text>
+<text top="378" left="241" width="178" height="15" font="0">00001: ADC analog Channel1</text>
+<text top="396" left="241" width="15" height="15" font="0">....</text>
+<text top="414" left="241" width="183" height="15" font="0">01111: ADC analog Channel15</text>
+<text top="432" left="241" width="186" height="15" font="0">10000: ADC analog Channel16</text>
+<text top="450" left="241" width="186" height="15" font="0">10001: ADC analog Channel17</text>
+<text top="468" left="241" width="140" height="15" font="0">Other values: reserved.</text>
+<text top="488" left="228" width="551" height="15" font="10"><i>Note: ADC1 analog Channel16 and Channel17 are internally connected to the temperature </i></text>
+<text top="504" left="271" width="94" height="15" font="10"><i>sensor and to V</i></text>
+<text top="510" left="365" width="39" height="12" font="11"><i>REFINT</i></text>
+<text top="504" left="404" width="82" height="15" font="10"><i>, respectively.</i></text>
+<text top="524" left="271" width="459" height="15" font="10"><i>ADC2 analog inputs Channel16 and Channel17 are internally connected to V</i></text>
+<text top="530" left="729" width="14" height="12" font="11"><i>SS</i></text>
+<text top="524" left="744" width="4" height="15" font="10"><i>.</i></text>
+<text top="543" left="271" width="518" height="15" font="10"><i>ADC3 analog inputs Channel9, Channel14, Channel15, Channel16 and Channel17 are </i></text>
+<text top="560" left="271" width="90" height="15" font="10"><i>connected to V</i></text>
+<text top="566" left="361" width="14" height="12" font="11"><i>SS</i></text>
+<text top="560" left="375" width="4" height="15" font="10"><i>.</i></text>
+<text top="708" left="115" width="12" height="12" font="8">31</text>
+<text top="708" left="157" width="12" height="12" font="8">30</text>
+<text top="708" left="199" width="12" height="12" font="8">29</text>
+<text top="708" left="241" width="12" height="12" font="8">28</text>
+<text top="708" left="283" width="12" height="12" font="8">27</text>
+<text top="708" left="325" width="12" height="12" font="8">26</text>
+<text top="708" left="368" width="12" height="12" font="8">25</text>
+<text top="708" left="412" width="12" height="12" font="8">24</text>
+<text top="708" left="456" width="12" height="12" font="8">23</text>
+<text top="708" left="500" width="12" height="12" font="8">22</text>
+<text top="708" left="546" width="12" height="12" font="8">21</text>
+<text top="708" left="590" width="12" height="12" font="8">20</text>
+<text top="708" left="632" width="12" height="12" font="8">19</text>
+<text top="708" left="676" width="12" height="12" font="8">18</text>
+<text top="708" left="721" width="12" height="12" font="8">17</text>
+<text top="708" left="765" width="12" height="12" font="8">16</text>
+<text top="743" left="247" width="45" height="12" font="8">Reserved</text>
+<text top="727" left="445" width="35" height="12" font="8">TSVRE</text>
+<text top="739" left="455" width="13" height="12" font="8">FE</text>
+<text top="727" left="488" width="36" height="12" font="8">SWSTA</text>
+<text top="739" left="499" width="14" height="12" font="8">RT</text>
+<text top="727" left="534" width="36" height="12" font="8">JSWST</text>
+<text top="739" left="542" width="21" height="12" font="8">ART</text>
+<text top="727" left="579" width="34" height="12" font="8">EXTTR</text>
+<text top="739" left="590" width="11" height="12" font="8">IG</text>
+<text top="733" left="652" width="61" height="12" font="8">EXTSEL[2:0]</text>
+<text top="733" left="760" width="22" height="12" font="8">Res.</text>
+<text top="759" left="457" width="11" height="12" font="8">rw</text>
+<text top="759" left="501" width="11" height="12" font="8">rw</text>
+<text top="759" left="546" width="11" height="12" font="8">rw</text>
+<text top="759" left="590" width="11" height="12" font="8">rw</text>
+<text top="759" left="633" width="11" height="12" font="8">rw</text>
+<text top="759" left="677" width="11" height="12" font="8">rw</text>
+<text top="759" left="721" width="11" height="12" font="8">rw</text>
+<text top="778" left="115" width="12" height="12" font="8">15</text>
+<text top="778" left="157" width="12" height="12" font="8">14</text>
+<text top="778" left="199" width="12" height="12" font="8">13</text>
+<text top="778" left="241" width="12" height="12" font="8">12</text>
+<text top="778" left="283" width="11" height="12" font="8">11</text>
+<text top="778" left="325" width="12" height="12" font="8">10</text>
+<text top="778" left="371" width="6" height="12" font="8">9</text>
+<text top="778" left="415" width="6" height="12" font="8">8</text>
+<text top="778" left="459" width="6" height="12" font="8">7</text>
+<text top="778" left="503" width="6" height="12" font="8">6</text>
+<text top="778" left="549" width="6" height="12" font="8">5</text>
+<text top="778" left="593" width="6" height="12" font="8">4</text>
+<text top="778" left="635" width="6" height="12" font="8">3</text>
+<text top="778" left="679" width="6" height="12" font="8">2</text>
+<text top="778" left="724" width="6" height="12" font="8">1</text>
+<text top="778" left="768" width="6" height="12" font="8">0</text>
+<text top="798" left="105" width="32" height="12" font="8">JEXTT</text>
+<text top="810" left="111" width="19" height="12" font="8">RIG</text>
+<text top="804" left="172" width="66" height="12" font="8">JEXTSEL[2:0]</text>
+<text top="804" left="273" width="31" height="12" font="8">ALIGN</text>
+<text top="804" left="330" width="45" height="12" font="8">Reserved</text>
+<text top="804" left="406" width="23" height="12" font="8">DMA</text>
+<text top="814" left="506" width="45" height="12" font="8">Reserved</text>
+<text top="798" left="628" width="24" height="12" font="8">RST </text>
+<text top="810" left="628" width="20" height="12" font="8">CAL</text>
+<text top="804" left="672" width="20" height="12" font="8">CAL</text>
+<text top="804" left="712" width="30" height="12" font="8">CONT</text>
+<text top="804" left="756" width="30" height="12" font="8">ADON</text>
+<text top="829" left="115" width="11" height="12" font="8">rw</text>
+<text top="829" left="157" width="11" height="12" font="8">rw</text>
+<text top="829" left="199" width="11" height="12" font="8">rw</text>
+<text top="829" left="241" width="11" height="12" font="8">rw</text>
+<text top="829" left="283" width="11" height="12" font="8">rw</text>
+<text top="829" left="342" width="22" height="12" font="8">Res.</text>
+<text top="829" left="412" width="11" height="12" font="8">rw</text>
+<text top="829" left="633" width="11" height="12" font="8">rw</text>
+<text top="829" left="677" width="11" height="12" font="8">rw</text>
+<text top="829" left="721" width="11" height="12" font="8">rw</text>
+<text top="829" left="765" width="11" height="12" font="8">rw</text>
+</page>
+<page number="5" position="absolute" top="0" left="0" height="1263" width="892">
+	<fontspec id="12" size="11" family="KNBMFL+Arial" color="#000000"/>
+<text top="1115" left="398" width="97" height="15" font="0">RM0008 Rev 21</text>
+<text top="1115" left="737" width="55" height="15" font="0">241<a href="">/1136</a></text>
+<text top="88" left="101" width="57" height="17" font="1"><b>RM0008</b></text>
+<text top="88" left="554" width="238" height="17" font="1"><b>Analog-to-digital converter (ADC)</b></text>
+<text top="1140" left="825" width="18" height="12" font="2">253</text>
+<text top="144" left="160" width="60" height="15" font="0">Bits 31:24</text>
+<text top="144" left="241" width="231" height="15" font="0">Reserved, must be kept at reset value.</text>
+<text top="170" left="185" width="34" height="15" font="0">Bit 23</text>
+<text top="170" left="228" width="62" height="15" font="9"><b>TSVREFE</b></text>
+<text top="170" left="290" width="166" height="15" font="0">: Temperature sensor and V</text>
+<text top="176" left="456" width="39" height="12" font="12">REFINT</text>
+<text top="170" left="495" width="44" height="15" font="0"> enable</text>
+<text top="189" left="241" width="506" height="15" font="0">This bit is set and cleared by software to enable/disable the temperature sensor and V</text>
+<text top="195" left="747" width="39" height="12" font="12">REFINT</text>
+<text top="189" left="785" width="4" height="15" font="0"> </text>
+<text top="206" left="241" width="401" height="15" font="0">channel. In devices with dual ADCs this bit is present only in ADC1.</text>
+<text top="224" left="241" width="174" height="15" font="0">0: Temperature sensor and V</text>
+<text top="230" left="414" width="39" height="12" font="12">REFINT</text>
+<text top="224" left="453" width="105" height="15" font="0"> channel disabled</text>
+<text top="242" left="241" width="174" height="15" font="0">1: Temperature sensor and V</text>
+<text top="248" left="414" width="39" height="12" font="12">REFINT</text>
+<text top="242" left="453" width="103" height="15" font="0"> channel enabled</text>
+<text top="267" left="185" width="34" height="15" font="0">Bit 22</text>
+<text top="267" left="228" width="66" height="15" font="9"><b>SWSTART</b></text>
+<text top="267" left="294" width="223" height="15" font="0">: Start conversion of regular channels</text>
+<text top="287" left="241" width="490" height="15" font="0">This bit is set by software to start conversion and cleared by hardware as soon as </text>
+<text top="303" left="241" width="513" height="15" font="0">conversion starts. It starts a conversion of a group of regular channels if SWSTART is </text>
+<text top="320" left="241" width="301" height="15" font="0">selected as trigger event by the EXTSEL[2:0] bits. </text>
+<text top="338" left="241" width="83" height="15" font="0">0: Reset state</text>
+<text top="356" left="241" width="241" height="15" font="0">1: Starts conversion of regular channels </text>
+<text top="381" left="185" width="34" height="15" font="0">Bit 21</text>
+<text top="381" left="228" width="73" height="15" font="9"><b>JSWSTART</b></text>
+<text top="381" left="301" width="228" height="15" font="0">: Start conversion of injected channels</text>
+<text top="401" left="241" width="548" height="15" font="0">This bit is set by software and cleared by software or by hardware as soon as the conversion </text>
+<text top="417" left="241" width="531" height="15" font="0">starts. It starts a conversion of a group of injected channels (if JSWSTART is selected as </text>
+<text top="434" left="241" width="236" height="15" font="0">trigger event by the JEXTSEL[2:0] bits. </text>
+<text top="452" left="241" width="83" height="15" font="0">0: Reset state</text>
+<text top="470" left="241" width="242" height="15" font="0">1: Starts conversion of injected channels</text>
+<text top="495" left="185" width="34" height="15" font="0">Bit 20</text>
+<text top="495" left="228" width="59" height="15" font="9"><b>EXTTRIG</b></text>
+<text top="495" left="287" width="328" height="15" font="0">: External trigger conversion mode for regular channels</text>
+<text top="515" left="241" width="529" height="15" font="0">This bit is set and cleared by software to enable/disable the external trigger used to start </text>
+<text top="531" left="241" width="230" height="15" font="0">conversion of a regular channel group.</text>
+<text top="549" left="241" width="244" height="15" font="0">0: Conversion on external event disabled</text>
+<text top="567" left="241" width="242" height="15" font="0">1: Conversion on external event enabled</text>
+<text top="593" left="160" width="60" height="15" font="0">Bits 19:17</text>
+<text top="593" left="228" width="81" height="15" font="9"><b>EXTSEL[2:0]</b></text>
+<text top="593" left="309" width="236" height="15" font="0">: External event select for regular group</text>
+<text top="612" left="241" width="548" height="15" font="0">These bits select the external event used to trigger the start of conversion of a regular group:</text>
+<text top="630" left="241" width="284" height="15" font="0">For ADC1 and ADC2, the assigned triggers are:</text>
+<text top="648" left="241" width="142" height="15" font="0">000: Timer 1 CC1 event</text>
+<text top="666" left="241" width="142" height="15" font="0">001: Timer 1 CC2 event</text>
+<text top="684" left="241" width="142" height="15" font="0">010: Timer 1 CC3 event</text>
+<text top="702" left="241" width="141" height="15" font="0">011: Timer 2 CC2 event</text>
+<text top="720" left="241" width="154" height="15" font="0">100: Timer 3 TRGO event</text>
+<text top="738" left="241" width="142" height="15" font="0">101: Timer 4 CC4 event</text>
+<text top="756" left="241" width="545" height="15" font="0">110: EXTI line 11/TIM8_TRGO event (TIM8_TRGO is available only in high-density and XL-</text>
+<text top="773" left="241" width="97" height="15" font="0">density devices)</text>
+<text top="791" left="241" width="93" height="15" font="0">111: SWSTART</text>
+<text top="827" left="241" width="219" height="15" font="0">For ADC3, the assigned triggers are:</text>
+<text top="845" left="241" width="142" height="15" font="0">000: Timer 3 CC1 event</text>
+<text top="863" left="241" width="142" height="15" font="0">001: Timer 2 CC3 event</text>
+<text top="881" left="241" width="142" height="15" font="0">010: Timer 1 CC3 event</text>
+<text top="899" left="241" width="141" height="15" font="0">011: Timer 8 CC1 event</text>
+<text top="917" left="241" width="154" height="15" font="0">100: Timer 8 TRGO event</text>
+<text top="935" left="241" width="142" height="15" font="0">101: Timer 5 CC1 event</text>
+<text top="953" left="241" width="141" height="15" font="0">110: Timer 5 CC3 event</text>
+<text top="971" left="241" width="93" height="15" font="0">111: SWSTART</text>
+<text top="996" left="185" width="274" height="15" font="0">Bit 16 Reserved, must be kept at reset value.</text>
+</page>
+<page number="6" position="absolute" top="0" left="0" height="1263" width="892">
+	<fontspec id="13" size="14" family="KNBNII+Arial,Italic" color="#0000ff"/>
+<text top="88" left="101" width="238" height="17" font="1"><b>Analog-to-digital converter (ADC)</b></text>
+<text top="88" left="735" width="57" height="17" font="1"><b>RM0008</b></text>
+<text top="1115" left="101" width="55" height="15" font="0">242<a href="">/1136</a></text>
+<text top="1115" left="398" width="97" height="15" font="0">RM0008 Rev 21</text>
+<text top="144" left="185" width="34" height="15" font="0">Bit 15</text>
+<text top="144" left="228" width="66" height="15" font="9"><b>JEXTTRIG</b></text>
+<text top="144" left="294" width="332" height="15" font="0">: External trigger conversion mode for injected channels</text>
+<text top="164" left="241" width="529" height="15" font="0">This bit is set and cleared by software to enable/disable the external trigger used to start </text>
+<text top="180" left="241" width="242" height="15" font="0">conversion of an injected channel group.</text>
+<text top="198" left="241" width="244" height="15" font="0">0: Conversion on external event disabled</text>
+<text top="216" left="241" width="242" height="15" font="0">1: Conversion on external event enabled</text>
+<text top="242" left="160" width="60" height="15" font="0">Bits 14:12</text>
+<text top="242" left="228" width="89" height="15" font="9"><b>JEXTSEL[2:0]</b></text>
+<text top="242" left="317" width="241" height="15" font="0">: External event select for injected group</text>
+<text top="261" left="241" width="526" height="15" font="0">These bits select the external event used to trigger the start of conversion of an injected </text>
+<text top="278" left="241" width="38" height="15" font="0">group:</text>
+<text top="296" left="241" width="280" height="15" font="0">For ADC1 and ADC2 the assigned triggers are:</text>
+<text top="314" left="241" width="154" height="15" font="0">000: Timer 1 TRGO event</text>
+<text top="332" left="241" width="142" height="15" font="0">001: Timer 1 CC4 event</text>
+<text top="350" left="241" width="154" height="15" font="0">010: Timer 2 TRGO event</text>
+<text top="368" left="241" width="141" height="15" font="0">011: Timer 2 CC1 event</text>
+<text top="386" left="241" width="142" height="15" font="0">100: Timer 3 CC4 event</text>
+<text top="404" left="241" width="154" height="15" font="0">101: Timer 4 TRGO event</text>
+<text top="422" left="241" width="518" height="15" font="0">110: EXTI line15/TIM8_CC4 event (TIM8_CC4 is available only in high-density and XL-</text>
+<text top="438" left="241" width="97" height="15" font="0">density devices)</text>
+<text top="456" left="241" width="99" height="15" font="0">111: JSWSTART</text>
+<text top="492" left="241" width="215" height="15" font="0">For ADC3 the assigned triggers are:</text>
+<text top="510" left="241" width="154" height="15" font="0">000: Timer 1 TRGO event</text>
+<text top="528" left="241" width="142" height="15" font="0">001: Timer 1 CC4 event</text>
+<text top="546" left="241" width="142" height="15" font="0">010: Timer 4 CC3 event</text>
+<text top="564" left="241" width="141" height="15" font="0">011: Timer 8 CC2 event</text>
+<text top="582" left="241" width="142" height="15" font="0">100: Timer 8 CC4 event</text>
+<text top="600" left="241" width="154" height="15" font="0">101: Timer 5 TRGO event</text>
+<text top="618" left="241" width="141" height="15" font="0">110: Timer 5 CC4 event</text>
+<text top="636" left="241" width="99" height="15" font="0">111: JSWSTART</text>
+<text top="662" left="186" width="33" height="15" font="0">Bit 11</text>
+<text top="662" left="228" width="42" height="15" font="9"><b>ALIGN</b></text>
+<text top="662" left="270" width="98" height="15" font="0">: Data alignment</text>
+<text top="681" left="241" width="285" height="15" font="0">This bit is set and cleared by software. Refer to </text>
+<text top="681" left="526" width="61" height="15" font="13"><a href=""><i>Figure 27.</i></a></text>
+<text top="681" left="586" width="26" height="15" font="0">and </text>
+<text top="681" left="613" width="61" height="15" font="13"><a href=""><i>Figure 28.</i></a></text>
+<text top="699" left="241" width="113" height="15" font="0">0: Right Alignment </text>
+<text top="717" left="241" width="100" height="15" font="0">1: Left Alignment</text>
+<text top="743" left="167" width="292" height="15" font="0">Bits 10:9 Reserved, must be kept at reset value.</text>
+<text top="768" left="193" width="39" height="15" font="0">Bit 8  </text>
+<text top="768" left="232" width="31" height="15" font="9"><b>DMA</b></text>
+<text top="768" left="263" width="178" height="15" font="0">: Direct memory access mode</text>
+<text top="788" left="241" width="545" height="15" font="0">This bit is set and cleared by software. Refer to the DMA controller chapter for more details.</text>
+<text top="806" left="241" width="136" height="15" font="0">0: DMA mode disabled</text>
+<text top="824" left="241" width="133" height="15" font="0">1: DMA mode enabled</text>
+<text top="842" left="241" width="311" height="15" font="0">Only ADC1 and ADC3 can generate a DMA request.</text>
+<text top="867" left="175" width="288" height="15" font="0">Bits 7:4  Reserved, must be kept at reset value.</text>
+<text top="893" left="193" width="27" height="15" font="0">Bit 3</text>
+<text top="893" left="228" width="63" height="15" font="9"><b>RSTCAL: </b></text>
+<text top="893" left="291" width="100" height="15" font="0">Reset calibration</text>
+<text top="912" left="241" width="548" height="15" font="0">This bit is set by software and cleared by hardware. It is cleared after the calibration registers </text>
+<text top="929" left="241" width="82" height="15" font="0">are initialized.</text>
+<text top="947" left="241" width="195" height="15" font="0">0: Calibration register initialized. </text>
+<text top="965" left="241" width="181" height="15" font="0">1: Initialize calibration register.</text>
+<text top="984" left="228" width="560" height="15" font="10"><i>Note: If RSTCAL is set when conversion is ongoing, additional cycles are required to clear the </i></text>
+<text top="1001" left="271" width="121" height="15" font="10"><i>calibration registers.</i></text>
+</page>
+<page number="7" position="absolute" top="0" left="0" height="1263" width="892">
+<text top="1115" left="398" width="97" height="15" font="0">RM0008 Rev 21</text>
+<text top="1115" left="737" width="55" height="15" font="0">243<a href="">/1136</a></text>
+<text top="88" left="101" width="57" height="17" font="1"><b>RM0008</b></text>
+<text top="88" left="554" width="238" height="17" font="1"><b>Analog-to-digital converter (ADC)</b></text>
+<text top="1140" left="825" width="18" height="12" font="2">253</text>
+<text top="144" left="193" width="27" height="15" font="0">Bit 2</text>
+<text top="144" left="228" width="36" height="15" font="9"><b>CAL: </b></text>
+<text top="144" left="264" width="91" height="15" font="0">A/D Calibration</text>
+<text top="164" left="241" width="537" height="15" font="0">This bit is set by software to start the calibration. It is reset by hardware after calibration is </text>
+<text top="180" left="241" width="62" height="15" font="0">complete. </text>
+<text top="198" left="241" width="149" height="15" font="0">0: Calibration completed </text>
+<text top="216" left="241" width="122" height="15" font="0">1: Enable calibration</text>
+<text top="242" left="193" width="27" height="15" font="0">Bit 1</text>
+<text top="242" left="228" width="41" height="15" font="9"><b>CONT:</b></text>
+<text top="242" left="269" width="141" height="15" font="0"> Continuous conversion</text>
+<text top="261" left="241" width="548" height="15" font="0">This bit is set and cleared by software. If set conversion takes place continuously till this bit is </text>
+<text top="278" left="241" width="38" height="15" font="0">reset. </text>
+<text top="296" left="241" width="163" height="15" font="0">0: Single conversion mode </text>
+<text top="314" left="241" width="193" height="15" font="0">1: Continuous conversion mode </text>
+<text top="339" left="193" width="27" height="15" font="0">Bit 0</text>
+<text top="339" left="228" width="40" height="15" font="9"><b>ADON</b></text>
+<text top="339" left="268" width="151" height="15" font="0">: A/D converter ON / OFF</text>
+<text top="359" left="241" width="546" height="15" font="0">This bit is set and cleared by software. If this bit holds a value of zero and a 1 is written to it </text>
+<text top="375" left="241" width="299" height="15" font="0">then it wakes up the ADC from Power Down state.</text>
+<text top="393" left="241" width="527" height="15" font="0">Conversion starts when this bit holds a value of 1 and a 1 is written to it. The application </text>
+<text top="410" left="241" width="144" height="15" font="0">should allow a delay of t</text>
+<text top="416" left="385" width="30" height="12" font="12">STAB </text>
+<text top="410" left="415" width="309" height="15" font="0">between power up and start of conversion. Refer to </text>
+<text top="410" left="725" width="61" height="15" font="13"><a href=""><i>Figure 23.</i></a></text>
+<text top="428" left="241" width="403" height="15" font="0">0: Disable ADC conversion/calibration and go to power down mode.</text>
+<text top="446" left="241" width="228" height="15" font="0">1: Enable ADC and to start conversion</text>
+<text top="466" left="228" width="533" height="15" font="10"><i>Note: If any other bit in this register apart from ADON is changed at the same time, then </i></text>
+<text top="482" left="271" width="484" height="15" font="10"><i>conversion is not triggered. This is to prevent triggering an erroneous conversion.</i></text>
+</page>
+<page number="8" position="absolute" top="0" left="0" height="1263" width="892">
+	<fontspec id="14" size="14" family="KNELKP+Arial,BoldItalic" color="#000000"/>
+<text top="88" left="101" width="238" height="17" font="1"><b>Analog-to-digital converter (ADC)</b></text>
+<text top="88" left="735" width="57" height="17" font="1"><b>RM0008</b></text>
+<text top="1115" left="101" width="55" height="15" font="0">244<a href="">/1136</a></text>
+<text top="1115" left="398" width="97" height="15" font="0">RM0008 Rev 21</text>
+<text top="134" left="101" width="150" height="20" font="6"><b>11.12.4 ADC </b></text>
+<text top="134" left="230" width="88" height="20" font="6"><b>sample </b></text>
+<text top="134" left="297" width="251" height="20" font="6"><b>time register 1 (ADC_SMPR1)</b></text>
+<text top="167" left="186" width="139" height="17" font="4">Address offset: 0x0C</text>
+<text top="194" left="186" width="174" height="17" font="4">Reset value: 0x0000 0000</text>
+<text top="358" left="187" width="7" height="3" font="7">         </text>
+<text top="219" left="115" width="12" height="12" font="8">31</text>
+<text top="219" left="157" width="12" height="12" font="8">30</text>
+<text top="219" left="199" width="12" height="12" font="8">29</text>
+<text top="219" left="241" width="12" height="12" font="8">28</text>
+<text top="219" left="283" width="12" height="12" font="8">27</text>
+<text top="219" left="325" width="12" height="12" font="8">26</text>
+<text top="219" left="368" width="12" height="12" font="8">25</text>
+<text top="219" left="412" width="12" height="12" font="8">24</text>
+<text top="219" left="456" width="12" height="12" font="8">23</text>
+<text top="219" left="500" width="12" height="12" font="8">22</text>
+<text top="219" left="544" width="12" height="12" font="8">21</text>
+<text top="219" left="588" width="12" height="12" font="8">20</text>
+<text top="219" left="632" width="12" height="12" font="8">19</text>
+<text top="219" left="676" width="12" height="12" font="8">18</text>
+<text top="219" left="721" width="12" height="12" font="8">17</text>
+<text top="219" left="765" width="12" height="12" font="8">16</text>
+<text top="248" left="247" width="45" height="12" font="8">Reserved</text>
+<text top="238" left="479" width="55" height="12" font="8">SMP17[2:0]</text>
+<text top="238" left="611" width="55" height="12" font="8">SMP16[2:0]</text>
+<text top="238" left="721" width="55" height="12" font="8">SMP15[2:1]</text>
+<text top="258" left="457" width="11" height="12" font="8">rw</text>
+<text top="258" left="501" width="11" height="12" font="8">rw</text>
+<text top="258" left="545" width="11" height="12" font="8">rw</text>
+<text top="258" left="589" width="11" height="12" font="8">rw</text>
+<text top="258" left="633" width="11" height="12" font="8">rw</text>
+<text top="258" left="677" width="11" height="12" font="8">rw</text>
+<text top="258" left="721" width="11" height="12" font="8">rw</text>
+<text top="258" left="765" width="11" height="12" font="8">rw</text>
+<text top="277" left="115" width="12" height="12" font="8">15</text>
+<text top="277" left="157" width="12" height="12" font="8">14</text>
+<text top="277" left="199" width="12" height="12" font="8">13</text>
+<text top="277" left="241" width="12" height="12" font="8">12</text>
+<text top="277" left="283" width="11" height="12" font="8">11</text>
+<text top="277" left="325" width="12" height="12" font="8">10</text>
+<text top="277" left="371" width="6" height="12" font="8">9</text>
+<text top="277" left="415" width="6" height="12" font="8">8</text>
+<text top="277" left="459" width="6" height="12" font="8">7</text>
+<text top="277" left="503" width="6" height="12" font="8">6</text>
+<text top="277" left="547" width="6" height="12" font="8">5</text>
+<text top="277" left="591" width="6" height="12" font="8">4</text>
+<text top="277" left="635" width="6" height="12" font="8">3</text>
+<text top="277" left="679" width="6" height="12" font="8">2</text>
+<text top="277" left="724" width="6" height="12" font="8">1</text>
+<text top="277" left="768" width="6" height="12" font="8">0</text>
+<text top="297" left="109" width="23" height="12" font="8">SMP</text>
+<text top="309" left="109" width="23" height="12" font="8">15_0</text>
+<text top="303" left="177" width="55" height="12" font="8">SMP14[2:0]</text>
+<text top="303" left="304" width="55" height="12" font="8">SMP13[2:0]</text>
+<text top="303" left="435" width="55" height="12" font="8">SMP12[2:0]</text>
+<text top="303" left="567" width="54" height="12" font="8">SMP11[2:0]</text>
+<text top="303" left="699" width="55" height="12" font="8">SMP10[2:0]</text>
+<text top="328" left="115" width="11" height="12" font="8">rw</text>
+<text top="328" left="157" width="11" height="12" font="8">rw</text>
+<text top="328" left="199" width="11" height="12" font="8">rw</text>
+<text top="328" left="241" width="11" height="12" font="8">rw</text>
+<text top="328" left="283" width="11" height="12" font="8">rw</text>
+<text top="328" left="325" width="11" height="12" font="8">rw</text>
+<text top="328" left="368" width="11" height="12" font="8">rw</text>
+<text top="328" left="412" width="11" height="12" font="8">rw</text>
+<text top="328" left="457" width="11" height="12" font="8">rw</text>
+<text top="328" left="501" width="11" height="12" font="8">rw</text>
+<text top="328" left="545" width="11" height="12" font="8">rw</text>
+<text top="328" left="589" width="11" height="12" font="8">rw</text>
+<text top="328" left="633" width="11" height="12" font="8">rw</text>
+<text top="328" left="677" width="11" height="12" font="8">rw</text>
+<text top="328" left="721" width="11" height="12" font="8">rw</text>
+<text top="328" left="765" width="11" height="12" font="8">rw</text>
+<text top="368" left="160" width="303" height="15" font="0">Bits 31:24  Reserved, must be kept at reset value.</text>
+<text top="393" left="167" width="52" height="15" font="0">Bits 23:0</text>
+<text top="393" left="228" width="70" height="15" font="9"><b>SMPx[2:0]:</b></text>
+<text top="393" left="298" width="4" height="15" font="14"><i><b> </b></i></text>
+<text top="393" left="301" width="196" height="15" font="0">Channel x Sample time selection</text>
+<text top="413" left="241" width="535" height="15" font="0">These bits are written by software to select the sample time individually for each channel. </text>
+<text top="429" left="241" width="413" height="15" font="0">During sample cycles channel selection bits must remain unchanged.</text>
+<text top="447" left="241" width="90" height="15" font="0">000: 1.5 cycles</text>
+<text top="466" left="241" width="90" height="15" font="0">001: 7.5 cycles</text>
+<text top="484" left="241" width="97" height="15" font="0">010: 13.5 cycles</text>
+<text top="502" left="241" width="96" height="15" font="0">011: 28.5 cycles</text>
+<text top="520" left="241" width="97" height="15" font="0">100: 41.5 cycles</text>
+<text top="538" left="241" width="97" height="15" font="0">101: 55.5 cycles</text>
+<text top="556" left="241" width="96" height="15" font="0">110: 71.5 cycles</text>
+<text top="573" left="241" width="103" height="15" font="0">111: 239.5 cycles</text>
+<text top="593" left="228" width="555" height="15" font="10"><i>Note: ADC1 analog Channel16 and Channel 17 are internally connected to the temperature </i></text>
+<text top="610" left="271" width="94" height="15" font="10"><i>sensor and to V</i></text>
+<text top="615" left="365" width="39" height="12" font="11"><i>REFINT</i></text>
+<text top="610" left="404" width="82" height="15" font="10"><i>, respectively.</i></text>
+<text top="629" left="271" width="452" height="15" font="10"><i>ADC2 analog input Channel16 and Channel17 are internally connected to V</i></text>
+<text top="635" left="723" width="14" height="12" font="11"><i>SS</i></text>
+<text top="629" left="737" width="4" height="15" font="10"><i>.</i></text>
+<text top="648" left="271" width="516" height="15" font="10"><i>ADC3 analog inputs Channel14, Channel15, Channel16 and Channel17 are connected </i></text>
+<text top="665" left="271" width="24" height="15" font="10"><i>to V</i></text>
+<text top="671" left="295" width="14" height="12" font="11"><i>SS</i></text>
+<text top="665" left="309" width="4" height="15" font="10"><i>.</i></text>
+</page>
+<page number="9" position="absolute" top="0" left="0" height="1263" width="892">
+<text top="1115" left="398" width="97" height="15" font="0">RM0008 Rev 21</text>
+<text top="1115" left="737" width="55" height="15" font="0">245<a href="">/1136</a></text>
+<text top="88" left="101" width="57" height="17" font="1"><b>RM0008</b></text>
+<text top="88" left="554" width="238" height="17" font="1"><b>Analog-to-digital converter (ADC)</b></text>
+<text top="1140" left="825" width="18" height="12" font="2">253</text>
+<text top="134" left="101" width="150" height="20" font="6"><b>11.12.5 ADC </b></text>
+<text top="134" left="230" width="88" height="20" font="6"><b>sample </b></text>
+<text top="134" left="297" width="251" height="20" font="6"><b>time register 2 (ADC_SMPR2)</b></text>
+<text top="167" left="186" width="136" height="17" font="4">Address offset: 0x10</text>
+<text top="194" left="186" width="174" height="17" font="4">Reset value: 0x0000 0000</text>
+<text top="358" left="187" width="7" height="3" font="7">         </text>
+<text top="638" left="101" width="64" height="20" font="6"><b>11.12.6 </b></text>
+<text top="638" left="186" width="558" height="20" font="6"><b>ADC injected channel data offset register x (ADC_JOFRx) (x=1..4)</b></text>
+<text top="671" left="186" width="174" height="17" font="4">Address offset: 0x14-0x20</text>
+<text top="698" left="186" width="174" height="17" font="4">Reset value: 0x0000 0000</text>
+<text top="831" left="187" width="7" height="3" font="7">         </text>
+<text top="219" left="115" width="12" height="12" font="8">31</text>
+<text top="219" left="157" width="12" height="12" font="8">30</text>
+<text top="219" left="199" width="12" height="12" font="8">29</text>
+<text top="219" left="241" width="12" height="12" font="8">28</text>
+<text top="219" left="283" width="12" height="12" font="8">27</text>
+<text top="219" left="325" width="12" height="12" font="8">26</text>
+<text top="219" left="368" width="12" height="12" font="8">25</text>
+<text top="219" left="412" width="12" height="12" font="8">24</text>
+<text top="219" left="456" width="12" height="12" font="8">23</text>
+<text top="219" left="500" width="12" height="12" font="8">22</text>
+<text top="219" left="544" width="12" height="12" font="8">21</text>
+<text top="219" left="588" width="12" height="12" font="8">20</text>
+<text top="219" left="632" width="12" height="12" font="8">19</text>
+<text top="219" left="676" width="12" height="12" font="8">18</text>
+<text top="219" left="721" width="12" height="12" font="8">17</text>
+<text top="219" left="765" width="12" height="12" font="8">16</text>
+<text top="238" left="119" width="45" height="12" font="8">Reserved</text>
+<text top="238" left="222" width="49" height="12" font="8">SMP9[2:0]</text>
+<text top="238" left="350" width="49" height="12" font="8">SMP8[2:0]</text>
+<text top="238" left="482" width="49" height="12" font="8">SMP7[2:0]</text>
+<text top="238" left="614" width="49" height="12" font="8">SMP6[2:0]</text>
+<text top="238" left="724" width="49" height="12" font="8">SMP5[2:1]</text>
+<text top="258" left="131" width="22" height="12" font="8">Res.</text>
+<text top="258" left="199" width="11" height="12" font="8">rw</text>
+<text top="258" left="241" width="11" height="12" font="8">rw</text>
+<text top="258" left="283" width="11" height="12" font="8">rw</text>
+<text top="258" left="325" width="11" height="12" font="8">rw</text>
+<text top="258" left="368" width="11" height="12" font="8">rw</text>
+<text top="258" left="412" width="11" height="12" font="8">rw</text>
+<text top="258" left="457" width="11" height="12" font="8">rw</text>
+<text top="258" left="501" width="11" height="12" font="8">rw</text>
+<text top="258" left="545" width="11" height="12" font="8">rw</text>
+<text top="258" left="589" width="11" height="12" font="8">rw</text>
+<text top="258" left="633" width="11" height="12" font="8">rw</text>
+<text top="258" left="677" width="11" height="12" font="8">rw</text>
+<text top="258" left="721" width="11" height="12" font="8">rw</text>
+<text top="258" left="765" width="11" height="12" font="8">rw</text>
+<text top="277" left="115" width="12" height="12" font="8">15</text>
+<text top="277" left="157" width="12" height="12" font="8">14</text>
+<text top="277" left="199" width="12" height="12" font="8">13</text>
+<text top="277" left="241" width="12" height="12" font="8">12</text>
+<text top="277" left="283" width="11" height="12" font="8">11</text>
+<text top="277" left="325" width="12" height="12" font="8">10</text>
+<text top="277" left="371" width="6" height="12" font="8">9</text>
+<text top="277" left="415" width="6" height="12" font="8">8</text>
+<text top="277" left="459" width="6" height="12" font="8">7</text>
+<text top="277" left="503" width="6" height="12" font="8">6</text>
+<text top="277" left="547" width="6" height="12" font="8">5</text>
+<text top="277" left="591" width="6" height="12" font="8">4</text>
+<text top="277" left="635" width="6" height="12" font="8">3</text>
+<text top="277" left="679" width="6" height="12" font="8">2</text>
+<text top="277" left="724" width="6" height="12" font="8">1</text>
+<text top="277" left="768" width="6" height="12" font="8">0</text>
+<text top="297" left="109" width="23" height="12" font="8">SMP</text>
+<text top="309" left="112" width="18" height="12" font="8">5_0</text>
+<text top="303" left="180" width="49" height="12" font="8">SMP4[2:0]</text>
+<text top="303" left="307" width="49" height="12" font="8">SMP3[2:0]</text>
+<text top="303" left="438" width="49" height="12" font="8">SMP2[2:0]</text>
+<text top="303" left="570" width="49" height="12" font="8">SMP1[2:0]</text>
+<text top="303" left="702" width="49" height="12" font="8">SMP0[2:0]</text>
+<text top="328" left="115" width="11" height="12" font="8">rw</text>
+<text top="328" left="157" width="11" height="12" font="8">rw</text>
+<text top="328" left="199" width="11" height="12" font="8">rw</text>
+<text top="328" left="241" width="11" height="12" font="8">rw</text>
+<text top="328" left="283" width="11" height="12" font="8">rw</text>
+<text top="328" left="325" width="11" height="12" font="8">rw</text>
+<text top="328" left="368" width="11" height="12" font="8">rw</text>
+<text top="328" left="412" width="11" height="12" font="8">rw</text>
+<text top="328" left="457" width="11" height="12" font="8">rw</text>
+<text top="328" left="501" width="11" height="12" font="8">rw</text>
+<text top="328" left="545" width="11" height="12" font="8">rw</text>
+<text top="328" left="589" width="11" height="12" font="8">rw</text>
+<text top="328" left="633" width="11" height="12" font="8">rw</text>
+<text top="328" left="677" width="11" height="12" font="8">rw</text>
+<text top="328" left="721" width="11" height="12" font="8">rw</text>
+<text top="328" left="765" width="11" height="12" font="8">rw</text>
+<text top="368" left="161" width="303" height="15" font="0">Bits 31:30  Reserved, must be kept at reset value.</text>
+<text top="393" left="168" width="53" height="15" font="0">Bits 29:0</text>
+<text top="393" left="229" width="70" height="15" font="9"><b>SMPx[2:0]:</b></text>
+<text top="393" left="299" width="4" height="15" font="14"><i><b> </b></i></text>
+<text top="393" left="303" width="196" height="15" font="0">Channel x Sample time selection</text>
+<text top="413" left="242" width="535" height="15" font="0">These bits are written by software to select the sample time individually for each channel. </text>
+<text top="429" left="242" width="413" height="15" font="0">During sample cycles channel selection bits must remain unchanged.</text>
+<text top="447" left="242" width="90" height="15" font="0">000: 1.5 cycles</text>
+<text top="466" left="242" width="90" height="15" font="0">001: 7.5 cycles</text>
+<text top="484" left="242" width="97" height="15" font="0">010: 13.5 cycles</text>
+<text top="502" left="242" width="97" height="15" font="0">011: 28.5 cycles</text>
+<text top="520" left="242" width="97" height="15" font="0">100: 41.5 cycles</text>
+<text top="538" left="242" width="97" height="15" font="0">101: 55.5 cycles</text>
+<text top="556" left="242" width="97" height="15" font="0">110: 71.5 cycles</text>
+<text top="573" left="242" width="103" height="15" font="0">111: 239.5 cycles</text>
+<text top="593" left="229" width="324" height="15" font="10"><i>Note: ADC3 analog input Channel9 is connected to V</i></text>
+<text top="599" left="554" width="14" height="12" font="11"><i>SS</i></text>
+<text top="593" left="568" width="4" height="15" font="10"><i>.</i></text>
+<text top="723" left="115" width="12" height="12" font="8">31</text>
+<text top="723" left="157" width="12" height="12" font="8">30</text>
+<text top="723" left="199" width="12" height="12" font="8">29</text>
+<text top="723" left="241" width="12" height="12" font="8">28</text>
+<text top="723" left="283" width="12" height="12" font="8">27</text>
+<text top="723" left="325" width="12" height="12" font="8">26</text>
+<text top="723" left="368" width="12" height="12" font="8">25</text>
+<text top="723" left="412" width="12" height="12" font="8">24</text>
+<text top="723" left="456" width="12" height="12" font="8">23</text>
+<text top="723" left="500" width="12" height="12" font="8">22</text>
+<text top="723" left="544" width="12" height="12" font="8">21</text>
+<text top="723" left="588" width="12" height="12" font="8">20</text>
+<text top="723" left="632" width="12" height="12" font="8">19</text>
+<text top="723" left="676" width="12" height="12" font="8">18</text>
+<text top="723" left="721" width="12" height="12" font="8">17</text>
+<text top="723" left="765" width="12" height="12" font="8">16</text>
+<text top="742" left="424" width="45" height="12" font="8">Reserved</text>
+<text top="762" left="115" width="12" height="12" font="8">15</text>
+<text top="762" left="157" width="12" height="12" font="8">14</text>
+<text top="762" left="199" width="12" height="12" font="8">13</text>
+<text top="762" left="241" width="12" height="12" font="8">12</text>
+<text top="762" left="283" width="11" height="12" font="8">11</text>
+<text top="762" left="325" width="12" height="12" font="8">10</text>
+<text top="762" left="371" width="6" height="12" font="8">9</text>
+<text top="762" left="415" width="6" height="12" font="8">8</text>
+<text top="762" left="459" width="6" height="12" font="8">7</text>
+<text top="762" left="503" width="6" height="12" font="8">6</text>
+<text top="762" left="547" width="6" height="12" font="8">5</text>
+<text top="762" left="591" width="6" height="12" font="8">4</text>
+<text top="762" left="635" width="6" height="12" font="8">3</text>
+<text top="762" left="679" width="6" height="12" font="8">2</text>
+<text top="762" left="724" width="6" height="12" font="8">1</text>
+<text top="762" left="768" width="6" height="12" font="8">0</text>
+<text top="791" left="161" width="45" height="12" font="8">Reserved</text>
+<text top="781" left="492" width="77" height="12" font="8">JOFFSETx[11:0]</text>
+<text top="801" left="283" width="11" height="12" font="8">rw</text>
+<text top="801" left="325" width="11" height="12" font="8">rw</text>
+<text top="801" left="368" width="11" height="12" font="8">rw</text>
+<text top="801" left="412" width="11" height="12" font="8">rw</text>
+<text top="801" left="457" width="11" height="12" font="8">rw</text>
+<text top="801" left="501" width="11" height="12" font="8">rw</text>
+<text top="801" left="545" width="11" height="12" font="8">rw</text>
+<text top="801" left="589" width="11" height="12" font="8">rw</text>
+<text top="801" left="633" width="11" height="12" font="8">rw</text>
+<text top="801" left="677" width="11" height="12" font="8">rw</text>
+<text top="801" left="721" width="11" height="12" font="8">rw</text>
+<text top="801" left="765" width="11" height="12" font="8">rw</text>
+<text top="840" left="161" width="303" height="15" font="0">Bits 31:12  Reserved, must be kept at reset value.</text>
+<text top="866" left="169" width="52" height="15" font="0">Bits 11:0</text>
+<text top="866" left="229" width="103" height="15" font="9"><b>JOFFSETx[11:0]</b></text>
+<text top="866" left="333" width="207" height="15" font="0">: Data offset for injected channel x </text>
+<text top="885" left="242" width="499" height="15" font="0">These bits are written by software to define the offset to be subtracted from the raw </text>
+<text top="902" left="242" width="545" height="15" font="0">converted data when converting injected channels. The conversion result can be read from </text>
+<text top="918" left="242" width="168" height="15" font="0">in the ADC_JDRx registers. </text>
+</page>
+<page number="10" position="absolute" top="0" left="0" height="1263" width="892">
+	<fontspec id="15" size="15" family="KNBNII+Arial,Italic" color="#000000"/>
+<text top="88" left="101" width="238" height="17" font="1"><b>Analog-to-digital converter (ADC)</b></text>
+<text top="88" left="735" width="57" height="17" font="1"><b>RM0008</b></text>
+<text top="1115" left="101" width="55" height="15" font="0">246<a href="">/1136</a></text>
+<text top="1115" left="398" width="97" height="15" font="0">RM0008 Rev 21</text>
+<text top="134" left="101" width="64" height="20" font="6"><b>11.12.7 </b></text>
+<text top="134" left="186" width="432" height="20" font="6"><b>ADC watchdog high threshold register (ADC_HTR)</b></text>
+<text top="167" left="186" width="136" height="17" font="4">Address offset: 0x24</text>
+<text top="194" left="186" width="181" height="17" font="4">Reset value: 0x0000 0FFF </text>
+<text top="327" left="187" width="7" height="3" font="7">         </text>
+<text top="428" left="101" width="36" height="17" font="15"><i>Note:</i></text>
+<text top="428" left="186" width="553" height="17" font="15"><i>The software can write to these registers when an ADC conversion is ongoing. The </i></text>
+<text top="446" left="186" width="588" height="17" font="15"><i>programmed value will be effective when the next conversion is complete. Writing to this </i></text>
+<text top="464" left="186" width="597" height="17" font="15"><i>register is performed with a write delay that can create uncertainty on the effective time at </i></text>
+<text top="482" left="186" width="243" height="17" font="15"><i>which the new value is programmed.</i></text>
+<text top="520" left="101" width="64" height="20" font="6"><b>11.12.8 </b></text>
+<text top="520" left="186" width="421" height="20" font="6"><b>ADC watchdog low threshold register (ADC_LTR)</b></text>
+<text top="552" left="186" width="136" height="17" font="4">Address offset: 0x28</text>
+<text top="579" left="186" width="174" height="17" font="4">Reset value: 0x0000 0000</text>
+<text top="712" left="187" width="7" height="3" font="7">         </text>
+<text top="813" left="101" width="36" height="17" font="15"><i>Note:</i></text>
+<text top="813" left="186" width="553" height="17" font="15"><i>The software can write to these registers when an ADC conversion is ongoing. The </i></text>
+<text top="831" left="186" width="588" height="17" font="15"><i>programmed value will be effective when the next conversion is complete. Writing to this </i></text>
+<text top="849" left="186" width="597" height="17" font="15"><i>register is performed with a write delay that can create uncertainty on the effective time at </i></text>
+<text top="867" left="186" width="243" height="17" font="15"><i>which the new value is programmed.</i></text>
+<text top="219" left="115" width="12" height="12" font="8">31</text>
+<text top="219" left="157" width="12" height="12" font="8">30</text>
+<text top="219" left="199" width="12" height="12" font="8">29</text>
+<text top="219" left="241" width="12" height="12" font="8">28</text>
+<text top="219" left="283" width="12" height="12" font="8">27</text>
+<text top="219" left="325" width="12" height="12" font="8">26</text>
+<text top="219" left="368" width="12" height="12" font="8">25</text>
+<text top="219" left="412" width="12" height="12" font="8">24</text>
+<text top="219" left="456" width="12" height="12" font="8">23</text>
+<text top="219" left="500" width="12" height="12" font="8">22</text>
+<text top="219" left="544" width="12" height="12" font="8">21</text>
+<text top="219" left="588" width="12" height="12" font="8">20</text>
+<text top="219" left="632" width="12" height="12" font="8">19</text>
+<text top="219" left="676" width="12" height="12" font="8">18</text>
+<text top="219" left="721" width="12" height="12" font="8">17</text>
+<text top="219" left="765" width="12" height="12" font="8">16</text>
+<text top="238" left="424" width="45" height="12" font="8">Reserved</text>
+<text top="258" left="115" width="12" height="12" font="8">15</text>
+<text top="258" left="157" width="12" height="12" font="8">14</text>
+<text top="258" left="199" width="12" height="12" font="8">13</text>
+<text top="258" left="241" width="12" height="12" font="8">12</text>
+<text top="258" left="283" width="11" height="12" font="8">11</text>
+<text top="258" left="325" width="12" height="12" font="8">10</text>
+<text top="258" left="371" width="6" height="12" font="8">9</text>
+<text top="258" left="415" width="6" height="12" font="8">8</text>
+<text top="258" left="459" width="6" height="12" font="8">7</text>
+<text top="258" left="503" width="6" height="12" font="8">6</text>
+<text top="258" left="547" width="6" height="12" font="8">5</text>
+<text top="258" left="591" width="6" height="12" font="8">4</text>
+<text top="258" left="635" width="6" height="12" font="8">3</text>
+<text top="258" left="679" width="6" height="12" font="8">2</text>
+<text top="258" left="724" width="6" height="12" font="8">1</text>
+<text top="258" left="768" width="6" height="12" font="8">0</text>
+<text top="287" left="161" width="45" height="12" font="8">Reserved</text>
+<text top="277" left="511" width="39" height="12" font="8">HT[11:0]</text>
+<text top="297" left="283" width="11" height="12" font="8">rw</text>
+<text top="297" left="325" width="11" height="12" font="8">rw</text>
+<text top="297" left="368" width="11" height="12" font="8">rw</text>
+<text top="297" left="412" width="11" height="12" font="8">rw</text>
+<text top="297" left="457" width="11" height="12" font="8">rw</text>
+<text top="297" left="501" width="11" height="12" font="8">rw</text>
+<text top="297" left="545" width="11" height="12" font="8">rw</text>
+<text top="297" left="589" width="11" height="12" font="8">rw</text>
+<text top="297" left="633" width="11" height="12" font="8">rw</text>
+<text top="297" left="677" width="11" height="12" font="8">rw</text>
+<text top="297" left="721" width="11" height="12" font="8">rw</text>
+<text top="297" left="765" width="11" height="12" font="8">rw</text>
+<text top="336" left="162" width="299" height="15" font="0">Bits 31:12 Reserved, must be kept at reset value.</text>
+<text top="362" left="170" width="51" height="15" font="0">Bits 11:0</text>
+<text top="362" left="230" width="58" height="15" font="9"><b>HT[11:0]:</b></text>
+<text top="362" left="288" width="198" height="15" font="0"> Analog watchdog high threshold </text>
+<text top="381" left="243" width="519" height="15" font="0">These bits are written by software to define the high threshold for the analog watchdog.</text>
+<text top="604" left="115" width="12" height="12" font="8">31</text>
+<text top="604" left="157" width="12" height="12" font="8">30</text>
+<text top="604" left="199" width="12" height="12" font="8">29</text>
+<text top="604" left="241" width="12" height="12" font="8">28</text>
+<text top="604" left="283" width="12" height="12" font="8">27</text>
+<text top="604" left="325" width="12" height="12" font="8">26</text>
+<text top="604" left="368" width="12" height="12" font="8">25</text>
+<text top="604" left="412" width="12" height="12" font="8">24</text>
+<text top="604" left="456" width="12" height="12" font="8">23</text>
+<text top="604" left="500" width="12" height="12" font="8">22</text>
+<text top="604" left="544" width="12" height="12" font="8">21</text>
+<text top="604" left="588" width="12" height="12" font="8">20</text>
+<text top="604" left="632" width="12" height="12" font="8">19</text>
+<text top="604" left="676" width="12" height="12" font="8">18</text>
+<text top="604" left="721" width="12" height="12" font="8">17</text>
+<text top="604" left="765" width="12" height="12" font="8">16</text>
+<text top="624" left="424" width="45" height="12" font="8">Reserved</text>
+<text top="643" left="115" width="12" height="12" font="8">15</text>
+<text top="643" left="157" width="12" height="12" font="8">14</text>
+<text top="643" left="199" width="12" height="12" font="8">13</text>
+<text top="643" left="241" width="12" height="12" font="8">12</text>
+<text top="643" left="283" width="11" height="12" font="8">11</text>
+<text top="643" left="325" width="12" height="12" font="8">10</text>
+<text top="643" left="371" width="6" height="12" font="8">9</text>
+<text top="643" left="415" width="6" height="12" font="8">8</text>
+<text top="643" left="459" width="6" height="12" font="8">7</text>
+<text top="643" left="503" width="6" height="12" font="8">6</text>
+<text top="643" left="547" width="6" height="12" font="8">5</text>
+<text top="643" left="591" width="6" height="12" font="8">4</text>
+<text top="643" left="635" width="6" height="12" font="8">3</text>
+<text top="643" left="679" width="6" height="12" font="8">2</text>
+<text top="643" left="724" width="6" height="12" font="8">1</text>
+<text top="643" left="768" width="6" height="12" font="8">0</text>
+<text top="672" left="161" width="45" height="12" font="8">Reserved</text>
+<text top="663" left="512" width="37" height="12" font="8">LT[11:0]</text>
+<text top="682" left="283" width="11" height="12" font="8">rw</text>
+<text top="682" left="325" width="11" height="12" font="8">rw</text>
+<text top="682" left="368" width="11" height="12" font="8">rw</text>
+<text top="682" left="412" width="11" height="12" font="8">rw</text>
+<text top="682" left="457" width="11" height="12" font="8">rw</text>
+<text top="682" left="501" width="11" height="12" font="8">rw</text>
+<text top="682" left="545" width="11" height="12" font="8">rw</text>
+<text top="682" left="589" width="11" height="12" font="8">rw</text>
+<text top="682" left="633" width="11" height="12" font="8">rw</text>
+<text top="682" left="677" width="11" height="12" font="8">rw</text>
+<text top="682" left="721" width="11" height="12" font="8">rw</text>
+<text top="682" left="765" width="11" height="12" font="8">rw</text>
+<text top="722" left="162" width="303" height="15" font="0">Bits 31:12  Reserved, must be kept at reset value.</text>
+<text top="747" left="170" width="51" height="15" font="0">Bits 11:0</text>
+<text top="747" left="230" width="55" height="15" font="9"><b>LT[11:0]:</b></text>
+<text top="747" left="286" width="193" height="15" font="0"> Analog watchdog low threshold </text>
+<text top="767" left="243" width="514" height="15" font="0">These bits are written by software to define the low threshold for the analog watchdog.</text>
+</page>
+<page number="11" position="absolute" top="0" left="0" height="1263" width="892">
+<text top="1115" left="398" width="97" height="15" font="0">RM0008 Rev 21</text>
+<text top="1115" left="737" width="55" height="15" font="0">247<a href="">/1136</a></text>
+<text top="88" left="101" width="57" height="17" font="1"><b>RM0008</b></text>
+<text top="88" left="554" width="238" height="17" font="1"><b>Analog-to-digital converter (ADC)</b></text>
+<text top="1140" left="825" width="18" height="12" font="2">253</text>
+<text top="134" left="101" width="150" height="20" font="6"><b>11.12.9 ADC </b></text>
+<text top="134" left="230" width="87" height="20" font="6"><b>regular </b></text>
+<text top="134" left="296" width="284" height="20" font="6"><b>sequence register 1 (ADC_SQR1)</b></text>
+<text top="167" left="186" width="139" height="17" font="4">Address offset: 0x2C</text>
+<text top="194" left="186" width="174" height="17" font="4">Reset value: 0x0000 0000</text>
+<text top="347" left="187" width="7" height="3" font="7">         </text>
+<text top="219" left="119" width="12" height="12" font="8">31</text>
+<text top="219" left="163" width="12" height="12" font="8">30</text>
+<text top="219" left="205" width="12" height="12" font="8">29</text>
+<text top="219" left="246" width="12" height="12" font="8">28</text>
+<text top="219" left="288" width="12" height="12" font="8">27</text>
+<text top="219" left="329" width="12" height="12" font="8">26</text>
+<text top="219" left="372" width="12" height="12" font="8">25</text>
+<text top="219" left="416" width="12" height="12" font="8">24</text>
+<text top="219" left="459" width="12" height="12" font="8">23</text>
+<text top="219" left="503" width="12" height="12" font="8">22</text>
+<text top="219" left="546" width="12" height="12" font="8">21</text>
+<text top="219" left="590" width="12" height="12" font="8">20</text>
+<text top="219" left="633" width="12" height="12" font="8">19</text>
+<text top="219" left="677" width="12" height="12" font="8">18</text>
+<text top="219" left="720" width="12" height="12" font="8">17</text>
+<text top="219" left="764" width="12" height="12" font="8">16</text>
+<text top="248" left="250" width="45" height="12" font="8">Reserved</text>
+<text top="238" left="517" width="26" height="12" font="8">L[3:0]</text>
+<text top="238" left="681" width="47" height="12" font="8">SQ16[4:1]</text>
+<text top="258" left="460" width="11" height="12" font="8">rw</text>
+<text top="258" left="503" width="11" height="12" font="8">rw</text>
+<text top="258" left="547" width="11" height="12" font="8">rw</text>
+<text top="258" left="590" width="11" height="12" font="8">rw</text>
+<text top="258" left="634" width="11" height="12" font="8">rw</text>
+<text top="258" left="677" width="11" height="12" font="8">rw</text>
+<text top="258" left="721" width="11" height="12" font="8">rw</text>
+<text top="258" left="765" width="11" height="12" font="8">rw</text>
+<text top="277" left="119" width="12" height="12" font="8">15</text>
+<text top="277" left="163" width="12" height="12" font="8">14</text>
+<text top="277" left="205" width="12" height="12" font="8">13</text>
+<text top="277" left="246" width="12" height="12" font="8">12</text>
+<text top="277" left="288" width="11" height="12" font="8">11</text>
+<text top="277" left="329" width="12" height="12" font="8">10</text>
+<text top="277" left="375" width="6" height="12" font="8">9</text>
+<text top="277" left="418" width="6" height="12" font="8">8</text>
+<text top="277" left="462" width="6" height="12" font="8">7</text>
+<text top="277" left="506" width="6" height="12" font="8">6</text>
+<text top="277" left="549" width="6" height="12" font="8">5</text>
+<text top="277" left="593" width="6" height="12" font="8">4</text>
+<text top="277" left="636" width="6" height="12" font="8">3</text>
+<text top="277" left="680" width="6" height="12" font="8">2</text>
+<text top="277" left="723" width="6" height="12" font="8">1</text>
+<text top="277" left="767" width="6" height="12" font="8">0</text>
+<text top="297" left="105" width="38" height="12" font="8">SQ16_0</text>
+<text top="297" left="228" width="47" height="12" font="8">SQ15[4:0]</text>
+<text top="297" left="441" width="47" height="12" font="8">SQ14[4:0]</text>
+<text top="297" left="659" width="47" height="12" font="8">SQ13[4:0]</text>
+<text top="316" left="119" width="11" height="12" font="8">rw</text>
+<text top="316" left="164" width="11" height="12" font="8">rw</text>
+<text top="316" left="205" width="11" height="12" font="8">rw</text>
+<text top="316" left="246" width="11" height="12" font="8">rw</text>
+<text top="316" left="288" width="11" height="12" font="8">rw</text>
+<text top="316" left="329" width="11" height="12" font="8">rw</text>
+<text top="316" left="372" width="11" height="12" font="8">rw</text>
+<text top="316" left="416" width="11" height="12" font="8">rw</text>
+<text top="316" left="460" width="11" height="12" font="8">rw</text>
+<text top="316" left="503" width="11" height="12" font="8">rw</text>
+<text top="316" left="547" width="11" height="12" font="8">rw</text>
+<text top="316" left="590" width="11" height="12" font="8">rw</text>
+<text top="316" left="633" width="11" height="12" font="8">rw</text>
+<text top="316" left="677" width="11" height="12" font="8">rw</text>
+<text top="316" left="721" width="11" height="12" font="8">rw</text>
+<text top="316" left="765" width="11" height="12" font="8">rw</text>
+<text top="356" left="161" width="303" height="15" font="0">Bits 31:24  Reserved, must be kept at reset value.</text>
+<text top="381" left="161" width="60" height="15" font="0">Bits 23:20</text>
+<text top="381" left="229" width="37" height="15" font="9"><b>L[3:0]</b></text>
+<text top="381" left="266" width="208" height="15" font="0">: Regular channel sequence length</text>
+<text top="401" left="242" width="535" height="15" font="0">These bits are written by software to define the total number of conversions in the regular </text>
+<text top="417" left="242" width="182" height="15" font="0">channel conversion sequence.</text>
+<text top="435" left="242" width="114" height="15" font="0">0000: 1 conversion</text>
+<text top="453" left="242" width="124" height="15" font="0">0001: 2 conversions </text>
+<text top="471" left="242" width="19" height="15" font="0">.....</text>
+<text top="489" left="242" width="125" height="15" font="0">1111: 16 conversions</text>
+<text top="515" left="161" width="60" height="15" font="0">Bits 19:15</text>
+<text top="515" left="229" width="63" height="15" font="9"><b>SQ16[4:0]</b></text>
+<text top="515" left="292" width="225" height="15" font="0">: 16th conversion in regular sequence</text>
+<text top="534" left="242" width="541" height="15" font="0">These bits are written by software with the channel number (0..17) assigned as the 16th in </text>
+<text top="551" left="242" width="154" height="15" font="0">the conversion sequence.</text>
+<text top="576" left="161" width="60" height="15" font="0">Bits 14:10</text>
+<text top="576" left="229" width="63" height="15" font="9"><b>SQ15[4:0]</b></text>
+<text top="576" left="292" width="225" height="15" font="0">: 15th conversion in regular sequence</text>
+<text top="602" left="176" width="45" height="15" font="0">Bits 9:5</text>
+<text top="602" left="229" width="63" height="15" font="9"><b>SQ14[4:0]</b></text>
+<text top="602" left="292" width="240" height="15" font="0">: 1fourth conversion in regular sequence</text>
+<text top="628" left="176" width="45" height="15" font="0">Bits 4:0</text>
+<text top="628" left="229" width="63" height="15" font="9"><b>SQ13[4:0]</b></text>
+<text top="628" left="292" width="225" height="15" font="0">: 13th conversion in regular sequence</text>
+</page>
+<page number="12" position="absolute" top="0" left="0" height="1263" width="892">
+<text top="88" left="101" width="238" height="17" font="1"><b>Analog-to-digital converter (ADC)</b></text>
+<text top="88" left="735" width="57" height="17" font="1"><b>RM0008</b></text>
+<text top="1115" left="101" width="55" height="15" font="0">248<a href="">/1136</a></text>
+<text top="1115" left="398" width="97" height="15" font="0">RM0008 Rev 21</text>
+<text top="134" left="101" width="140" height="20" font="6"><b>11.12.10 ADC </b></text>
+<text top="134" left="230" width="77" height="20" font="6"><b>regular </b></text>
+<text top="134" left="296" width="284" height="20" font="6"><b>sequence register 2 (ADC_SQR2)</b></text>
+<text top="167" left="186" width="136" height="17" font="4">Address offset: 0x30</text>
+<text top="194" left="186" width="174" height="17" font="4">Reset value: 0x0000 0000</text>
+<text top="358" left="187" width="7" height="3" font="7">         </text>
+<text top="219" left="115" width="12" height="12" font="8">31</text>
+<text top="219" left="157" width="12" height="12" font="8">30</text>
+<text top="219" left="199" width="12" height="12" font="8">29</text>
+<text top="219" left="241" width="12" height="12" font="8">28</text>
+<text top="219" left="283" width="12" height="12" font="8">27</text>
+<text top="219" left="325" width="12" height="12" font="8">26</text>
+<text top="219" left="368" width="12" height="12" font="8">25</text>
+<text top="219" left="412" width="12" height="12" font="8">24</text>
+<text top="219" left="456" width="12" height="12" font="8">23</text>
+<text top="219" left="500" width="12" height="12" font="8">22</text>
+<text top="219" left="544" width="12" height="12" font="8">21</text>
+<text top="219" left="588" width="12" height="12" font="8">20</text>
+<text top="219" left="632" width="12" height="12" font="8">19</text>
+<text top="219" left="676" width="12" height="12" font="8">18</text>
+<text top="219" left="721" width="12" height="12" font="8">17</text>
+<text top="219" left="765" width="12" height="12" font="8">16</text>
+<text top="248" left="119" width="45" height="12" font="8">Reserved</text>
+<text top="238" left="266" width="47" height="12" font="8">SQ12[4:0]</text>
+<text top="238" left="483" width="46" height="12" font="8">SQ11[4:0]</text>
+<text top="238" left="681" width="47" height="12" font="8">SQ10[4:1]</text>
+<text top="258" left="199" width="11" height="12" font="8">rw</text>
+<text top="258" left="241" width="11" height="12" font="8">rw</text>
+<text top="258" left="283" width="11" height="12" font="8">rw</text>
+<text top="258" left="325" width="11" height="12" font="8">rw</text>
+<text top="258" left="368" width="11" height="12" font="8">rw</text>
+<text top="258" left="412" width="11" height="12" font="8">rw</text>
+<text top="258" left="457" width="11" height="12" font="8">rw</text>
+<text top="258" left="501" width="11" height="12" font="8">rw</text>
+<text top="258" left="545" width="11" height="12" font="8">rw</text>
+<text top="258" left="589" width="11" height="12" font="8">rw</text>
+<text top="258" left="633" width="11" height="12" font="8">rw</text>
+<text top="258" left="677" width="11" height="12" font="8">rw</text>
+<text top="258" left="721" width="11" height="12" font="8">rw</text>
+<text top="258" left="765" width="11" height="12" font="8">rw</text>
+<text top="277" left="115" width="12" height="12" font="8">15</text>
+<text top="277" left="157" width="12" height="12" font="8">14</text>
+<text top="277" left="199" width="12" height="12" font="8">13</text>
+<text top="277" left="241" width="12" height="12" font="8">12</text>
+<text top="277" left="283" width="11" height="12" font="8">11</text>
+<text top="277" left="325" width="12" height="12" font="8">10</text>
+<text top="277" left="371" width="6" height="12" font="8">9</text>
+<text top="277" left="415" width="6" height="12" font="8">8</text>
+<text top="277" left="459" width="6" height="12" font="8">7</text>
+<text top="277" left="503" width="6" height="12" font="8">6</text>
+<text top="277" left="547" width="6" height="12" font="8">5</text>
+<text top="277" left="591" width="6" height="12" font="8">4</text>
+<text top="277" left="635" width="6" height="12" font="8">3</text>
+<text top="277" left="679" width="6" height="12" font="8">2</text>
+<text top="277" left="724" width="6" height="12" font="8">1</text>
+<text top="277" left="768" width="6" height="12" font="8">0</text>
+<text top="297" left="104" width="33" height="12" font="8">SQ10_</text>
+<text top="309" left="118" width="6" height="12" font="8">0</text>
+<text top="303" left="226" width="41" height="12" font="8">SQ9[4:0]</text>
+<text top="303" left="441" width="41" height="12" font="8">SQ8[4:0]</text>
+<text top="303" left="662" width="41" height="12" font="8">SQ7[4:0]</text>
+<text top="328" left="115" width="11" height="12" font="8">rw</text>
+<text top="328" left="157" width="11" height="12" font="8">rw</text>
+<text top="328" left="199" width="11" height="12" font="8">rw</text>
+<text top="328" left="241" width="11" height="12" font="8">rw</text>
+<text top="328" left="283" width="11" height="12" font="8">rw</text>
+<text top="328" left="325" width="11" height="12" font="8">rw</text>
+<text top="328" left="368" width="11" height="12" font="8">rw</text>
+<text top="328" left="412" width="11" height="12" font="8">rw</text>
+<text top="328" left="457" width="11" height="12" font="8">rw</text>
+<text top="328" left="501" width="11" height="12" font="8">rw</text>
+<text top="328" left="545" width="11" height="12" font="8">rw</text>
+<text top="328" left="589" width="11" height="12" font="8">rw</text>
+<text top="328" left="633" width="11" height="12" font="8">rw</text>
+<text top="328" left="677" width="11" height="12" font="8">rw</text>
+<text top="328" left="721" width="11" height="12" font="8">rw</text>
+<text top="328" left="765" width="11" height="12" font="8">rw</text>
+<text top="368" left="162" width="303" height="15" font="0">Bits 31:30  Reserved, must be kept at reset value.</text>
+<text top="393" left="162" width="60" height="15" font="0">Bits 29:26</text>
+<text top="393" left="230" width="63" height="15" font="9"><b>SQ12[4:0]</b></text>
+<text top="393" left="293" width="8" height="15" font="0">: </text>
+<text top="393" left="301" width="8" height="15" font="10"><i>1</i></text>
+<text top="393" left="308" width="210" height="15" font="0">2th conversion in regular sequence</text>
+<text top="413" left="230" width="558" height="15" font="0">These bits are written by software with the channel number (0..17) assigned as the 12th in the </text>
+<text top="429" left="230" width="163" height="15" font="0">sequence to be converted. </text>
+<text top="455" left="162" width="60" height="15" font="0">Bits 24:20</text>
+<text top="455" left="230" width="62" height="15" font="9"><b>SQ11[4:0]</b></text>
+<text top="455" left="293" width="224" height="15" font="0">: 11th conversion in regular sequence</text>
+<text top="480" left="162" width="60" height="15" font="0">Bits 19:15</text>
+<text top="480" left="230" width="63" height="15" font="9"><b>SQ10[4:0]</b></text>
+<text top="480" left="293" width="225" height="15" font="0">: 10th conversion in regular sequence</text>
+<text top="506" left="162" width="60" height="15" font="0">Bits 14:10</text>
+<text top="506" left="230" width="60" height="15" font="9"><b>SQ9[4:0]:</b></text>
+<text top="506" left="290" width="214" height="15" font="0"> 9th conversion in regular sequence</text>
+<text top="531" left="177" width="45" height="15" font="0">Bits 9:5</text>
+<text top="531" left="230" width="55" height="15" font="9"><b>SQ8[4:0]</b></text>
+<text top="531" left="286" width="217" height="15" font="0">: 8th conversion in regular sequence</text>
+<text top="557" left="177" width="45" height="15" font="0">Bits 4:0</text>
+<text top="557" left="230" width="55" height="15" font="9"><b>SQ7[4:0]</b></text>
+<text top="557" left="286" width="217" height="15" font="0">: 7th conversion in regular sequence</text>
+</page>
+<page number="13" position="absolute" top="0" left="0" height="1263" width="892">
+<text top="1115" left="398" width="97" height="15" font="0">RM0008 Rev 21</text>
+<text top="1115" left="737" width="55" height="15" font="0">249<a href="">/1136</a></text>
+<text top="88" left="101" width="57" height="17" font="1"><b>RM0008</b></text>
+<text top="88" left="554" width="238" height="17" font="1"><b>Analog-to-digital converter (ADC)</b></text>
+<text top="1140" left="825" width="18" height="12" font="2">253</text>
+<text top="134" left="101" width="141" height="20" font="6"><b>11.12.11 ADC </b></text>
+<text top="134" left="230" width="78" height="20" font="6"><b>regular </b></text>
+<text top="134" left="296" width="284" height="20" font="6"><b>sequence register 3 (ADC_SQR3)</b></text>
+<text top="167" left="186" width="136" height="17" font="4">Address offset: 0x34</text>
+<text top="194" left="186" width="174" height="17" font="4">Reset value: 0x0000 0000</text>
+<text top="347" left="187" width="7" height="3" font="7">         </text>
+<text top="219" left="115" width="12" height="12" font="8">31</text>
+<text top="219" left="157" width="12" height="12" font="8">30</text>
+<text top="219" left="199" width="12" height="12" font="8">29</text>
+<text top="219" left="241" width="12" height="12" font="8">28</text>
+<text top="219" left="283" width="12" height="12" font="8">27</text>
+<text top="219" left="325" width="12" height="12" font="8">26</text>
+<text top="219" left="368" width="12" height="12" font="8">25</text>
+<text top="219" left="412" width="12" height="12" font="8">24</text>
+<text top="219" left="456" width="12" height="12" font="8">23</text>
+<text top="219" left="500" width="12" height="12" font="8">22</text>
+<text top="219" left="544" width="12" height="12" font="8">21</text>
+<text top="219" left="588" width="12" height="12" font="8">20</text>
+<text top="219" left="632" width="12" height="12" font="8">19</text>
+<text top="219" left="676" width="12" height="12" font="8">18</text>
+<text top="219" left="721" width="12" height="12" font="8">17</text>
+<text top="219" left="765" width="12" height="12" font="8">16</text>
+<text top="248" left="119" width="45" height="12" font="8">Reserved</text>
+<text top="238" left="269" width="41" height="12" font="8">SQ6[4:0]</text>
+<text top="238" left="485" width="41" height="12" font="8">SQ5[4:0]</text>
+<text top="238" left="684" width="41" height="12" font="8">SQ4[4:1]</text>
+<text top="258" left="199" width="11" height="12" font="8">rw</text>
+<text top="258" left="241" width="11" height="12" font="8">rw</text>
+<text top="258" left="283" width="11" height="12" font="8">rw</text>
+<text top="258" left="325" width="11" height="12" font="8">rw</text>
+<text top="258" left="368" width="11" height="12" font="8">rw</text>
+<text top="258" left="412" width="11" height="12" font="8">rw</text>
+<text top="258" left="457" width="11" height="12" font="8">rw</text>
+<text top="258" left="501" width="11" height="12" font="8">rw</text>
+<text top="258" left="545" width="11" height="12" font="8">rw</text>
+<text top="258" left="589" width="11" height="12" font="8">rw</text>
+<text top="258" left="633" width="11" height="12" font="8">rw</text>
+<text top="258" left="677" width="11" height="12" font="8">rw</text>
+<text top="258" left="721" width="11" height="12" font="8">rw</text>
+<text top="258" left="765" width="11" height="12" font="8">rw</text>
+<text top="277" left="115" width="12" height="12" font="8">15</text>
+<text top="277" left="157" width="12" height="12" font="8">14</text>
+<text top="277" left="199" width="12" height="12" font="8">13</text>
+<text top="277" left="241" width="12" height="12" font="8">12</text>
+<text top="277" left="283" width="11" height="12" font="8">11</text>
+<text top="277" left="325" width="12" height="12" font="8">10</text>
+<text top="277" left="371" width="6" height="12" font="8">9</text>
+<text top="277" left="415" width="6" height="12" font="8">8</text>
+<text top="277" left="459" width="6" height="12" font="8">7</text>
+<text top="277" left="503" width="6" height="12" font="8">6</text>
+<text top="277" left="547" width="6" height="12" font="8">5</text>
+<text top="277" left="591" width="6" height="12" font="8">4</text>
+<text top="277" left="635" width="6" height="12" font="8">3</text>
+<text top="277" left="679" width="6" height="12" font="8">2</text>
+<text top="277" left="724" width="6" height="12" font="8">1</text>
+<text top="277" left="768" width="6" height="12" font="8">0</text>
+<text top="297" left="104" width="33" height="12" font="8">SQ4_0</text>
+<text top="297" left="226" width="41" height="12" font="8">SQ3[4:0]</text>
+<text top="297" left="441" width="41" height="12" font="8">SQ2[4:0]</text>
+<text top="297" left="662" width="41" height="12" font="8">SQ1[4:0]</text>
+<text top="316" left="115" width="11" height="12" font="8">rw</text>
+<text top="316" left="157" width="11" height="12" font="8">rw</text>
+<text top="316" left="199" width="11" height="12" font="8">rw</text>
+<text top="316" left="241" width="11" height="12" font="8">rw</text>
+<text top="316" left="283" width="11" height="12" font="8">rw</text>
+<text top="316" left="325" width="11" height="12" font="8">rw</text>
+<text top="316" left="368" width="11" height="12" font="8">rw</text>
+<text top="316" left="412" width="11" height="12" font="8">rw</text>
+<text top="316" left="457" width="11" height="12" font="8">rw</text>
+<text top="316" left="501" width="11" height="12" font="8">rw</text>
+<text top="316" left="545" width="11" height="12" font="8">rw</text>
+<text top="316" left="589" width="11" height="12" font="8">rw</text>
+<text top="316" left="633" width="11" height="12" font="8">rw</text>
+<text top="316" left="677" width="11" height="12" font="8">rw</text>
+<text top="316" left="721" width="11" height="12" font="8">rw</text>
+<text top="316" left="765" width="11" height="12" font="8">rw</text>
+<text top="356" left="161" width="303" height="15" font="0">Bits 31:30  Reserved, must be kept at reset value.</text>
+<text top="381" left="161" width="60" height="15" font="0">Bits 29:25</text>
+<text top="381" left="229" width="55" height="15" font="9"><b>SQ6[4:0]</b></text>
+<text top="381" left="285" width="217" height="15" font="0">: 6th conversion in regular sequence</text>
+<text top="401" left="242" width="549" height="15" font="0">These bits are written by software with the channel number (0..17) assigned as the 6th in the </text>
+<text top="417" left="242" width="159" height="15" font="0">sequence to be converted.</text>
+<text top="443" left="161" width="60" height="15" font="0">Bits 24:20</text>
+<text top="443" left="229" width="60" height="15" font="9"><b>SQ5[4:0]:</b></text>
+<text top="443" left="289" width="213" height="15" font="0"> 5th conversion in regular sequence</text>
+<text top="468" left="161" width="60" height="15" font="0">Bits 19:15</text>
+<text top="468" left="229" width="55" height="15" font="9"><b>SQ4[4:0]</b></text>
+<text top="468" left="285" width="233" height="15" font="0">: fourth conversion in regular sequence</text>
+<text top="494" left="161" width="60" height="15" font="0">Bits 14:10</text>
+<text top="494" left="229" width="55" height="15" font="9"><b>SQ3[4:0]</b></text>
+<text top="494" left="285" width="225" height="15" font="0">: third conversion in regular sequence</text>
+<text top="520" left="176" width="45" height="15" font="0">Bits 9:5</text>
+<text top="520" left="229" width="60" height="15" font="9"><b>SQ2[4:0]:</b></text>
+<text top="520" left="289" width="238" height="15" font="0"> second conversion in regular sequence</text>
+<text top="545" left="176" width="45" height="15" font="0">Bits 4:0</text>
+<text top="545" left="229" width="55" height="15" font="9"><b>SQ1[4:0]</b></text>
+<text top="545" left="285" width="220" height="15" font="0">: first conversion in regular sequence</text>
+</page>
+<page number="14" position="absolute" top="0" left="0" height="1263" width="892">
+	<fontspec id="16" size="12" family="KNBMFL+Arial" color="#000000"/>
+<text top="88" left="101" width="238" height="17" font="1"><b>Analog-to-digital converter (ADC)</b></text>
+<text top="88" left="735" width="57" height="17" font="1"><b>RM0008</b></text>
+<text top="1115" left="101" width="55" height="15" font="0">250<a href="">/1136</a></text>
+<text top="1115" left="398" width="97" height="15" font="0">RM0008 Rev 21</text>
+<text top="134" left="101" width="471" height="20" font="6"><b>11.12.12  ADC injected sequence register (ADC_JSQR)</b></text>
+<text top="167" left="186" width="136" height="17" font="4">Address offset: 0x38</text>
+<text top="194" left="186" width="174" height="17" font="4">Reset value: 0x0000 0000</text>
+<text top="347" left="187" width="7" height="3" font="7">         </text>
+<text top="219" left="119" width="12" height="12" font="8">31</text>
+<text top="219" left="164" width="12" height="12" font="8">30</text>
+<text top="219" left="205" width="12" height="12" font="8">29</text>
+<text top="219" left="247" width="12" height="12" font="8">28</text>
+<text top="219" left="288" width="12" height="12" font="8">27</text>
+<text top="219" left="330" width="12" height="12" font="8">26</text>
+<text top="219" left="372" width="12" height="12" font="8">25</text>
+<text top="219" left="416" width="12" height="12" font="8">24</text>
+<text top="219" left="460" width="12" height="12" font="8">23</text>
+<text top="219" left="503" width="12" height="12" font="8">22</text>
+<text top="219" left="546" width="12" height="12" font="8">21</text>
+<text top="219" left="590" width="12" height="12" font="8">20</text>
+<text top="219" left="633" width="12" height="12" font="8">19</text>
+<text top="219" left="677" width="12" height="12" font="8">18</text>
+<text top="219" left="720" width="12" height="12" font="8">17</text>
+<text top="219" left="764" width="12" height="12" font="8">16</text>
+<text top="248" left="293" width="45" height="12" font="8">Reserved</text>
+<text top="238" left="558" width="32" height="12" font="8">JL[1:0]</text>
+<text top="238" left="681" width="47" height="12" font="8">JSQ4[4:1]</text>
+<text top="258" left="547" width="11" height="12" font="8">rw</text>
+<text top="258" left="590" width="11" height="12" font="8">rw</text>
+<text top="258" left="634" width="11" height="12" font="8">rw</text>
+<text top="258" left="677" width="11" height="12" font="8">rw</text>
+<text top="258" left="721" width="11" height="12" font="8">rw</text>
+<text top="258" left="764" width="11" height="12" font="8">rw</text>
+<text top="277" left="119" width="12" height="12" font="8">15</text>
+<text top="277" left="164" width="12" height="12" font="8">14</text>
+<text top="277" left="205" width="12" height="12" font="8">13</text>
+<text top="277" left="247" width="12" height="12" font="8">12</text>
+<text top="277" left="289" width="11" height="12" font="8">11</text>
+<text top="277" left="330" width="12" height="12" font="8">10</text>
+<text top="277" left="375" width="6" height="12" font="8">9</text>
+<text top="277" left="419" width="6" height="12" font="8">8</text>
+<text top="277" left="462" width="6" height="12" font="8">7</text>
+<text top="277" left="506" width="6" height="12" font="8">6</text>
+<text top="277" left="549" width="6" height="12" font="8">5</text>
+<text top="277" left="593" width="6" height="12" font="8">4</text>
+<text top="277" left="636" width="6" height="12" font="8">3</text>
+<text top="277" left="680" width="6" height="12" font="8">2</text>
+<text top="277" left="723" width="6" height="12" font="8">1</text>
+<text top="277" left="767" width="6" height="12" font="8">0</text>
+<text top="297" left="106" width="38" height="12" font="8">JSQ4_0</text>
+<text top="297" left="229" width="47" height="12" font="8">JSQ3[4:0]</text>
+<text top="297" left="442" width="47" height="12" font="8">JSQ2[4:0]</text>
+<text top="297" left="660" width="47" height="12" font="8">JSQ1[4:0]</text>
+<text top="316" left="120" width="11" height="12" font="8">rw</text>
+<text top="316" left="164" width="11" height="12" font="8">rw</text>
+<text top="316" left="206" width="11" height="12" font="8">rw</text>
+<text top="316" left="247" width="11" height="12" font="8">rw</text>
+<text top="316" left="289" width="11" height="12" font="8">rw</text>
+<text top="316" left="330" width="11" height="12" font="8">rw</text>
+<text top="316" left="372" width="11" height="12" font="8">rw</text>
+<text top="316" left="416" width="11" height="12" font="8">rw</text>
+<text top="316" left="460" width="11" height="12" font="8">rw</text>
+<text top="316" left="503" width="11" height="12" font="8">rw</text>
+<text top="316" left="547" width="11" height="12" font="8">rw</text>
+<text top="316" left="590" width="11" height="12" font="8">rw</text>
+<text top="316" left="634" width="11" height="12" font="8">rw</text>
+<text top="316" left="677" width="11" height="12" font="8">rw</text>
+<text top="316" left="721" width="11" height="12" font="8">rw</text>
+<text top="316" left="764" width="11" height="12" font="8">rw</text>
+<text top="356" left="162" width="303" height="15" font="0">Bits 31:22  Reserved, must be kept at reset value.</text>
+<text top="381" left="162" width="60" height="15" font="0">Bits 21:20</text>
+<text top="381" left="230" width="44" height="15" font="9"><b>JL[1:0]</b></text>
+<text top="381" left="275" width="157" height="15" font="0">: Injected sequence length</text>
+<text top="401" left="243" width="540" height="15" font="0">These bits are written by software to define the total number of conversions in the injected </text>
+<text top="417" left="243" width="182" height="15" font="0">channel conversion sequence.</text>
+<text top="435" left="243" width="99" height="15" font="0">00: 1 conversion</text>
+<text top="452" left="243" width="106" height="15" font="0">01: 2 conversions</text>
+<text top="468" left="243" width="106" height="15" font="0">10: 3 conversions</text>
+<text top="485" left="243" width="105" height="15" font="0">11: 4 conversions</text>
+<text top="511" left="162" width="60" height="15" font="0">Bits 19:15</text>
+<text top="511" left="230" width="63" height="15" font="9"><b>JSQ4[4:0]</b></text>
+<text top="511" left="293" width="350" height="15" font="0">: fourth conversion in injected sequence (when JL[1:0] = 3)</text>
+<text top="508" left="643" width="13" height="12" font="12">(1)</text>
+<text top="530" left="243" width="544" height="15" font="0">These bits are written by software with the channel number (0..17) assigned as the fourth in </text>
+<text top="547" left="243" width="181" height="15" font="0">the sequence to be converted.</text>
+<text top="584" left="230" width="552" height="15" font="10"><i>Note: Unlike a regular conversion sequence, if JL[1:0] length is less than four, the channels </i></text>
+<text top="601" left="273" width="494" height="15" font="10"><i>are converted in a sequence starting from (4-JL). Example: ADC_JSQR[21:0] = 10 </i></text>
+<text top="617" left="273" width="493" height="15" font="10"><i>00011 00011 00111 00010 means that a scan conversion will convert the following </i></text>
+<text top="633" left="273" width="235" height="15" font="10"><i>channel sequence: 7, 3, 3. (not 2, 7, 3) </i></text>
+<text top="659" left="162" width="60" height="15" font="0">Bits 14:10</text>
+<text top="659" left="230" width="67" height="15" font="9"><b>JSQ3[4:0]:</b></text>
+<text top="659" left="298" width="337" height="15" font="0"> third conversion in injected sequence (when JL[1:0] = 3)</text>
+<text top="684" left="177" width="45" height="15" font="0">Bits 9:5</text>
+<text top="684" left="230" width="63" height="15" font="9"><b>JSQ2[4:0]</b></text>
+<text top="684" left="293" width="358" height="15" font="0">: second conversion in injected sequence (when JL[1:0] = 3)</text>
+<text top="710" left="177" width="45" height="15" font="0">Bits 4:0</text>
+<text top="710" left="230" width="63" height="15" font="9"><b>JSQ1[4:0]</b></text>
+<text top="710" left="293" width="337" height="15" font="0">: first conversion in injected sequence (when JL[1:0] = 3)</text>
+<text top="735" left="101" width="551" height="13" font="16">1. When JL=3 ( 4 injected conversions in the sequencer), the ADC converts the channels in this order: </text>
+<text top="747" left="122" width="279" height="13" font="16">JSQ1[4:0] &gt;&gt; JSQ2[4:0] &gt;&gt; JSQ3[4:0] &gt;&gt; JSQ4[4:0] </text>
+<text top="759" left="122" width="530" height="13" font="16">When JL=2 ( 3 injected conversions in the sequencer), the ADC converts the channels in this order: </text>
+<text top="771" left="122" width="205" height="13" font="16">JSQ2[4:0] &gt;&gt; JSQ3[4:0] &gt;&gt; JSQ4[4:0] </text>
+<text top="783" left="122" width="530" height="13" font="16">When JL=1 ( 2 injected conversions in the sequencer), the ADC converts the channels in this order: </text>
+<text top="795" left="122" width="131" height="13" font="16">JSQ3[4:0] &gt;&gt; JSQ4[4:0] </text>
+<text top="807" left="122" width="504" height="13" font="16">When JL=0 (1 injected conversion in the sequencer), the ADC converts only JSQ4[4:0] channel</text>
+</page>
+<page number="15" position="absolute" top="0" left="0" height="1263" width="892">
+<text top="1115" left="398" width="97" height="15" font="0">RM0008 Rev 21</text>
+<text top="1115" left="737" width="55" height="15" font="0">251<a href="">/1136</a></text>
+<text top="88" left="101" width="57" height="17" font="1"><b>RM0008</b></text>
+<text top="88" left="554" width="238" height="17" font="1"><b>Analog-to-digital converter (ADC)</b></text>
+<text top="1140" left="825" width="18" height="12" font="2">253</text>
+<text top="134" left="101" width="509" height="20" font="6"><b>11.12.13  ADC injected data register x (ADC_JDRx) (x= 1..4)</b></text>
+<text top="167" left="186" width="185" height="17" font="4">Address offset: 0x3C - 0x48</text>
+<text top="194" left="186" width="174" height="17" font="4">Reset value: 0x0000 0000</text>
+<text top="327" left="187" width="7" height="3" font="7">         </text>
+<text top="443" left="101" width="140" height="20" font="6"><b>11.12.14 ADC </b></text>
+<text top="443" left="230" width="77" height="20" font="6"><b>regular </b></text>
+<text top="443" left="296" width="200" height="20" font="6"><b>data register (ADC_DR)</b></text>
+<text top="476" left="186" width="139" height="17" font="4">Address offset: 0x4C</text>
+<text top="503" left="186" width="174" height="17" font="4">Reset value: 0x0000 0000</text>
+<text top="655" left="187" width="7" height="3" font="7">         </text>
+<text top="219" left="115" width="12" height="12" font="8">31</text>
+<text top="219" left="157" width="12" height="12" font="8">30</text>
+<text top="219" left="199" width="12" height="12" font="8">29</text>
+<text top="219" left="241" width="12" height="12" font="8">28</text>
+<text top="219" left="283" width="12" height="12" font="8">27</text>
+<text top="219" left="325" width="12" height="12" font="8">26</text>
+<text top="219" left="368" width="12" height="12" font="8">25</text>
+<text top="219" left="412" width="12" height="12" font="8">24</text>
+<text top="219" left="456" width="12" height="12" font="8">23</text>
+<text top="219" left="500" width="12" height="12" font="8">22</text>
+<text top="219" left="544" width="12" height="12" font="8">21</text>
+<text top="219" left="588" width="12" height="12" font="8">20</text>
+<text top="219" left="632" width="12" height="12" font="8">19</text>
+<text top="219" left="676" width="12" height="12" font="8">18</text>
+<text top="219" left="721" width="12" height="12" font="8">17</text>
+<text top="219" left="765" width="12" height="12" font="8">16</text>
+<text top="238" left="424" width="45" height="12" font="8">Reserved</text>
+<text top="258" left="115" width="12" height="12" font="8">15</text>
+<text top="258" left="157" width="12" height="12" font="8">14</text>
+<text top="258" left="199" width="12" height="12" font="8">13</text>
+<text top="258" left="241" width="12" height="12" font="8">12</text>
+<text top="258" left="283" width="11" height="12" font="8">11</text>
+<text top="258" left="325" width="12" height="12" font="8">10</text>
+<text top="258" left="371" width="6" height="12" font="8">9</text>
+<text top="258" left="415" width="6" height="12" font="8">8</text>
+<text top="258" left="459" width="6" height="12" font="8">7</text>
+<text top="258" left="503" width="6" height="12" font="8">6</text>
+<text top="258" left="547" width="6" height="12" font="8">5</text>
+<text top="258" left="591" width="6" height="12" font="8">4</text>
+<text top="258" left="635" width="6" height="12" font="8">3</text>
+<text top="258" left="679" width="6" height="12" font="8">2</text>
+<text top="258" left="724" width="6" height="12" font="8">1</text>
+<text top="258" left="768" width="6" height="12" font="8">0</text>
+<text top="277" left="417" width="58" height="12" font="8">JDATA[15:0]</text>
+<text top="297" left="119" width="3" height="12" font="8">r</text>
+<text top="297" left="161" width="3" height="12" font="8">r</text>
+<text top="297" left="203" width="3" height="12" font="8">r</text>
+<text top="297" left="245" width="3" height="12" font="8">r</text>
+<text top="297" left="287" width="3" height="12" font="8">r</text>
+<text top="297" left="329" width="3" height="12" font="8">r</text>
+<text top="297" left="372" width="3" height="12" font="8">r</text>
+<text top="297" left="416" width="3" height="12" font="8">r</text>
+<text top="297" left="460" width="3" height="12" font="8">r</text>
+<text top="297" left="504" width="3" height="12" font="8">r</text>
+<text top="297" left="549" width="3" height="12" font="8">r</text>
+<text top="297" left="593" width="3" height="12" font="8">r</text>
+<text top="297" left="637" width="3" height="12" font="8">r</text>
+<text top="297" left="681" width="3" height="12" font="8">r</text>
+<text top="297" left="725" width="3" height="12" font="8">r</text>
+<text top="297" left="769" width="3" height="12" font="8">r</text>
+<text top="336" left="161" width="303" height="15" font="0">Bits 31:16  Reserved, must be kept at reset value.</text>
+<text top="362" left="168" width="53" height="15" font="0">Bits 15:0</text>
+<text top="362" left="229" width="79" height="15" font="9"><b>JDATA[15:0]</b></text>
+<text top="362" left="308" width="88" height="15" font="0">: Injected data </text>
+<text top="381" left="242" width="533" height="15" font="0">These bits are read only. They contain the conversion result from injected channel x. The </text>
+<text top="398" left="242" width="234" height="15" font="0">data is left or right-aligned as shown in </text>
+<text top="398" left="476" width="57" height="15" font="13"><a href=""><i>Figure 27</i></a></text>
+<text top="398" left="533" width="30" height="15" font="0"><a href=""> a</a>nd </text>
+<text top="398" left="563" width="57" height="15" font="13"><a href=""><i>Figure 28</i></a></text>
+<text top="398" left="620" width="4" height="15" font="0"><a href="">.</a></text>
+<text top="528" left="115" width="12" height="12" font="8">31</text>
+<text top="528" left="157" width="12" height="12" font="8">30</text>
+<text top="528" left="199" width="12" height="12" font="8">29</text>
+<text top="528" left="241" width="12" height="12" font="8">28</text>
+<text top="528" left="283" width="12" height="12" font="8">27</text>
+<text top="528" left="325" width="12" height="12" font="8">26</text>
+<text top="528" left="368" width="12" height="12" font="8">25</text>
+<text top="528" left="412" width="12" height="12" font="8">24</text>
+<text top="528" left="456" width="12" height="12" font="8">23</text>
+<text top="528" left="500" width="12" height="12" font="8">22</text>
+<text top="528" left="544" width="12" height="12" font="8">21</text>
+<text top="528" left="588" width="12" height="12" font="8">20</text>
+<text top="528" left="632" width="12" height="12" font="8">19</text>
+<text top="528" left="676" width="12" height="12" font="8">18</text>
+<text top="528" left="721" width="12" height="12" font="8">17</text>
+<text top="528" left="765" width="12" height="12" font="8">16</text>
+<text top="547" left="406" width="81" height="12" font="8">ADC2DATA[15:0]</text>
+<text top="567" left="119" width="3" height="12" font="8">r</text>
+<text top="567" left="161" width="3" height="12" font="8">r</text>
+<text top="567" left="203" width="3" height="12" font="8">r</text>
+<text top="567" left="245" width="3" height="12" font="8">r</text>
+<text top="567" left="287" width="3" height="12" font="8">r</text>
+<text top="567" left="329" width="3" height="12" font="8">r</text>
+<text top="567" left="372" width="3" height="12" font="8">r</text>
+<text top="567" left="416" width="3" height="12" font="8">r</text>
+<text top="567" left="460" width="3" height="12" font="8">r</text>
+<text top="567" left="504" width="3" height="12" font="8">r</text>
+<text top="567" left="549" width="3" height="12" font="8">r</text>
+<text top="567" left="593" width="3" height="12" font="8">r</text>
+<text top="567" left="637" width="3" height="12" font="8">r</text>
+<text top="567" left="681" width="3" height="12" font="8">r</text>
+<text top="567" left="725" width="3" height="12" font="8">r</text>
+<text top="567" left="769" width="3" height="12" font="8">r</text>
+<text top="586" left="115" width="12" height="12" font="8">15</text>
+<text top="586" left="157" width="12" height="12" font="8">14</text>
+<text top="586" left="199" width="12" height="12" font="8">13</text>
+<text top="586" left="241" width="12" height="12" font="8">12</text>
+<text top="586" left="283" width="11" height="12" font="8">11</text>
+<text top="586" left="325" width="12" height="12" font="8">10</text>
+<text top="586" left="371" width="6" height="12" font="8">9</text>
+<text top="586" left="415" width="6" height="12" font="8">8</text>
+<text top="586" left="459" width="6" height="12" font="8">7</text>
+<text top="586" left="503" width="6" height="12" font="8">6</text>
+<text top="586" left="547" width="6" height="12" font="8">5</text>
+<text top="586" left="591" width="6" height="12" font="8">4</text>
+<text top="586" left="635" width="6" height="12" font="8">3</text>
+<text top="586" left="679" width="6" height="12" font="8">2</text>
+<text top="586" left="724" width="6" height="12" font="8">1</text>
+<text top="586" left="768" width="6" height="12" font="8">0</text>
+<text top="606" left="420" width="53" height="12" font="8">DATA[15:0]</text>
+<text top="625" left="119" width="3" height="12" font="8">r</text>
+<text top="625" left="161" width="3" height="12" font="8">r</text>
+<text top="625" left="203" width="3" height="12" font="8">r</text>
+<text top="625" left="245" width="3" height="12" font="8">r</text>
+<text top="625" left="287" width="3" height="12" font="8">r</text>
+<text top="625" left="329" width="3" height="12" font="8">r</text>
+<text top="625" left="372" width="3" height="12" font="8">r</text>
+<text top="625" left="416" width="3" height="12" font="8">r</text>
+<text top="625" left="460" width="3" height="12" font="8">r</text>
+<text top="625" left="504" width="3" height="12" font="8">r</text>
+<text top="625" left="549" width="3" height="12" font="8">r</text>
+<text top="625" left="593" width="3" height="12" font="8">r</text>
+<text top="625" left="637" width="3" height="12" font="8">r</text>
+<text top="625" left="681" width="3" height="12" font="8">r</text>
+<text top="625" left="725" width="3" height="12" font="8">r</text>
+<text top="625" left="769" width="3" height="12" font="8">r</text>
+<text top="665" left="162" width="60" height="15" font="0">Bits 31:16</text>
+<text top="665" left="230" width="113" height="15" font="9"><b>ADC2DATA[15:0]:</b></text>
+<text top="665" left="343" width="4" height="15" font="10"><i> </i></text>
+<text top="665" left="347" width="66" height="15" font="0">ADC2 data</text>
+<text top="684" left="230" width="459" height="15" font="0">In ADC1: In dual mode, these bits contain the regular data of ADC2. Refer to </text>
+<text top="684" left="690" width="81" height="15" font="13"><a href=""><i>Section 11.9: </i></a></text>
+<text top="701" left="230" width="97" height="15" font="13"><a href=""><i>Dual ADC mode</i></a></text>
+<text top="701" left="327" width="4" height="15" font="0">.</text>
+<text top="720" left="230" width="263" height="15" font="0">In ADC2 and ADC3: these bits are not used.</text>
+<text top="746" left="169" width="52" height="15" font="0">Bits 15:0</text>
+<text top="746" left="230" width="71" height="15" font="9"><b>DATA[15:0]</b></text>
+<text top="746" left="302" width="85" height="15" font="0">: Regular data</text>
+<text top="765" left="243" width="545" height="15" font="0">These bits are read only. They contain the conversion result from the regular channels. The </text>
+<text top="782" left="243" width="234" height="15" font="0">data is left or right-aligned as shown in<a href=""> </a></text>
+<text top="782" left="477" width="57" height="15" font="13"><a href=""><i>Figure 27</i></a></text>
+<text top="782" left="534" width="30" height="15" font="0"><a href=""> an</a>d </text>
+<text top="782" left="564" width="57" height="15" font="13"><a href=""><i>Figure 28</i></a></text>
+<text top="782" left="621" width="4" height="15" font="0"><a href="">.</a></text>
+</page>
+<page number="16" position="absolute" top="0" left="0" height="1263" width="892">
+	<fontspec id="17" size="14" family="KNBNHG+Arial,Bold" color="#000000"/>
+	<fontspec id="18" size="10" family="KNBMFL+Arial" color="#000000"/>
+<text top="88" left="101" width="238" height="17" font="1"><b>Analog-to-digital converter (ADC)</b></text>
+<text top="88" left="735" width="57" height="17" font="1"><b>RM0008</b></text>
+<text top="1115" left="101" width="55" height="15" font="0">252<a href="">/1136</a></text>
+<text top="1115" left="398" width="97" height="15" font="0">RM0008 Rev 21</text>
+<text top="134" left="101" width="237" height="20" font="6"><b>11.12.15  ADC register map</b></text>
+<text top="167" left="186" width="336" height="17" font="4">The following table summarizes the ADC registers.</text>
+<text top="203" left="187" width="7" height="3" font="7">         </text>
+<text top="203" left="284" width="320" height="17" font="1"><b>Table 72. ADC register map and reset values </b></text>
+<text top="265" left="103" width="39" height="15" font="9"><b>Offset</b></text>
+<text top="265" left="165" width="54" height="15" font="9"><b>Register</b></text>
+<text top="273" left="248" width="0" height="15" font="17"><b>31</b></text>
+<text top="273" left="266" width="0" height="15" font="17"><b>30</b></text>
+<text top="273" left="283" width="0" height="15" font="17"><b>29</b></text>
+<text top="273" left="301" width="0" height="15" font="17"><b>28</b></text>
+<text top="273" left="318" width="0" height="15" font="17"><b>27</b></text>
+<text top="273" left="336" width="0" height="15" font="17"><b>26</b></text>
+<text top="273" left="353" width="0" height="15" font="17"><b>25</b></text>
+<text top="273" left="371" width="0" height="15" font="17"><b>24</b></text>
+<text top="273" left="388" width="0" height="15" font="17"><b>23</b></text>
+<text top="273" left="406" width="0" height="15" font="17"><b>22</b></text>
+<text top="273" left="423" width="0" height="15" font="17"><b>21</b></text>
+<text top="273" left="441" width="0" height="15" font="17"><b>20</b></text>
+<text top="273" left="458" width="0" height="15" font="17"><b>19</b></text>
+<text top="273" left="475" width="0" height="15" font="17"><b>18</b></text>
+<text top="273" left="493" width="0" height="15" font="17"><b>17</b></text>
+<text top="273" left="510" width="0" height="15" font="17"><b>16</b></text>
+<text top="273" left="528" width="0" height="15" font="17"><b>15</b></text>
+<text top="273" left="545" width="0" height="15" font="17"><b>14</b></text>
+<text top="273" left="563" width="0" height="15" font="17"><b>13</b></text>
+<text top="273" left="580" width="0" height="15" font="17"><b>12</b></text>
+<text top="272" left="598" width="0" height="15" font="17"><b>11</b></text>
+<text top="273" left="615" width="0" height="15" font="17"><b>10</b></text>
+<text top="269" left="633" width="0" height="15" font="17"><b>9</b></text>
+<text top="269" left="650" width="0" height="15" font="17"><b>8</b></text>
+<text top="269" left="668" width="0" height="15" font="17"><b>7</b></text>
+<text top="269" left="685" width="0" height="15" font="17"><b>6</b></text>
+<text top="269" left="703" width="0" height="15" font="17"><b>5</b></text>
+<text top="269" left="720" width="0" height="15" font="17"><b>4</b></text>
+<text top="269" left="738" width="0" height="15" font="17"><b>3</b></text>
+<text top="269" left="755" width="0" height="15" font="17"><b>2</b></text>
+<text top="269" left="773" width="0" height="15" font="17"><b>1</b></text>
+<text top="269" left="790" width="0" height="15" font="17"><b>0</b></text>
+<text top="351" left="111" width="23" height="12" font="8">0x00</text>
+<text top="343" left="170" width="42" height="12" font="8">ADC_SR</text>
+<text top="351" left="450" width="45" height="12" font="8">Reserved</text>
+<text top="357" left="717" width="0" height="12" font="18">STR</text>
+<text top="337" left="717" width="0" height="12" font="18">T</text>
+<text top="360" left="734" width="0" height="12" font="18">JS</text>
+<text top="348" left="734" width="0" height="12" font="18">TR</text>
+<text top="334" left="734" width="0" height="12" font="18">T</text>
+<text top="358" left="752" width="0" height="12" font="18">JEO</text>
+<text top="337" left="752" width="0" height="12" font="18">C</text>
+<text top="355" left="769" width="0" height="12" font="18">EO</text>
+<text top="340" left="769" width="0" height="12" font="18">C</text>
+<text top="356" left="787" width="0" height="12" font="18">AW</text>
+<text top="339" left="787" width="0" height="12" font="18">D</text>
+<text top="372" left="164" width="55" height="12" font="8">Reset value</text>
+<text top="372" left="714" width="6" height="12" font="8">0</text>
+<text top="372" left="732" width="6" height="12" font="8">0</text>
+<text top="372" left="749" width="6" height="12" font="8">0</text>
+<text top="372" left="767" width="6" height="12" font="8">0</text>
+<text top="372" left="784" width="6" height="12" font="8">0</text>
+<text top="415" left="111" width="23" height="12" font="8">0x04</text>
+<text top="408" left="167" width="49" height="12" font="8">ADC_CR1</text>
+<text top="415" left="284" width="45" height="12" font="8">Reserved</text>
+<text top="428" left="384" width="0" height="12" font="18">AW</text>
+<text top="411" left="384" width="0" height="12" font="18">D</text>
+<text top="403" left="384" width="0" height="12" font="18">E</text>
+<text top="396" left="384" width="0" height="12" font="18">N</text>
+<text top="430" left="402" width="0" height="12" font="18">JA</text>
+<text top="418" left="402" width="0" height="12" font="18">WD</text>
+<text top="401" left="402" width="0" height="12" font="18">EN</text>
+<text top="438" left="428" width="0" height="12" font="18">Reser</text>
+<text top="410" left="428" width="0" height="12" font="18">ve</text>
+<text top="399" left="428" width="0" height="12" font="18">d</text>
+<text top="402" left="455" width="55" height="12" font="8">DUALMOD </text>
+<text top="414" left="471" width="20" height="12" font="8">[3:0]</text>
+<text top="396" left="530" width="28" height="12" font="8">DISC </text>
+<text top="408" left="530" width="27" height="12" font="8">NUM </text>
+<text top="420" left="532" width="20" height="12" font="8">[2:0]</text>
+<text top="431" left="577" width="0" height="12" font="18">JDI</text>
+<text top="415" left="577" width="0" height="12" font="18">S</text>
+<text top="408" left="577" width="0" height="12" font="18">C</text>
+<text top="400" left="577" width="0" height="12" font="18">E</text>
+<text top="393" left="577" width="0" height="12" font="18">N</text>
+<text top="428" left="594" width="0" height="12" font="18">DIS</text>
+<text top="411" left="594" width="0" height="12" font="18">C</text>
+<text top="403" left="594" width="0" height="12" font="18">EN</text>
+<text top="425" left="612" width="0" height="12" font="18">JA</text>
+<text top="413" left="612" width="0" height="12" font="18">U</text>
+<text top="406" left="612" width="0" height="12" font="18">T</text>
+<text top="399" left="612" width="0" height="12" font="18">O</text>
+<text top="432" left="629" width="0" height="12" font="18">AW</text>
+<text top="416" left="629" width="0" height="12" font="18">D</text>
+<text top="408" left="629" width="0" height="12" font="18"> S</text>
+<text top="398" left="629" width="0" height="12" font="18">G</text>
+<text top="390" left="629" width="0" height="12" font="18">L</text>
+<text top="423" left="647" width="0" height="12" font="18">SCAN</text>
+<text top="429" left="664" width="0" height="12" font="18">JE</text>
+<text top="416" left="664" width="0" height="12" font="18">OC IE</text>
+<text top="425" left="682" width="0" height="12" font="18">AW</text>
+<text top="409" left="682" width="0" height="12" font="18">D</text>
+<text top="401" left="682" width="0" height="12" font="18">IE</text>
+<text top="425" left="699" width="0" height="12" font="18">EO</text>
+<text top="409" left="699" width="0" height="12" font="18">CIE</text>
+<text top="408" left="722" width="60" height="12" font="8">AWDCH[4:0]</text>
+<text top="444" left="164" width="55" height="12" font="8">Reset  value</text>
+<text top="444" left="382" width="6" height="12" font="8">0</text>
+<text top="444" left="399" width="6" height="12" font="8">0</text>
+<text top="444" left="452" width="6" height="12" font="8">0</text>
+<text top="444" left="469" width="6" height="12" font="8">0</text>
+<text top="444" left="487" width="6" height="12" font="8">0</text>
+<text top="444" left="504" width="6" height="12" font="8">0</text>
+<text top="444" left="522" width="6" height="12" font="8">0</text>
+<text top="444" left="539" width="6" height="12" font="8">0</text>
+<text top="444" left="557" width="6" height="12" font="8">0</text>
+<text top="444" left="574" width="6" height="12" font="8">0</text>
+<text top="444" left="592" width="6" height="12" font="8">0</text>
+<text top="444" left="609" width="6" height="12" font="8">0</text>
+<text top="444" left="627" width="6" height="12" font="8">0</text>
+<text top="444" left="644" width="6" height="12" font="8">0</text>
+<text top="444" left="662" width="6" height="12" font="8">0</text>
+<text top="444" left="679" width="6" height="12" font="8">0</text>
+<text top="444" left="697" width="6" height="12" font="8">0</text>
+<text top="444" left="714" width="6" height="12" font="8">0</text>
+<text top="444" left="732" width="6" height="12" font="8">0</text>
+<text top="444" left="749" width="6" height="12" font="8">0</text>
+<text top="444" left="767" width="6" height="12" font="8">0</text>
+<text top="444" left="784" width="6" height="12" font="8">0</text>
+<text top="491" left="111" width="23" height="12" font="8">0x08</text>
+<text top="483" left="167" width="49" height="12" font="8">ADC_CR2</text>
+<text top="491" left="284" width="45" height="12" font="8">Reserved</text>
+<text top="508" left="384" width="0" height="12" font="18">TS</text>
+<text top="495" left="384" width="0" height="12" font="18">VR</text>
+<text top="480" left="384" width="0" height="12" font="18">EFE</text>
+<text top="509" left="402" width="0" height="12" font="18">SWS</text>
+<text top="485" left="402" width="0" height="12" font="18">TAR</text>
+<text top="465" left="402" width="0" height="12" font="18">T</text>
+<text top="509" left="418" width="0" height="12" font="18">JSWS</text>
+<text top="479" left="418" width="0" height="12" font="18">TA</text>
+<text top="467" left="418" width="0" height="12" font="18">R</text>
+<text top="507" left="437" width="0" height="12" font="18">EX</text>
+<text top="493" left="437" width="0" height="12" font="18">TTRI</text>
+<text top="469" left="437" width="0" height="12" font="18">G</text>
+<text top="477" left="452" width="43" height="12" font="8">EXTSEL </text>
+<text top="490" left="462" width="20" height="12" font="8">[2:0]</text>
+<text top="514" left="507" width="0" height="12" font="18">Reserved</text>
+<text top="509" left="524" width="0" height="12" font="18">JEXTTRIG</text>
+<text top="472" left="540" width="40" height="12" font="8">JEXTSE</text>
+<text top="483" left="557" width="6" height="12" font="8">L</text>
+<text top="495" left="550" width="20" height="12" font="8">[2:0]</text>
+<text top="500" left="594" width="0" height="12" font="18">AL</text>
+<text top="487" left="594" width="0" height="12" font="18">IG</text>
+<text top="476" left="594" width="0" height="12" font="18">N</text>
+<text top="514" left="620" width="0" height="12" font="18">Reserved</text>
+<text top="496" left="647" width="0" height="12" font="18">DMA</text>
+<text top="491" left="669" width="45" height="12" font="8">Reserved</text>
+<text top="505" left="734" width="0" height="12" font="18">RSTCA</text>
+<text top="469" left="734" width="0" height="12" font="18">L</text>
+<text top="494" left="752" width="0" height="12" font="18">CAL</text>
+<text top="499" left="769" width="0" height="12" font="18">CO</text>
+<text top="483" left="769" width="0" height="12" font="18">N</text>
+<text top="476" left="769" width="0" height="12" font="18">T</text>
+<text top="499" left="787" width="0" height="12" font="18">ADON</text>
+<text top="523" left="164" width="55" height="12" font="8">Reset  value</text>
+<text top="523" left="382" width="6" height="12" font="8">0</text>
+<text top="523" left="399" width="6" height="12" font="8">0</text>
+<text top="523" left="417" width="6" height="12" font="8">0</text>
+<text top="523" left="434" width="6" height="12" font="8">0</text>
+<text top="523" left="452" width="6" height="12" font="8">0</text>
+<text top="523" left="469" width="6" height="12" font="8">0</text>
+<text top="523" left="487" width="6" height="12" font="8">0</text>
+<text top="523" left="522" width="6" height="12" font="8">0</text>
+<text top="523" left="539" width="6" height="12" font="8">0</text>
+<text top="523" left="557" width="6" height="12" font="8">0</text>
+<text top="523" left="574" width="6" height="12" font="8">0</text>
+<text top="523" left="592" width="6" height="12" font="8">0</text>
+<text top="523" left="644" width="6" height="12" font="8">0</text>
+<text top="523" left="732" width="6" height="12" font="8">0</text>
+<text top="523" left="749" width="6" height="12" font="8">0</text>
+<text top="523" left="767" width="6" height="12" font="8">0</text>
+<text top="523" left="784" width="6" height="12" font="8">0</text>
+<text top="557" left="110" width="24" height="12" font="8">0x0C</text>
+<text top="550" left="159" width="64" height="12" font="8">ADC_SMPR1</text>
+<text top="550" left="456" width="119" height="12" font="8">Sample time bits SMPx_x</text>
+<text top="577" left="164" width="55" height="12" font="8">Reset  value</text>
+<text top="577" left="242" width="6" height="12" font="8">0</text>
+<text top="577" left="259" width="6" height="12" font="8">0</text>
+<text top="577" left="277" width="6" height="12" font="8">0</text>
+<text top="577" left="294" width="6" height="12" font="8">0</text>
+<text top="577" left="312" width="6" height="12" font="8">0</text>
+<text top="577" left="329" width="6" height="12" font="8">0</text>
+<text top="577" left="347" width="6" height="12" font="8">0</text>
+<text top="577" left="364" width="6" height="12" font="8">0</text>
+<text top="577" left="382" width="6" height="12" font="8">0</text>
+<text top="577" left="399" width="6" height="12" font="8">0</text>
+<text top="577" left="417" width="6" height="12" font="8">0</text>
+<text top="577" left="434" width="6" height="12" font="8">0</text>
+<text top="577" left="452" width="6" height="12" font="8">0</text>
+<text top="577" left="469" width="6" height="12" font="8">0</text>
+<text top="577" left="487" width="6" height="12" font="8">0</text>
+<text top="577" left="504" width="6" height="12" font="8">0</text>
+<text top="577" left="522" width="6" height="12" font="8">0</text>
+<text top="577" left="539" width="6" height="12" font="8">0</text>
+<text top="577" left="557" width="6" height="12" font="8">0</text>
+<text top="577" left="574" width="6" height="12" font="8">0</text>
+<text top="577" left="592" width="6" height="12" font="8">0</text>
+<text top="577" left="609" width="6" height="12" font="8">0</text>
+<text top="577" left="627" width="6" height="12" font="8">0</text>
+<text top="577" left="644" width="6" height="12" font="8">0</text>
+<text top="577" left="662" width="6" height="12" font="8">0</text>
+<text top="577" left="679" width="6" height="12" font="8">0</text>
+<text top="577" left="697" width="6" height="12" font="8">0</text>
+<text top="577" left="714" width="6" height="12" font="8">0</text>
+<text top="577" left="732" width="6" height="12" font="8">0</text>
+<text top="577" left="749" width="6" height="12" font="8">0</text>
+<text top="577" left="767" width="6" height="12" font="8">0</text>
+<text top="577" left="784" width="6" height="12" font="8">0</text>
+<text top="611" left="111" width="23" height="12" font="8">0x10</text>
+<text top="603" left="159" width="64" height="12" font="8">ADC_SMPR2</text>
+<text top="603" left="456" width="119" height="12" font="8">Sample time bits SMPx_x</text>
+<text top="630" left="164" width="55" height="12" font="8">Reset  value</text>
+<text top="630" left="242" width="6" height="12" font="8">0</text>
+<text top="630" left="259" width="6" height="12" font="8">0</text>
+<text top="630" left="277" width="6" height="12" font="8">0</text>
+<text top="630" left="294" width="6" height="12" font="8">0</text>
+<text top="630" left="312" width="6" height="12" font="8">0</text>
+<text top="630" left="329" width="6" height="12" font="8">0</text>
+<text top="630" left="347" width="6" height="12" font="8">0</text>
+<text top="630" left="364" width="6" height="12" font="8">0</text>
+<text top="630" left="382" width="6" height="12" font="8">0</text>
+<text top="630" left="399" width="6" height="12" font="8">0</text>
+<text top="630" left="417" width="6" height="12" font="8">0</text>
+<text top="630" left="434" width="6" height="12" font="8">0</text>
+<text top="630" left="452" width="6" height="12" font="8">0</text>
+<text top="630" left="469" width="6" height="12" font="8">0</text>
+<text top="630" left="487" width="6" height="12" font="8">0</text>
+<text top="630" left="504" width="6" height="12" font="8">0</text>
+<text top="630" left="522" width="6" height="12" font="8">0</text>
+<text top="630" left="539" width="6" height="12" font="8">0</text>
+<text top="630" left="557" width="6" height="12" font="8">0</text>
+<text top="630" left="574" width="6" height="12" font="8">0</text>
+<text top="630" left="592" width="6" height="12" font="8">0</text>
+<text top="630" left="609" width="6" height="12" font="8">0</text>
+<text top="630" left="627" width="6" height="12" font="8">0</text>
+<text top="630" left="644" width="6" height="12" font="8">0</text>
+<text top="630" left="662" width="6" height="12" font="8">0</text>
+<text top="630" left="679" width="6" height="12" font="8">0</text>
+<text top="630" left="697" width="6" height="12" font="8">0</text>
+<text top="630" left="714" width="6" height="12" font="8">0</text>
+<text top="630" left="732" width="6" height="12" font="8">0</text>
+<text top="630" left="749" width="6" height="12" font="8">0</text>
+<text top="630" left="767" width="6" height="12" font="8">0</text>
+<text top="630" left="784" width="6" height="12" font="8">0</text>
+<text top="664" left="111" width="23" height="12" font="8">0x14</text>
+<text top="656" left="161" width="61" height="12" font="8">ADC_JOFR1</text>
+<text top="664" left="389" width="45" height="12" font="8">Reserved</text>
+<text top="656" left="652" width="78" height="12" font="8">JOFFSET1[11:0]</text>
+<text top="683" left="164" width="55" height="12" font="8">Reset value</text>
+<text top="683" left="592" width="6" height="12" font="8">0</text>
+<text top="683" left="609" width="6" height="12" font="8">0</text>
+<text top="683" left="627" width="6" height="12" font="8">0</text>
+<text top="683" left="644" width="6" height="12" font="8">0</text>
+<text top="683" left="662" width="6" height="12" font="8">0</text>
+<text top="683" left="679" width="6" height="12" font="8">0</text>
+<text top="683" left="697" width="6" height="12" font="8">0</text>
+<text top="683" left="714" width="6" height="12" font="8">0</text>
+<text top="683" left="732" width="6" height="12" font="8">0</text>
+<text top="683" left="749" width="6" height="12" font="8">0</text>
+<text top="683" left="767" width="6" height="12" font="8">0</text>
+<text top="683" left="784" width="6" height="12" font="8">0</text>
+<text top="717" left="111" width="23" height="12" font="8">0x18</text>
+<text top="710" left="161" width="61" height="12" font="8">ADC_JOFR2</text>
+<text top="717" left="389" width="45" height="12" font="8">Reserved</text>
+<text top="710" left="652" width="78" height="12" font="8">JOFFSET2[11:0]</text>
+<text top="736" left="164" width="55" height="12" font="8">Reset value</text>
+<text top="736" left="592" width="6" height="12" font="8">0</text>
+<text top="736" left="609" width="6" height="12" font="8">0</text>
+<text top="736" left="627" width="6" height="12" font="8">0</text>
+<text top="736" left="644" width="6" height="12" font="8">0</text>
+<text top="736" left="662" width="6" height="12" font="8">0</text>
+<text top="736" left="679" width="6" height="12" font="8">0</text>
+<text top="736" left="697" width="6" height="12" font="8">0</text>
+<text top="736" left="714" width="6" height="12" font="8">0</text>
+<text top="736" left="732" width="6" height="12" font="8">0</text>
+<text top="736" left="749" width="6" height="12" font="8">0</text>
+<text top="736" left="767" width="6" height="12" font="8">0</text>
+<text top="736" left="784" width="6" height="12" font="8">0</text>
+<text top="770" left="110" width="24" height="12" font="8">0x1C</text>
+<text top="763" left="161" width="61" height="12" font="8">ADC_JOFR3</text>
+<text top="770" left="389" width="45" height="12" font="8">Reserved</text>
+<text top="763" left="652" width="78" height="12" font="8">JOFFSET3[11:0]</text>
+<text top="790" left="164" width="55" height="12" font="8">Reset value</text>
+<text top="790" left="592" width="6" height="12" font="8">0</text>
+<text top="790" left="609" width="6" height="12" font="8">0</text>
+<text top="790" left="627" width="6" height="12" font="8">0</text>
+<text top="790" left="644" width="6" height="12" font="8">0</text>
+<text top="790" left="662" width="6" height="12" font="8">0</text>
+<text top="790" left="679" width="6" height="12" font="8">0</text>
+<text top="790" left="697" width="6" height="12" font="8">0</text>
+<text top="790" left="714" width="6" height="12" font="8">0</text>
+<text top="790" left="732" width="6" height="12" font="8">0</text>
+<text top="790" left="749" width="6" height="12" font="8">0</text>
+<text top="790" left="767" width="6" height="12" font="8">0</text>
+<text top="790" left="784" width="6" height="12" font="8">0</text>
+<text top="824" left="111" width="23" height="12" font="8">0x20</text>
+<text top="816" left="161" width="61" height="12" font="8">ADC_JOFR4</text>
+<text top="824" left="389" width="45" height="12" font="8">Reserved</text>
+<text top="816" left="652" width="78" height="12" font="8">JOFFSET4[11:0]</text>
+<text top="843" left="164" width="55" height="12" font="8">Reset value</text>
+<text top="843" left="592" width="6" height="12" font="8">0</text>
+<text top="843" left="609" width="6" height="12" font="8">0</text>
+<text top="843" left="627" width="6" height="12" font="8">0</text>
+<text top="843" left="644" width="6" height="12" font="8">0</text>
+<text top="843" left="662" width="6" height="12" font="8">0</text>
+<text top="843" left="679" width="6" height="12" font="8">0</text>
+<text top="843" left="697" width="6" height="12" font="8">0</text>
+<text top="843" left="714" width="6" height="12" font="8">0</text>
+<text top="843" left="732" width="6" height="12" font="8">0</text>
+<text top="843" left="749" width="6" height="12" font="8">0</text>
+<text top="843" left="767" width="6" height="12" font="8">0</text>
+<text top="843" left="784" width="6" height="12" font="8">0</text>
+<text top="877" left="111" width="23" height="12" font="8">0x24</text>
+<text top="869" left="167" width="49" height="12" font="8">ADC_HTR</text>
+<text top="877" left="389" width="45" height="12" font="8">Reserved</text>
+<text top="869" left="671" width="39" height="12" font="8">HT[11:0]</text>
+<text top="896" left="164" width="55" height="12" font="8">Reset value</text>
+<text top="896" left="592" width="6" height="12" font="8">0</text>
+<text top="896" left="609" width="6" height="12" font="8">0</text>
+<text top="896" left="627" width="6" height="12" font="8">0</text>
+<text top="896" left="644" width="6" height="12" font="8">0</text>
+<text top="896" left="662" width="6" height="12" font="8">0</text>
+<text top="896" left="679" width="6" height="12" font="8">0</text>
+<text top="896" left="697" width="6" height="12" font="8">0</text>
+<text top="896" left="714" width="6" height="12" font="8">0</text>
+<text top="896" left="732" width="6" height="12" font="8">0</text>
+<text top="896" left="749" width="6" height="12" font="8">0</text>
+<text top="896" left="767" width="6" height="12" font="8">0</text>
+<text top="896" left="784" width="6" height="12" font="8">0</text>
+<text top="930" left="111" width="23" height="12" font="8">0x28</text>
+<text top="923" left="168" width="47" height="12" font="8">ADC_LTR</text>
+<text top="930" left="389" width="45" height="12" font="8">Reserved</text>
+<text top="923" left="672" width="37" height="12" font="8">LT[11:0]</text>
+<text top="949" left="164" width="55" height="12" font="8">Reset value</text>
+<text top="949" left="592" width="6" height="12" font="8">0</text>
+<text top="949" left="609" width="6" height="12" font="8">0</text>
+<text top="949" left="627" width="6" height="12" font="8">0</text>
+<text top="949" left="644" width="6" height="12" font="8">0</text>
+<text top="949" left="662" width="6" height="12" font="8">0</text>
+<text top="949" left="679" width="6" height="12" font="8">0</text>
+<text top="949" left="697" width="6" height="12" font="8">0</text>
+<text top="949" left="714" width="6" height="12" font="8">0</text>
+<text top="949" left="732" width="6" height="12" font="8">0</text>
+<text top="949" left="749" width="6" height="12" font="8">0</text>
+<text top="949" left="767" width="6" height="12" font="8">0</text>
+<text top="949" left="784" width="6" height="12" font="8">0</text>
+<text top="996" left="110" width="24" height="12" font="8">0x2C</text>
+<text top="989" left="163" width="56" height="12" font="8">ADC_SQR1</text>
+<text top="996" left="284" width="45" height="12" font="8">Reserved</text>
+<text top="989" left="398" width="26" height="12" font="8">L[3:0]</text>
+<text top="971" left="455" width="73" height="12" font="8">SQ16[4:0] 16th </text>
+<text top="983" left="459" width="65" height="12" font="8">conversion in </text>
+<text top="995" left="473" width="35" height="12" font="8">regular </text>
+<text top="1007" left="457" width="65" height="12" font="8">sequence bits</text>
+<text top="971" left="542" width="73" height="12" font="8">SQ15[4:0] 15th </text>
+<text top="983" left="546" width="65" height="12" font="8">conversion in </text>
+<text top="995" left="561" width="35" height="12" font="8">regular </text>
+<text top="1007" left="545" width="65" height="12" font="8">sequence bits</text>
+<text top="965" left="641" width="50" height="12" font="8">SQ14[4:0] </text>
+<text top="977" left="648" width="35" height="12" font="8">1fourth </text>
+<text top="989" left="634" width="65" height="12" font="8">conversion in </text>
+<text top="1001" left="648" width="35" height="12" font="8">regular </text>
+<text top="1013" left="632" width="65" height="12" font="8">sequence bits</text>
+<text top="971" left="717" width="73" height="12" font="8">SQ13[4:0] 13th </text>
+<text top="983" left="721" width="65" height="12" font="8">conversion in </text>
+<text top="995" left="736" width="35" height="12" font="8">regular </text>
+<text top="1007" left="720" width="65" height="12" font="8">sequence bits</text>
+<text top="1028" left="164" width="55" height="12" font="8">Reset  value</text>
+<text top="1028" left="382" width="6" height="12" font="8">0</text>
+<text top="1028" left="399" width="6" height="12" font="8">0</text>
+<text top="1028" left="417" width="6" height="12" font="8">0</text>
+<text top="1028" left="434" width="6" height="12" font="8">0</text>
+<text top="1028" left="452" width="6" height="12" font="8">0</text>
+<text top="1028" left="469" width="6" height="12" font="8">0</text>
+<text top="1028" left="487" width="6" height="12" font="8">0</text>
+<text top="1028" left="504" width="6" height="12" font="8">0</text>
+<text top="1028" left="522" width="6" height="12" font="8">0</text>
+<text top="1028" left="539" width="6" height="12" font="8">0</text>
+<text top="1028" left="557" width="6" height="12" font="8">0</text>
+<text top="1028" left="574" width="6" height="12" font="8">0</text>
+<text top="1028" left="592" width="6" height="12" font="8">0</text>
+<text top="1028" left="609" width="6" height="12" font="8">0</text>
+<text top="1028" left="627" width="6" height="12" font="8">0</text>
+<text top="1028" left="644" width="6" height="12" font="8">0</text>
+<text top="1028" left="662" width="6" height="12" font="8">0</text>
+<text top="1028" left="679" width="6" height="12" font="8">0</text>
+<text top="1028" left="697" width="6" height="12" font="8">0</text>
+<text top="1028" left="714" width="6" height="12" font="8">0</text>
+<text top="1028" left="732" width="6" height="12" font="8">0</text>
+<text top="1028" left="749" width="6" height="12" font="8">0</text>
+<text top="1028" left="767" width="6" height="12" font="8">0</text>
+<text top="1028" left="784" width="6" height="12" font="8">0</text>
+</page>
+<page number="17" position="absolute" top="0" left="0" height="1263" width="892">
+<text top="1115" left="398" width="97" height="15" font="0">RM0008 Rev 21</text>
+<text top="1115" left="737" width="55" height="15" font="0">253<a href="">/1136</a></text>
+<text top="88" left="101" width="57" height="17" font="1"><b>RM0008</b></text>
+<text top="88" left="554" width="238" height="17" font="1"><b>Analog-to-digital converter (ADC)</b></text>
+<text top="1140" left="825" width="18" height="12" font="2">253</text>
+<text top="794" left="186" width="57" height="17" font="4"><a href="">Refer to </a></text>
+<text top="794" left="243" width="128" height="17" font="5"><a href=""><i>Table 3 on page 50</i></a></text>
+<text top="794" left="371" width="245" height="17" font="4"> for the register boundary addresses.</text>
+<text top="294" left="111" width="23" height="12" font="8">0x30</text>
+<text top="287" left="163" width="56" height="12" font="8">ADC_SQR2</text>
+<text top="317" left="253" width="0" height="12" font="18">Reserved</text>
+<text top="269" left="280" width="73" height="12" font="8">SQ12[4:0] 12th </text>
+<text top="281" left="284" width="65" height="12" font="8">conversion in </text>
+<text top="293" left="299" width="36" height="12" font="8">regular </text>
+<text top="305" left="282" width="65" height="12" font="8">sequence bits</text>
+<text top="269" left="368" width="72" height="12" font="8">SQ11[4:0] 11th </text>
+<text top="281" left="371" width="65" height="12" font="8">conversion in </text>
+<text top="293" left="386" width="36" height="12" font="8">regular </text>
+<text top="305" left="370" width="65" height="12" font="8">sequence bits</text>
+<text top="269" left="454" width="73" height="12" font="8">SQ10[4:0] 10th </text>
+<text top="281" left="459" width="65" height="12" font="8">conversion in </text>
+<text top="293" left="473" width="35" height="12" font="8">regular </text>
+<text top="305" left="457" width="65" height="12" font="8">sequence bits</text>
+<text top="269" left="548" width="62" height="12" font="8">SQ9[4:0] 9th </text>
+<text top="281" left="546" width="65" height="12" font="8">conversion in </text>
+<text top="293" left="561" width="35" height="12" font="8">regular </text>
+<text top="305" left="545" width="65" height="12" font="8">sequence bits</text>
+<text top="269" left="635" width="62" height="12" font="8">SQ8[4:0] 8th </text>
+<text top="281" left="634" width="65" height="12" font="8">conversion in </text>
+<text top="293" left="648" width="35" height="12" font="8">regular </text>
+<text top="305" left="632" width="65" height="12" font="8">sequence bits</text>
+<text top="269" left="723" width="62" height="12" font="8">SQ7[4:0] 7th </text>
+<text top="281" left="721" width="65" height="12" font="8">conversion in </text>
+<text top="293" left="736" width="35" height="12" font="8">regular </text>
+<text top="305" left="720" width="65" height="12" font="8">sequence bits</text>
+<text top="326" left="164" width="55" height="12" font="8">Reset  value</text>
+<text top="326" left="277" width="6" height="12" font="8">0</text>
+<text top="326" left="294" width="6" height="12" font="8">0</text>
+<text top="326" left="312" width="6" height="12" font="8">0</text>
+<text top="326" left="329" width="6" height="12" font="8">0</text>
+<text top="326" left="347" width="6" height="12" font="8">0</text>
+<text top="326" left="364" width="6" height="12" font="8">0</text>
+<text top="326" left="382" width="6" height="12" font="8">0</text>
+<text top="326" left="399" width="6" height="12" font="8">0</text>
+<text top="326" left="417" width="6" height="12" font="8">0</text>
+<text top="326" left="434" width="6" height="12" font="8">0</text>
+<text top="326" left="452" width="6" height="12" font="8">0</text>
+<text top="326" left="469" width="6" height="12" font="8">0</text>
+<text top="326" left="487" width="6" height="12" font="8">0</text>
+<text top="326" left="504" width="6" height="12" font="8">0</text>
+<text top="326" left="522" width="6" height="12" font="8">0</text>
+<text top="326" left="539" width="6" height="12" font="8">0</text>
+<text top="326" left="557" width="6" height="12" font="8">0</text>
+<text top="326" left="574" width="6" height="12" font="8">0</text>
+<text top="326" left="592" width="6" height="12" font="8">0</text>
+<text top="326" left="609" width="6" height="12" font="8">0</text>
+<text top="326" left="627" width="6" height="12" font="8">0</text>
+<text top="326" left="644" width="6" height="12" font="8">0</text>
+<text top="326" left="662" width="6" height="12" font="8">0</text>
+<text top="326" left="679" width="6" height="12" font="8">0</text>
+<text top="326" left="697" width="6" height="12" font="8">0</text>
+<text top="326" left="714" width="6" height="12" font="8">0</text>
+<text top="326" left="732" width="6" height="12" font="8">0</text>
+<text top="326" left="749" width="6" height="12" font="8">0</text>
+<text top="326" left="767" width="6" height="12" font="8">0</text>
+<text top="326" left="784" width="6" height="12" font="8">0</text>
+<text top="373" left="111" width="23" height="12" font="8">0x34</text>
+<text top="365" left="163" width="56" height="12" font="8">ADC_SQR3</text>
+<text top="396" left="253" width="0" height="12" font="18">Reserved</text>
+<text top="347" left="285" width="62" height="12" font="8">SQ6[4:0] 6th </text>
+<text top="359" left="284" width="65" height="12" font="8">conversion in </text>
+<text top="371" left="299" width="36" height="12" font="8">regular </text>
+<text top="383" left="282" width="65" height="12" font="8">sequence bits</text>
+<text top="347" left="373" width="62" height="12" font="8">SQ5[4:0] 5th </text>
+<text top="359" left="371" width="65" height="12" font="8">conversion in </text>
+<text top="371" left="386" width="36" height="12" font="8">regular </text>
+<text top="383" left="370" width="65" height="12" font="8">sequence bits</text>
+<text top="347" left="454" width="74" height="12" font="8">SQ4[4:0] fourth </text>
+<text top="359" left="459" width="65" height="12" font="8">conversion in </text>
+<text top="371" left="473" width="35" height="12" font="8">regular </text>
+<text top="383" left="457" width="65" height="12" font="8">sequence bits</text>
+<text top="347" left="545" width="67" height="12" font="8">SQ3[4:0] third </text>
+<text top="359" left="546" width="65" height="12" font="8">conversion in </text>
+<text top="371" left="561" width="35" height="12" font="8">regular </text>
+<text top="383" left="545" width="65" height="12" font="8">sequence bits</text>
+<text top="347" left="626" width="78" height="12" font="8">SQ2[4:0] second </text>
+<text top="359" left="634" width="65" height="12" font="8">conversion in </text>
+<text top="371" left="648" width="35" height="12" font="8">regular </text>
+<text top="383" left="632" width="65" height="12" font="8">sequence bits</text>
+<text top="347" left="722" width="64" height="12" font="8">SQ1[4:0] first </text>
+<text top="359" left="721" width="65" height="12" font="8">conversion in </text>
+<text top="371" left="736" width="35" height="12" font="8">regular </text>
+<text top="383" left="720" width="65" height="12" font="8">sequence bits</text>
+<text top="405" left="164" width="55" height="12" font="8">Reset  value</text>
+<text top="405" left="277" width="6" height="12" font="8">0</text>
+<text top="405" left="294" width="6" height="12" font="8">0</text>
+<text top="405" left="312" width="6" height="12" font="8">0</text>
+<text top="405" left="329" width="6" height="12" font="8">0</text>
+<text top="405" left="347" width="6" height="12" font="8">0</text>
+<text top="405" left="364" width="6" height="12" font="8">0</text>
+<text top="405" left="382" width="6" height="12" font="8">0</text>
+<text top="405" left="399" width="6" height="12" font="8">0</text>
+<text top="405" left="417" width="6" height="12" font="8">0</text>
+<text top="405" left="434" width="6" height="12" font="8">0</text>
+<text top="405" left="452" width="6" height="12" font="8">0</text>
+<text top="405" left="469" width="6" height="12" font="8">0</text>
+<text top="405" left="487" width="6" height="12" font="8">0</text>
+<text top="405" left="504" width="6" height="12" font="8">0</text>
+<text top="405" left="522" width="6" height="12" font="8">0</text>
+<text top="405" left="539" width="6" height="12" font="8">0</text>
+<text top="405" left="557" width="6" height="12" font="8">0</text>
+<text top="405" left="574" width="6" height="12" font="8">0</text>
+<text top="405" left="592" width="6" height="12" font="8">0</text>
+<text top="405" left="609" width="6" height="12" font="8">0</text>
+<text top="405" left="627" width="6" height="12" font="8">0</text>
+<text top="405" left="644" width="6" height="12" font="8">0</text>
+<text top="405" left="662" width="6" height="12" font="8">0</text>
+<text top="405" left="679" width="6" height="12" font="8">0</text>
+<text top="405" left="697" width="6" height="12" font="8">0</text>
+<text top="405" left="714" width="6" height="12" font="8">0</text>
+<text top="405" left="732" width="6" height="12" font="8">0</text>
+<text top="405" left="749" width="6" height="12" font="8">0</text>
+<text top="405" left="767" width="6" height="12" font="8">0</text>
+<text top="405" left="784" width="6" height="12" font="8">0</text>
+<text top="452" left="111" width="23" height="12" font="8">0x38</text>
+<text top="444" left="164" width="56" height="12" font="8">ADC_JSQR</text>
+<text top="452" left="301" width="45" height="12" font="8">Reserved</text>
+<text top="438" left="417" width="23" height="12" font="8">JL[1:</text>
+<text top="450" left="424" width="9" height="12" font="8">0]</text>
+<text top="426" left="466" width="50" height="12" font="8">JSQ4[4:0] </text>
+<text top="438" left="451" width="80" height="12" font="8">fourthconversion </text>
+<text top="450" left="466" width="50" height="12" font="8">in injected </text>
+<text top="462" left="457" width="65" height="12" font="8">sequence bits</text>
+<text top="426" left="542" width="73" height="12" font="8">JSQ3[4:0] third </text>
+<text top="438" left="546" width="65" height="12" font="8">conversion in </text>
+<text top="450" left="559" width="39" height="12" font="8">injected </text>
+<text top="462" left="545" width="65" height="12" font="8">sequence bits</text>
+<text top="420" left="641" width="50" height="12" font="8">JSQ2[4:0] </text>
+<text top="432" left="648" width="37" height="12" font="8">second </text>
+<text top="444" left="634" width="65" height="12" font="8">conversion in </text>
+<text top="456" left="647" width="39" height="12" font="8">injected </text>
+<text top="468" left="632" width="65" height="12" font="8">sequence bits</text>
+<text top="426" left="719" width="69" height="12" font="8">JSQ1[4:0] first </text>
+<text top="438" left="721" width="65" height="12" font="8">conversion in </text>
+<text top="450" left="734" width="39" height="12" font="8">injected </text>
+<text top="462" left="720" width="65" height="12" font="8">sequence bits</text>
+<text top="484" left="164" width="55" height="12" font="8">Reset  value</text>
+<text top="484" left="417" width="6" height="12" font="8">0</text>
+<text top="484" left="434" width="6" height="12" font="8">0</text>
+<text top="484" left="452" width="6" height="12" font="8">0</text>
+<text top="484" left="469" width="6" height="12" font="8">0</text>
+<text top="484" left="487" width="6" height="12" font="8">0</text>
+<text top="484" left="504" width="6" height="12" font="8">0</text>
+<text top="484" left="522" width="6" height="12" font="8">0</text>
+<text top="484" left="539" width="6" height="12" font="8">0</text>
+<text top="484" left="557" width="6" height="12" font="8">0</text>
+<text top="484" left="574" width="6" height="12" font="8">0</text>
+<text top="484" left="592" width="6" height="12" font="8">0</text>
+<text top="484" left="609" width="6" height="12" font="8">0</text>
+<text top="484" left="627" width="6" height="12" font="8">0</text>
+<text top="484" left="644" width="6" height="12" font="8">0</text>
+<text top="484" left="662" width="6" height="12" font="8">0</text>
+<text top="484" left="679" width="6" height="12" font="8">0</text>
+<text top="484" left="697" width="6" height="12" font="8">0</text>
+<text top="484" left="714" width="6" height="12" font="8">0</text>
+<text top="484" left="732" width="6" height="12" font="8">0</text>
+<text top="484" left="749" width="6" height="12" font="8">0</text>
+<text top="484" left="767" width="6" height="12" font="8">0</text>
+<text top="484" left="784" width="6" height="12" font="8">0</text>
+<text top="518" left="110" width="24" height="12" font="8">0x3C</text>
+<text top="510" left="164" width="54" height="12" font="8">ADC_JDR1</text>
+<text top="518" left="354" width="45" height="12" font="8">Reserved</text>
+<text top="510" left="627" width="58" height="12" font="8">JDATA[15:0]</text>
+<text top="537" left="164" width="55" height="12" font="8">Reset  value</text>
+<text top="537" left="522" width="6" height="12" font="8">0</text>
+<text top="537" left="539" width="6" height="12" font="8">0</text>
+<text top="537" left="557" width="6" height="12" font="8">0</text>
+<text top="537" left="574" width="6" height="12" font="8">0</text>
+<text top="537" left="592" width="6" height="12" font="8">0</text>
+<text top="537" left="609" width="6" height="12" font="8">0</text>
+<text top="537" left="627" width="6" height="12" font="8">0</text>
+<text top="537" left="644" width="6" height="12" font="8">0</text>
+<text top="537" left="662" width="6" height="12" font="8">0</text>
+<text top="537" left="679" width="6" height="12" font="8">0</text>
+<text top="537" left="697" width="6" height="12" font="8">0</text>
+<text top="537" left="714" width="6" height="12" font="8">0</text>
+<text top="537" left="732" width="6" height="12" font="8">0</text>
+<text top="537" left="749" width="6" height="12" font="8">0</text>
+<text top="537" left="767" width="6" height="12" font="8">0</text>
+<text top="537" left="784" width="6" height="12" font="8">0</text>
+<text top="571" left="111" width="23" height="12" font="8">0x40</text>
+<text top="563" left="164" width="54" height="12" font="8">ADC_JDR2</text>
+<text top="571" left="354" width="45" height="12" font="8">Reserved</text>
+<text top="563" left="627" width="58" height="12" font="8">JDATA[15:0]</text>
+<text top="590" left="164" width="55" height="12" font="8">Reset  value</text>
+<text top="590" left="522" width="6" height="12" font="8">0</text>
+<text top="590" left="539" width="6" height="12" font="8">0</text>
+<text top="590" left="557" width="6" height="12" font="8">0</text>
+<text top="590" left="574" width="6" height="12" font="8">0</text>
+<text top="590" left="592" width="6" height="12" font="8">0</text>
+<text top="590" left="609" width="6" height="12" font="8">0</text>
+<text top="590" left="627" width="6" height="12" font="8">0</text>
+<text top="590" left="644" width="6" height="12" font="8">0</text>
+<text top="590" left="662" width="6" height="12" font="8">0</text>
+<text top="590" left="679" width="6" height="12" font="8">0</text>
+<text top="590" left="697" width="6" height="12" font="8">0</text>
+<text top="590" left="714" width="6" height="12" font="8">0</text>
+<text top="590" left="732" width="6" height="12" font="8">0</text>
+<text top="590" left="749" width="6" height="12" font="8">0</text>
+<text top="590" left="767" width="6" height="12" font="8">0</text>
+<text top="590" left="784" width="6" height="12" font="8">0</text>
+<text top="624" left="111" width="23" height="12" font="8">0x44</text>
+<text top="617" left="164" width="54" height="12" font="8">ADC_JDR3</text>
+<text top="624" left="354" width="45" height="12" font="8">Reserved</text>
+<text top="617" left="627" width="58" height="12" font="8">JDATA[15:0]</text>
+<text top="643" left="164" width="55" height="12" font="8">Reset  value</text>
+<text top="643" left="522" width="6" height="12" font="8">0</text>
+<text top="643" left="539" width="6" height="12" font="8">0</text>
+<text top="643" left="557" width="6" height="12" font="8">0</text>
+<text top="643" left="574" width="6" height="12" font="8">0</text>
+<text top="643" left="592" width="6" height="12" font="8">0</text>
+<text top="643" left="609" width="6" height="12" font="8">0</text>
+<text top="643" left="627" width="6" height="12" font="8">0</text>
+<text top="643" left="644" width="6" height="12" font="8">0</text>
+<text top="643" left="662" width="6" height="12" font="8">0</text>
+<text top="643" left="679" width="6" height="12" font="8">0</text>
+<text top="643" left="697" width="6" height="12" font="8">0</text>
+<text top="643" left="714" width="6" height="12" font="8">0</text>
+<text top="643" left="732" width="6" height="12" font="8">0</text>
+<text top="643" left="749" width="6" height="12" font="8">0</text>
+<text top="643" left="767" width="6" height="12" font="8">0</text>
+<text top="643" left="784" width="6" height="12" font="8">0</text>
+<text top="678" left="111" width="23" height="12" font="8">0x48</text>
+<text top="670" left="164" width="54" height="12" font="8">ADC_JDR4</text>
+<text top="678" left="354" width="45" height="12" font="8">Reserved</text>
+<text top="670" left="627" width="58" height="12" font="8">JDATA[15:0]</text>
+<text top="697" left="164" width="55" height="12" font="8">Reset  value</text>
+<text top="697" left="522" width="6" height="12" font="8">0</text>
+<text top="697" left="539" width="6" height="12" font="8">0</text>
+<text top="697" left="557" width="6" height="12" font="8">0</text>
+<text top="697" left="574" width="6" height="12" font="8">0</text>
+<text top="697" left="592" width="6" height="12" font="8">0</text>
+<text top="697" left="609" width="6" height="12" font="8">0</text>
+<text top="697" left="627" width="6" height="12" font="8">0</text>
+<text top="697" left="644" width="6" height="12" font="8">0</text>
+<text top="697" left="662" width="6" height="12" font="8">0</text>
+<text top="697" left="679" width="6" height="12" font="8">0</text>
+<text top="697" left="697" width="6" height="12" font="8">0</text>
+<text top="697" left="714" width="6" height="12" font="8">0</text>
+<text top="697" left="732" width="6" height="12" font="8">0</text>
+<text top="697" left="749" width="6" height="12" font="8">0</text>
+<text top="697" left="767" width="6" height="12" font="8">0</text>
+<text top="697" left="784" width="6" height="12" font="8">0</text>
+<text top="731" left="110" width="24" height="12" font="8">0x4C</text>
+<text top="723" left="170" width="43" height="12" font="8">ADC_DR</text>
+<text top="723" left="336" width="81" height="12" font="8">ADC2DATA[15:0]</text>
+<text top="723" left="610" width="92" height="12" font="8">Regular DATA[15:0]</text>
+<text top="750" left="164" width="55" height="12" font="8">Reset  value</text>
+<text top="750" left="242" width="6" height="12" font="8">0</text>
+<text top="750" left="259" width="6" height="12" font="8">0</text>
+<text top="750" left="277" width="6" height="12" font="8">0</text>
+<text top="750" left="294" width="6" height="12" font="8">0</text>
+<text top="750" left="312" width="6" height="12" font="8">0</text>
+<text top="750" left="329" width="6" height="12" font="8">0</text>
+<text top="750" left="347" width="6" height="12" font="8">0</text>
+<text top="750" left="364" width="6" height="12" font="8">0</text>
+<text top="750" left="382" width="6" height="12" font="8">0</text>
+<text top="750" left="399" width="6" height="12" font="8">0</text>
+<text top="750" left="417" width="6" height="12" font="8">0</text>
+<text top="750" left="434" width="6" height="12" font="8">0</text>
+<text top="750" left="452" width="6" height="12" font="8">0</text>
+<text top="750" left="469" width="6" height="12" font="8">0</text>
+<text top="750" left="487" width="6" height="12" font="8">0</text>
+<text top="750" left="504" width="6" height="12" font="8">0</text>
+<text top="750" left="522" width="6" height="12" font="8">0</text>
+<text top="750" left="539" width="6" height="12" font="8">0</text>
+<text top="750" left="557" width="6" height="12" font="8">0</text>
+<text top="750" left="574" width="6" height="12" font="8">0</text>
+<text top="750" left="592" width="6" height="12" font="8">0</text>
+<text top="750" left="609" width="6" height="12" font="8">0</text>
+<text top="750" left="627" width="6" height="12" font="8">0</text>
+<text top="750" left="644" width="6" height="12" font="8">0</text>
+<text top="750" left="662" width="6" height="12" font="8">0</text>
+<text top="750" left="679" width="6" height="12" font="8">0</text>
+<text top="750" left="697" width="6" height="12" font="8">0</text>
+<text top="750" left="714" width="6" height="12" font="8">0</text>
+<text top="750" left="732" width="6" height="12" font="8">0</text>
+<text top="750" left="749" width="6" height="12" font="8">0</text>
+<text top="750" left="767" width="6" height="12" font="8">0</text>
+<text top="750" left="784" width="6" height="12" font="8">0</text>
+<text top="135" left="244" width="405" height="17" font="1"><b>Table 72. ADC register map and reset values  (continued)</b></text>
+<text top="198" left="103" width="39" height="15" font="9"><b>Offset</b></text>
+<text top="198" left="165" width="54" height="15" font="9"><b>Register</b></text>
+<text top="205" left="248" width="0" height="15" font="17"><b>31</b></text>
+<text top="205" left="266" width="0" height="15" font="17"><b>30</b></text>
+<text top="205" left="283" width="0" height="15" font="17"><b>29</b></text>
+<text top="205" left="301" width="0" height="15" font="17"><b>28</b></text>
+<text top="205" left="318" width="0" height="15" font="17"><b>27</b></text>
+<text top="205" left="336" width="0" height="15" font="17"><b>26</b></text>
+<text top="205" left="353" width="0" height="15" font="17"><b>25</b></text>
+<text top="205" left="371" width="0" height="15" font="17"><b>24</b></text>
+<text top="205" left="388" width="0" height="15" font="17"><b>23</b></text>
+<text top="205" left="406" width="0" height="15" font="17"><b>22</b></text>
+<text top="205" left="423" width="0" height="15" font="17"><b>21</b></text>
+<text top="205" left="441" width="0" height="15" font="17"><b>20</b></text>
+<text top="205" left="458" width="0" height="15" font="17"><b>19</b></text>
+<text top="205" left="475" width="0" height="15" font="17"><b>18</b></text>
+<text top="205" left="493" width="0" height="15" font="17"><b>17</b></text>
+<text top="205" left="510" width="0" height="15" font="17"><b>16</b></text>
+<text top="205" left="528" width="0" height="15" font="17"><b>15</b></text>
+<text top="205" left="545" width="0" height="15" font="17"><b>14</b></text>
+<text top="205" left="563" width="0" height="15" font="17"><b>13</b></text>
+<text top="205" left="580" width="0" height="15" font="17"><b>12</b></text>
+<text top="205" left="598" width="0" height="15" font="17"><b>11</b></text>
+<text top="205" left="615" width="0" height="15" font="17"><b>10</b></text>
+<text top="201" left="633" width="0" height="15" font="17"><b>9</b></text>
+<text top="201" left="650" width="0" height="15" font="17"><b>8</b></text>
+<text top="201" left="668" width="0" height="15" font="17"><b>7</b></text>
+<text top="201" left="685" width="0" height="15" font="17"><b>6</b></text>
+<text top="201" left="703" width="0" height="15" font="17"><b>5</b></text>
+<text top="201" left="720" width="0" height="15" font="17"><b>4</b></text>
+<text top="201" left="738" width="0" height="15" font="17"><b>3</b></text>
+<text top="201" left="755" width="0" height="15" font="17"><b>2</b></text>
+<text top="201" left="773" width="0" height="15" font="17"><b>1</b></text>
+<text top="201" left="790" width="0" height="15" font="17"><b>0</b></text>
+</page>
+<outline>
+<item page="1">11 Analog-to-digital converter (ADC)</item>
+<outline>
+<item page="1">11.12 ADC registers</item>
+<outline>
+<item page="1">11.12.1 ADC status register (ADC_SR)</item>
+<item page="2">11.12.2 ADC control register 1 (ADC_CR1)</item>
+<item page="4">11.12.3 ADC control register 2 (ADC_CR2)</item>
+<item page="8">11.12.4 ADC sample time register 1 (ADC_SMPR1)</item>
+<item page="9">11.12.5 ADC sample time register 2 (ADC_SMPR2)</item>
+<item page="9">11.12.6 ADC injected channel data offset register x (ADC_JOFRx) (x=1..4)</item>
+<item page="10">11.12.7 ADC watchdog high threshold register (ADC_HTR)</item>
+<item page="10">11.12.8 ADC watchdog low threshold register (ADC_LTR)</item>
+<item page="11">11.12.9 ADC regular sequence register 1 (ADC_SQR1)</item>
+<item page="12">11.12.10 ADC regular sequence register 2 (ADC_SQR2)</item>
+<item page="13">11.12.11 ADC regular sequence register 3 (ADC_SQR3)</item>
+<item page="14">11.12.12 ADC injected sequence register (ADC_JSQR)</item>
+<item page="15">11.12.13 ADC injected data register x (ADC_JDRx) (x= 1..4)</item>
+<item page="15">11.12.14 ADC regular data register (ADC_DR)</item>
+<item page="16">11.12.15 ADC register map</item>
+<outline>
+<item page="16">Table 72. ADC register map and reset values</item>
+</outline>
+</outline>
+</outline>
+</outline>
+</pdf2xml>

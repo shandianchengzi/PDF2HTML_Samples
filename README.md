@@ -27,7 +27,8 @@
 | 11 |pdftotree|本软件包是我们开发自己的模块以替代 Adobe Acrobat 的成果。目前有几种将 pdf 转换为 html 的开源工具，但这些工具无法保留表格中的单元格结构。我们在这个项目中的目标是开发一个工具，提取 pdf 文档中的文本、数字和表格，并以易于使用的格式返回。https://pypi.org/project/pdftotree/|✅⭐⭐pdftotree：能转换但效果不太好，去除了很多格式|
 | 12 |depdf|An ultimate pdf file disintegration tool. DePDF is designed to extract tables and paragraphs into structured markup language [eg. html] from embedding pdf pages. You can also use it to convert page/pdf to html. Built on top of pdfplumber. https://pypi.org/project/depdf/0.1.1/|✅⭐⭐depdf：能转换但效果不太好，去除了很多格式，和pdftotree类似，都不太能很明显的分清PDF的各个章节|
 | 13 |poppdf|A python (3.6+) module that wraps poppler's pdftoimage, pdftohtml and pdftotext to extract informations from PDF. https://pypi.org/project/poppdf/|✅⭐poppdf：能转换但难以阅读，不排除是我没找到正确的使用方式|
-| 14 |pandoc|`pandoc input.pdf -o output.html`|❌【已测，失败】pandoc 不接受 pdf 这个输入。详见 [【记录】Pandoc｜Linux安装最新Pandoc](https://blog.csdn.net/qq_46106285/article/details/138094313)。|
+| 14 |poppler|[Poppler](https://gitcode.com/danigm/poppler?utm_source=artical_gitcode) 是一个用于 PDF 文档处理的强大开源库。它提供了一系列高级功能，包括页面提取、文本提取、注释和书签处理等。[Poppler - 高性能的PDF文档处理库-CSDN博客](https://blog.csdn.net/gitblog_00001/article/details/136569277)|✅⭐⭐⭐⭐poppler：转换成 HTML 的效果还是非常好的，但 XML 就不太行了|
+| 15 |pandoc|`pandoc input.pdf -o output.html`|❌【已测，失败】pandoc 不接受 pdf 这个输入。详见 [【记录】Pandoc｜Linux安装最新Pandoc](https://blog.csdn.net/qq_46106285/article/details/138094313)。|
 
 如果还有其他工具也可以尝试测试并添加进来。
 
