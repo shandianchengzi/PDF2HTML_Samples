@@ -15,7 +15,7 @@ def convert_pdf_to_xml(pdf_file_path, output_file_path):
     # Execute pdftohtml command
     try:
         subprocess.run(["pdftohtml", "-xml", pdf_file_path, output_file_path])
-        print("PDF converted to HTML successfully!")
+        print("PDF converted to XML successfully!")
     except FileNotFoundError:
         print("pdftohtml command not found. Make sure poppler is installed and added to your system PATH.")
     pass
