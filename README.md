@@ -17,7 +17,7 @@
 | 1    | pdfminer     | Warning: Starting from version 20191010, PDFMiner supports Python 3 only. For Python 2 support, check out pdfminer.six. https://pypi.org/project/pdfminer/ |          |
 | 2 | pdfminer.six | 【这个工具是专供 Python2 的，详见 https://pypi.org/project/pdfminer/ 】这是一个PDF文档解析器，可以用于提取文本、元数据以及页面布局信息。您可以使用pdfminer.six来提取PDF中的文本内容，并将其转换为XML或HTML格式。 | 不太好用，详见[【记录】Python3｜ 将 PDF 转换成 HTML/XML（✅⭐pdfminer.six）](https://blog.csdn.net/qq_46106285/article/details/138095328) |
 | 3    | pdfminer3k   | 据说是 pdfminer 的 Python3 版本，不清楚和 pdfminer.six 有什么区别。 | ✅⭐⭐⭐pdfminer3k：转HTML还可以 |
-| 4    | PyPDF2       | 这是一个纯Python库，用于处理PDF文件。虽然主要用于创建、阅读和修改PDF文件，但您也可以使用它来提取文本内容，并将其转换为XML或HTML格式。 |          |
+| 4    | PyPDF2       | 这是一个纯Python库，用于处理PDF文件。虽然主要用于创建、阅读和修改PDF文件，但您也可以使用它来提取文本内容，并将其转换为XML或HTML格式。 | ✅⭐PyPDF2：本人没找到能直接将PDF 转换成 HTML/XML 的方法，不推荐这个工具 |
 | 5    | pdf2xml      | 这是一个命令行工具，可以将PDF文件转换为XML格式。虽然它不是Python库，但您可以通过Python的subprocess模块来调用该工具，并处理生成的XML文件。 |          |
 | 6    | pdf2htmlEX   | 这是另一个命令行工具，用于将PDF文件转换为HTML格式。您可以通过Python的subprocess模块来调用该工具，并处理生成的HTML文件。https://blog.csdn.net/gitblog_00074/article/details/136775457 | [【记录】Python3｜ 将 PDF 转换成 HTML/XML（✅⭐⭐⭐⭐pdf2htmlEX）](https://blog.csdn.net/qq_46106285/article/details/138356607) |
 | 7    | PyMuPDF+tqdm | https://blog.csdn.net/qq_28505809/article/details/124147552  | ✅⭐PyMuPDF+tqdm：和pdfminer.six转换结果类似 |

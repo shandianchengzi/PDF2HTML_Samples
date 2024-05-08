@@ -1,0 +1,603 @@
+<PDF_Content><Text>RM0008 Rev 21 237/1136RM0008 Analog-to-digital converter (ADC)
+25311.12 ADC registers
+Refer to Section 2.2 on page 45  for a list of abbreviations used in register descriptions.
+The peripheral registers have to be accessed by words (32-bit).
+11.12.1 ADC status register (ADC_SR)
+Address offset: 0x00Reset value: 0x0000 0000
+         
+         31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16
+Reserved
+1 5 1 4 1 3 1 2 1 1 1 0 9876543210
+ReservedSTRT JSTRT JEOC EOC AWD
+rc_w0 rc_w0 rc_w0 rc_w0 rc_w0
+Bits 31:5 Reserved, must be kept at reset value.
+Bit 4 STRT:  Regular channel Start flag  
+This bit is set by hardware when regular channel  conversion starts. It is cleared by software.
+0: No regular channel conversion started1: Regular channel conversion has started
+Bit 3 JSTRT:  Injected channel Start flag
+This bit is set by hardware when injected channel group conversion starts. It is cleared by 
+software.
+0: No injected group conversion started1: Injected group conversion has started
+Bit 2 JEOC:  Injected channel end of conversion
+This bit is set by hardware at the end of all in jected group channel conversion. It is cleared 
+by software. 
+0: Conversion is not complete 1: Conversion complete
+Bit 1 EOC:  End of conversion
+This bit is set by hardware at the end of a group channel conversion (regular or injected). It is 
+cleared by software or by reading the ADC_DR. 
+0: Conversion is not complete 1: Conversion complete
+Bit 0 AWD:  Analog watchdog flag 
+This bit is set by hardware when the converted voltage crosses the values programmed in 
+the ADC_LTR and ADC_HTR registers.  It is cleared by software.
+0: No Analog watchdog event occurred1: Analog watchdog event occurredAnalog-to-digital converter (ADC) RM0008
+238/1136 RM0008 Rev 2111.12.2 ADC control register 1 (ADC_CR1)
+Address offset: 0x04
+Reset value: 0x0000 0000
+         
+         31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16
+ReservedAWDE
+NJAWDE
+NReservedDUALMOD[3:0]
+rw rw rw rw rw rw
+15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+DISCNUM[2:0]JDISCE
+NDISC 
+ENJAUTOAWD 
+SGLSCANJEOC 
+IEAWDIE EOCIE AWDCH[4:0]
+rw rw rw rw rw rw rw rw rw rw rw rw rw rw rw rw
+Bits 31:24 Reserved, must  be kept at reset value.
+Bit 23 AWDEN:  Analog watchdog enable on regular channels
+This bit is set/reset by software.
+0: Analog watchdog disabled on regular channels
+1: Analog watchdog enabled on regular channels
+Bit 22 JAWDEN:  Analog watchdog enable on injected channels
+This bit is set/reset by software.
+0: Analog watchdog disabled on injected channels1: Analog watchdog enabled on injected channels
+Bits 21:20 Reserved, must  be kept at reset value.
+Bits 19:16 DUALMOD[3:0] : Dual mode selection
+These bits are written by softwa re to select the operating mode.
+0000: Independent mode. 0001: Combined regular simultaneo us + injected simultaneous mode 
+0010: Combined regular simultaneous + alternate trigger mode0011: Combined injected simultaneous + fast interleaved mode 0100: Combined injected simultaneous + slow Interleaved mode 0101: Injected simultaneous mode only0110: Regular simultaneous mode only0111: Fast interleaved mode only1000: Slow interleaved mode only1001: Alternate trigger mode only
+Note: These bits are reserved in ADC2 and ADC3.
+In dual mode, a change of channel configurat ion generates a restart that can produce a 
+loss of synchronization. It is recommended to disable dual mode before any 
+configuration change.
+Bits 15:13  DISCNUM[2:0] : Discontinuous mode channel count
+These bits are written by software to define the number of regular channels to be converted 
+in discontinuous mode, after receiving an external trigger.
+000: 1 channel001: 2 channels.......111: 8 channelsRM0008 Rev 21 239/1136RM0008 Analog-to-digital converter (ADC)
+253Bit 12 JDISCEN : Discontinuous mode on injected channels
+This bit set and cleared by software to ena ble/disable discontinuous mode on injected group 
+channels
+0: Discontinuous mode on in jected channels disabled
+1: Discontinuous mode on in jected channels enabled
+Bit 11 DISCEN : Discontinuous mode on regular channels
+This bit set and cleared by software to enable/disable Discontinuous mode on regular 
+channels.
+0: Discontinuous mode on regular channels disabled1: Discontinuous mode on regular channels enabled
+Bit 10 JAUTO:  Automatic Injected Group conversion 
+This bit set and cleared by software to enabl e/disable automatic inje cted group conversion 
+after regular group conversion.
+0: Automatic injected group conversion disabled 1: Automatic injected group conversion enabled
+Bit 9 AWDSGL:  Enable the watchdog on a single channel in scan mode
+This bit set and cleared by software to e nable/disable the analog watchdog on the channel 
+identified by the AWDCH[4:0] bits.
+0: Analog watchdog enabled on all channels1: Analog watchdog enabled on a single channel 
+Bit 8 SCAN:  Scan mode 
+This bit is set and cleared by software to enable/disable Scan mode. In Scan mode, the 
+inputs selected through the ADC_SQRx or  ADC_JSQRx registers are converted. 
+0: Scan mode disabled1: Scan mode enabled
+Note: An EOC or JEOC interrupt is generated onl y on the end of conversion of the last 
+channel if the corresponding EOCIE or JEOCIE bit is set
+Bit 7 JEOCIE : Interrupt enable for injected channels
+This bit is set and cleared by software to en able/disable the end of conversion interrupt for 
+injected channels. 
+0: JEOC interrupt disabled1: JEOC interrupt enabled. An interrupt is generated when the JEOC bit is set.Analog-to-digital converter (ADC) RM0008
+240/1136 RM0008 Rev 2111.12.3 ADC control register 2 (ADC_CR2)
+Address offset: 0x08
+Reset value: 0x0000 0000
+         
+         Bit 6 AWDIE : Analog watchdog interrupt enable 
+This bit is set and cleared by software to enable/disable the analog watchdog interrupt. 
+0: Analog watchdog interrupt disabled 1: Analog watchdog interrupt enabled
+Bit 5 EOCIE:  Interrupt enable for EOC 
+This bit is set and cleared by software to enable/disable the End of Conversion interrupt. 
+0: EOC interrupt disabled1: EOC interrupt enabled. An interrupt is generated when the EOC bit is set.
+Bits 4:0 AWDCH[4:0]:  Analog watchdog channel select bits 
+These bits are set and cleared by software. T hey select the input channel to be guarded by 
+the Analog watchdog. 
+00000: ADC analog Channel0 00001: ADC analog Channel1....01111: ADC analog Channel1510000: ADC analog Channel1610001: ADC analog Channel17Other values: reserved.
+Note: ADC1 analog Channel16 and Channel17 are internally connected to the temperature 
+sensor and to V
+REFINT , respectively.
+ADC2 analog inputs Channel16 and Channel17 are internally connected to VSS.
+ADC3 analog inputs Channel9, Channel14, Channel15, Channel16 and Channel17 are 
+connected to VSS.
+31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16
+ReservedTSVRE
+FESWSTA
+RTJSWST
+ARTEXTTR
+IGEXTSEL[2:0] Res.
+rw rw rw rw rw rw rw
+15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+JEXTT
+RIGJEXTSEL[2:0] ALIGN Reserved DMA
+ReservedRST 
+CALCAL CONT ADON
+rw rw rw rw rw Res. rw rw rw rw rwRM0008 Rev 21 241/1136RM0008 Analog-to-digital converter (ADC)
+253Bits 31:24 Reserved, must be kept at reset value.
+Bit 23 TSVREFE : Temperature sensor and VREFINT  enable
+This bit is set and cleared by software to enable/disable the temp erature sensor and VREFINT  
+channel. In devices with dual ADCs this bit is present only in ADC1.
+0: Temperature sensor and VREFINT  channel disabled
+1: Temperature sensor and VREFINT  channel enabled
+Bit 22 SWSTART : Start conversion of regular channels
+This bit is set by software to start c onversion and cleared by hardware as soon as 
+conversion starts. It starts a conversion of a group of regular channels if SWSTART is 
+selected as trigger event by the EXTSEL[2:0] bits. 
+0: Reset state1: Starts conversion of regular channels 
+Bit 21 JSWSTART : Start conversion of injected channels
+This bit is set by software and cleared by software or by hardware as soon as the conversion 
+starts. It starts a conversion  of a group of injected channels (if JSWSTART is selected as 
+trigger event by the JEXTSEL[2:0] bits. 
+0: Reset state
+1: Starts conversion of injected channels
+Bit 20 EXTTRIG : External trigger conversion mode for regular channels
+This bit is set and cleared by software to enable/disable the external trigger used to start 
+conversion of a regular channel group.
+0: Conversion on external event disabled1: Conversion on external event enabled
+Bits 19:17 EXTSEL[2:0] : External event select for regular group
+These bits select the external event used to tr igger the start of conversion of a regular group:
+For ADC1 and ADC2, the assigned triggers are:000: Timer 1 CC1 event001: Timer 1 CC2 event010: Timer 1 CC3 event011: Timer 2 CC2 event100: Timer 3 TRGO event101: Timer 4 CC4 event110: EXTI line 11/TIM8_TRGO event (TIM8_TRGO  is available only in high-density and XL-
+density devices)
+111: SWSTART
+For ADC3, the assigned triggers are:
+000: Timer 3 CC1 event001: Timer 2 CC3 event010: Timer 1 CC3 event011: Timer 8 CC1 event100: Timer 8 TRGO event101: Timer 5 CC1 event110: Timer 5 CC3 event111: SWSTART
+Bit 16 Reserved, must be kept at reset value.Analog-to-digital converter (ADC) RM0008
+242/1136 RM0008 Rev 21Bit 15 JEXTTRIG : External trigger conversion mode for injected channels
+This bit is set and cleared by software to enable/disable the external trigger used to start 
+conversion of an injected channel group.
+0: Conversion on external event disabled1: Conversion on external event enabled
+Bits 14:12 JEXTSEL[2:0] : External event select for injected group
+These bits select the external event used to trigger the start of conversion of an injected 
+group:
+For ADC1 and ADC2 the assigned triggers are:000: Timer 1 TRGO event001: Timer 1 CC4 event010: Timer 2 TRGO event011: Timer 2 CC1 event100: Timer 3 CC4 event101: Timer 4 TRGO event110: EXTI line15/TIM8_CC4 event (TIM8_CC4 is available only in high-density and XL-
+density devices)
+111: JSWSTART
+For ADC3 the assigned triggers are:
+000: Timer 1 TRGO event001: Timer 1 CC4 event010: Timer 4 CC3 event011: Timer 8 CC2 event100: Timer 8 CC4 event101: Timer 5 TRGO event110: Timer 5 CC4 event111: JSWSTART
+Bit 11 ALIGN : Data alignment
+This bit is set and clear ed by software. Refer to Figure 27. and Figure 28.
+0: Right Alignment 1: Left Alignment
+Bits 10:9 Reserved, must be kept at reset value.
+Bit 8  DMA : Direct memo ry access mode
+This bit is set and cleared by software. Refer to the DMA controller chapter for more details.
+0: DMA mode disabled1: DMA mode enabledOnly ADC1 and ADC3 can generate a DMA request.
+Bits 7:4  Reserved, must be kept at reset value.
+Bit 3 RSTCAL: Reset calibration
+This bit is set by software and cleared by hard ware. It is cleared after the calibration registers 
+are initialized.
+0: Calibration register initialized. 1: Initialize calibration register.
+Note: If RSTCAL is set when conversion is ongoing, additional cycles are required to clear the 
+calibration registers.RM0008 Rev 21 243/1136RM0008 Analog-to-digital converter (ADC)
+253Bit 2 CAL: A/D Calibration
+This bit is set by software to start the calibrati on. It is reset by hardw are after calibration is 
+complete. 
+0: Calibration completed 1: Enable calibration
+Bit 1 CONT:  Continuous conversion
+This bit is set and cleared by software. If set conversion takes place continuously till this bit is 
+reset. 
+0: Single conversion mode 1: Continuous conversion mode 
+Bit 0 ADON : A/D converter ON / OFF
+This bit is set and cleared by software. If this bit holds a value of zero and a 1 is written to it 
+then it wakes up the ADC from Power Down state.
+Conversion starts when this bit holds a value of 1 and a 1 is written to it. The application 
+should allow a delay of t
+STAB between power up and start of conversion. Refer to Figure 23.
+0: Disable ADC conversion/calibration and go to power down mode.1: Enable ADC and to start conversion
+Note: If any other bit in this register apart fr om ADON is changed at the same time, then 
+conversion is not triggered. This is to  prevent triggering an erroneous conversion.Analog-to-digital converter (ADC) RM0008
+244/1136 RM0008 Rev 2111.12.4 ADC sample time  register 1 (ADC_SMPR1)
+Address offset: 0x0C
+Reset value: 0x0000 0000
+         31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16
+ReservedSMP17[2:0] SMP16[2:0] SMP15[2:1]
+rw rw rw rw rw rw rw rw
+1 5 1 4 1 3 1 2 1 1 1 0 9876543210
+SMP
+15_0SMP14[2:0] SMP13[2:0] SMP12[2:0] SMP11[2:0] SMP10[2:0]
+rw rw rw rw rw rw rw rw rw rw rw rw rw rw rw rw
+Bits 31:24  Reserved, must be kept at reset value.
+Bits 23:0 SMPx[2:0]:  Channel x Sample time selection
+These bits are written by software to select the sample time individually for each channel. 
+During sample cycles chan nel selection bits mu st remain unchanged.
+000: 1.5 cycles
+001: 7.5 cycles
+010: 13.5 cycles011: 28.5 cycles100: 41.5 cycles101: 55.5 cycles110: 71.5 cycles111: 239.5 cycles
+Note: ADC1 analog Channel16 and Channel 17 are internally connected to the temperature 
+sensor and to V
+REFINT , respectively.
+ADC2 analog input Channel16 and Channel17 are internally connected to VSS.
+ADC3 analog inputs Channel14, Channel15, Channel16 and Channel17 are connected 
+to VSS.RM0008 Rev 21 245/1136RM0008 Analog-to-digital converter (ADC)
+25311.12.5 ADC sample time  register 2 (ADC_SMPR2)
+Address offset: 0x10
+Reset value: 0x0000 0000
+         
+11.12.6 ADC injected channel data of fset register x ( ADC_JOFRx) (x=1..4)
+Address offset: 0x14-0x20
+Reset value: 0x0000 0000
+         31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16
+Reserved SMP9[2:0] SMP8[2:0] SMP7[2:0] SMP6[2:0] SMP5[2:1]
+Res. rw rw rw rw rw rw rw rw rw rw rw rw rw rw
+1 5 1 4 1 3 1 2 1 1 1 0 9876543210
+SMP
+5_0SMP4[2:0] SMP3[2:0] SMP2[2:0] SMP1[2:0] SMP0[2:0]
+rw rw rw rw rw rw rw rw rw rw rw rw rw rw rw rw
+Bits 31:30  Reserved, must be kept at reset value.
+Bits 29:0 SMPx[2:0]:  Channel x Sample time selection
+These bits are written by softwa re to select the sample time individually for each channel. 
+During sample cycles channel selection bits must remain unchanged.
+000: 1.5 cycles
+001: 7.5 cycles
+010: 13.5 cycles011: 28.5 cycles100: 41.5 cycles101: 55.5 cycles110: 71.5 cycles111: 239.5 cycles
+Note: ADC3 analog input Channel9 is connected to V
+SS.
+31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16
+Reserved
+1 5 1 4 1 3 1 2 1 1 1 0 9876543210
+ReservedJOFFSETx[11:0]
+rw rw rw rw rw rw rw rw rw rw rw rw
+Bits 31:12  Reserved, must be kept at reset value.
+Bits 11:0 JOFFSETx[11:0] : Data offset for injected channel x 
+These bits are written by software to defi ne the offset to be subtracted from the raw 
+converted data when converting injected cha nnels. The conversion result can be read from 
+in the ADC_JDRx registers. Analog-to-digital converter (ADC) RM0008
+246/1136 RM0008 Rev 2111.12.7 ADC watchdog high thr eshold register (ADC_HTR)
+Address offset: 0x24
+Reset value: 0x0000 0FFF 
+         
+Note: The software can write to these registers when an ADC conversion is ongoing. The 
+programmed value will be effectiv e when the next conversion is  complete. Writing to this 
+register is performed with a write delay that ca n create uncertainty on the effective time at 
+which the new value is programmed.
+11.12.8 ADC watchdog low thr eshold register (ADC_LTR)
+Address offset: 0x28
+Reset value: 0x0000 0000
+         
+Note: The software can write to these registers when an ADC conversion is ongoing. The 
+programmed value will be effectiv e when the next conversion is  complete. Writing to this 
+register is performed with a write delay that ca n create uncertainty on the effective time at 
+which the new value is programmed.31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16
+Reserved
+1 5 1 4 1 3 1 2 1 1 1 0 9876543210
+ReservedHT[11:0]
+rw rw rw rw rw rw rw rw rw rw rw rw
+Bits 31:12 Reserved, must  be kept at reset value.
+Bits 11:0 HT[11:0]:  Analog watchdog high threshold 
+These bits are written by software to defin e the high threshold for the analog watchdog.
+31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16
+Reserved
+1 5 1 4 1 3 1 2 1 1 1 0 9876543210
+ReservedLT[11:0]
+rw rw rw rw rw rw rw rw rw rw rw rw
+Bits 31:12  Reserved, must be kept at reset value.
+Bits 11:0 LT[11:0]:  Analog watchdog low threshold 
+These bits are written by software to def ine the low threshold for the analog watchdog.RM0008 Rev 21 247/1136RM0008 Analog-to-digital converter (ADC)
+25311.12.9 ADC regular sequenc e register 1 (ADC_SQR1)
+Address offset: 0x2C
+Reset value: 0x0000 0000
+         31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16
+ReservedL[3:0] SQ16[4:1]
+rw rw rw rw rw rw rw rw
+15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+SQ16_0 SQ15[4:0] SQ14[4:0] SQ13[4:0]
+rw rw rw rw rw rw rw rw rw rw rw rw rw rw rw rw
+Bits 31:24  Reserved, must be kept at reset value.
+Bits 23:20 L[3:0] : Regular channel sequence length
+These bits are written by software to define th e total number of conversions in the regular 
+channel conversion sequence.
+0000: 1 conversion0001: 2 conversions .....1111: 16 conversions
+Bits 19:15 SQ16[4:0] : 16th conversion in regular sequence
+These bits are written by software with the channel number (0..17) assigned as the 16th in 
+the conversion sequence.
+Bits 14:10 SQ15[4:0] : 15th conversion in regular sequence
+Bits 9:5 SQ14[4:0] : 1fourth conversion in regular sequence
+Bits 4:0 SQ13[4:0] : 13th conversion in regular sequenceAnalog-to-digital converter (ADC) RM0008
+248/1136 RM0008 Rev 2111.12.10 ADC regular sequenc e register 2 (ADC_SQR2)
+Address offset: 0x30
+Reset value: 0x0000 0000
+         31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16
+ReservedSQ12[4:0] SQ11[4:0] SQ10[4:1]
+rw rw rw rw rw rw rw rw rw rw rw rw rw rw
+1 5 1 4 1 3 1 2 1 1 1 0 9876543210
+SQ10_
+0SQ9[4:0] SQ8[4:0] SQ7[4:0]
+rw rw rw rw rw rw rw rw rw rw rw rw rw rw rw rw
+Bits 31:30  Reserved, must be kept at reset value.
+Bits 29:26 SQ12[4:0] : 12th conversion in regular sequence
+These bits are written by softwa re with the channel number (0..17 ) assigned as the 12th in the 
+sequence to be converted. 
+Bits 24:20 SQ11[4:0] : 11th conversion in regular sequence
+Bits 19:15 SQ10[4:0] : 10th conversion in regular sequence
+Bits 14:10 SQ9[4:0]:  9th conversion in regular sequence
+Bits 9:5 SQ8[4:0] : 8th conversion in regular sequence
+Bits 4:0 SQ7[4:0] : 7th conversion in regular sequenceRM0008 Rev 21 249/1136RM0008 Analog-to-digital converter (ADC)
+25311.12.11 ADC regular seque nce register 3 (ADC_SQR3)
+Address offset: 0x34
+Reset value: 0x0000 0000
+         31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16
+ReservedSQ6[4:0] SQ5[4:0] SQ4[4:1]
+rw rw rw rw rw rw rw rw rw rw rw rw rw rw
+1 5 1 4 1 3 1 2 1 1 1 0 9876543210
+SQ4_0 SQ3[4:0] SQ2[4:0] SQ1[4:0]
+rw rw rw rw rw rw rw rw rw rw rw rw rw rw rw rw
+Bits 31:30  Reserved, must be kept at reset value.
+Bits 29:25 SQ6[4:0] : 6th conversion in regular sequence
+These bits are written by soft ware with the channel number (0.. 17) assigned as the 6th in the 
+sequence to be converted.
+Bits 24:20 SQ5[4:0]:  5th conversion in regular sequence
+Bits 19:15 SQ4[4:0] : fourth conversion in regular sequence
+Bits 14:10 SQ3[4:0] : third conversion in regular sequence
+Bits 9:5 SQ2[4:0]:  second conversion in regular sequence
+Bits 4:0 SQ1[4:0] : first conversion in regular sequenceAnalog-to-digital converter (ADC) RM0008
+250/1136 RM0008 Rev 2111.12.12 ADC injected seque nce register (ADC_JSQR)
+Address offset: 0x38
+Reset value: 0x0000 0000
+         31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16
+ReservedJL[1:0] JSQ4[4:1]
+rw rw rw rw rw rw
+15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+JSQ4_0 JSQ3[4:0] JSQ2[4:0] JSQ1[4:0]
+rw rw rw rw rw rw rw rw rw rw rw rw rw rw rw rw
+Bits 31:22  Reserved, must be kept at reset value.
+Bits 21:20 JL[1:0] : Injected sequence length
+These bits are written by software to define th e total number of conversions in the injected 
+channel conversion sequence.
+00: 1 conversion
+01: 2 conversions
+10: 3 conversions
+11: 4 conversions
+Bits 19:15 JSQ4[4:0] : fourth conversion in injected sequence (when JL[1:0] = 3)(1)
+These bits are written by software with the c hannel number (0..17) assigned as the fourth in 
+the sequence to be converted.
+Note: Unlike a regular conversion sequence, if JL[1:0] length is less than four, the channels 
+are converted in a sequence starting from  (4-JL). Example: ADC_JSQR[21:0] = 10 
+00011 00011 00111 00010 means that a scan conversion will convert the following channel sequence: 7, 3,  3. (not 2, 7, 3) 
+Bits 14:10 JSQ3[4:0]:  third conversion in injected sequence (when JL[1:0] = 3)
+Bits 9:5 JSQ2[4:0] : second conversion in injected sequence (when JL[1:0] = 3)
+Bits 4:0 JSQ1[4:0] : first conversion in injected sequence (when JL[1:0] = 3)
+1. When JL=3 ( 4 injected conversions in the sequencer), the ADC converts the channels in this order: 
+JSQ1[4:0] &gt;&gt; JSQ2[4:0] &gt;&gt; JSQ3[4:0] &gt;&gt; JSQ4[4:0] 
+When JL=2 ( 3 injected conversions in the sequencer), the ADC converts the channels in this order: 
+JSQ2[4:0] &gt;&gt; JSQ3[4:0] &gt;&gt; JSQ4[4:0] When JL=1 ( 2 injected conversions in the sequencer), the ADC converts the channels in this order: 
+JSQ3[4:0] &gt;&gt; JSQ4[4:0] 
+When JL=0 (1 injected conversion in the s equencer), the ADC conver ts only JSQ4[4:0] channelRM0008 Rev 21 251/1136RM0008 Analog-to-digital converter (ADC)
+25311.12.13 ADC injected data re gister x (ADC_JDRx) (x= 1..4)
+Address offset: 0x3C - 0x48
+Reset value: 0x0000 0000
+         
+11.12.14 ADC regular da ta register (ADC_DR)
+Address offset: 0x4C
+Reset value: 0x0000 0000
+         31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16
+Reserved
+1 5 1 4 1 3 1 2 1 1 1 0 9876543210
+JDATA[15:0]
+rrrrrrr r r r rrrrrr
+Bits 31:16  Reserved, must be kept at reset value.
+Bits 15:0 JDATA[15:0] : Injected data 
+These bits are read only. They contain the c onversion result from injected channel x. The 
+data is left or right-aligned as shown in Figure 27  and Figure 28 .
+31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16
+ADC2DATA[15:0]
+rrrrrrr r r r rrrrrr
+1 5 1 4 1 3 1 2 1 1 1 0 9876543210
+DATA[15:0]
+rrrrrrr r r r rrrrrr
+Bits 31:16 ADC2DATA[15:0]:  ADC2 data
+In ADC1: In dual mode, these bits cont ain the regular data of ADC2. Refer to Section 11.9: 
+Dual ADC mode .
+In ADC2 and ADC3: these bits are not used.
+Bits 15:0 DATA[15:0] : Regular data
+These bits are read only. They contain the conv ersion result from the regular channels. The 
+data is left or right-aligned as shown in Figure 27  and Figure 28 .Analog-to-digital converter (ADC) RM0008
+252/1136 RM0008 Rev 2111.12.15 ADC register map
+The following table summarizes the ADC registers.
+         Table 72. ADC register map and reset values 
+Offset Register
+31
+30
+29
+28
+2726
+25
+2423
+22
+21
+20
+1918
+17
+16
+15
+1413
+12
+11
+10
+9
+8
+7
+65
+4
+3
+2
+10
+0x00ADC_SRReserved
+STRT
+JSTRT
+JEOC
+EOC
+AWD
+Reset value 00000
+0x04ADC_CR1Reserved
+AWDEN
+JAWDEN
+ReservedDUALMOD 
+[3:0]DISC 
+NUM 
+[2:0]
+JDISCEN
+DISCEN
+JAUTO
+AWD SGL
+SCAN
+JEOC IE
+AWDIE
+EOCIEAWDCH[4:0]
+R e s e t  v a l u e 00 00000000000000000000
+0x08ADC_CR2Reserved
+TSVREFE
+SWSTART
+JSWSTAR
+EXTTRIGEXTSEL 
+[2:0]
+Reserved
+JEXTTRIGJEXTSE
+L
+[2:0]
+ALIGN
+Reserved
+DMAReserved
+RSTCAL
+CAL
+CONT
+ADON
+R e s e t  v a l u e 0000000 00000 0 0000
+0x0CADC_SMPR1 Sample time bits SMPx_x
+R e s e t  v a l u e 00000000000000000000000000000000
+0x10ADC_SMPR2 Sample time bits SMPx_x
+R e s e t  v a l u e 00000000000000000000000000000000
+0x14ADC_JOFR1ReservedJOFFSET1[11:0]
+Reset value 000000000000
+0x18ADC_JOFR2ReservedJOFFSET2[11:0]
+Reset value 000000000000
+0x1CADC_JOFR3ReservedJOFFSET3[11:0]
+Reset value 000000000000
+0x20ADC_JOFR4ReservedJOFFSET4[11:0]
+Reset value 000000000000
+0x24ADC_HTRReservedHT[11:0]
+Reset value 000000000000
+0x28ADC_LTRReservedLT[11:0]
+Reset value 000000000000
+0x2CADC_SQR1ReservedL[3:0]SQ16[4:0] 16th 
+conversion in 
+regular 
+sequence bitsSQ15[4:0] 15th 
+conversion in 
+regular 
+sequence bitsSQ14[4:0] 
+1fourth 
+conversion in 
+regular 
+sequence bitsSQ13[4:0] 13th 
+conversion in 
+regular 
+sequence bits
+R e s e t  v a l u e 000000000000000000000000RM0008 Rev 21 253/1136RM0008 Analog-to-digital converter (ADC)
+253Refer to Table 3 on page 50  for the register boundary addresses.0x30ADC_SQR2
+ReservedSQ12[4:0] 12th 
+conversion in 
+regular 
+sequence bitsSQ11[4:0] 11th 
+conversion in 
+regular 
+sequence bitsSQ10[4:0] 10th 
+conversion in 
+regular 
+sequence bitsSQ9[4:0] 9th 
+conversion in 
+regular 
+sequence bitsSQ8[4:0] 8th 
+conversion in 
+regular 
+sequence bitsSQ7[4:0] 7th 
+conversion in 
+regular 
+sequence bits
+R e s e t  v a l u e 000000000000000000000000000000
+0x34ADC_SQR3
+ReservedSQ6[4:0] 6th 
+conversion in 
+regular 
+sequence bitsSQ5[4:0] 5th 
+conversion in 
+regular 
+sequence bitsSQ4[4:0] fourth 
+conversion in 
+regular 
+sequence bitsSQ3[4:0] third 
+conversion in 
+regular 
+sequence bitsSQ2[4:0] second 
+conversion in 
+regular 
+sequence bitsSQ1[4:0] first 
+conversion in 
+regular 
+sequence bits
+R e s e t  v a l u e 000000000000000000000000000000
+0x38ADC_JSQRReservedJL[1:
+0]JSQ4[4:0] 
+fourthconversion 
+in injected 
+sequence bitsJSQ3[4:0] third 
+conversion in 
+injected 
+sequence bitsJSQ2[4:0] 
+second 
+conversion in 
+injected 
+sequence bitsJSQ1[4:0] first 
+conversion in 
+injected 
+sequence bits
+R e s e t  v a l u e 0000000000000000000000
+0x3CADC_JDR1ReservedJDATA[15:0]
+R e s e t  v a l u e 0000000000000000
+0x40ADC_JDR2ReservedJDATA[15:0]
+R e s e t  v a l u e 0000000000000000
+0x44ADC_JDR3ReservedJDATA[15:0]
+R e s e t  v a l u e 0000000000000000
+0x48ADC_JDR4ReservedJDATA[15:0]
+R e s e t  v a l u e 0000000000000000
+0x4CADC_DR ADC2DATA[15:0] Regular DATA[15:0]
+R e s e t  v a l u e 00000000000000000000000000000000Table 72. ADC register map and reset values  (continued)
+Offset Register
+31
+30
+29
+28
+2726
+25
+2423
+22
+21
+20
+1918
+17
+16
+15
+1413
+12
+11
+10
+9
+8
+7
+65
+4
+3
+2
+10</Text></PDF_Content>
